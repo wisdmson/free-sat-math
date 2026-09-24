@@ -1,0 +1,13 @@
+---
+import ProblemPage from '../../components/ProblemPage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { desmosApiKey } from '../../site.config';
+---
+
+<BaseLayout title="Problem">
+  <h1 class="visually-hidden">Problem</h1>
+  <ProblemPage client:only="react" desmosKey={desmosApiKey()} />
+  <noscript>
+    <p class="notice">Problems need JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>

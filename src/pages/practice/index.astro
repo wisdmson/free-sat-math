@@ -1,0 +1,13 @@
+---
+import PracticeSession from '../../components/PracticeSession';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { desmosApiKey } from '../../site.config';
+---
+
+<BaseLayout title="Practice">
+  <h1 class="visually-hidden">Practice</h1>
+  <PracticeSession client:only="react" desmosKey={desmosApiKey()} />
+  <noscript>
+    <p class="notice">Practice needs JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>
