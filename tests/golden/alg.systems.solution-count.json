@@ -1,0 +1,1031 @@
+{
+  "typeId": "alg.systems.solution-count",
+  "version": 1,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "$$\\begin{aligned} y &= 3x + 4 \\\\ y &= x + 9 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "The first line has slope $3$ and the second has slope $1$.",
+        "Lines with different slopes cross at exactly one point, so the system has exactly one solution."
+      ],
+      "desmos": [
+        "-3x + y = 4",
+        "-x + y = 9"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "-3",
+          "1",
+          "4"
+        ],
+        "e2": [
+          "-1",
+          "1",
+          "9"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:easy:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "$$\\begin{aligned} y &= x - 9 \\\\ -3y &= -3x + 27 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "Both equations describe the same line, so every point on that line is a solution.",
+        "B": "The slopes are equal and so are the intercepts: both equations describe the same line.",
+        "C": "Two different lines cross at most once, and here the lines are the same line."
+      },
+      "solution": [
+        "Divide both sides of the second equation by $-3$: $y = x - 9$.",
+        "That is the first equation, so both equations describe the same line. Every point on the line is a solution, so there are infinitely many solutions."
+      ],
+      "desmos": [
+        "-x + y = -9",
+        "3x - 3y = 27"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "-1",
+          "1",
+          "-9"
+        ],
+        "e2": [
+          "3",
+          "-3",
+          "27"
+        ],
+        "outcome": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:easy:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "$$\\begin{aligned} y &= 2x + 1 \\\\ y &= -2x - 3 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "The first line has slope $2$ and the second has slope $-2$.",
+        "Lines with different slopes cross at exactly one point, so the system has exactly one solution."
+      ],
+      "desmos": [
+        "-2x + y = 1",
+        "2x + y = -3"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "-2",
+          "1",
+          "1"
+        ],
+        "e2": [
+          "2",
+          "1",
+          "-3"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:easy:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "$$\\begin{aligned} y &= 4x + 5 \\\\ y &= 4x + 7 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "The slopes are equal, so the lines are parallel; lines with equal slopes and different intercepts never cross.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "Equal slopes are not enough: the intercepts differ, so the lines are parallel and never meet."
+      },
+      "solution": [
+        "Both equations are in slope-intercept form, and both lines have slope $4$.",
+        "The $y$-intercepts are different ($5$ and $7$), so the lines are parallel and never meet. The system has zero solutions."
+      ],
+      "desmos": [
+        "-4x + y = 5",
+        "-4x + y = 7"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "-4",
+          "1",
+          "5"
+        ],
+        "e2": [
+          "-4",
+          "1",
+          "7"
+        ],
+        "outcome": "zero"
+      },
+      "id": "g:alg.systems.solution-count@1:easy:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "$$\\begin{aligned} y &= 2x + 7 \\\\ y &= 4x - 2 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "The first line has slope $2$ and the second has slope $4$.",
+        "Lines with different slopes cross at exactly one point, so the system has exactly one solution."
+      ],
+      "desmos": [
+        "-2x + y = 7",
+        "-4x + y = -2"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "-2",
+          "1",
+          "7"
+        ],
+        "e2": [
+          "-4",
+          "1",
+          "-2"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:easy:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "$$\\begin{aligned} 5x + 3y &= 0 \\\\ -12x - 9y &= 6 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "Solve each equation for $y$. The first line has slope $-\\frac{5}{3}$ and the second has slope $-\\frac{4}{3}$.",
+        "The slopes are different, so the lines cross exactly once. The system has exactly one solution."
+      ],
+      "desmos": [
+        "5x + 3y = 0",
+        "-12x - 9y = 6"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "5",
+          "3",
+          "0"
+        ],
+        "e2": [
+          "-12",
+          "-9",
+          "6"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:medium:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "$$\\begin{aligned} 4x - 6y &= 9 \\\\ 16x - 24y &= 36 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "Both equations describe the same line, so every point on that line is a solution.",
+        "B": "The slopes are equal and so are the intercepts: both equations describe the same line.",
+        "C": "Two different lines cross at most once, and here the lines are the same line."
+      },
+      "solution": [
+        "Multiply the first equation by $4$: $16x - 24y = 36$.",
+        "That is exactly the second equation, so both equations describe the same line. The system has infinitely many solutions."
+      ],
+      "desmos": [
+        "4x - 6y = 9",
+        "16x - 24y = 36"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "4",
+          "-6",
+          "9"
+        ],
+        "e2": [
+          "16",
+          "-24",
+          "36"
+        ],
+        "outcome": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:medium:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "$$\\begin{aligned} 4x + y &= -3 \\\\ 13x + 3y &= 7 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "Solve each equation for $y$. The first line has slope $-4$ and the second has slope $-\\frac{13}{3}$.",
+        "The slopes are different, so the lines cross exactly once. The system has exactly one solution."
+      ],
+      "desmos": [
+        "4x + y = -3",
+        "13x + 3y = 7"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "4",
+          "1",
+          "-3"
+        ],
+        "e2": [
+          "13",
+          "3",
+          "7"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:medium:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "$$\\begin{aligned} 5x + 3y &= 2 \\\\ 20x + 12y &= 6 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "The slopes are equal, so the lines are parallel; lines with equal slopes and different intercepts never cross.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "Equal slopes are not enough: the intercepts differ, so the lines are parallel and never meet."
+      },
+      "solution": [
+        "Multiply the first equation by $4$: $20x + 12y = 8$.",
+        "The left side now matches the second equation, but the right sides differ ($8$ and $6$). The lines are parallel, so the system has zero solutions."
+      ],
+      "desmos": [
+        "5x + 3y = 2",
+        "20x + 12y = 6"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "5",
+          "3",
+          "2"
+        ],
+        "e2": [
+          "20",
+          "12",
+          "6"
+        ],
+        "outcome": "zero"
+      },
+      "id": "g:alg.systems.solution-count@1:medium:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "$$\\begin{aligned} 4x + 5y &= 6 \\\\ 13x + 15y &= -9 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+      "choices": [
+        {
+          "text": "Zero",
+          "value": "zero"
+        },
+        {
+          "text": "Exactly one",
+          "value": "one"
+        },
+        {
+          "text": "Exactly two",
+          "value": "two"
+        },
+        {
+          "text": "Infinitely many",
+          "value": "infinite"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The slopes are different, so the lines must cross exactly once.",
+        "C": "Two different lines cross at most once, so a linear system never has exactly two solutions.",
+        "D": "The slopes differ, so these are two different lines that cross exactly once."
+      },
+      "solution": [
+        "Solve each equation for $y$. The first line has slope $-\\frac{4}{5}$ and the second has slope $-\\frac{13}{15}$.",
+        "The slopes are different, so the lines cross exactly once. The system has exactly one solution."
+      ],
+      "desmos": [
+        "4x + 5y = 6",
+        "13x + 15y = -9"
+      ],
+      "meta": {
+        "mode": "count",
+        "e1": [
+          "4",
+          "5",
+          "6"
+        ],
+        "e2": [
+          "13",
+          "15",
+          "-9"
+        ],
+        "outcome": "one"
+      },
+      "id": "g:alg.systems.solution-count@1:medium:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "$$\\begin{aligned} 15x + ky &= 27 \\\\ 25x + 5y &= 49 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "choices": [
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$\\frac{25}{3}$",
+          "value": "25/3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "This is the matching coefficient in the other equation. The coefficients need the same ratio, not the same value.",
+        "D": "The ratio is flipped: scale by the first equation over the second, not the second over the first."
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{25}{15} = \\frac{5}{3}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{5}{k} = \\frac{5}{3}$, so $k = 3$.",
+        "Check the constants: $\\frac{49}{27} \\neq \\frac{5}{3}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "15",
+          "3",
+          "27"
+        ],
+        "e2": [
+          "25",
+          "5",
+          "49"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "$$\\begin{aligned} x + ky &= 2 \\\\ 5x + 30y &= 10 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has infinitely many solutions, what is the value of $k$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$150$",
+          "value": "150"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "This is the matching coefficient in the other equation. The coefficients need the same ratio, not the same value.",
+        "D": "The ratio is flipped: scale by the first equation over the second, not the second over the first."
+      },
+      "solution": [
+        "A linear system has infinitely many solutions when one equation is a multiple of the other: the $x$-coefficients, the $y$-coefficients, and the constants are all in the same ratio.",
+        "Compare the known $x$-coefficients: $\\frac{5}{1}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{30}{k} = 5$, so $k = 6$.",
+        "Check the constants: $\\frac{10}{2} = 5$ as well, so the equations describe the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "1",
+          "6",
+          "2"
+        ],
+        "e2": [
+          "5",
+          "30",
+          "10"
+        ],
+        "hidden": "y",
+        "cond": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "$$\\begin{aligned} 8x + ky &= -6 \\\\ 20x - 15y &= -19 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "choices": [
+        {
+          "text": "$-\\frac{75}{2}$",
+          "value": "-75/2"
+        },
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "The ratio is flipped: scale by the first equation over the second, not the second over the first.",
+        "B": "This is the matching coefficient in the other equation. The coefficients need the same ratio, not the same value.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{20}{8} = \\frac{5}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{-15}{k} = \\frac{5}{2}$, so $k = -6$.",
+        "Check the constants: $\\frac{-19}{-6} \\neq \\frac{5}{2}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "8",
+          "-6",
+          "-6"
+        ],
+        "e2": [
+          "20",
+          "-15",
+          "-19"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "$$\\begin{aligned} 10x + ky &= 2 \\\\ 15x + 6y &= -2 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "Used the ratio of the constants instead of the ratio of the known coefficients.",
+        "C": "This is the matching coefficient in the other equation. The coefficients need the same ratio, not the same value.",
+        "D": "The ratio is flipped: scale by the first equation over the second, not the second over the first."
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{15}{10} = \\frac{3}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{6}{k} = \\frac{3}{2}$, so $k = 4$.",
+        "Check the constants: $\\frac{-2}{2} \\neq \\frac{3}{2}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "10",
+          "4",
+          "2"
+        ],
+        "e2": [
+          "15",
+          "6",
+          "-2"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "$$\\begin{aligned} 12x + ky &= -6 \\\\ 30x + 20y &= -15 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has infinitely many solutions, what is the value of $k$?",
+      "choices": [
+        {
+          "text": "$-8$",
+          "value": "-8"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "This is the matching coefficient in the other equation. The coefficients need the same ratio, not the same value.",
+        "D": "The ratio is flipped: scale by the first equation over the second, not the second over the first."
+      },
+      "solution": [
+        "A linear system has infinitely many solutions when one equation is a multiple of the other: the $x$-coefficients, the $y$-coefficients, and the constants are all in the same ratio.",
+        "Compare the known $x$-coefficients: $\\frac{30}{12} = \\frac{5}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{20}{k} = \\frac{5}{2}$, so $k = 8$.",
+        "Check the constants: $\\frac{-15}{-6} = \\frac{5}{2}$ as well, so the equations describe the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "12",
+          "8",
+          "-6"
+        ],
+        "e2": [
+          "30",
+          "20",
+          "-15"
+        ],
+        "hidden": "y",
+        "cond": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "$$\\begin{aligned} 15x + ky &= 27 \\\\ 25x + 5y &= 49 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3"
+        ]
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{25}{15} = \\frac{5}{3}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{5}{k} = \\frac{5}{3}$, so $k = 3$.",
+        "Check the constants: $\\frac{49}{27} \\neq \\frac{5}{3}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "15",
+          "3",
+          "27"
+        ],
+        "e2": [
+          "25",
+          "5",
+          "49"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "$$\\begin{aligned} x + ky &= 2 \\\\ 5x + 30y &= 10 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has infinitely many solutions, what is the value of $k$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "A linear system has infinitely many solutions when one equation is a multiple of the other: the $x$-coefficients, the $y$-coefficients, and the constants are all in the same ratio.",
+        "Compare the known $x$-coefficients: $\\frac{5}{1}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{30}{k} = 5$, so $k = 6$.",
+        "Check the constants: $\\frac{10}{2} = 5$ as well, so the equations describe the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "1",
+          "6",
+          "2"
+        ],
+        "e2": [
+          "5",
+          "30",
+          "10"
+        ],
+        "hidden": "y",
+        "cond": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "$$\\begin{aligned} 8x + ky &= -6 \\\\ 20x - 15y &= -19 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-6"
+        ]
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{20}{8} = \\frac{5}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{-15}{k} = \\frac{5}{2}$, so $k = -6$.",
+        "Check the constants: $\\frac{-19}{-6} \\neq \\frac{5}{2}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "8",
+          "-6",
+          "-6"
+        ],
+        "e2": [
+          "20",
+          "-15",
+          "-19"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "$$\\begin{aligned} 10x + ky &= 2 \\\\ 15x + 6y &= -2 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "A linear system has no solution when its lines are parallel: the $x$-coefficients and the $y$-coefficients are in the same ratio, but the constants are not.",
+        "Compare the known $x$-coefficients: $\\frac{15}{10} = \\frac{3}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{6}{k} = \\frac{3}{2}$, so $k = 4$.",
+        "Check the constants: $\\frac{-2}{2} \\neq \\frac{3}{2}$, so the lines are parallel rather than the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "10",
+          "4",
+          "2"
+        ],
+        "e2": [
+          "15",
+          "6",
+          "-2"
+        ],
+        "hidden": "y",
+        "cond": "none"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "$$\\begin{aligned} 12x + ky &= -6 \\\\ 30x + 20y &= -15 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has infinitely many solutions, what is the value of $k$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "8"
+        ]
+      },
+      "solution": [
+        "A linear system has infinitely many solutions when one equation is a multiple of the other: the $x$-coefficients, the $y$-coefficients, and the constants are all in the same ratio.",
+        "Compare the known $x$-coefficients: $\\frac{30}{12} = \\frac{5}{2}$.",
+        "The $y$-coefficients need the same ratio: $\\frac{20}{k} = \\frac{5}{2}$, so $k = 8$.",
+        "Check the constants: $\\frac{-15}{-6} = \\frac{5}{2}$ as well, so the equations describe the same line."
+      ],
+      "meta": {
+        "mode": "constant",
+        "e1": [
+          "12",
+          "8",
+          "-6"
+        ],
+        "e2": [
+          "30",
+          "20",
+          "-15"
+        ],
+        "hidden": "y",
+        "cond": "infinite"
+      },
+      "id": "g:alg.systems.solution-count@1:hard:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}
