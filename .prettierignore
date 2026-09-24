@@ -1,0 +1,9 @@
+dist/
+.astro/
+node_modules/
+package-lock.json
+playwright-report/
+test-results/
+tests/golden/
+docs/superpowers/
+.superpowers/
