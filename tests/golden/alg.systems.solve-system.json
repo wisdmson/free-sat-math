@@ -1,0 +1,1411 @@
+{
+  "typeId": "alg.systems.solve-system",
+  "version": 1,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "$$\\begin{aligned} y &= 2x + 9 \\\\ 3x + 5y &= 19 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "This is the value of $x$, not $y$.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $y = 2x + 9$ into the second equation: $3x + 5(2x + 9) = 19$.",
+        "Distribute and combine like terms: $13x + 45 = 19$.",
+        "So $13x = -26$, which gives $x = -2$.",
+        "Substitute $x = -2$ into $y = 2x + 9$ to get $y = 5$."
+      ],
+      "desmos": [
+        "-2x + y = 9",
+        "3x + 5y = 19"
+      ],
+      "meta": {
+        "e1": [
+          "-2",
+          "1",
+          "9"
+        ],
+        "e2": [
+          "3",
+          "5",
+          "19"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "$$\\begin{aligned} y &= -4x + 21 \\\\ 5x + y &= 26 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$47$",
+          "value": "47"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "This is the value of $y$, not $x$.",
+        "D": "A sign error when moving the constant term to the other side."
+      },
+      "solution": [
+        "Substitute $y = -4x + 21$ into the second equation: $5x + (-4x + 21) = 26$.",
+        "Distribute and combine like terms: $x + 21 = 26$.",
+        "So $x = 5$, which gives $x = 5$."
+      ],
+      "desmos": [
+        "4x + y = 21",
+        "5x + y = 26"
+      ],
+      "meta": {
+        "e1": [
+          "4",
+          "1",
+          "21"
+        ],
+        "e2": [
+          "5",
+          "1",
+          "26"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "$$\\begin{aligned} y &= x + 4 \\\\ 2x + y &= -2 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$\\frac{14}{3}$",
+          "value": "14/3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "This is the value of $x$, not $y$.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error while solving for $x$ carried into $y$."
+      },
+      "solution": [
+        "Substitute $y = x + 4$ into the second equation: $2x + (x + 4) = -2$.",
+        "Distribute and combine like terms: $3x + 4 = -2$.",
+        "So $3x = -6$, which gives $x = -2$.",
+        "Substitute $x = -2$ into $y = x + 4$ to get $y = 2$."
+      ],
+      "desmos": [
+        "-x + y = 4",
+        "2x + y = -2"
+      ],
+      "meta": {
+        "e1": [
+          "-1",
+          "1",
+          "4"
+        ],
+        "e2": [
+          "2",
+          "1",
+          "-2"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "$$\\begin{aligned} y &= 2x + 21 \\\\ 3x + y &= -19 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "choices": [
+        {
+          "text": "$-8$",
+          "value": "-8"
+        },
+        {
+          "text": "$\\frac{2}{5}$",
+          "value": "2/5"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A sign error when moving the constant term to the other side.",
+        "C": "This is the value of $y$, not $x$.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $y = 2x + 21$ into the second equation: $3x + (2x + 21) = -19$.",
+        "Distribute and combine like terms: $5x + 21 = -19$.",
+        "So $5x = -40$, which gives $x = -8$."
+      ],
+      "desmos": [
+        "-2x + y = 21",
+        "3x + y = -19"
+      ],
+      "meta": {
+        "e1": [
+          "-2",
+          "1",
+          "21"
+        ],
+        "e2": [
+          "3",
+          "1",
+          "-19"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "$$\\begin{aligned} y &= 4x - 9 \\\\ 5x - 2y &= 9 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-45$",
+          "value": "-45"
+        },
+        {
+          "text": "$-33$",
+          "value": "-33"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error while solving for $x$ carried into $y$.",
+        "B": "The constant was not distributed, which threw off $x$ and then $y$.",
+        "C": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $y = 4x - 9$ into the second equation: $5x - 2(4x - 9) = 9$.",
+        "Distribute and combine like terms: $-3x + 18 = 9$.",
+        "So $-3x = -9$, which gives $x = 3$.",
+        "Substitute $x = 3$ into $y = 4x - 9$ to get $y = 3$."
+      ],
+      "desmos": [
+        "-4x + y = -9",
+        "5x - 2y = 9"
+      ],
+      "meta": {
+        "e1": [
+          "-4",
+          "1",
+          "-9"
+        ],
+        "e2": [
+          "5",
+          "-2",
+          "9"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "$$\\begin{aligned} y &= 2x + 9 \\\\ 3x + 5y &= 19 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Substitute $y = 2x + 9$ into the second equation: $3x + 5(2x + 9) = 19$.",
+        "Distribute and combine like terms: $13x + 45 = 19$.",
+        "So $13x = -26$, which gives $x = -2$.",
+        "Substitute $x = -2$ into $y = 2x + 9$ to get $y = 5$."
+      ],
+      "desmos": [
+        "-2x + y = 9",
+        "3x + 5y = 19"
+      ],
+      "meta": {
+        "e1": [
+          "-2",
+          "1",
+          "9"
+        ],
+        "e2": [
+          "3",
+          "5",
+          "19"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "$$\\begin{aligned} y &= -4x + 21 \\\\ 5x + y &= 26 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Substitute $y = -4x + 21$ into the second equation: $5x + (-4x + 21) = 26$.",
+        "Distribute and combine like terms: $x + 21 = 26$.",
+        "So $x = 5$, which gives $x = 5$."
+      ],
+      "desmos": [
+        "4x + y = 21",
+        "5x + y = 26"
+      ],
+      "meta": {
+        "e1": [
+          "4",
+          "1",
+          "21"
+        ],
+        "e2": [
+          "5",
+          "1",
+          "26"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "$$\\begin{aligned} y &= x + 4 \\\\ 2x + y &= -2 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "Substitute $y = x + 4$ into the second equation: $2x + (x + 4) = -2$.",
+        "Distribute and combine like terms: $3x + 4 = -2$.",
+        "So $3x = -6$, which gives $x = -2$.",
+        "Substitute $x = -2$ into $y = x + 4$ to get $y = 2$."
+      ],
+      "desmos": [
+        "-x + y = 4",
+        "2x + y = -2"
+      ],
+      "meta": {
+        "e1": [
+          "-1",
+          "1",
+          "4"
+        ],
+        "e2": [
+          "2",
+          "1",
+          "-2"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "$$\\begin{aligned} y &= 2x + 21 \\\\ 3x + y &= -19 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-8"
+        ]
+      },
+      "solution": [
+        "Substitute $y = 2x + 21$ into the second equation: $3x + (2x + 21) = -19$.",
+        "Distribute and combine like terms: $5x + 21 = -19$.",
+        "So $5x = -40$, which gives $x = -8$."
+      ],
+      "desmos": [
+        "-2x + y = 21",
+        "3x + y = -19"
+      ],
+      "meta": {
+        "e1": [
+          "-2",
+          "1",
+          "21"
+        ],
+        "e2": [
+          "3",
+          "1",
+          "-19"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "$$\\begin{aligned} y &= 4x - 9 \\\\ 5x - 2y &= 9 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3"
+        ]
+      },
+      "solution": [
+        "Substitute $y = 4x - 9$ into the second equation: $5x - 2(4x - 9) = 9$.",
+        "Distribute and combine like terms: $-3x + 18 = 9$.",
+        "So $-3x = -9$, which gives $x = 3$.",
+        "Substitute $x = 3$ into $y = 4x - 9$ to get $y = 3$."
+      ],
+      "desmos": [
+        "-4x + y = -9",
+        "5x - 2y = 9"
+      ],
+      "meta": {
+        "e1": [
+          "-4",
+          "1",
+          "-9"
+        ],
+        "e2": [
+          "5",
+          "-2",
+          "9"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:easy:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "$$\\begin{aligned} 5x + y &= -1 \\\\ 6x + 6y &= 18 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "The wrong sign was used for $x$ when substituting back.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "This is the value of $x$, not $y$."
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $6$ and the second equation by $1$: $$\\begin{aligned} 30x + 6y &= -6 \\\\ 6x + 6y &= 18 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $24x = -24$.",
+        "So $x = -1$.",
+        "Substitute $x = -1$ into the first equation: $y - 5 = -1$, so $y = 4$."
+      ],
+      "desmos": [
+        "5x + y = -1",
+        "6x + 6y = 18"
+      ],
+      "meta": {
+        "e1": [
+          "5",
+          "1",
+          "-1"
+        ],
+        "e2": [
+          "6",
+          "6",
+          "18"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "$$\\begin{aligned} x + 6y &= 10 \\\\ 2x - 5y &= 3 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$\\frac{7}{3}$",
+          "value": "7/3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "The wrong sign was used for $x$ when substituting back.",
+        "D": "This is the value of $x$, not $y$."
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $-5$ and the second equation by $6$: $$\\begin{aligned} -5x - 30y &= -50 \\\\ 12x - 30y &= 18 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $-17x = -68$.",
+        "So $x = 4$.",
+        "Substitute $x = 4$ into the first equation: $6y + 4 = 10$, so $y = 1$."
+      ],
+      "desmos": [
+        "x + 6y = 10",
+        "2x - 5y = 3"
+      ],
+      "meta": {
+        "e1": [
+          "1",
+          "6",
+          "10"
+        ],
+        "e2": [
+          "2",
+          "-5",
+          "3"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "$$\\begin{aligned} 4x - 3y &= -10 \\\\ -2x + y &= 4 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$\\frac{14}{3}$",
+          "value": "14/3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "This is the value of $x$, not $y$.",
+        "D": "The wrong sign was used for $x$ when substituting back."
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $1$ and the second equation by $-3$: $$\\begin{aligned} 4x - 3y &= -10 \\\\ 6x - 3y &= -12 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $-2x = 2$.",
+        "So $x = -1$.",
+        "Substitute $x = -1$ into the first equation: $-3y - 4 = -10$, so $y = 2$."
+      ],
+      "desmos": [
+        "4x - 3y = -10",
+        "-2x + y = 4"
+      ],
+      "meta": {
+        "e1": [
+          "4",
+          "-3",
+          "-10"
+        ],
+        "e2": [
+          "-2",
+          "1",
+          "4"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "$$\\begin{aligned} 5x + 2y &= -25 \\\\ x - 2y &= -17 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "The equations were combined with the wrong operation, so $y$ was not eliminated.",
+        "C": "This is the value of $y$, not $x$.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "The $y$-terms are opposites, so add the equations: $6x = -42$.",
+        "So $x = -7$."
+      ],
+      "desmos": [
+        "5x + 2y = -25",
+        "x - 2y = -17"
+      ],
+      "meta": {
+        "e1": [
+          "5",
+          "2",
+          "-25"
+        ],
+        "e2": [
+          "1",
+          "-2",
+          "-17"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "$$\\begin{aligned} 6x + 4y &= 20 \\\\ -2x + 2y &= 0 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The equations were combined with the wrong operation, so $y$ was not eliminated."
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $2$ and the second equation by $4$: $$\\begin{aligned} 12x + 8y &= 40 \\\\ -8x + 8y &= 0 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $20x = 40$.",
+        "So $x = 2$."
+      ],
+      "desmos": [
+        "6x + 4y = 20",
+        "-2x + 2y = 0"
+      ],
+      "meta": {
+        "e1": [
+          "6",
+          "4",
+          "20"
+        ],
+        "e2": [
+          "-2",
+          "2",
+          "0"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "$$\\begin{aligned} 5x + y &= -1 \\\\ 6x + 6y &= 18 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $6$ and the second equation by $1$: $$\\begin{aligned} 30x + 6y &= -6 \\\\ 6x + 6y &= 18 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $24x = -24$.",
+        "So $x = -1$.",
+        "Substitute $x = -1$ into the first equation: $y - 5 = -1$, so $y = 4$."
+      ],
+      "desmos": [
+        "5x + y = -1",
+        "6x + 6y = 18"
+      ],
+      "meta": {
+        "e1": [
+          "5",
+          "1",
+          "-1"
+        ],
+        "e2": [
+          "6",
+          "6",
+          "18"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "$$\\begin{aligned} x + 6y &= 10 \\\\ 2x - 5y &= 3 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "1"
+        ]
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $-5$ and the second equation by $6$: $$\\begin{aligned} -5x - 30y &= -50 \\\\ 12x - 30y &= 18 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $-17x = -68$.",
+        "So $x = 4$.",
+        "Substitute $x = 4$ into the first equation: $6y + 4 = 10$, so $y = 1$."
+      ],
+      "desmos": [
+        "x + 6y = 10",
+        "2x - 5y = 3"
+      ],
+      "meta": {
+        "e1": [
+          "1",
+          "6",
+          "10"
+        ],
+        "e2": [
+          "2",
+          "-5",
+          "3"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "$$\\begin{aligned} 4x - 3y &= -10 \\\\ -2x + y &= 4 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $1$ and the second equation by $-3$: $$\\begin{aligned} 4x - 3y &= -10 \\\\ 6x - 3y &= -12 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $-2x = 2$.",
+        "So $x = -1$.",
+        "Substitute $x = -1$ into the first equation: $-3y - 4 = -10$, so $y = 2$."
+      ],
+      "desmos": [
+        "4x - 3y = -10",
+        "-2x + y = 4"
+      ],
+      "meta": {
+        "e1": [
+          "4",
+          "-3",
+          "-10"
+        ],
+        "e2": [
+          "-2",
+          "1",
+          "4"
+        ],
+        "ask": "y"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "$$\\begin{aligned} 5x + 2y &= -25 \\\\ x - 2y &= -17 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-7"
+        ]
+      },
+      "solution": [
+        "The $y$-terms are opposites, so add the equations: $6x = -42$.",
+        "So $x = -7$."
+      ],
+      "desmos": [
+        "5x + 2y = -25",
+        "x - 2y = -17"
+      ],
+      "meta": {
+        "e1": [
+          "5",
+          "2",
+          "-25"
+        ],
+        "e2": [
+          "1",
+          "-2",
+          "-17"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "$$\\begin{aligned} 6x + 4y &= 20 \\\\ -2x + 2y &= 0 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "To eliminate $y$, multiply the first equation by $2$ and the second equation by $4$: $$\\begin{aligned} 12x + 8y &= 40 \\\\ -8x + 8y &= 0 \\end{aligned}$$",
+        "Subtract the second new equation from the first: $20x = 40$.",
+        "So $x = 2$."
+      ],
+      "desmos": [
+        "6x + 4y = 20",
+        "-2x + 2y = 0"
+      ],
+      "meta": {
+        "e1": [
+          "6",
+          "4",
+          "20"
+        ],
+        "e2": [
+          "-2",
+          "2",
+          "0"
+        ],
+        "ask": "x"
+      },
+      "id": "g:alg.systems.solve-system@1:medium:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "$$\\begin{aligned} 7x + y &= 29 \\\\ x + 7y &= -13 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "choices": [
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$\\frac{9}{2}$",
+          "value": "9/2"
+        },
+        {
+          "text": "$\\frac{21}{4}$",
+          "value": "21/4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "This is $x + y$, not $x - y$.",
+        "B": "This is the value of $x$ alone.",
+        "C": "Divided by the wrong coefficient after combining the equations."
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $6x - 6y = 42$.",
+        "Factor out $6$: $6(x - y) = 42$, so $x - y = 7$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{9}{2}$ and $y = -\\frac{5}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "7x + y = 29",
+        "x + 7y = -13"
+      ],
+      "meta": {
+        "e1": [
+          "7",
+          "1",
+          "29"
+        ],
+        "e2": [
+          "1",
+          "7",
+          "-13"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "$$\\begin{aligned} 8x + 2y &= 33 \\\\ 2x + 8y &= -3 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x + y$?",
+      "choices": [
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$\\frac{9}{2}$",
+          "value": "9/2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "This is the value of $x$ alone.",
+        "C": "Divided by the wrong coefficient after combining the equations.",
+        "D": "This is $x - y$, not $x + y$."
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so add the equations: $10x + 10y = 30$.",
+        "Factor out $10$: $10(x + y) = 30$, so $x + y = 3$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{9}{2}$ and $y = -\\frac{3}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "8x + 2y = 33",
+        "2x + 8y = -3"
+      ],
+      "meta": {
+        "e1": [
+          "8",
+          "2",
+          "33"
+        ],
+        "e2": [
+          "2",
+          "8",
+          "-3"
+        ],
+        "ask": "x+y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "$$\\begin{aligned} 6x - 4y &= -23 \\\\ -4x + 6y &= 37 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x + y$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{7}{5}$",
+          "value": "7/5"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "This is $x - y$, not $x + y$.",
+        "B": "This is the value of $x$ alone.",
+        "C": "Divided by the wrong coefficient after combining the equations."
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so add the equations: $2x + 2y = 14$.",
+        "Factor out $2$: $2(x + y) = 14$, so $x + y = 7$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{1}{2}$ and $y = \\frac{13}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "6x - 4y = -23",
+        "-4x + 6y = 37"
+      ],
+      "meta": {
+        "e1": [
+          "6",
+          "-4",
+          "-23"
+        ],
+        "e2": [
+          "-4",
+          "6",
+          "37"
+        ],
+        "ask": "x+y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "$$\\begin{aligned} 2x + 6y &= -2 \\\\ 6x + 2y &= 2 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "choices": [
+        {
+          "text": "$-\\frac{1}{2}$",
+          "value": "-1/2"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "Divided by the wrong coefficient after combining the equations.",
+        "B": "This is $x + y$, not $x - y$.",
+        "C": "This is the value of $x$ alone."
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $-4x + 4y = -4$.",
+        "Factor out $-4$: $-4(x - y) = -4$, so $x - y = 1$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{1}{2}$ and $y = -\\frac{1}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "2x + 6y = -2",
+        "6x + 2y = 2"
+      ],
+      "meta": {
+        "e1": [
+          "2",
+          "6",
+          "-2"
+        ],
+        "e2": [
+          "6",
+          "2",
+          "2"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "$$\\begin{aligned} 7x + 3y &= 47 \\\\ 3x + 7y &= 63 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$-\\frac{8}{5}$",
+          "value": "-8/5"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "Divided by the wrong coefficient after combining the equations.",
+        "C": "This is the value of $x$ alone.",
+        "D": "This is $x + y$, not $x - y$."
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $4x - 4y = -16$.",
+        "Factor out $4$: $4(x - y) = -16$, so $x - y = -4$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{7}{2}$ and $y = \\frac{15}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "7x + 3y = 47",
+        "3x + 7y = 63"
+      ],
+      "meta": {
+        "e1": [
+          "7",
+          "3",
+          "47"
+        ],
+        "e2": [
+          "3",
+          "7",
+          "63"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "$$\\begin{aligned} 7x + y &= 29 \\\\ x + 7y &= -13 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $6x - 6y = 42$.",
+        "Factor out $6$: $6(x - y) = 42$, so $x - y = 7$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{9}{2}$ and $y = -\\frac{5}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "7x + y = 29",
+        "x + 7y = -13"
+      ],
+      "meta": {
+        "e1": [
+          "7",
+          "1",
+          "29"
+        ],
+        "e2": [
+          "1",
+          "7",
+          "-13"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "$$\\begin{aligned} 8x + 2y &= 33 \\\\ 2x + 8y &= -3 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x + y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3"
+        ]
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so add the equations: $10x + 10y = 30$.",
+        "Factor out $10$: $10(x + y) = 30$, so $x + y = 3$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{9}{2}$ and $y = -\\frac{3}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "8x + 2y = 33",
+        "2x + 8y = -3"
+      ],
+      "meta": {
+        "e1": [
+          "8",
+          "2",
+          "33"
+        ],
+        "e2": [
+          "2",
+          "8",
+          "-3"
+        ],
+        "ask": "x+y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "$$\\begin{aligned} 6x - 4y &= -23 \\\\ -4x + 6y &= 37 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x + y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so add the equations: $2x + 2y = 14$.",
+        "Factor out $2$: $2(x + y) = 14$, so $x + y = 7$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{1}{2}$ and $y = \\frac{13}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "6x - 4y = -23",
+        "-4x + 6y = 37"
+      ],
+      "meta": {
+        "e1": [
+          "6",
+          "-4",
+          "-23"
+        ],
+        "e2": [
+          "-4",
+          "6",
+          "37"
+        ],
+        "ask": "x+y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "$$\\begin{aligned} 2x + 6y &= -2 \\\\ 6x + 2y &= 2 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "1"
+        ]
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $-4x + 4y = -4$.",
+        "Factor out $-4$: $-4(x - y) = -4$, so $x - y = 1$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{1}{2}$ and $y = -\\frac{1}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "2x + 6y = -2",
+        "6x + 2y = 2"
+      ],
+      "meta": {
+        "e1": [
+          "2",
+          "6",
+          "-2"
+        ],
+        "e2": [
+          "6",
+          "2",
+          "2"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "$$\\begin{aligned} 7x + 3y &= 47 \\\\ 3x + 7y &= 63 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x - y$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-4"
+        ]
+      },
+      "solution": [
+        "The coefficients of $x$ and $y$ trade places between the equations, so subtract the second equation from the first: $4x - 4y = -16$.",
+        "Factor out $4$: $4(x - y) = -16$, so $x - y = -4$.",
+        "You never need $x$ and $y$ on their own. They are $x = \\frac{7}{2}$ and $y = \\frac{15}{2}$, which take longer to find."
+      ],
+      "desmos": [
+        "7x + 3y = 47",
+        "3x + 7y = 63"
+      ],
+      "meta": {
+        "e1": [
+          "7",
+          "3",
+          "47"
+        ],
+        "e2": [
+          "3",
+          "7",
+          "63"
+        ],
+        "ask": "x-y"
+      },
+      "id": "g:alg.systems.solve-system@1:hard:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}
