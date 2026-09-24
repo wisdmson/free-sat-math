@@ -1,0 +1,1116 @@
+{
+  "typeId": "alg.systems.word-system",
+  "version": 1,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A used bookstore sold 129 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$11, and each paperback book cost \\$4. Altogether the books brought in \\$873.\n\nLet $x$ be the number of hardcover books sold and $y$ the number of paperback books sold. Which system of equations represents this situation?",
+      "choices": [
+        {
+          "text": "$\\begin{aligned} x + y &= 129 \\\\ 11x + 4y &= 873 \\end{aligned}$",
+          "value": "1,1,129;11,4,873"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 873 \\\\ 11x + 4y &= 129 \\end{aligned}$",
+          "value": "1,1,873;11,4,129"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 129 \\\\ 4x + 11y &= 873 \\end{aligned}$",
+          "value": "1,1,129;4,11,873"
+        },
+        {
+          "text": "$\\begin{aligned} x - y &= 129 \\\\ 11x + 4y &= 873 \\end{aligned}$",
+          "value": "1,-1,129;11,4,873"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "The number of books and the money collected are swapped.",
+        "C": "The prices are on the wrong variables: $x$ counts hardcover books, which cost \\$11 each.",
+        "D": "The number of hardcover books plus the number of paperback books is the total, so the first equation should use $x + y$, not $x - y$."
+      },
+      "solution": [
+        "Each item sold counts once toward the 129 books, so $x + y = 129$.",
+        "The hardcover books bring in \\$11 each and the paperback books bring in \\$4 each, so $11x + 4y = 873$."
+      ],
+      "meta": {
+        "mode": "model",
+        "T": 129,
+        "V": 873,
+        "pA": 11,
+        "pB": 4
+      },
+      "id": "g:alg.systems.word-system@1:easy:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A robotics team sold 98 candles in one day: some large candles and the rest small candles. Each large candle cost \\$15, and each small candle cost \\$4. Altogether the candles brought in \\$1,030.\n\nLet $x$ be the number of large candles sold and $y$ the number of small candles sold. Which system of equations represents this situation?",
+      "choices": [
+        {
+          "text": "$\\begin{aligned} x - y &= 98 \\\\ 15x + 4y &= 1{,}030 \\end{aligned}$",
+          "value": "1,-1,98;15,4,1030"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 1{,}030 \\\\ 15x + 4y &= 98 \\end{aligned}$",
+          "value": "1,1,1030;15,4,98"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 98 \\\\ 4x + 15y &= 1{,}030 \\end{aligned}$",
+          "value": "1,1,98;4,15,1030"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 98 \\\\ 15x + 4y &= 1{,}030 \\end{aligned}$",
+          "value": "1,1,98;15,4,1030"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "The number of large candles plus the number of small candles is the total, so the first equation should use $x + y$, not $x - y$.",
+        "B": "The number of candles and the money collected are swapped.",
+        "C": "The prices are on the wrong variables: $x$ counts large candles, which cost \\$15 each."
+      },
+      "solution": [
+        "Each item sold counts once toward the 98 candles, so $x + y = 98$.",
+        "The large candles bring in \\$15 each and the small candles bring in \\$4 each, so $15x + 4y = 1{,}030$."
+      ],
+      "meta": {
+        "mode": "model",
+        "T": 98,
+        "V": 1030,
+        "pA": 15,
+        "pB": 4
+      },
+      "id": "g:alg.systems.word-system@1:easy:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A used bookstore sold 80 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$10, and each paperback book cost \\$4. Altogether the books brought in \\$560.\n\nLet $x$ be the number of hardcover books sold and $y$ the number of paperback books sold. Which system of equations represents this situation?",
+      "choices": [
+        {
+          "text": "$\\begin{aligned} x + y &= 560 \\\\ 10x + 4y &= 80 \\end{aligned}$",
+          "value": "1,1,560;10,4,80"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 80 \\\\ 10x + 4y &= 560 \\end{aligned}$",
+          "value": "1,1,80;10,4,560"
+        },
+        {
+          "text": "$\\begin{aligned} x - y &= 80 \\\\ 10x + 4y &= 560 \\end{aligned}$",
+          "value": "1,-1,80;10,4,560"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 80 \\\\ 4x + 10y &= 560 \\end{aligned}$",
+          "value": "1,1,80;4,10,560"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "The number of books and the money collected are swapped.",
+        "C": "The number of hardcover books plus the number of paperback books is the total, so the first equation should use $x + y$, not $x - y$.",
+        "D": "The prices are on the wrong variables: $x$ counts hardcover books, which cost \\$10 each."
+      },
+      "solution": [
+        "Each item sold counts once toward the 80 books, so $x + y = 80$.",
+        "The hardcover books bring in \\$10 each and the paperback books bring in \\$4 each, so $10x + 4y = 560$."
+      ],
+      "meta": {
+        "mode": "model",
+        "T": 80,
+        "V": 560,
+        "pA": 10,
+        "pB": 4
+      },
+      "id": "g:alg.systems.word-system@1:easy:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A community theater sold 117 tickets in one day: some adult tickets and the rest student tickets. Each adult ticket cost \\$15, and each student ticket cost \\$7. Altogether the tickets brought in \\$1,315.\n\nLet $x$ be the number of adult tickets sold and $y$ the number of student tickets sold. Which system of equations represents this situation?",
+      "choices": [
+        {
+          "text": "$\\begin{aligned} x - y &= 117 \\\\ 15x + 7y &= 1{,}315 \\end{aligned}$",
+          "value": "1,-1,117;15,7,1315"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 117 \\\\ 7x + 15y &= 1{,}315 \\end{aligned}$",
+          "value": "1,1,117;7,15,1315"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 117 \\\\ 15x + 7y &= 1{,}315 \\end{aligned}$",
+          "value": "1,1,117;15,7,1315"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 1{,}315 \\\\ 15x + 7y &= 117 \\end{aligned}$",
+          "value": "1,1,1315;15,7,117"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "The number of adult tickets plus the number of student tickets is the total, so the first equation should use $x + y$, not $x - y$.",
+        "B": "The prices are on the wrong variables: $x$ counts adult tickets, which cost \\$15 each.",
+        "D": "The number of tickets and the money collected are swapped."
+      },
+      "solution": [
+        "Each item sold counts once toward the 117 tickets, so $x + y = 117$.",
+        "The adult tickets bring in \\$15 each and the student tickets bring in \\$7 each, so $15x + 7y = 1{,}315$."
+      ],
+      "meta": {
+        "mode": "model",
+        "T": 117,
+        "V": 1315,
+        "pA": 15,
+        "pB": 7
+      },
+      "id": "g:alg.systems.word-system@1:easy:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A robotics team sold 80 candles in one day: some large candles and the rest small candles. Each large candle cost \\$16, and each small candle cost \\$8. Altogether the candles brought in \\$1,056.\n\nLet $x$ be the number of large candles sold and $y$ the number of small candles sold. Which system of equations represents this situation?",
+      "choices": [
+        {
+          "text": "$\\begin{aligned} x + y &= 1{,}056 \\\\ 16x + 8y &= 80 \\end{aligned}$",
+          "value": "1,1,1056;16,8,80"
+        },
+        {
+          "text": "$\\begin{aligned} x - y &= 80 \\\\ 16x + 8y &= 1{,}056 \\end{aligned}$",
+          "value": "1,-1,80;16,8,1056"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 80 \\\\ 16x + 8y &= 1{,}056 \\end{aligned}$",
+          "value": "1,1,80;16,8,1056"
+        },
+        {
+          "text": "$\\begin{aligned} x + y &= 80 \\\\ 8x + 16y &= 1{,}056 \\end{aligned}$",
+          "value": "1,1,80;8,16,1056"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "The number of candles and the money collected are swapped.",
+        "B": "The number of large candles plus the number of small candles is the total, so the first equation should use $x + y$, not $x - y$.",
+        "D": "The prices are on the wrong variables: $x$ counts large candles, which cost \\$16 each."
+      },
+      "solution": [
+        "Each item sold counts once toward the 80 candles, so $x + y = 80$.",
+        "The large candles bring in \\$16 each and the small candles bring in \\$8 each, so $16x + 8y = 1{,}056$."
+      ],
+      "meta": {
+        "mode": "model",
+        "T": 80,
+        "V": 1056,
+        "pA": 16,
+        "pB": 8
+      },
+      "id": "g:alg.systems.word-system@1:easy:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A used bookstore sold 129 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$11, and each paperback book cost \\$4. Altogether the books brought in \\$873.\n\nHow many paperback books were sold?",
+      "choices": [
+        {
+          "text": "$51$",
+          "value": "51"
+        },
+        {
+          "text": "$76$",
+          "value": "76"
+        },
+        {
+          "text": "$78$",
+          "value": "78"
+        },
+        {
+          "text": "$312$",
+          "value": "312"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "This is the number of hardcover books.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the money from paperback books, not the number sold."
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $x + y = 129$ and $11x + 4y = 873$.",
+        "From the first equation, $y = 129 - x$. Substitute into the second: $11x + 4(129 - x) = 873$.",
+        "Simplify: $7x + 516 = 873$, so $7x = 357$ and $x = 51$.",
+        "Then $y = 129 - 51 = 78$.",
+        "So 78 paperback books were sold."
+      ],
+      "desmos": [
+        "x + y = 129",
+        "11x + 4y = 873"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 129,
+        "V": 873,
+        "pA": 11,
+        "pB": 4,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A robotics team sold 98 candles in one day: some large candles and the rest small candles. Each large candle cost \\$15, and each small candle cost \\$4. Altogether the candles brought in \\$1,030.\n\nHow many large candles were sold?",
+      "choices": [
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
+        },
+        {
+          "text": "$58$",
+          "value": "58"
+        },
+        {
+          "text": "$870$",
+          "value": "870"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "This is the number of small candles.",
+        "B": "This assumes the same number of each item was sold.",
+        "D": "This is the money from large candles, not the number sold."
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $x + y = 98$ and $15x + 4y = 1{,}030$.",
+        "From the first equation, $y = 98 - x$. Substitute into the second: $15x + 4(98 - x) = 1{,}030$.",
+        "Simplify: $11x + 392 = 1{,}030$, so $11x = 638$ and $x = 58$.",
+        "So 58 large candles were sold."
+      ],
+      "desmos": [
+        "x + y = 98",
+        "15x + 4y = 1030"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 98,
+        "V": 1030,
+        "pA": 15,
+        "pB": 4,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:medium:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A used bookstore sold 80 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$10, and each paperback book cost \\$4. Altogether the books brought in \\$560.\n\nHow many paperback books were sold?",
+      "choices": [
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$38$",
+          "value": "38"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$160$",
+          "value": "160"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the money from paperback books, not the number sold."
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $x + y = 80$ and $10x + 4y = 560$.",
+        "From the first equation, $y = 80 - x$. Substitute into the second: $10x + 4(80 - x) = 560$.",
+        "Simplify: $6x + 320 = 560$, so $6x = 240$ and $x = 40$.",
+        "Then $y = 80 - 40 = 40$.",
+        "So 40 paperback books were sold."
+      ],
+      "desmos": [
+        "x + y = 80",
+        "10x + 4y = 560"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 80,
+        "V": 560,
+        "pA": 10,
+        "pB": 4,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A community theater sold 117 tickets in one day: some adult tickets and the rest student tickets. Each adult ticket cost \\$15, and each student ticket cost \\$7. Altogether the tickets brought in \\$1,315.\n\nHow many adult tickets were sold?",
+      "choices": [
+        {
+          "text": "$55$",
+          "value": "55"
+        },
+        {
+          "text": "$62$",
+          "value": "62"
+        },
+        {
+          "text": "$64$",
+          "value": "64"
+        },
+        {
+          "text": "$930$",
+          "value": "930"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "This is the number of student tickets.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the money from adult tickets, not the number sold."
+      },
+      "solution": [
+        "Let $x$ be the number of adult tickets and $y$ the number of student tickets. Then $x + y = 117$ and $15x + 7y = 1{,}315$.",
+        "From the first equation, $y = 117 - x$. Substitute into the second: $15x + 7(117 - x) = 1{,}315$.",
+        "Simplify: $8x + 819 = 1{,}315$, so $8x = 496$ and $x = 62$.",
+        "So 62 adult tickets were sold."
+      ],
+      "desmos": [
+        "x + y = 117",
+        "15x + 7y = 1315"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 117,
+        "V": 1315,
+        "pA": 15,
+        "pB": 7,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:medium:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A robotics team sold 80 candles in one day: some large candles and the rest small candles. Each large candle cost \\$16, and each small candle cost \\$8. Altogether the candles brought in \\$1,056.\n\nHow many small candles were sold?",
+      "choices": [
+        {
+          "text": "$28$",
+          "value": "28"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$52$",
+          "value": "52"
+        },
+        {
+          "text": "$224$",
+          "value": "224"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "This assumes the same number of each item was sold.",
+        "C": "This is the number of large candles.",
+        "D": "This is the money from small candles, not the number sold."
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $x + y = 80$ and $16x + 8y = 1{,}056$.",
+        "From the first equation, $y = 80 - x$. Substitute into the second: $16x + 8(80 - x) = 1{,}056$.",
+        "Simplify: $8x + 640 = 1{,}056$, so $8x = 416$ and $x = 52$.",
+        "Then $y = 80 - 52 = 28$.",
+        "So 28 small candles were sold."
+      ],
+      "desmos": [
+        "x + y = 80",
+        "16x + 8y = 1056"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 80,
+        "V": 1056,
+        "pA": 16,
+        "pB": 8,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A used bookstore sold 129 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$11, and each paperback book cost \\$4. Altogether the books brought in \\$873.\n\nHow many paperback books were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "78"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $x + y = 129$ and $11x + 4y = 873$.",
+        "From the first equation, $y = 129 - x$. Substitute into the second: $11x + 4(129 - x) = 873$.",
+        "Simplify: $7x + 516 = 873$, so $7x = 357$ and $x = 51$.",
+        "Then $y = 129 - 51 = 78$.",
+        "So 78 paperback books were sold."
+      ],
+      "desmos": [
+        "x + y = 129",
+        "11x + 4y = 873"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 129,
+        "V": 873,
+        "pA": 11,
+        "pB": 4,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A robotics team sold 98 candles in one day: some large candles and the rest small candles. Each large candle cost \\$15, and each small candle cost \\$4. Altogether the candles brought in \\$1,030.\n\nHow many large candles were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "58"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $x + y = 98$ and $15x + 4y = 1{,}030$.",
+        "From the first equation, $y = 98 - x$. Substitute into the second: $15x + 4(98 - x) = 1{,}030$.",
+        "Simplify: $11x + 392 = 1{,}030$, so $11x = 638$ and $x = 58$.",
+        "So 58 large candles were sold."
+      ],
+      "desmos": [
+        "x + y = 98",
+        "15x + 4y = 1030"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 98,
+        "V": 1030,
+        "pA": 15,
+        "pB": 4,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:medium:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A used bookstore sold 80 books in one day: some hardcover books and the rest paperback books. Each hardcover book cost \\$10, and each paperback book cost \\$4. Altogether the books brought in \\$560.\n\nHow many paperback books were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "40"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $x + y = 80$ and $10x + 4y = 560$.",
+        "From the first equation, $y = 80 - x$. Substitute into the second: $10x + 4(80 - x) = 560$.",
+        "Simplify: $6x + 320 = 560$, so $6x = 240$ and $x = 40$.",
+        "Then $y = 80 - 40 = 40$.",
+        "So 40 paperback books were sold."
+      ],
+      "desmos": [
+        "x + y = 80",
+        "10x + 4y = 560"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 80,
+        "V": 560,
+        "pA": 10,
+        "pB": 4,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A community theater sold 117 tickets in one day: some adult tickets and the rest student tickets. Each adult ticket cost \\$15, and each student ticket cost \\$7. Altogether the tickets brought in \\$1,315.\n\nHow many adult tickets were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "62"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of adult tickets and $y$ the number of student tickets. Then $x + y = 117$ and $15x + 7y = 1{,}315$.",
+        "From the first equation, $y = 117 - x$. Substitute into the second: $15x + 7(117 - x) = 1{,}315$.",
+        "Simplify: $8x + 819 = 1{,}315$, so $8x = 496$ and $x = 62$.",
+        "So 62 adult tickets were sold."
+      ],
+      "desmos": [
+        "x + y = 117",
+        "15x + 7y = 1315"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 117,
+        "V": 1315,
+        "pA": 15,
+        "pB": 7,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:medium:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A robotics team sold 80 candles in one day: some large candles and the rest small candles. Each large candle cost \\$16, and each small candle cost \\$8. Altogether the candles brought in \\$1,056.\n\nHow many small candles were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "28"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $x + y = 80$ and $16x + 8y = 1{,}056$.",
+        "From the first equation, $y = 80 - x$. Substitute into the second: $16x + 8(80 - x) = 1{,}056$.",
+        "Simplify: $8x + 640 = 1{,}056$, so $8x = 416$ and $x = 52$.",
+        "Then $y = 80 - 52 = 28$.",
+        "So 28 small candles were sold."
+      ],
+      "desmos": [
+        "x + y = 80",
+        "16x + 8y = 1056"
+      ],
+      "meta": {
+        "mode": "count",
+        "T": 80,
+        "V": 1056,
+        "pA": 16,
+        "pB": 8,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:medium:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A used bookstore sold hardcover books for \\$11 each and paperback books for \\$4 each, bringing in a total of \\$735. The number of paperback books sold was 15 more than 4 times the number of hardcover books sold.\n\nHow many paperback books were sold?",
+      "choices": [
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$100$",
+          "value": "100"
+        },
+        {
+          "text": "$113$",
+          "value": "113"
+        },
+        {
+          "text": "$115$",
+          "value": "115"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "This is the number of hardcover books.",
+        "B": "This forgets to add 15.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $y = 4x + 15$ and $11x + 4y = 735$.",
+        "Substitute for $y$: $11x + 4(4x + 15) = 735$.",
+        "Simplify: $27x + 60 = 735$, so $27x = 675$ and $x = 25$.",
+        "Then $y = 4(25) + 15 = 115$.",
+        "So 115 paperback books were sold."
+      ],
+      "desmos": [
+        "y = 4x + 15",
+        "11x + 4y = 735"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 735,
+        "pA": 11,
+        "pB": 4,
+        "k": 4,
+        "d": 15,
+        "sign": 1,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:hard:mcq:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A robotics team sold large candles for \\$15 each and small candles for \\$4 each, bringing in a total of \\$1,069. The number of small candles sold was 4 more than 3 times the number of large candles sold.\n\nHow many small candles were sold?",
+      "choices": [
+        {
+          "text": "$39$",
+          "value": "39"
+        },
+        {
+          "text": "$117$",
+          "value": "117"
+        },
+        {
+          "text": "$119$",
+          "value": "119"
+        },
+        {
+          "text": "$121$",
+          "value": "121"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "This is the number of large candles.",
+        "B": "This forgets to add 4.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $y = 3x + 4$ and $15x + 4y = 1{,}069$.",
+        "Substitute for $y$: $15x + 4(3x + 4) = 1{,}069$.",
+        "Simplify: $27x + 16 = 1{,}069$, so $27x = 1{,}053$ and $x = 39$.",
+        "Then $y = 3(39) + 4 = 121$.",
+        "So 121 small candles were sold."
+      ],
+      "desmos": [
+        "y = 3x + 4",
+        "15x + 4y = 1069"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 1069,
+        "pA": 15,
+        "pB": 4,
+        "k": 3,
+        "d": 4,
+        "sign": 1,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:hard:mcq:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A used bookstore sold hardcover books for \\$10 each and paperback books for \\$4 each, bringing in a total of \\$432. The number of paperback books sold was 9 more than 3 times the number of hardcover books sold.\n\nHow many hardcover books were sold?",
+      "choices": [
+        {
+          "text": "$17$",
+          "value": "17"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        },
+        {
+          "text": "$19$",
+          "value": "19"
+        },
+        {
+          "text": "$63$",
+          "value": "63"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the number of paperback books."
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $y = 3x + 9$ and $10x + 4y = 432$.",
+        "Substitute for $y$: $10x + 4(3x + 9) = 432$.",
+        "Simplify: $22x + 36 = 432$, so $22x = 396$ and $x = 18$.",
+        "So 18 hardcover books were sold."
+      ],
+      "desmos": [
+        "y = 3x + 9",
+        "10x + 4y = 432"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 432,
+        "pA": 10,
+        "pB": 4,
+        "k": 3,
+        "d": 9,
+        "sign": 1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:mcq:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A community theater sold adult tickets for \\$15 each and student tickets for \\$7 each, bringing in a total of \\$923. The number of student tickets sold was 7 fewer than 3 times the number of adult tickets sold.\n\nHow many adult tickets were sold?",
+      "choices": [
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$26$",
+          "value": "26"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$74$",
+          "value": "74"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the number of student tickets."
+      },
+      "solution": [
+        "Let $x$ be the number of adult tickets and $y$ the number of student tickets. Then $y = 3x - 7$ and $15x + 7y = 923$.",
+        "Substitute for $y$: $15x + 7(3x - 7) = 923$.",
+        "Simplify: $36x - 49 = 923$, so $36x = 972$ and $x = 27$.",
+        "So 27 adult tickets were sold."
+      ],
+      "desmos": [
+        "y = 3x - 7",
+        "15x + 7y = 923"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 923,
+        "pA": 15,
+        "pB": 7,
+        "k": 3,
+        "d": 7,
+        "sign": -1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:mcq:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A robotics team sold large candles for \\$16 each and small candles for \\$8 each, bringing in a total of \\$1,320. The number of small candles sold was 10 fewer than 3 times the number of large candles sold.\n\nHow many large candles were sold?",
+      "choices": [
+        {
+          "text": "$31$",
+          "value": "31"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$95$",
+          "value": "95"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "This reads \"10 fewer than\" backwards.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "This is the number of small candles."
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $y = 3x - 10$ and $16x + 8y = 1{,}320$.",
+        "Substitute for $y$: $16x + 8(3x - 10) = 1{,}320$.",
+        "Simplify: $40x - 80 = 1{,}320$, so $40x = 1{,}400$ and $x = 35$.",
+        "So 35 large candles were sold."
+      ],
+      "desmos": [
+        "y = 3x - 10",
+        "16x + 8y = 1320"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 1320,
+        "pA": 16,
+        "pB": 8,
+        "k": 3,
+        "d": 10,
+        "sign": -1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:mcq:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A used bookstore sold hardcover books for \\$11 each and paperback books for \\$4 each, bringing in a total of \\$735. The number of paperback books sold was 15 more than 4 times the number of hardcover books sold.\n\nHow many paperback books were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "115"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $y = 4x + 15$ and $11x + 4y = 735$.",
+        "Substitute for $y$: $11x + 4(4x + 15) = 735$.",
+        "Simplify: $27x + 60 = 735$, so $27x = 675$ and $x = 25$.",
+        "Then $y = 4(25) + 15 = 115$.",
+        "So 115 paperback books were sold."
+      ],
+      "desmos": [
+        "y = 4x + 15",
+        "11x + 4y = 735"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 735,
+        "pA": 11,
+        "pB": 4,
+        "k": 4,
+        "d": 15,
+        "sign": 1,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:hard:spr:1",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A robotics team sold large candles for \\$15 each and small candles for \\$4 each, bringing in a total of \\$1,069. The number of small candles sold was 4 more than 3 times the number of large candles sold.\n\nHow many small candles were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "121"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $y = 3x + 4$ and $15x + 4y = 1{,}069$.",
+        "Substitute for $y$: $15x + 4(3x + 4) = 1{,}069$.",
+        "Simplify: $27x + 16 = 1{,}069$, so $27x = 1{,}053$ and $x = 39$.",
+        "Then $y = 3(39) + 4 = 121$.",
+        "So 121 small candles were sold."
+      ],
+      "desmos": [
+        "y = 3x + 4",
+        "15x + 4y = 1069"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 1069,
+        "pA": 15,
+        "pB": 4,
+        "k": 3,
+        "d": 4,
+        "sign": 1,
+        "ask": "b"
+      },
+      "id": "g:alg.systems.word-system@1:hard:spr:2",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A used bookstore sold hardcover books for \\$10 each and paperback books for \\$4 each, bringing in a total of \\$432. The number of paperback books sold was 9 more than 3 times the number of hardcover books sold.\n\nHow many hardcover books were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "18"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of hardcover books and $y$ the number of paperback books. Then $y = 3x + 9$ and $10x + 4y = 432$.",
+        "Substitute for $y$: $10x + 4(3x + 9) = 432$.",
+        "Simplify: $22x + 36 = 432$, so $22x = 396$ and $x = 18$.",
+        "So 18 hardcover books were sold."
+      ],
+      "desmos": [
+        "y = 3x + 9",
+        "10x + 4y = 432"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 432,
+        "pA": 10,
+        "pB": 4,
+        "k": 3,
+        "d": 9,
+        "sign": 1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:spr:3",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A community theater sold adult tickets for \\$15 each and student tickets for \\$7 each, bringing in a total of \\$923. The number of student tickets sold was 7 fewer than 3 times the number of adult tickets sold.\n\nHow many adult tickets were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "27"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of adult tickets and $y$ the number of student tickets. Then $y = 3x - 7$ and $15x + 7y = 923$.",
+        "Substitute for $y$: $15x + 7(3x - 7) = 923$.",
+        "Simplify: $36x - 49 = 923$, so $36x = 972$ and $x = 27$.",
+        "So 27 adult tickets were sold."
+      ],
+      "desmos": [
+        "y = 3x - 7",
+        "15x + 7y = 923"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 923,
+        "pA": 15,
+        "pB": 7,
+        "k": 3,
+        "d": 7,
+        "sign": -1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:spr:4",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A robotics team sold large candles for \\$16 each and small candles for \\$8 each, bringing in a total of \\$1,320. The number of small candles sold was 10 fewer than 3 times the number of large candles sold.\n\nHow many large candles were sold?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "35"
+        ]
+      },
+      "solution": [
+        "Let $x$ be the number of large candles and $y$ the number of small candles. Then $y = 3x - 10$ and $16x + 8y = 1{,}320$.",
+        "Substitute for $y$: $16x + 8(3x - 10) = 1{,}320$.",
+        "Simplify: $40x - 80 = 1{,}320$, so $40x = 1{,}400$ and $x = 35$.",
+        "So 35 large candles were sold."
+      ],
+      "desmos": [
+        "y = 3x - 10",
+        "16x + 8y = 1320"
+      ],
+      "meta": {
+        "mode": "relation",
+        "V": 1320,
+        "pA": 16,
+        "pB": 8,
+        "k": 3,
+        "d": 10,
+        "sign": -1,
+        "ask": "a"
+      },
+      "id": "g:alg.systems.word-system@1:hard:spr:5",
+      "skill": "alg.systems",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}
