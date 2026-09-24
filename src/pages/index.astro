@@ -1,18 +1,32 @@
 ---
-// Temporary home page. Task 17 replaces it with the real one.
-import { SITE } from '../site.config';
+import TargetScoreSelect from '../components/TargetScoreSelect';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/paths';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{SITE.name}</title>
-  </head>
-  <body>
-    <h1>{SITE.name}</h1>
-    <p>{SITE.description}</p>
-    <p>{SITE.disclaimer}</p>
-  </body>
-</html>
+<BaseLayout>
+  <h1>Free SAT Math practice</h1>
+  <p class="lead">
+    Practice every SAT Math skill at your level, with step-by-step solutions. No sign-up, no
+    paywall, and your progress stays on your device.
+  </p>
+  <TargetScoreSelect client:only="react" id="home-target" />
+  <p>
+    <a class="button primary" href={url('/practice/?skill=mix&level=auto')}>
+      Start practicing
+    </a>
+  </p>
+  <h2>How it works</h2>
+  <ul>
+    <li>Problems are organized by the official SAT Math skills, each at easy, medium and hard.</li>
+    <li>
+      Every problem has a worked solution. When you miss one, you'll see why that answer was
+      tempting.
+    </li>
+    <li>Auto mode raises the difficulty after 3 right in a row and eases off after 2 misses.</li>
+  </ul>
+  <p>
+    Available now: <a href={url('/skills/alg.systems/')}>systems of linear equations</a>. More
+    skills are on the way. See the <a href={url('/skills/')}>full skills list</a>.
+  </p>
+</BaseLayout>

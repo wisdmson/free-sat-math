@@ -1,0 +1,95 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/global.css';
+import { url } from '../lib/paths';
+import { SITE } from '../site.config';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = SITE.description } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.name}` : SITE.name;
+const nav: ReadonlyArray<readonly [string, string]> = [
+  ['/skills/', 'Skills'],
+  ['/review/', 'Review'],
+  ['/formulas/', 'Formulas'],
+  ['/settings/', 'Settings'],
+];
+const here = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <!-- Apply a saved theme before first paint. Key must match THEME_KEY in src/lib/theme.ts. -->
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('fsm.theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href={url('/')}>
+          {SITE.name}
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            {nav.map(([href, label]) => (
+              <li>
+                <a href={url(href)} aria-current={here.startsWith(url(href)) ? 'page' : undefined}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch between light and dark theme"
+        >
+          ◐
+        </button>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>{SITE.disclaimer}</p>
+        <p class="footer-links">
+          <a href={url('/about/')}>About and privacy</a>
+          <a href={url('/formulas/')}>Formula sheet</a>
+          <a href={url('/settings/')}>Settings</a>
+        </p>
+      </div>
+    </footer>
+    <script is:inline>
+      document.getElementById('theme-toggle')?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme
+          ? root.dataset.theme === 'dark'
+          : matchMedia('(prefers-color-scheme: dark)').matches;
+        const next = dark ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try {
+          localStorage.setItem('fsm.theme', next);
+        } catch {}
+      });
+    </script>
+  </body>
+</html>

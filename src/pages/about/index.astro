@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../site.config';
+---
+
+<BaseLayout title="About and privacy">
+  <h1>About {SITE.name}</h1>
+  <p>
+    {SITE.name} is a free SAT Math practice site. Every problem, solution and lesson here is written
+    for this site. There are no ads, no accounts and no paid tier.
+  </p>
+  <h2>Privacy</h2>
+  <ul>
+    <li>No cookies, no analytics and no trackers.</li>
+    <li>
+      Your progress is saved only in this browser. Use Settings to download it or move it to another
+      device.
+    </li>
+    <li>
+      This site is hosted on GitHub Pages, which keeps standard server logs. If you open the
+      embedded calculator, your browser loads it from desmos.com.
+    </li>
+  </ul>
+  <h2>Licenses</h2>
+  <p>
+    The code is MIT-licensed. The problems, solutions and lessons are licensed CC BY 4.0, so
+    teachers can reuse them.
+  </p>
+  <p>{SITE.disclaimer}</p>
+</BaseLayout>
