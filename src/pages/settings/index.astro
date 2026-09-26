@@ -1,0 +1,12 @@
+---
+import SettingsPage from '../../components/SettingsPage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Settings">
+  <h1>Settings</h1>
+  <SettingsPage client:only="react" />
+  <noscript>
+    <p class="notice">Settings need JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>

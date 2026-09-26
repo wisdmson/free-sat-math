@@ -1,0 +1,15 @@
+---
+import ReviewPage from '../../components/ReviewPage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Review"
+  description="Retry missed problems, revisit bookmarks, and see your accuracy by skill."
+>
+  <h1>Review</h1>
+  <ReviewPage client:only="react" />
+  <noscript>
+    <p class="notice">Review needs JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>
