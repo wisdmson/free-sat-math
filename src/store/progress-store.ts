@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react';
 import {
   PROGRESS_KEY,
+  browserSession,
   browserStorage,
   emptyProgress,
   loadProgress,
@@ -8,6 +9,7 @@ import {
   saveProgress,
   type KeyValueStore,
   type LoadStatus,
+  type ReplaceResult,
 } from './progress';
 import type { Progress } from './schema';
 
@@ -25,8 +27,8 @@ export interface ProgressStore {
   subscribe(listener: () => void): () => void;
   /** Applies a pure update and saves it. */
   update(fn: (p: Progress) => Progress): void;
-  /** Backs up the saved data, then replaces it (import and reset). */
-  replace(next: Progress): { saved: boolean; backupKey?: string };
+  /** Backs up the saved data, then replaces it (import and reset). Refused if no backup fits. */
+  replace(next: Progress): ReplaceResult;
   /** Re-reads storage (another tab wrote to it). */
   reload(): void;
 }
@@ -34,9 +36,10 @@ export interface ProgressStore {
 export function createProgressStore(
   storage: KeyValueStore | null,
   now: () => Date = () => new Date(),
+  session: KeyValueStore | null = null,
 ): ProgressStore {
   const fromLoad = (): StoreSnapshot => {
-    const loaded = loadProgress(storage, now());
+    const loaded = loadProgress(storage, now(), session);
     const base = { progress: loaded.progress, status: loaded.status, saveFailed: false };
     return loaded.backupKey === undefined ? base : { ...base, backupKey: loaded.backupKey };
   };
@@ -51,11 +54,14 @@ export function createProgressStore(
     },
     update(fn) {
       const progress = fn(snapshot.progress);
-      snapshot = { ...snapshot, progress, saveFailed: !saveProgress(storage, progress) };
+      // Locked: unreadable data we couldn't back up stays untouched, so nothing is saved over it.
+      const saveFailed = snapshot.status === 'locked' ? false : !saveProgress(storage, progress);
+      snapshot = { ...snapshot, progress, saveFailed };
       emit();
     },
     replace(next) {
       const result = replaceProgress(storage, next, now());
+      if (result.refused) return result;
       snapshot = { ...snapshot, progress: next, saveFailed: !result.saved };
       emit();
       return result;
@@ -72,7 +78,7 @@ let shared: ProgressStore | null = null;
 /** The one store for this page, shared by every island. Browser only. */
 export function getProgressStore(): ProgressStore {
   if (shared === null) {
-    const store = createProgressStore(browserStorage());
+    const store = createProgressStore(browserStorage(), undefined, browserSession());
     window.addEventListener('storage', (e) => {
       if (e.key === PROGRESS_KEY) store.reload();
     });

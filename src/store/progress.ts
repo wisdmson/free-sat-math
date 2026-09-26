@@ -40,7 +40,21 @@ export function browserStorage(): KeyValueStore | null {
   }
 }
 
-export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'unavailable';
+/** sessionStorage if it works, otherwise null. Used to keep the recovery notice up for the visit. */
+export function browserSession(): KeyValueStore | null {
+  try {
+    return window.sessionStorage;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * - `recovered`: unreadable data was backed up and replaced with a fresh start.
+ * - `locked`: unreadable data could not be backed up (storage full), so it is left untouched and
+ *   nothing is saved over it.
+ */
+export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'locked' | 'unavailable';
 
 export interface LoadResult {
   progress: Progress;
@@ -48,6 +62,9 @@ export interface LoadResult {
   /** Where unreadable data was copied, when status is 'recovered'. */
   backupKey?: string;
 }
+
+/** Session key holding the backup key of a recovery, so later pages in the visit still say so. */
+export const RECOVERED_NOTICE_KEY = 'fsm.recovered';
 
 function backup(storage: KeyValueStore, raw: string, now: Date): string | undefined {
   const key = `${BACKUP_PREFIX}${now.toISOString()}`;
@@ -59,8 +76,24 @@ function backup(storage: KeyValueStore, raw: string, now: Date): string | undefi
   }
 }
 
-/** Reads saved progress. Unreadable data is backed up (never deleted) and replaced with a fresh start. */
-export function loadProgress(storage: KeyValueStore | null, now: Date = new Date()): LoadResult {
+function readNotice(session: KeyValueStore | null): string | null {
+  try {
+    return session?.getItem(RECOVERED_NOTICE_KEY) ?? null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Reads saved progress. Unreadable data is backed up once (never deleted), then replaced with a
+ * fresh start so later page loads don't back it up again. If no backup can be written, the data
+ * is left exactly as it is and the status is `locked`.
+ */
+export function loadProgress(
+  storage: KeyValueStore | null,
+  now: Date = new Date(),
+  session: KeyValueStore | null = null,
+): LoadResult {
   if (storage === null) return { progress: emptyProgress(), status: 'unavailable' };
   let raw: string | null;
   try {
@@ -68,17 +101,27 @@ export function loadProgress(storage: KeyValueStore | null, now: Date = new Date
   } catch {
     return { progress: emptyProgress(), status: 'unavailable' };
   }
+  const notice = readNotice(session);
   if (raw === null) return { progress: emptyProgress(), status: 'fresh' };
   try {
     const parsed = progressSchema.safeParse(JSON.parse(raw));
-    if (parsed.success) return { progress: parsed.data, status: 'ok' };
+    if (parsed.success) {
+      return notice === null
+        ? { progress: parsed.data, status: 'ok' }
+        : { progress: parsed.data, status: 'recovered', backupKey: notice };
+    }
   } catch {
     // fall through to recovery
   }
   const backupKey = backup(storage, raw, now);
-  return backupKey === undefined
-    ? { progress: emptyProgress(), status: 'recovered' }
-    : { progress: emptyProgress(), status: 'recovered', backupKey };
+  if (backupKey === undefined) return { progress: emptyProgress(), status: 'locked' };
+  saveProgress(storage, emptyProgress());
+  try {
+    session?.setItem(RECOVERED_NOTICE_KEY, backupKey);
+  } catch {
+    // the notice just won't carry over to the next page
+  }
+  return { progress: emptyProgress(), status: 'recovered', backupKey };
 }
 
 /** Writes progress. Returns false when the browser refuses (quota, private mode). */
@@ -197,19 +240,33 @@ export function parseImport(text: string): ImportResult {
   };
 }
 
-/** Backs up the current saved data, then replaces it. Returns the backup key if one was written. */
+export interface ReplaceResult {
+  saved: boolean;
+  backupKey?: string;
+  /** The current data could not be backed up, so nothing was changed. */
+  refused?: true;
+}
+
+/**
+ * Backs up the current saved data, then replaces it. If there is data and the backup can't be
+ * written, nothing is replaced: import and reset never lose progress without a copy.
+ */
 export function replaceProgress(
   storage: KeyValueStore | null,
   next: Progress,
   now: Date = new Date(),
-): { saved: boolean; backupKey?: string } {
+): ReplaceResult {
   if (storage === null) return { saved: false };
-  let backupKey: string | undefined;
+  let current: string | null = null;
   try {
-    const current = storage.getItem(PROGRESS_KEY);
-    if (current !== null) backupKey = backup(storage, current, now);
+    current = storage.getItem(PROGRESS_KEY);
   } catch {
-    // nothing to back up
+    // unreadable storage: nothing to back up
+  }
+  let backupKey: string | undefined;
+  if (current !== null) {
+    backupKey = backup(storage, current, now);
+    if (backupKey === undefined) return { saved: false, refused: true };
   }
   const saved = saveProgress(storage, next);
   return backupKey === undefined ? { saved } : { saved, backupKey };

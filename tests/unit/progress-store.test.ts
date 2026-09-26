@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import {
+  BACKUP_PREFIX,
   PROGRESS_KEY,
   emptyProgress,
   toggleBookmark,
@@ -55,6 +56,36 @@ describe('createProgressStore', () => {
     expect(r.saved).toBe(true);
     expect(storage.data.has(r.backupKey!)).toBe(true);
     expect(store.getSnapshot().progress.bookmarks).toEqual([]);
+  });
+
+  it('never overwrites unreadable data it could not back up', () => {
+    const storage = memory();
+    storage.data.set(PROGRESS_KEY, '{not json');
+    const write = storage.setItem;
+    storage.setItem = (k, v) => {
+      if (k.startsWith(BACKUP_PREFIX)) throw new Error('full');
+      write(k, v);
+    };
+    const store = createProgressStore(storage);
+    expect(store.getSnapshot().status).toBe('locked');
+    store.update((p) => toggleBookmark(p, 'x'));
+    expect(storage.data.get(PROGRESS_KEY)).toBe('{not json');
+    expect(store.replace(emptyProgress()).refused).toBe(true);
+    expect(storage.data.get(PROGRESS_KEY)).toBe('{not json');
+  });
+
+  it('replace() leaves everything as it was when the backup fails', () => {
+    const storage = memory();
+    const store = createProgressStore(storage);
+    store.update((p) => toggleBookmark(p, 'x'));
+    const write = storage.setItem;
+    storage.setItem = (k, v) => {
+      if (k.startsWith(BACKUP_PREFIX)) throw new Error('full');
+      write(k, v);
+    };
+    expect(store.replace(emptyProgress())).toEqual({ saved: false, refused: true });
+    expect(store.getSnapshot().progress.bookmarks).toEqual(['x']);
+    expect(JSON.parse(storage.data.get(PROGRESS_KEY)!).bookmarks).toEqual(['x']);
   });
 
   it('reload() picks up another tab’s write', () => {

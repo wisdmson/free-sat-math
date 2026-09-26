@@ -21,11 +21,14 @@ import type { Attempt } from '../../src/store/schema';
 class MemoryStore implements KeyValueStore {
   data = new Map<string, string>();
   failWrites = false;
+  /** Only backup writes fail: a nearly full browser can still hold the current record. */
+  failBackups = false;
   getItem(k: string) {
     return this.data.get(k) ?? null;
   }
   setItem(k: string, v: string) {
-    if (this.failWrites) throw new DOMException('quota', 'QuotaExceededError');
+    if (this.failWrites || (this.failBackups && k.startsWith(BACKUP_PREFIX)))
+      throw new DOMException('quota', 'QuotaExceededError');
     this.data.set(k, v);
   }
   removeItem(k: string) {
@@ -71,6 +74,31 @@ describe('loadProgress', () => {
       expect(store.getItem(r.backupKey!)).toBe(raw);
       expect(r.progress).toEqual(emptyProgress());
     }
+  });
+  it('backs up unreadable data once, not again on every page load', () => {
+    const store = new MemoryStore();
+    store.setItem(PROGRESS_KEY, '{not json');
+    loadProgress(store, NOW);
+    loadProgress(store, new Date('2026-09-24T12:05:00.000Z'));
+    const backups = [...store.data.keys()].filter((k) => k.startsWith(BACKUP_PREFIX));
+    expect(backups).toHaveLength(1);
+  });
+  it('keeps telling the student about the recovery for the rest of the session', () => {
+    const store = new MemoryStore();
+    const session = new MemoryStore();
+    store.setItem(PROGRESS_KEY, '{not json');
+    const first = loadProgress(store, NOW, session);
+    const second = loadProgress(store, new Date('2026-09-24T12:05:00.000Z'), session);
+    expect(second.status).toBe('recovered');
+    expect(second.backupKey).toBe(first.backupKey);
+  });
+  it('leaves unreadable data untouched when no backup can be written', () => {
+    const store = new MemoryStore();
+    store.setItem(PROGRESS_KEY, '{not json');
+    store.failBackups = true;
+    const r = loadProgress(store, NOW);
+    expect(r.status).toBe('locked');
+    expect(store.getItem(PROGRESS_KEY)).toBe('{not json');
   });
 });
 
@@ -154,5 +182,14 @@ describe('export and import', () => {
     expect(r.saved).toBe(true);
     expect(store.getItem(r.backupKey!)).toBe(before);
     expect(loadProgress(store).progress).toEqual(emptyProgress());
+  });
+  it('refuses to replace saved data when the backup cannot be written', () => {
+    const store = new MemoryStore();
+    saveProgress(store, recordAttempt(emptyProgress(), attempt()));
+    const before = store.getItem(PROGRESS_KEY);
+    store.failBackups = true;
+    const r = replaceProgress(store, emptyProgress(), NOW);
+    expect(r).toEqual({ saved: false, refused: true });
+    expect(store.getItem(PROGRESS_KEY)).toBe(before);
   });
 });

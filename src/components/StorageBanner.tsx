@@ -9,6 +9,14 @@ export default function StorageBanner({ snapshot }: { snapshot: StoreSnapshot })
       </p>
     );
   }
+  if (snapshot.status === 'locked') {
+    return (
+      <p className="banner banner-warn" role="status">
+        We couldn't read your saved progress, and this browser's storage is too full to back it up.
+        We've left it untouched, so nothing you do now will be saved. Everything else still works.
+      </p>
+    );
+  }
   if (snapshot.status === 'recovered') {
     return (
       <p className="banner" role="status">

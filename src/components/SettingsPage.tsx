@@ -32,8 +32,20 @@ export default function SettingsPage() {
     link.href = URL.createObjectURL(blob);
     link.download = exportFileName(new Date());
     link.click();
-    URL.revokeObjectURL(link.href);
+    // Safari cancels the download if the URL is revoked in the same task as the click.
+    const href = link.href;
+    setTimeout(() => URL.revokeObjectURL(href), 40_000);
     setMessage('Progress file downloaded.');
+  };
+
+  /** Import and reset both go through here: nothing changes unless a backup was written first. */
+  const replaceWith = (next: Progress, done: string) => {
+    const result = store.replace(next);
+    setMessage(
+      result.refused
+        ? "Nothing was changed: this browser's storage is too full to back up your current progress first. Download your progress, then try again."
+        : done,
+    );
   };
 
   const chooseFile = async (file: File | undefined) => {
@@ -142,9 +154,8 @@ export default function SettingsPage() {
                 type="button"
                 className="button primary"
                 onClick={() => {
-                  store.replace(pending.progress);
+                  replaceWith(pending.progress, 'Progress imported.');
                   setPending(null);
-                  setMessage('Progress imported.');
                 }}
               >
                 Replace my progress
@@ -166,9 +177,8 @@ export default function SettingsPage() {
                 type="button"
                 className="button danger"
                 onClick={() => {
-                  store.replace(emptyProgress());
+                  replaceWith(emptyProgress(), 'Progress reset.');
                   setConfirmReset(false);
-                  setMessage('Progress reset.');
                 }}
               >
                 Reset

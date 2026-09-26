@@ -73,6 +73,9 @@ test('unreadable saved progress is backed up and the student is told', async ({ 
   });
   await page.goto('/review/');
   await expect(page.getByText("We couldn't read your saved progress")).toBeVisible();
+  // A second page in the same visit still shows the notice and makes no second backup.
+  await page.goto('/settings/');
+  await expect(page.getByText("We couldn't read your saved progress")).toBeVisible();
   const backups = await page.evaluate(() =>
     Object.keys(localStorage).filter((k) => k.startsWith('fsm.backup.')),
   );
