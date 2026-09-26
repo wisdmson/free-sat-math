@@ -1,0 +1,67 @@
+---
+title: Systems of two linear equations
+skill: alg.systems
+summary: Find where two lines meet, count a system's solutions, and turn two-quantity word problems into systems.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## What these questions ask
+
+A system is two equations that must both be true at once. On the test you'll be asked to:
+
+- find <M t="x" />, <M t="y" />, or a combination such as <M t="x + y" />;
+- decide how many solutions a system has, or find the constant that gives it none or infinitely many;
+- write or solve a system for a situation with two unknown amounts, such as two ticket prices.
+
+## Two ways to solve
+
+**Substitution.** If one equation already says <M t="y = \dots" /> (or <M t="x = \dots" />), put that expression into the other equation. You're left with one variable to solve for.
+
+**Elimination.** Multiply one or both equations so a variable has matching (or opposite) coefficients, then subtract (or add) the equations to cancel that variable.
+
+**Look for a shortcut.** When the question asks for something like <M t="x + y" />, check whether adding or subtracting the equations gives it directly. If the coefficients trade places, as in <M t="3x + 5y" /> and <M t="5x + 3y" />, adding gives <M t="8x + 8y" />, which is <M t="8(x + y)" />.
+
+<WorkedExample
+  typeId="alg.systems.solve-system"
+  difficulty="medium"
+  format="mcq"
+  seed={12}
+  title="Example: elimination"
+/>
+
+## How many solutions?
+
+Each equation is a line, and the solutions are the points the lines share.
+
+| The lines…                               | Solutions       |
+| ---------------------------------------- | --------------- |
+| have different slopes                    | exactly one     |
+| have the same slope, different intercept | zero (parallel) |
+| are the same line                        | infinitely many |
+
+For equations in the form <M t="ax + by = c" />, compare ratios. If <M t="\frac{a_1}{a_2} = \frac{b_1}{b_2}" />, the slopes match. Then the constants decide: the same ratio means the same line, and a different ratio means parallel lines.
+
+<WorkedExample
+  typeId="alg.systems.solution-count"
+  difficulty="hard"
+  format="mcq"
+  seed={16}
+  title="Example: finding the constant"
+/>
+
+## Word problems
+
+Name the two unknowns first ("let <M t="x" /> be the number of adult tickets"). Then write one equation for each fact: usually a total count and a total amount of money.
+
+## Common traps
+
+- Answering with <M t="y" /> when the question asks for <M t="x" />.
+- Distributing a negative and dropping a sign.
+- Forgetting to multiply the constant when distributing, for example writing <M t="3(x + 2)" /> as <M t="3x + 2" />.
+- Assuming "same slope" means "same line." Check the intercepts, too.
+
+## Desmos shortcut
+
+Type both equations into Desmos. Click the point where the lines cross to read off <M t="(x, y)" />. If the lines never meet, there's no solution. If you only see one line, both equations describe the same line.

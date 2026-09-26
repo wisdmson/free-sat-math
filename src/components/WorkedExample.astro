@@ -1,0 +1,46 @@
+---
+/** A generated problem rendered at build time, with its solution behind a <details> toggle. */
+import { LETTERS, type Difficulty, type Format } from '../engine/problem';
+import { buildProblem } from '../engine/build';
+import { getProblemType } from '../engine/registry';
+import { answerText } from '../lib/labels';
+import { blockHtml, inlineHtml } from '../lib/math-html';
+
+interface Props {
+  typeId: string;
+  difficulty: Difficulty;
+  format: Format;
+  seed: number;
+  title?: string;
+}
+const { typeId, difficulty, format, seed, title = 'Worked example' } = Astro.props;
+const type = getProblemType(typeId);
+if (!type) throw new Error(`WorkedExample: unknown problem type ${typeId}`);
+const problem = buildProblem(type, difficulty, format, seed);
+if (!type.verify(problem)) throw new Error(`WorkedExample: ${problem.id} failed verification`);
+---
+
+<figure class="worked-example">
+  <figcaption>{title}</figcaption>
+  <div class="problem-stem" set:html={blockHtml(problem.stem)} />
+  {problem.choices && (
+    <ul class="example-choices">
+      {problem.choices.map((c, i) => (
+        <li>
+          <span class="choice-letter">{LETTERS[i]}</span> <Fragment set:html={inlineHtml(c.text)} />
+        </li>
+      ))}
+    </ul>
+  )}
+  <details>
+    <summary>Show the answer and solution</summary>
+    <p>
+      <strong>Answer:</strong> <Fragment set:html={inlineHtml(answerText(problem))} />
+    </p>
+    <ol>
+      {problem.solution.map((step) => (
+        <li set:html={inlineHtml(step)} />
+      ))}
+    </ol>
+  </details>
+</figure>

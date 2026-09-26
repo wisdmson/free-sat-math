@@ -1,0 +1,13 @@
+---
+import SkillsList from '../../components/SkillsList';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Skills"
+  description="Every SAT Math skill, grouped the way the test groups them."
+>
+  <h1>Skills</h1>
+  <p class="lead">The SAT Math section tests 19 skills in 4 areas.</p>
+  <SkillsList client:load />
+</BaseLayout>

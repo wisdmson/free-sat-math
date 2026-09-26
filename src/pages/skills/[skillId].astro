@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from 'astro:content';
+import { isSkillAvailable } from '../../engine/registry';
+import { getSkill } from '../../engine/skills';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const lessons = await getCollection('lessons');
+  return lessons.map((lesson) => ({ params: { skillId: lesson.data.skill }, props: { lesson } }));
+}
+
+const { lesson } = Astro.props;
+const skill = getSkill(lesson.data.skill);
+const { Content } = await render(lesson);
+const practice = (level: string) => url(`/practice/?skill=${skill.id}&level=${level}`);
+---
+
+<BaseLayout title={skill.name} description={lesson.data.summary}>
+  <p class="breadcrumbs">
+    <a href={url('/skills/')}>Skills</a> / {skill.name}
+  </p>
+  <h1>{skill.name}</h1>
+  <p class="lead">{lesson.data.summary}</p>
+  {isSkillAvailable(skill.id) && (
+    <section aria-labelledby="practice-heading">
+      <h2 id="practice-heading">Practice</h2>
+      <div class="button-row">
+        <a class="button primary" href={practice('auto')}>
+          Start (adjusts to you)
+        </a>
+        <a class="button" href={practice('easy')}>
+          Easy
+        </a>
+        <a class="button" href={practice('medium')}>
+          Medium
+        </a>
+        <a class="button" href={practice('hard')}>
+          Hard
+        </a>
+      </div>
+    </section>
+  )}
+  <article class="lesson">
+    <Content />
+  </article>
+</BaseLayout>

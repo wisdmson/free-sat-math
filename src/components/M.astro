@@ -1,0 +1,10 @@
+---
+/** Inline math for lessons: <M t="x + y = 5" />. */
+import { inlineHtml } from '../lib/math-html';
+interface Props {
+  t: string;
+}
+const { t } = Astro.props;
+---
+
+<Fragment set:html={inlineHtml(`$${t}$`)} />
