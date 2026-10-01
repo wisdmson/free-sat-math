@@ -46,4 +46,22 @@ describe('drill content', () => {
     expect(prompts('mm.percent', 2).some((t) => t.includes('what percent'))).toBe(true);
     expect(prompts('mm.percent', 3).some((t) => t.includes('then decreased'))).toBe(true);
   });
+  it('lists all six drills in spec order', async () => {
+    const { DRILL_IDS } = await import('../../src/engine/mental/ids');
+    expect(DRILLS.map((d) => d.id)).toEqual([...DRILL_IDS]);
+  });
+  it('squares and roots end with simplifying radicals as a choice', () => {
+    expect(prompts('mm.squares', 1).every((t) => /^(\d+²|√\d+)$/.test(t))).toBe(true);
+    expect(prompts('mm.squares', 3).every((t) => /^Simplify √\d+$/.test(t))).toBe(true);
+  });
+  it('exponents reach zero and negative powers', () => {
+    expect(prompts('mm.exponents', 3).some((t) => t.includes('⁻'))).toBe(true);
+    expect(prompts('mm.exponents', 3).some((t) => t.endsWith('⁰'))).toBe(true);
+  });
+  it('shortcuts cover slope, factoring and estimation', () => {
+    expect(prompts('mm.shortcuts', 1).every((t) => t.startsWith('Slope through'))).toBe(true);
+    expect(prompts('mm.shortcuts', 2).every((t) => t.startsWith('Factor x²'))).toBe(true);
+    expect(prompts('mm.shortcuts', 3).some((t) => t.startsWith('Which is closest'))).toBe(true);
+    expect(prompts('mm.shortcuts', 3).some((t) => t.includes('² −'))).toBe(true);
+  });
 });
