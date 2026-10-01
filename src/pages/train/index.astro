@@ -1,0 +1,17 @@
+---
+import GymApp from '../../components/gym/GymApp';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/play.css';
+import '../../styles/gym.css';
+---
+
+<BaseLayout
+  title="Mental Math Gym"
+  description="60-second mental math sprints: arithmetic, percents, fractions, exponents, roots and SAT shortcuts."
+>
+  <h1>Mental Math Gym</h1>
+  <GymApp client:only="react" />
+  <noscript>
+    <p class="notice">The Gym needs JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>

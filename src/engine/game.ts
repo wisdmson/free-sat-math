@@ -77,3 +77,5 @@ export function currentStreak(days: Readonly<Record<string, number>>, now: Date)
   while (n <= DAYS_KEPT && isCounted(days, dayKey(shiftDays(start, -n)))) n += 1;
   return n;
 }
+/** Gym sprints: points per correct answer, no combo (spec §3.3). */
+export const GYM_POINTS_PER_CORRECT = 2;

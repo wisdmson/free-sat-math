@@ -215,7 +215,6 @@
   cursor: pointer;
 }
 .numpad-submit {
-  grid-column: span 2;
   background: var(--accent);
   border-color: var(--accent);
   color: var(--accent-text);
@@ -224,4 +223,26 @@
 .numpad-key:disabled {
   opacity: 0.45;
   cursor: default;
+}
+.gym-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+.gym-clock {
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+.gym-flash.is-right {
+  color: var(--good);
+}
+.gym-flash.is-wrong {
+  color: var(--bad);
+}
+.gym-prompt {
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }

@@ -13,11 +13,13 @@ const fullTitle = title ? `${title} · ${SITE.name}` : SITE.name;
 const nav: ReadonlyArray<readonly [string, string]> = [
   ['/skills/', 'Skills'],
   ['/review/', 'Review'],
+  ['/train/', 'Train'],
   ['/formulas/', 'Formulas'],
   ['/settings/', 'Settings'],
 ];
 const here = Astro.url.pathname;
-const onPlay = here.startsWith(url('/play/'));
+// Hidden where it would cover the game or a drill's number pad.
+const onPlay = here.startsWith(url('/play/')) || here.startsWith(url('/train/'));
 ---
 
 <!doctype html>
