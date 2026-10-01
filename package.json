@@ -13,7 +13,7 @@
     "test": "vitest run --project unit",
     "test:soak": "vitest run --project soak",
     "test:e2e": "playwright test",
-    "golden:update": "UPDATE_GOLDEN=1 vitest run --project unit tests/unit/golden.test.ts",
+    "golden:update": "UPDATE_GOLDEN=1 vitest run --project unit tests/unit/golden.test.ts tests/unit/mental-golden.test.ts",
     "check:bundle": "node scripts/check-bundle.mjs",
     "check:links": "node scripts/check-links.mjs",
     "lint": "eslint . && prettier --check .",
