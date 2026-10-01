@@ -6,6 +6,7 @@ import {
   emptyProgress,
   findRestorableBackup,
   loadProgress,
+  peekProgress,
   replaceProgress,
   saveProgress,
   type KeyValueStore,
@@ -64,7 +65,9 @@ export function createProgressStore(
   const listeners = new Set<() => void>();
   const emit = () => listeners.forEach((l) => l());
   const replace = (next: Progress): ReplaceResult => {
-    if (snapshot.status === 'newer') return { saved: false, refused: true };
+    if (snapshot.status === 'newer' || snapshot.status === 'older') {
+      return { saved: false, refused: true };
+    }
     const result = replaceProgress(storage, next, now());
     if (result.refused) return result;
     snapshot = { ...snapshot, progress: next, saveFailed: !result.saved };
@@ -79,15 +82,27 @@ export function createProgressStore(
     },
     update(fn) {
       const progress = fn(snapshot.progress);
-      // Locked or newer: someone else's data is in storage, so nothing is saved over it.
-      const readOnly = snapshot.status === 'locked' || snapshot.status === 'newer';
+      // Locked, newer or older: someone else's data is in storage, so nothing is saved over it.
+      const readOnly = ['locked', 'newer', 'older'].includes(snapshot.status);
       const saveFailed = readOnly ? false : !saveProgress(storage, progress);
-      snapshot = { ...snapshot, progress, saveFailed };
+      const next: StoreSnapshot = { ...snapshot, progress, saveFailed };
+      // Once there is new progress, restoring an old copy would bury it: stop offering.
+      if (progress.attempts.length > 0 || progress.game.points > 0) delete next.restorable;
+      snapshot = next;
       emit();
     },
     replace,
     reload() {
-      snapshot = fromLoad();
+      // Called when another tab writes. Never upgrade or recover here: if that tab runs an older
+      // version, writing back would make the two tabs rewrite each other in a loop.
+      const peek = peekProgress(storage);
+      if (peek.kind === 'upgraded' || peek.kind === 'unreadable') {
+        snapshot = { progress: snapshot.progress, status: 'older', saveFailed: false };
+      } else if (peek.kind === 'newer') {
+        snapshot = { ...snapshot, status: 'newer' };
+      } else {
+        snapshot = fromLoad();
+      }
       emit();
     },
     restore(key) {

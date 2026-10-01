@@ -219,6 +219,7 @@ export default function PlayFeed({
                 desmosKey={desmosKey}
                 result={e.result}
                 reduced={reduced}
+                active={i === current}
                 onAnswer={(r) => e.card?.kind === 'sat' && onAnswer(i, e.card.problem, r)}
               />
             )}

@@ -132,6 +132,85 @@ describe('createProgressStore', () => {
     expect(store.getSnapshot().restorable).toBeUndefined();
   });
 
+  it('a reload that finds an older version’s record never writes, so two tabs cannot loop', () => {
+    const storage = memory();
+    const store = createProgressStore(storage);
+    store.update((p) => toggleBookmark(p, 'mine'));
+    // An older build in another tab wrote its own (v1) record.
+    const v1 = JSON.stringify({
+      schemaVersion: 1,
+      settings: { targetScore: null, timeMultiplier: 1, untimed: false },
+      attempts: [],
+      bookmarks: [],
+      skillState: {},
+      testAttempts: [],
+      completedFixedTests: [],
+    });
+    storage.data.set(PROGRESS_KEY, v1);
+    const keysBefore = [...storage.data.keys()];
+    store.reload();
+    expect(store.getSnapshot().status).toBe('older');
+    expect(store.getSnapshot().progress.bookmarks).toEqual(['mine']);
+    expect(storage.data.get(PROGRESS_KEY)).toBe(v1);
+    expect([...storage.data.keys()]).toEqual(keysBefore);
+    store.update((p) => toggleBookmark(p, 'more'));
+    expect(storage.data.get(PROGRESS_KEY)).toBe(v1);
+    expect(store.replace(emptyProgress()).refused).toBe(true);
+  });
+
+  it('stops offering a restore once the student has new progress', () => {
+    const storage = memory();
+    const key = `${BACKUP_PREFIX}2026-09-24T00:00:00.000Z`;
+    const backup = JSON.parse(JSON.stringify(emptyProgress()));
+    backup.attempts = [
+      {
+        problemId: 'g:alg.systems.solve-system@1:easy:mcq:1',
+        skill: 'alg.systems',
+        difficulty: 'easy',
+        correct: true,
+        response: 'A',
+        timeMs: 1,
+        at: '2026-09-24T00:00:00.000Z',
+        mode: 'practice',
+      },
+    ];
+    storage.data.set(key, JSON.stringify(backup));
+    const store = createProgressStore(
+      storage,
+      () => new Date('2026-09-24T06:00:00.000Z'),
+      null,
+      () => [...storage.data.keys()],
+    );
+    expect(store.getSnapshot().restorable).toBe(key);
+    store.update((p) => ({ ...p, attempts: [...backup.attempts] }));
+    expect(store.getSnapshot().restorable).toBeUndefined();
+  });
+
+  it('never offers back the copy made by a deliberate import or reset', () => {
+    const storage = memory();
+    const at = () => new Date('2026-09-24T06:00:00.000Z');
+    const keys = () => [...storage.data.keys()];
+    const first = createProgressStore(storage, at, null, keys);
+    first.update((p) => ({
+      ...p,
+      attempts: [
+        {
+          problemId: 'g:alg.systems.solve-system@1:easy:mcq:1',
+          skill: 'alg.systems',
+          difficulty: 'easy',
+          correct: true,
+          response: 'A',
+          timeMs: 1,
+          at: '2026-09-24T05:00:00.000Z',
+          mode: 'practice',
+        },
+      ],
+    }));
+    expect(first.replace(emptyProgress()).saved).toBe(true);
+    const next = createProgressStore(storage, at, null, keys);
+    expect(next.getSnapshot().restorable).toBeUndefined();
+  });
+
   it('reload() picks up another tab’s write', () => {
     const storage = memory();
     const store = createProgressStore(storage);

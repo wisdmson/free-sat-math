@@ -22,21 +22,34 @@ interface Props {
   desmosKey: string | null;
   result: CardResult | undefined;
   reduced: boolean;
+  /** True while this card is the one on screen. Defaults to true. */
+  active?: boolean;
   onAnswer(r: { correct: boolean; response: string; timeMs: number }): void;
 }
 
 /** One full-screen question card: tap an answer (or type and Check), see the result. */
-export default function SatCard({ problem, desmosKey, result, reduced, onAnswer }: Props) {
+export default function SatCard({
+  problem,
+  desmosKey,
+  result,
+  reduced,
+  active = true,
+  onAnswer,
+}: Props) {
   const [typed, setTyped] = useState('');
   const [invalid, setInvalid] = useState<string | null>(null);
   const [sheet, setSheet] = useState<'none' | 'why' | 'calc'>('none');
   const answered = useRef(false);
-  const startedAt = useRef(0);
+  // Cards are built a few ahead of time; the clock starts when this one first comes on screen.
+  const startedAt = useRef<number | null>(null);
   useEffect(() => {
-    startedAt.current = performance.now();
-  }, []);
+    if (active && startedAt.current === null) startedAt.current = performance.now();
+  }, [active]);
 
-  const elapsed = () => Math.round(performance.now() - startedAt.current);
+  const elapsed = () => {
+    const now = performance.now();
+    return Math.round(now - (startedAt.current ?? now));
+  };
   const submit = (correct: boolean, response: string) => {
     if (answered.current || result !== undefined) return;
     answered.current = true;

@@ -51,4 +51,34 @@ describe('SatCard', () => {
     // Solution is lazy-loaded, so wait for it.
     expect(await screen.findByRole('region', { name: 'Solution' })).toBeVisible();
   });
+  it('times an answer from when the card became current, not from when it was pre-rendered', async () => {
+    const onAnswer = vi.fn();
+    const clock = vi.spyOn(performance, 'now');
+    clock.mockReturnValue(1000);
+    const { container, rerender } = render(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        active={false}
+        onAnswer={onAnswer}
+      />,
+    );
+    clock.mockReturnValue(7000);
+    rerender(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        active
+        onAnswer={onAnswer}
+      />,
+    );
+    clock.mockReturnValue(7700);
+    await userEvent.click(container.querySelector('[data-letter="B"]')!);
+    expect(onAnswer).toHaveBeenCalledWith(expect.objectContaining({ timeMs: 700 }));
+    clock.mockRestore();
+  });
 });

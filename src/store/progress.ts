@@ -1,6 +1,6 @@
 import type { Difficulty, ProblemId } from '../engine/problem';
 import type { SkillId } from '../engine/skills';
-import { emptyGame, emptyMental, readProgress } from './migrate';
+import { emptyGame, emptyMental, readProgress, type ReadResult } from './migrate';
 import { PROGRESS_SCHEMA_VERSION, type Attempt, type Progress, type Settings } from './schema';
 
 export const PROGRESS_KEY = 'fsm.progress.v1';
@@ -52,10 +52,13 @@ export function browserSession(): KeyValueStore | null {
  * - `recovered`: unreadable data was backed up and replaced with a fresh start.
  * - `locked`: unreadable data could not be backed up (storage full), so it is left untouched and
  *   nothing is saved over it.
+ * - `older`: another tab running an older version just wrote its own record. Read-only until
+ *   this page is refreshed, so the two tabs can't keep rewriting each other's data.
  * - `newer`: saved by a newer version of the site (another tab). Read-only: never backed up or
  *   overwritten.
  */
-export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'locked' | 'newer' | 'unavailable';
+export type LoadStatus =
+  'ok' | 'fresh' | 'recovered' | 'locked' | 'newer' | 'older' | 'unavailable';
 
 export { schemaVersionOf } from './schema-version';
 
@@ -69,8 +72,17 @@ export interface LoadResult {
 /** Session key holding the backup key of a recovery, so later pages in the visit still say so. */
 export const RECOVERED_NOTICE_KEY = 'fsm.recovered';
 
-function backup(storage: KeyValueStore, raw: string, now: Date): string | undefined {
-  const key = `${BACKUP_PREFIX}${now.toISOString()}`;
+/**
+ * Copies raw saved data to a timestamped backup key. Copies made by a deliberate import or
+ * reset are labelled so they are never offered back by findRestorableBackup.
+ */
+function backup(
+  storage: KeyValueStore,
+  raw: string,
+  now: Date,
+  label: '' | 'replaced.' = '',
+): string | undefined {
+  const key = `${BACKUP_PREFIX}${label}${now.toISOString()}`;
   try {
     storage.setItem(key, raw);
     return key;
@@ -139,6 +151,27 @@ export function loadProgress(
     // the notice just won't carry over to the next page
   }
   return { progress: emptyProgress(), status: 'recovered', backupKey };
+}
+
+export type PeekResult = ReadResult | { kind: 'missing' } | { kind: 'unavailable' };
+
+/** Reads the saved record without writing anything (used when another tab changes it). */
+export function peekProgress(storage: KeyValueStore | null): PeekResult {
+  if (storage === null) return { kind: 'unavailable' };
+  let raw: string | null;
+  try {
+    raw = storage.getItem(PROGRESS_KEY);
+  } catch {
+    return { kind: 'unavailable' };
+  }
+  if (raw === null) return { kind: 'missing' };
+  let data: unknown;
+  try {
+    data = JSON.parse(raw);
+  } catch {
+    data = undefined;
+  }
+  return readProgress(data);
 }
 
 export const RESTORE_WINDOW_MS = 24 * 60 * 60 * 1000;
@@ -324,7 +357,7 @@ export function replaceProgress(
   }
   let backupKey: string | undefined;
   if (current !== null) {
-    backupKey = backup(storage, current, now);
+    backupKey = backup(storage, current, now, 'replaced.');
     if (backupKey === undefined) return { saved: false, refused: true };
   }
   const saved = saveProgress(storage, next);
