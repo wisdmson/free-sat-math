@@ -508,3 +508,28 @@ td {
     animation: none !important;
   }
 }
+
+.play-fab {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 3rem;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.18);
+}
+.play-fab:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.site-footer {
+  padding-bottom: 5rem;
+}

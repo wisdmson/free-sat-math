@@ -17,6 +17,7 @@ const nav: ReadonlyArray<readonly [string, string]> = [
   ['/settings/', 'Settings'],
 ];
 const here = Astro.url.pathname;
+const onPlay = here.startsWith(url('/play/'));
 ---
 
 <!doctype html>
@@ -78,6 +79,11 @@ const here = Astro.url.pathname;
         </p>
       </div>
     </footer>
+    {!onPlay && (
+      <a class="play-fab" href={url('/play/?go=1')} aria-label="Quick Play">
+        <span aria-hidden="true">⚡</span> Play
+      </a>
+    )}
     <script is:inline>
       document.getElementById('theme-toggle')?.addEventListener('click', () => {
         const root = document.documentElement;

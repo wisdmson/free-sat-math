@@ -84,3 +84,15 @@ test('Quick Play fits a 360px screen', async ({ page }) => {
     expect(overflow, path).toBeLessThanOrEqual(0);
   }
 });
+
+test('the floating Play button jumps straight into a question', async ({ page }) => {
+  await page.goto('/skills/');
+  await page.getByRole('link', { name: 'Quick Play' }).click();
+  await expect(page).toHaveURL(/\/play\/\?go=1$/);
+  await expect(current(page).locator('[id^="stem-g:"]')).toBeVisible();
+});
+
+test('the floating Play button is not shown on the Quick Play page', async ({ page }) => {
+  await page.goto('/play/');
+  await expect(page.locator('.play-fab')).toHaveCount(0);
+});

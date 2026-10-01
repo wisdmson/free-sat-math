@@ -11,9 +11,12 @@ import { url } from '../lib/paths';
     paywall, and your progress stays on your device.
   </p>
   <TargetScoreSelect client:only="react" id="home-target" />
-  <p>
+  <p class="button-row">
     <a class="button primary" href={url('/practice/?skill=mix&level=auto')}>
       Start practicing
+    </a>
+    <a class="button" href={url('/play/')}>
+      ▶ Quick Play
     </a>
   </p>
   <h2>How it works</h2>
