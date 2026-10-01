@@ -1,16 +1,13 @@
 import type { Difficulty, ProblemId } from '../engine/problem';
 import type { SkillId } from '../engine/skills';
-import {
-  PROGRESS_SCHEMA_VERSION,
-  progressSchema,
-  type Attempt,
-  type Progress,
-  type Settings,
-} from './schema';
+import { emptyGame, emptyMental, readProgress } from './migrate';
+import { PROGRESS_SCHEMA_VERSION, type Attempt, type Progress, type Settings } from './schema';
 
 export const PROGRESS_KEY = 'fsm.progress.v1';
 export const BACKUP_PREFIX = 'fsm.backup.';
 export const MAX_ATTEMPTS = 5000;
+/** One copy of the v1 record, kept when it is upgraded to v2. */
+export const PRE_V2_BACKUP_KEY = `${BACKUP_PREFIX}pre-v2`;
 
 /** The subset of the Web Storage API we use; lets tests pass a fake. */
 export type KeyValueStore = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;
@@ -18,12 +15,14 @@ export type KeyValueStore = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;
 export function emptyProgress(): Progress {
   return {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
-    settings: { targetScore: null, timeMultiplier: 1, untimed: false },
+    settings: { targetScore: null, timeMultiplier: 1, untimed: false, sound: false, haptics: true },
     attempts: [],
     bookmarks: [],
     skillState: {},
     testAttempts: [],
     completedFixedTests: [],
+    game: emptyGame(),
+    mental: emptyMental(),
   };
 }
 
@@ -58,12 +57,7 @@ export function browserSession(): KeyValueStore | null {
  */
 export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'locked' | 'newer' | 'unavailable';
 
-/** The integer `schemaVersion` of parsed JSON, or null if it has none. */
-export function schemaVersionOf(data: unknown): number | null {
-  if (typeof data !== 'object' || data === null) return null;
-  const v = (data as { schemaVersion?: unknown }).schemaVersion;
-  return typeof v === 'number' && Number.isInteger(v) ? v : null;
-}
+export { schemaVersionOf } from './schema-version';
 
 export interface LoadResult {
   progress: Progress;
@@ -118,15 +112,23 @@ export function loadProgress(
   } catch {
     data = undefined;
   }
-  const version = schemaVersionOf(data);
-  if (version !== null && version > PROGRESS_SCHEMA_VERSION) {
-    return { progress: emptyProgress(), status: 'newer' };
-  }
-  const parsed = progressSchema.safeParse(data);
-  if (parsed.success) {
-    return notice === null
-      ? { progress: parsed.data, status: 'ok' }
-      : { progress: parsed.data, status: 'recovered', backupKey: notice };
+  const read = readProgress(data);
+  if (read.kind === 'newer') return { progress: emptyProgress(), status: 'newer' };
+  const withNotice = (progress: Progress): LoadResult =>
+    notice === null
+      ? { progress, status: 'ok' }
+      : { progress, status: 'recovered', backupKey: notice };
+  if (read.kind === 'current') return withNotice(read.progress);
+  if (read.kind === 'upgraded') {
+    // Keep one copy of the v1 original. If no copy fits, show the upgraded record but save
+    // nothing, so the original stays exactly as it was (spec §9.2 step 3).
+    try {
+      if (storage.getItem(PRE_V2_BACKUP_KEY) === null) storage.setItem(PRE_V2_BACKUP_KEY, raw);
+    } catch {
+      return { progress: read.progress, status: 'locked' };
+    }
+    saveProgress(storage, read.progress);
+    return withNotice(read.progress);
   }
   const backupKey = backup(storage, raw, now);
   if (backupKey === undefined) return { progress: emptyProgress(), status: 'locked' };
@@ -237,13 +239,18 @@ export function parseImport(text: string): ImportResult {
   } catch {
     return { ok: false, reason: 'This file is not valid JSON.' };
   }
-  const parsed = progressSchema.safeParse(data);
-  if (!parsed.success) {
-    const first = parsed.error.issues[0];
-    const where = first && first.path.length > 0 ? ` (at ${first.path.join('.')})` : '';
+  const read = readProgress(data);
+  if (read.kind === 'newer') {
+    return {
+      ok: false,
+      reason: 'This file is from a newer version of Free SAT Math. Refresh and try again.',
+    };
+  }
+  if (read.kind === 'unreadable') {
+    const where = read.where === '' ? '' : ` (at ${read.where})`;
     return { ok: false, reason: `This file is not a Free SAT Math progress file${where}.` };
   }
-  const p = parsed.data;
+  const p = read.progress;
   return {
     ok: true,
     progress: p,

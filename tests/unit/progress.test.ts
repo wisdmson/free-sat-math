@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   BACKUP_PREFIX,
   MAX_ATTEMPTS,
+  PRE_V2_BACKUP_KEY,
   PROGRESS_KEY,
   emptyProgress,
   exportFileName,
@@ -74,6 +75,43 @@ describe('loadProgress', () => {
       expect(store.getItem(r.backupKey!)).toBe(raw);
       expect(r.progress).toEqual(emptyProgress());
     }
+  });
+  it('upgrades a v1 record in place and keeps one copy of the original', () => {
+    const store = new MemoryStore();
+    const v1 = {
+      schemaVersion: 1,
+      settings: { targetScore: null, timeMultiplier: 1, untimed: false },
+      attempts: [{ ...attempt(), mode: 'practice' }],
+      bookmarks: [],
+      skillState: {},
+      testAttempts: [],
+      completedFixedTests: [],
+    };
+    const raw = JSON.stringify(v1);
+    store.setItem(PROGRESS_KEY, raw);
+    const r = loadProgress(store, NOW);
+    expect(r.status).toBe('ok');
+    expect(r.progress.attempts).toHaveLength(1);
+    expect(store.getItem(PRE_V2_BACKUP_KEY)).toBe(raw);
+    expect(JSON.parse(store.getItem(PROGRESS_KEY)!).schemaVersion).toBe(PROGRESS_SCHEMA_VERSION);
+  });
+  it('shows the upgraded record but saves nothing when the copy cannot be kept', () => {
+    const store = new MemoryStore();
+    const raw = JSON.stringify({
+      schemaVersion: 1,
+      settings: { targetScore: null, timeMultiplier: 1, untimed: false },
+      attempts: [],
+      bookmarks: ['x'],
+      skillState: {},
+      testAttempts: [],
+      completedFixedTests: [],
+    });
+    store.setItem(PROGRESS_KEY, raw);
+    store.failBackups = true;
+    const r = loadProgress(store, NOW);
+    expect(r.status).toBe('locked');
+    expect(r.progress.bookmarks).toEqual(['x']);
+    expect(store.getItem(PROGRESS_KEY)).toBe(raw);
   });
   it('leaves data from a newer version of the site untouched and does not back it up', () => {
     const store = new MemoryStore();
@@ -191,6 +229,20 @@ describe('export and import', () => {
     expect(r.saved).toBe(true);
     expect(store.getItem(r.backupKey!)).toBe(before);
     expect(loadProgress(store).progress).toEqual(emptyProgress());
+  });
+  it('accepts progress files from the previous version and upgrades them', () => {
+    const v1File = JSON.stringify({
+      schemaVersion: 1,
+      settings: { targetScore: null, timeMultiplier: 1, untimed: false },
+      attempts: [],
+      bookmarks: ['b'],
+      skillState: {},
+      testAttempts: [],
+      completedFixedTests: [],
+    });
+    const r = parseImport(v1File);
+    expect(r.ok).toBe(true);
+    if (r.ok) expect(r.progress.schemaVersion).toBe(PROGRESS_SCHEMA_VERSION);
   });
   it('refuses to replace saved data when the backup cannot be written', () => {
     const store = new MemoryStore();
