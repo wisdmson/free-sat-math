@@ -67,7 +67,7 @@ test('a file that is not a progress file is rejected with a reason', async ({ pa
 test('unreadable saved progress is backed up and the student is told', async ({ page }) => {
   await page.addInitScript(() => {
     if (!sessionStorage.getItem('seeded')) {
-      localStorage.setItem('fsm.progress.v1', '{"schemaVersion": 99, "garbage": true}');
+      localStorage.setItem('fsm.progress.v1', '{"schemaVersion": 1, "garbage": true}');
       sessionStorage.setItem('seeded', '1');
     }
   });

@@ -9,6 +9,13 @@ export default function StorageBanner({ snapshot }: { snapshot: StoreSnapshot })
       </p>
     );
   }
+  if (snapshot.status === 'newer') {
+    return (
+      <p className="banner banner-warn" role="status">
+        This site was updated in another tab. Refresh this page to keep saving your progress.
+      </p>
+    );
+  }
   if (snapshot.status === 'locked') {
     return (
       <p className="banner banner-warn" role="status">

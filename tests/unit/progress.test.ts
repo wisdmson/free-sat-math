@@ -16,7 +16,7 @@ import {
   toggleBookmark,
   type KeyValueStore,
 } from '../../src/store/progress';
-import type { Attempt } from '../../src/store/schema';
+import { PROGRESS_SCHEMA_VERSION, type Attempt } from '../../src/store/schema';
 
 class MemoryStore implements KeyValueStore {
   data = new Map<string, string>();
@@ -65,7 +65,7 @@ describe('loadProgress', () => {
     expect(loadProgress(store)).toEqual({ progress: p, status: 'ok' });
   });
   it('backs up unreadable data instead of deleting it', () => {
-    for (const raw of ['{not json', JSON.stringify({ schemaVersion: 99 })]) {
+    for (const raw of ['{not json', JSON.stringify({ schemaVersion: 1 })]) {
       const store = new MemoryStore();
       store.setItem(PROGRESS_KEY, raw);
       const r = loadProgress(store, NOW);
@@ -74,6 +74,15 @@ describe('loadProgress', () => {
       expect(store.getItem(r.backupKey!)).toBe(raw);
       expect(r.progress).toEqual(emptyProgress());
     }
+  });
+  it('leaves data from a newer version of the site untouched and does not back it up', () => {
+    const store = new MemoryStore();
+    const raw = JSON.stringify({ schemaVersion: PROGRESS_SCHEMA_VERSION + 1, anything: true });
+    store.setItem(PROGRESS_KEY, raw);
+    const r = loadProgress(store, NOW);
+    expect(r.status).toBe('newer');
+    expect(store.getItem(PROGRESS_KEY)).toBe(raw);
+    expect([...store.data.keys()].filter((k) => k.startsWith(BACKUP_PREFIX))).toEqual([]);
   });
   it('backs up unreadable data once, not again on every page load', () => {
     const store = new MemoryStore();

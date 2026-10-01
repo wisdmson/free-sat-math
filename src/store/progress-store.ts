@@ -54,12 +54,14 @@ export function createProgressStore(
     },
     update(fn) {
       const progress = fn(snapshot.progress);
-      // Locked: unreadable data we couldn't back up stays untouched, so nothing is saved over it.
-      const saveFailed = snapshot.status === 'locked' ? false : !saveProgress(storage, progress);
+      // Locked or newer: someone else's data is in storage, so nothing is saved over it.
+      const readOnly = snapshot.status === 'locked' || snapshot.status === 'newer';
+      const saveFailed = readOnly ? false : !saveProgress(storage, progress);
       snapshot = { ...snapshot, progress, saveFailed };
       emit();
     },
     replace(next) {
+      if (snapshot.status === 'newer') return { saved: false, refused: true };
       const result = replaceProgress(storage, next, now());
       if (result.refused) return result;
       snapshot = { ...snapshot, progress: next, saveFailed: !result.saved };

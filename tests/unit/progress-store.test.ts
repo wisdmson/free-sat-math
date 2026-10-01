@@ -7,6 +7,7 @@ import {
   type KeyValueStore,
 } from '../../src/store/progress';
 import { createProgressStore } from '../../src/store/progress-store';
+import { PROGRESS_SCHEMA_VERSION } from '../../src/store/schema';
 
 const memory = (): KeyValueStore & { data: Map<string, string> } => {
   const data = new Map<string, string>();
@@ -86,6 +87,18 @@ describe('createProgressStore', () => {
     expect(store.replace(emptyProgress())).toEqual({ saved: false, refused: true });
     expect(store.getSnapshot().progress.bookmarks).toEqual(['x']);
     expect(JSON.parse(storage.data.get(PROGRESS_KEY)!).bookmarks).toEqual(['x']);
+  });
+
+  it('never writes over data saved by a newer version of the site', () => {
+    const storage = memory();
+    const raw = JSON.stringify({ schemaVersion: PROGRESS_SCHEMA_VERSION + 1 });
+    storage.data.set(PROGRESS_KEY, raw);
+    const store = createProgressStore(storage);
+    expect(store.getSnapshot().status).toBe('newer');
+    store.update((p) => toggleBookmark(p, 'x'));
+    expect(store.getSnapshot().progress.bookmarks).toEqual(['x']);
+    expect(store.replace(emptyProgress())).toEqual({ saved: false, refused: true });
+    expect(storage.data.get(PROGRESS_KEY)).toBe(raw);
   });
 
   it('reload() picks up another tab’s write', () => {

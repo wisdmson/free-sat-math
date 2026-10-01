@@ -53,8 +53,17 @@ export function browserSession(): KeyValueStore | null {
  * - `recovered`: unreadable data was backed up and replaced with a fresh start.
  * - `locked`: unreadable data could not be backed up (storage full), so it is left untouched and
  *   nothing is saved over it.
+ * - `newer`: saved by a newer version of the site (another tab). Read-only: never backed up or
+ *   overwritten.
  */
-export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'locked' | 'unavailable';
+export type LoadStatus = 'ok' | 'fresh' | 'recovered' | 'locked' | 'newer' | 'unavailable';
+
+/** The integer `schemaVersion` of parsed JSON, or null if it has none. */
+export function schemaVersionOf(data: unknown): number | null {
+  if (typeof data !== 'object' || data === null) return null;
+  const v = (data as { schemaVersion?: unknown }).schemaVersion;
+  return typeof v === 'number' && Number.isInteger(v) ? v : null;
+}
 
 export interface LoadResult {
   progress: Progress;
@@ -103,15 +112,21 @@ export function loadProgress(
   }
   const notice = readNotice(session);
   if (raw === null) return { progress: emptyProgress(), status: 'fresh' };
+  let data: unknown;
   try {
-    const parsed = progressSchema.safeParse(JSON.parse(raw));
-    if (parsed.success) {
-      return notice === null
-        ? { progress: parsed.data, status: 'ok' }
-        : { progress: parsed.data, status: 'recovered', backupKey: notice };
-    }
+    data = JSON.parse(raw);
   } catch {
-    // fall through to recovery
+    data = undefined;
+  }
+  const version = schemaVersionOf(data);
+  if (version !== null && version > PROGRESS_SCHEMA_VERSION) {
+    return { progress: emptyProgress(), status: 'newer' };
+  }
+  const parsed = progressSchema.safeParse(data);
+  if (parsed.success) {
+    return notice === null
+      ? { progress: parsed.data, status: 'ok' }
+      : { progress: parsed.data, status: 'recovered', backupKey: notice };
   }
   const backupKey = backup(storage, raw, now);
   if (backupKey === undefined) return { progress: emptyProgress(), status: 'locked' };
