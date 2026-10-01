@@ -1,0 +1,23 @@
+/** Test-day tips shown as cards in Quick Play (spec §5.4). Original wording; keep each short. */
+export const TIPS: readonly string[] = [
+  'Answer every question. A blank scores the same as a wrong answer.',
+  'Desmos can check your algebra: graph both sides and look for where they meet.',
+  'Read the last line of the question first, so you know what you are solving for.',
+  'Stuck after a minute? Flag it, guess, and come back if there is time.',
+  'Plug the answer choices back into the equation. One of them has to work.',
+  'Pick an easy number like 2 or 10 for a variable and test each choice.',
+  'Circle the units. Questions love to switch between minutes and hours.',
+  'Check whether the question wants x, y, or something like x + y.',
+  'If two answer choices are opposites, the sign is what the question is testing.',
+  'Estimate first. A quick ballpark rules out choices that are far off.',
+  'Write down the equation from a word problem before doing any math.',
+  'For "how many solutions" questions, compare slopes first.',
+  'Draw the picture for any geometry question, even when one is given.',
+  'Keep an eye on "not" and "except" in the question stem.',
+  'Your first module sets the difficulty of the second, so accuracy early pays off.',
+  'Typed answers can be fractions or decimals. Never round a fraction you can enter exactly.',
+  'A negative typed answer can be up to 6 characters, including the minus sign.',
+  'Breathe out slowly when you feel rushed. It resets your focus in seconds.',
+  'Skim the formula sheet before the test so you know what is on it.',
+  'The last few questions are not always the hardest. Leave time to try them.',
+];
