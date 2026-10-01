@@ -16,7 +16,27 @@ const mcq: Problem = {
   solution: ['Add.'],
 };
 
+const { choices: _choices, ...mcqRest } = mcq;
+const spr: Problem = {
+  ...mcqRest,
+  id: 'g:test@1:easy:spr:1',
+  format: 'spr',
+  answer: { kind: 'values', values: ['12'] },
+};
+
 describe('SatCard', () => {
+  it('answers a typed question with the number pad', async () => {
+    const onAnswer = vi.fn();
+    render(
+      <SatCard problem={spr} desmosKey={null} result={undefined} reduced onAnswer={onAnswer} />,
+    );
+    await userEvent.click(screen.getByRole('button', { name: '1' }));
+    await userEvent.click(screen.getByRole('button', { name: '2' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Check' }));
+    expect(onAnswer).toHaveBeenCalledWith(
+      expect.objectContaining({ correct: true, response: '12' }),
+    );
+  });
   it('answers with one tap and reports the result', async () => {
     const onAnswer = vi.fn();
     const { container } = render(

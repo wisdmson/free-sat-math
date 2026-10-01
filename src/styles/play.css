@@ -185,3 +185,43 @@
     box-shadow: 0 0 0 1.25rem transparent;
   }
 }
+.numpad {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 22rem;
+}
+.numpad-display {
+  min-height: 3.25rem;
+  padding: 0.6rem 0.9rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+.numpad-keys {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.numpad-key {
+  min-height: 3.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+.numpad-submit {
+  grid-column: span 2;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+}
+.numpad-key:disabled {
+  opacity: 0.45;
+  cursor: default;
+}

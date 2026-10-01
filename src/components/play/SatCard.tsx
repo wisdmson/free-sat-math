@@ -1,9 +1,9 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { checkSpr } from '../../engine/answer';
+import { checkSpr, sanitizeSprTyping } from '../../engine/answer';
 import { LETTERS, type Problem } from '../../engine/problem';
 import { answerText } from '../../lib/labels';
-import AnswerInput from '../AnswerInput';
 import MathText from '../MathText';
+import NumPad from '../NumPad';
 
 // Loaded on demand so they don't count against the page's first-load JS.
 const Solution = lazy(() => import('../Solution'));
@@ -97,35 +97,21 @@ export default function SatCard({
           })}
         </div>
       ) : (
-        <div className="play-typed">
-          <AnswerInput
-            id={`answer-${problem.id}`}
-            value={typed}
-            onChange={setTyped}
-            onSubmit={() => {
-              if (problem.answer.kind === 'choice' || typed.trim() === '') return;
-              const g = checkSpr(problem.answer, typed);
-              if (g.status === 'invalid') setInvalid(g.reason);
-              else submit(g.correct, typed.trim());
-            }}
-            locked={result !== undefined}
-          />
-          {result === undefined && (
-            <button
-              type="button"
-              className="button primary"
-              disabled={typed.trim() === ''}
-              onClick={() => {
-                if (problem.answer.kind === 'choice') return;
-                const g = checkSpr(problem.answer, typed);
-                if (g.status === 'invalid') setInvalid(g.reason);
-                else submit(g.correct, typed.trim());
-              }}
-            >
-              Check
-            </button>
-          )}
-        </div>
+        <NumPad
+          id={`answer-${problem.id}`}
+          label="Your answer"
+          value={typed}
+          onChange={(v) => setTyped(sanitizeSprTyping(v))}
+          onSubmit={() => {
+            if (problem.answer.kind === 'choice' || typed.trim() === '') return;
+            const g = checkSpr(problem.answer, typed);
+            if (g.status === 'invalid') setInvalid(g.reason);
+            else submit(g.correct, typed.trim());
+          }}
+          maxLength={6}
+          active={active && result === undefined}
+          locked={result !== undefined}
+        />
       )}
 
       <div role="status" aria-live="polite" className="play-feedback">

@@ -15,9 +15,7 @@ async function answerCurrent(page: Page, correct: boolean) {
     await current(page).locator(`[data-letter="${LETTERS[index]}"]`).click();
   } else {
     const right = answerValue(problem)!;
-    await current(page)
-      .getByLabel('Your answer')
-      .fill(correct ? right : right === '1' ? '2' : '1');
+    await page.keyboard.type(correct ? right : right === '1' ? '2' : '1');
     await current(page).getByRole('button', { name: 'Check' }).click();
   }
   await expect(current(page).getByRole('status')).toContainText(correct ? 'Correct' : 'Not quite');
