@@ -1,0 +1,17 @@
+---
+import PlayApp from '../../components/play/PlayApp';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { desmosApiKey } from '../../site.config';
+import '../../styles/play.css';
+---
+
+<BaseLayout
+  title="Quick Play"
+  description="Quick SAT Math questions you can answer in spare minutes, with combos, levels and a daily streak."
+>
+  <h1>Quick Play</h1>
+  <PlayApp client:only="react" desmosKey={desmosApiKey()} />
+  <noscript>
+    <p class="notice">Quick Play needs JavaScript turned on.</p>
+  </noscript>
+</BaseLayout>

@@ -1,0 +1,187 @@
+/* Quick Play. Uses the site tokens from global.css; the visual design pass (spec §10) restyles this file. */
+.play-start {
+  display: grid;
+  gap: 1rem;
+  max-width: 28rem;
+}
+.play-streak {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.play-level-card {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.meter {
+  height: 0.6rem;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+.meter span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.play-start-button {
+  min-height: 3.5rem;
+  font-size: 1.25rem;
+}
+
+.play-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--bg);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+.play-hud {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: calc(0.5rem + env(safe-area-inset-top, 0px)) 1rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+.play-exit {
+  min-width: 3rem;
+  min-height: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.play-combo {
+  margin-left: auto;
+  color: var(--muted);
+}
+.play-combo.is-hot {
+  color: var(--accent);
+}
+.play-feed {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior: contain;
+}
+.play-slot {
+  height: 100%;
+  min-height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: grid;
+  place-items: center;
+  padding: 1rem 1rem calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
+}
+.play-card {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  display: grid;
+  gap: 1rem;
+}
+.play-stem {
+  font-size: 1.15rem;
+}
+.play-choices {
+  display: grid;
+  gap: 0.6rem;
+}
+.play-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3.5rem;
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.05rem;
+  text-align: left;
+  cursor: pointer;
+}
+.play-choice.is-correct {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+.play-choice.is-wrong {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+}
+.play-choice:disabled {
+  cursor: default;
+}
+.play-tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.play-sheet {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.play-tip h2 {
+  font-size: 1.1rem;
+}
+.play-arrows {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 51;
+  display: grid;
+  gap: 0.5rem;
+}
+.play-arrows button {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.play-arrows button:disabled {
+  opacity: 0.4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .play-card.is-wrong {
+    animation: play-shake 0.35s ease-in-out;
+  }
+  .play-burst {
+    position: absolute;
+    inset: -1rem;
+    border-radius: var(--radius);
+    pointer-events: none;
+    box-shadow: 0 0 0 0 var(--good);
+    animation: play-burst 0.6s ease-out forwards;
+  }
+}
+@keyframes play-shake {
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+@keyframes play-burst {
+  to {
+    box-shadow: 0 0 0 1.25rem transparent;
+  }
+}
