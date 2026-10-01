@@ -16,12 +16,15 @@ const mcq: Problem = {
   solution: ['Add.'],
 };
 
-const { choices: _choices, ...mcqRest } = mcq;
 const spr: Problem = {
-  ...mcqRest,
   id: 'g:test@1:easy:spr:1',
+  skill: 'alg.systems',
+  difficulty: 'easy',
   format: 'spr',
+  source: 'generated',
+  stem: 'What is $6 \\cdot 2$?',
   answer: { kind: 'values', values: ['12'] },
+  solution: ['Multiply.'],
 };
 
 describe('SatCard', () => {
