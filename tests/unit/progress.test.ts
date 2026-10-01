@@ -7,6 +7,7 @@ import {
   emptyProgress,
   exportFileName,
   exportProgress,
+  findRestorableBackup,
   loadProgress,
   missedProblems,
   parseImport,
@@ -252,5 +253,32 @@ describe('export and import', () => {
     const r = replaceProgress(store, emptyProgress(), NOW);
     expect(r).toEqual({ saved: false, refused: true });
     expect(store.getItem(PROGRESS_KEY)).toBe(before);
+  });
+});
+
+describe('findRestorableBackup', () => {
+  const real = recordAttempt(emptyProgress(), attempt());
+  it('finds a recent backup with real progress when the saved record is empty', () => {
+    const store = new MemoryStore();
+    const key = `${BACKUP_PREFIX}2026-09-24T11:00:00.000Z`;
+    store.setItem(key, JSON.stringify(real));
+    expect(findRestorableBackup(store, [key, PROGRESS_KEY], emptyProgress(), NOW)).toBe(key);
+  });
+  it('offers nothing when the saved record already has progress', () => {
+    const store = new MemoryStore();
+    const key = `${BACKUP_PREFIX}2026-09-24T11:00:00.000Z`;
+    store.setItem(key, JSON.stringify(real));
+    expect(findRestorableBackup(store, [key], real, NOW)).toBeNull();
+  });
+  it('ignores backups older than a day, empty backups and the pre-v2 copy', () => {
+    const store = new MemoryStore();
+    const old = `${BACKUP_PREFIX}2026-09-22T11:00:00.000Z`;
+    const empty = `${BACKUP_PREFIX}2026-09-24T11:30:00.000Z`;
+    store.setItem(old, JSON.stringify(real));
+    store.setItem(empty, JSON.stringify(emptyProgress()));
+    store.setItem(PRE_V2_BACKUP_KEY, JSON.stringify(real));
+    expect(
+      findRestorableBackup(store, [old, empty, PRE_V2_BACKUP_KEY], emptyProgress(), NOW),
+    ).toBeNull();
   });
 });

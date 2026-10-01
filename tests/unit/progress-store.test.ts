@@ -101,6 +101,37 @@ describe('createProgressStore', () => {
     expect(storage.data.get(PROGRESS_KEY)).toBe(raw);
   });
 
+  it('offers a recent backup and restores it on request', () => {
+    const storage = memory();
+    const key = `${BACKUP_PREFIX}2026-09-24T00:00:00.000Z`;
+    storage.data.set(key, JSON.stringify(toggleBookmark(emptyProgress(), 'kept')));
+    // Real progress counts as attempts; a bookmark alone is not enough, so add one attempt.
+    const withAttempt = JSON.parse(storage.data.get(key)!);
+    withAttempt.attempts = [
+      {
+        problemId: 'g:alg.systems.solve-system@1:easy:mcq:1',
+        skill: 'alg.systems',
+        difficulty: 'easy',
+        correct: true,
+        response: 'A',
+        timeMs: 1,
+        at: '2026-09-24T00:00:00.000Z',
+        mode: 'practice',
+      },
+    ];
+    storage.data.set(key, JSON.stringify(withAttempt));
+    const store = createProgressStore(
+      storage,
+      () => new Date('2026-09-24T06:00:00.000Z'),
+      null,
+      () => [...storage.data.keys()],
+    );
+    expect(store.getSnapshot().restorable).toBe(key);
+    expect(store.restore(key).saved).toBe(true);
+    expect(store.getSnapshot().progress.bookmarks).toEqual(['kept']);
+    expect(store.getSnapshot().restorable).toBeUndefined();
+  });
+
   it('reload() picks up another tab’s write', () => {
     const storage = memory();
     const store = createProgressStore(storage);

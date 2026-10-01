@@ -141,6 +141,43 @@ export function loadProgress(
   return { progress: emptyProgress(), status: 'recovered', backupKey };
 }
 
+export const RESTORE_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+/**
+ * A backup from the last day holding real progress, offered when the saved record is empty.
+ * Covers a tab that still runs an older version: it can reset the record after a newer version
+ * wrote to it, but it always backs the data up first (spec §9.2, known gap).
+ */
+export function findRestorableBackup(
+  storage: KeyValueStore,
+  keys: readonly string[],
+  current: Progress,
+  now: Date,
+): string | null {
+  if (current.attempts.length > 0 || current.game.points > 0) return null;
+  const recent = keys
+    .filter((k) => k.startsWith(BACKUP_PREFIX) && k !== PRE_V2_BACKUP_KEY)
+    .filter((k) => {
+      const t = Date.parse(k.slice(BACKUP_PREFIX.length));
+      return Number.isFinite(t) && t <= now.getTime() && now.getTime() - t <= RESTORE_WINDOW_MS;
+    })
+    .sort()
+    .reverse();
+  for (const key of recent) {
+    let data: unknown;
+    try {
+      data = JSON.parse(storage.getItem(key) ?? '');
+    } catch {
+      continue;
+    }
+    const read = readProgress(data);
+    if (read.kind !== 'newer' && read.kind !== 'unreadable' && read.progress.attempts.length > 0) {
+      return key;
+    }
+  }
+  return null;
+}
+
 /** Writes progress. Returns false when the browser refuses (quota, private mode). */
 export function saveProgress(storage: KeyValueStore | null, progress: Progress): boolean {
   if (storage === null) return false;
