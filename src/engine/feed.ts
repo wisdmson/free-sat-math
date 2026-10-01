@@ -1,8 +1,9 @@
-/** Picks Quick Play's next card (spec §3.5). Lightning and pace cards arrive in later plans. */
+/** Picks Quick Play's next card (spec §3.5). Pace cards arrive in a later plan. */
 import { TIPS } from '../content/tips';
 import { skillAccuracy, type Accuracy } from '../store/progress';
 import type { Progress } from '../store/schema';
 import { generateVerified } from './build';
+import type { MentalProblem } from './mental/types';
 import { startingLevel } from './practice';
 import type { Format, Problem } from './problem';
 import { availableSkills, problemTypesForSkill } from './registry';
@@ -10,7 +11,9 @@ import type { Rng } from './rng';
 import type { SkillId } from './skills';
 
 export type Card =
-  { kind: 'sat'; key: string; problem: Problem } | { kind: 'tip'; key: string; text: string };
+  | { kind: 'sat'; key: string; problem: Problem }
+  | { kind: 'tip'; key: string; text: string }
+  | { kind: 'lightning'; key: string; questions: [MentalProblem, MentalProblem, MentalProblem] };
 
 /** A tip after this many questions. */
 export const TIP_EVERY = 25;
@@ -19,6 +22,9 @@ export const SPR_GAP = 4;
 export const SPR_CHANCE = 0.25;
 /** Problems answered this recently are never shown again. */
 export const RECENT_ATTEMPTS = 200;
+/** A ⚡ Lightning round after every 8 to 12 questions (spec §3.5). */
+export const LIGHTNING_GAP_MIN = 8;
+export const LIGHTNING_GAP_MAX = 12;
 
 export interface FeedState {
   sinceTip: number;
@@ -26,10 +32,30 @@ export interface FeedState {
   issued: string[];
   tipIndex: number;
   cardCount: number;
+  /** Questions until the next Lightning round; null means "draw a gap on the next question". */
+  untilLightning: number | null;
 }
 
-export function newFeedState(tipIndex: number): FeedState {
-  return { sinceTip: 0, recentFormats: [], issued: [], tipIndex, cardCount: 0 };
+export function newFeedState(tipIndex: number, lightningFirst = false): FeedState {
+  return {
+    sinceTip: 0,
+    recentFormats: [],
+    issued: [],
+    tipIndex,
+    cardCount: 0,
+    untilLightning: lightningFirst ? 0 : null,
+  };
+}
+
+/** Builds a Lightning round, or null if it can't (see engine/mental/lightning.ts). */
+export type LightningMaker = (
+  progress: Progress,
+  rng: Rng,
+) => [MentalProblem, MentalProblem, MentalProblem] | null;
+
+/** True when a Lightning round is due within `cards` questions: time to load the drills. */
+export function lightningSoon(state: FeedState, cards: number): boolean {
+  return state.untilLightning !== null && state.untilLightning <= cards;
 }
 
 /** 1 until a skill has 5 recent attempts, then 1 + (share wrong): 1 to 2. */
@@ -72,12 +98,17 @@ function satProblem(progress: Progress, state: FeedState, rng: Rng): Problem | n
   return null;
 }
 
-/** The next card, or null when no question could be generated (the feed shows a retry card). */
+/**
+ * The next card, or null when no question could be generated (the feed shows a retry card).
+ * Without `makeLightning` (drills not loaded yet) a due round waits and questions continue.
+ */
 export function nextCard(
   progress: Progress,
-  state: FeedState,
+  input: FeedState,
   rng: Rng,
+  makeLightning?: LightningMaker,
 ): { card: Card | null; state: FeedState } {
+  let state = input;
   if (state.sinceTip >= TIP_EVERY) {
     const text = TIPS[state.tipIndex % TIPS.length] as string;
     return {
@@ -90,6 +121,21 @@ export function nextCard(
       },
     };
   }
+  const until = state.untilLightning ?? rng.int(LIGHTNING_GAP_MIN, LIGHTNING_GAP_MAX);
+  if (until <= 0 && makeLightning !== undefined) {
+    const gap = rng.int(LIGHTNING_GAP_MIN, LIGHTNING_GAP_MAX);
+    const questions = makeLightning(progress, rng);
+    if (questions !== null) {
+      return {
+        card: { kind: 'lightning', key: `lightning-${state.cardCount}`, questions },
+        state: { ...state, untilLightning: gap, cardCount: state.cardCount + 1 },
+      };
+    }
+    // A drill failed: skip this round and carry on with questions.
+    state = { ...state, untilLightning: gap };
+  } else {
+    state = { ...state, untilLightning: until };
+  }
   const problem = satProblem(progress, state, rng);
   if (problem === null) return { card: null, state };
   return {
@@ -100,6 +146,7 @@ export function nextCard(
       recentFormats: [...state.recentFormats, problem.format].slice(-SPR_GAP),
       issued: [...state.issued, problem.id],
       cardCount: state.cardCount + 1,
+      untilLightning: Math.max(0, (state.untilLightning ?? 0) - 1),
     },
   };
 }

@@ -246,3 +246,14 @@
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
 }
+.play-lightning h2 {
+  font-size: 1.4rem;
+}
+.play-lightning-score {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* Keep the pad clear of the fixed ↑/↓ card arrows (right 1rem + 3rem wide). */
+.play-slot .numpad {
+  margin-right: 3.5rem;
+}

@@ -1,12 +1,28 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { newFeedState, nextCard, type Card, type FeedState } from '../../engine/feed';
-import { comboMultiplier, levelInfo, scoreSatAnswer } from '../../engine/game';
+import {
+  lightningSoon,
+  newFeedState,
+  nextCard,
+  type Card,
+  type FeedState,
+  type LightningMaker,
+} from '../../engine/feed';
+import {
+  LIGHTNING_PERFECT_BONUS,
+  LIGHTNING_PERFECT_COMBO,
+  comboMultiplier,
+  levelInfo,
+  lightningSeconds,
+  scoreLightningAnswer,
+  scoreSatAnswer,
+} from '../../engine/game';
 import type { Problem } from '../../engine/problem';
 import { createRng, randomSeed } from '../../engine/rng';
-import { applyPlayAnswer } from '../../store/play';
+import { addBonusPoints, applyLightningAnswer, applyPlayAnswer } from '../../store/play';
 import { getProgressStore, useProgress } from '../../store/progress-store';
 import StorageBanner from '../StorageBanner';
 import { answerFeedback, levelUpFeedback } from './feedback';
+import LightningCard, { type LightningResult } from './LightningCard';
 import SatCard, { type CardResult } from './SatCard';
 
 /** Cards built ahead of the current one, so a swipe is instant. */
@@ -14,7 +30,12 @@ const LOOKAHEAD = 3;
 /** Cards farther than this from the current one render as empty slots (keeps the DOM small). */
 const RENDER_WINDOW = 3;
 
-type Entry = { key: string; card: Card | null; result?: CardResult };
+/** `?lightning=first` starts with a Lightning round. Only in builds made with PUBLIC_TEST_HOOKS=1. */
+const lightningFirst = () =>
+  import.meta.env.PUBLIC_TEST_HOOKS === '1' &&
+  new URLSearchParams(window.location.search).get('lightning') === 'first';
+
+type Entry = { key: string; card: Card | null; result?: CardResult; lightning?: LightningResult };
 
 function useReducedMotion(): boolean {
   const [reduced, setReduced] = useState(
@@ -52,15 +73,41 @@ export default function PlayFeed({
   const comboRef = useRef(0);
   const scroller = useRef<HTMLDivElement>(null);
 
+  // The drills load on demand, a few cards before the first Lightning round is due, so a short
+  // session never downloads them. The test hook loads them first and waits.
+  const hook = useMemo(() => lightningFirst(), []);
+  const makeLightning = useRef<LightningMaker | undefined>(undefined);
+  const lightningLoading = useRef(false);
+  const [lightningReady, setLightningReady] = useState(false);
+  const loadLightning = useCallback(() => {
+    if (lightningLoading.current) return;
+    lightningLoading.current = true;
+    import('../../engine/mental/lightning').then(
+      (m) => {
+        makeLightning.current = m.lightningRound;
+        setLightningReady(true);
+      },
+      // Offline or failed: rounds wait and questions continue; try again on a later card.
+      () => {
+        lightningLoading.current = false;
+      },
+    );
+  }, []);
+  useEffect(() => {
+    if (hook) loadLightning();
+  }, [hook, loadLightning]);
+
   const extend = useCallback(
     (minLength: number) => {
       const list = entriesRef.current;
       if (list.length >= minLength || list.at(-1)?.card === null) return;
       const store = getProgressStore();
-      let state = feedState.current ?? newFeedState(store.getSnapshot().progress.game.tipIndex);
+      let state =
+        feedState.current ??
+        newFeedState(store.getSnapshot().progress.game.tipIndex, lightningFirst());
       const added: Entry[] = [];
       while (list.length + added.length < minLength) {
-        const r = nextCard(store.getSnapshot().progress, state, rng);
+        const r = nextCard(store.getSnapshot().progress, state, rng, makeLightning.current);
         if (r.card === null) {
           added.push({ key: `retry-${list.length + added.length}`, card: null });
           break;
@@ -73,13 +120,17 @@ export default function PlayFeed({
         added.push({ key: r.card.key, card: r.card });
       }
       feedState.current = state;
+      if (lightningSoon(state, LOOKAHEAD + 2)) loadLightning();
       entriesRef.current = [...list, ...added];
       setEntries(entriesRef.current);
     },
-    [rng],
+    [rng, loadLightning],
   );
 
-  useEffect(() => extend(current + 1 + LOOKAHEAD), [current, extend]);
+  useEffect(() => {
+    if (hook && !lightningReady) return;
+    extend(current + 1 + LOOKAHEAD);
+  }, [current, extend, hook, lightningReady]);
 
   // The card filling most of the screen is the current one. One observer for the whole session:
   // re-creating it on every new card would re-report the previous card mid-scroll and flip back.
@@ -171,6 +222,38 @@ export default function PlayFeed({
     setEntries(entriesRef.current);
   };
 
+  const onLightningAnswer = (r: { correct: boolean; answered: boolean }): number => {
+    const scored = scoreLightningAnswer(comboRef.current, r.correct);
+    comboRef.current = scored.combo;
+    setCombo(scored.combo);
+    const store = getProgressStore();
+    const before = levelInfo(store.getSnapshot().progress.game.points).level;
+    store.update((p) =>
+      applyLightningAnswer(p, {
+        answered: r.answered,
+        points: scored.points,
+        combo: scored.combo,
+        now: new Date(),
+      }),
+    );
+    const { settings, game } = store.getSnapshot().progress;
+    answerFeedback(r.correct, settings);
+    if (levelInfo(game.points).level > before) levelUpFeedback(settings);
+    return scored.points;
+  };
+
+  const onLightningDone = (index: number, right: number) => {
+    if (right === 3) {
+      comboRef.current += LIGHTNING_PERFECT_COMBO;
+      setCombo(comboRef.current);
+      getProgressStore().update((p) => addBonusPoints(p, LIGHTNING_PERFECT_BONUS));
+    }
+    entriesRef.current = entriesRef.current.map((e, i) =>
+      i === index ? { ...e, lightning: { done: true, right } } : e,
+    );
+    setEntries(entriesRef.current);
+  };
+
   const retry = (index: number) => {
     entriesRef.current = entriesRef.current.slice(0, index);
     extend(index + 1 + LOOKAHEAD);
@@ -213,6 +296,15 @@ export default function PlayFeed({
                 <h2 tabIndex={-1}>Test-day tip</h2>
                 <p>{e.card.text}</p>
               </div>
+            ) : e.card.kind === 'lightning' ? (
+              <LightningCard
+                questions={e.card.questions}
+                seconds={lightningSeconds(snapshot.progress.settings)}
+                active={i === current}
+                result={e.lightning}
+                onAnswer={onLightningAnswer}
+                onDone={(right) => onLightningDone(i, right)}
+              />
             ) : (
               <SatCard
                 problem={e.card.problem}

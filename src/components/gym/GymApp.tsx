@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { checkMental, generateMental } from '../../engine/mental/build';
+import { generateMental } from '../../engine/mental/build';
+import { checkMental } from '../../engine/mental/check';
 import type { DrillId } from '../../engine/mental/ids';
 import { DRILLS, getDrill } from '../../engine/mental/registry';
 import {

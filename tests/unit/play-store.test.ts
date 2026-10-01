@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { buildProblem } from '../../src/engine/build';
 import { getProblemType } from '../../src/engine/registry';
-import { applyPlayAnswer } from '../../src/store/play';
+import { addBonusPoints, applyLightningAnswer, applyPlayAnswer } from '../../src/store/play';
 import { emptyProgress } from '../../src/store/progress';
 
 const problem = buildProblem(getProblemType('alg.systems.solve-system')!, 'medium', 'mcq', 5);
@@ -23,5 +23,21 @@ describe('applyPlayAnswer', () => {
       p = applyPlayAnswer(p, { ...base, correct: false, points: 0, combo: 0 });
     expect(p.game.bestStreak).toBe(1);
     expect(p.game.bestCombo).toBe(0);
+  });
+});
+describe('Lightning answers', () => {
+  it('count toward points, best combo and today, but timeouts are not answers', () => {
+    let p = applyLightningAnswer(emptyProgress(), {
+      answered: true,
+      points: 10,
+      combo: 4,
+      now: base.now,
+    });
+    p = applyLightningAnswer(p, { answered: false, points: 0, combo: 0, now: base.now });
+    p = addBonusPoints(p, 25);
+    expect(p.game.points).toBe(35);
+    expect(p.game.bestCombo).toBe(4);
+    expect(p.game.answerDays).toEqual({ '2026-10-01': 1 });
+    expect(p.attempts).toEqual([]);
   });
 });

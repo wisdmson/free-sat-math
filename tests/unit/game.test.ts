@@ -5,8 +5,11 @@ import {
   comboMultiplier,
   currentStreak,
   dayKey,
+  LIGHTNING_POINTS,
   levelInfo,
+  lightningSeconds,
   pointsForLevel,
+  scoreLightningAnswer,
   scoreSatAnswer,
 } from '../../src/engine/game';
 
@@ -68,5 +71,22 @@ describe('days and streaks', () => {
     expect(
       currentStreak(counted('2026-03-07', '2026-03-08', '2026-03-09'), at(2026, 3, 9, 1)),
     ).toBe(3);
+  });
+});
+describe('Lightning', () => {
+  it('scores 5 per right answer times the combo multiplier', () => {
+    expect(scoreLightningAnswer(0, true)).toEqual({
+      combo: 1,
+      points: LIGHTNING_POINTS,
+      multiplier: 1,
+    });
+    expect(scoreLightningAnswer(5, true)).toEqual({ combo: 6, points: 15, multiplier: 3 });
+    expect(scoreLightningAnswer(4, false)).toEqual({ combo: 0, points: 0, multiplier: 1 });
+  });
+  it('Lightning time follows extended time and untimed', () => {
+    expect(lightningSeconds({ timeMultiplier: 1, untimed: false })).toBe(10);
+    expect(lightningSeconds({ timeMultiplier: 1.5, untimed: false })).toBe(15);
+    expect(lightningSeconds({ timeMultiplier: 2, untimed: false })).toBe(20);
+    expect(lightningSeconds({ timeMultiplier: 2, untimed: true })).toBeNull();
   });
 });

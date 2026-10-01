@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { answerValue } from '../../src/engine/generators/shared/choices';
+import { mentalFromId } from '../../src/engine/mental/build';
 import { LETTERS } from '../../src/engine/problem';
 import { problemFromId } from '../../src/engine/registry';
 
@@ -93,4 +94,67 @@ test('the floating Play button jumps straight into a question', async ({ page })
 test('the floating Play button is not shown on the Quick Play page', async ({ page }) => {
   await page.goto('/play/');
   await expect(page.locator('.play-fab')).toHaveCount(0);
+});
+
+test('a perfect Lightning round earns the bonus', async ({ page }) => {
+  await page.goto('/play/?go=1&lightning=first');
+  const card = current(page);
+  await expect(card.getByText('⚡ Lightning')).toBeVisible();
+  for (let i = 0; i < 3; i++) {
+    const prompt = card.locator('[data-mental-id]');
+    await expect(prompt).toHaveAttribute('data-mental-id', /^m:/);
+    const p = mentalFromId((await prompt.getAttribute('data-mental-id'))!)!;
+    if (p.answer.kind === 'choice') {
+      await card
+        .getByRole('button', { name: p.answer.choices[p.answer.index] as string, exact: true })
+        .click();
+    } else {
+      const [n, d] = p.answer.value.split('/');
+      await page.keyboard.type(
+        p.answer.form === 'decimal' ? String(Number(n) / Number(d ?? 1)) : p.answer.value,
+      );
+      await page.keyboard.press('Enter');
+    }
+    if (i < 2) await expect(card.getByText(`${i + 1} of 3 done`)).toBeVisible();
+  }
+  await expect(card.getByText('Perfect! +25 bonus')).toBeVisible();
+});
+
+test('an unanswered Lightning question times out', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('/play/?go=1&lightning=first');
+  await expect(current(page).getByText('⚡ Lightning')).toBeVisible();
+  await page.clock.fastForward(11_000);
+  await expect(current(page).getByText("Time's up")).toBeVisible();
+});
+
+test('the card arrows never cover the number pad', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 760 });
+  await page.goto('/play/?go=1&lightning=first');
+  await expect(current(page).locator('[data-mental-id]')).toBeVisible();
+  // A new player is at tier 1, where every drill's question is typed on the pad.
+  const pad = await current(page).locator('.numpad').boundingBox();
+  const arrows = await page.getByRole('navigation', { name: 'Move between cards' }).boundingBox();
+  expect(pad).not.toBeNull();
+  expect(arrows).not.toBeNull();
+  expect(pad!.x + pad!.width).toBeLessThanOrEqual(arrows!.x);
+});
+
+test('a Lightning round turns up on its own within 13 cards', async ({ page }) => {
+  // The drills download a few cards before the first round is due. A student reads each card;
+  // this test taps fast, so it waits for that download instead of racing it.
+  const drills = page.waitForResponse((r) => /\/lightning\.[\w-]+\.js$/.test(r.url()));
+  await page.goto('/play/?go=1');
+  // Cards near the current one are rendered ahead, so walk until the round is in the DOM.
+  // By the 5th card at least 8 are built, so a round is within reach and the download started.
+  const round = page.locator('.play-slot', { hasText: '⚡ Lightning' }).first();
+  for (let i = 0; i < 30 && (await round.count()) === 0; i++) {
+    await expect(current(page).locator('h2')).toBeAttached();
+    if (i === 4) await drills;
+    await next(page);
+  }
+  // Card numbers count from 1: a gap of 8 to 12 questions puts the round at card 9 to 13.
+  const index = Number(await round.getAttribute('data-index'));
+  expect(index).toBeGreaterThanOrEqual(8);
+  expect(index).toBeLessThanOrEqual(12);
 });

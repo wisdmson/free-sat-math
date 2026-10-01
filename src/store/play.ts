@@ -42,3 +42,26 @@ export function applyPlayAnswer(progress: Progress, a: PlayAnswer): Progress {
     },
   };
 }
+/** A Lightning answer: points and combo; only answered questions count toward the day (spec §3.4). */
+export function applyLightningAnswer(
+  progress: Progress,
+  a: { answered: boolean; points: number; combo: number; now: Date },
+): Progress {
+  const answerDays = a.answered
+    ? addAnswerDay(progress.game.answerDays, a.now)
+    : progress.game.answerDays;
+  return {
+    ...progress,
+    game: {
+      ...progress.game,
+      points: progress.game.points + a.points,
+      bestCombo: Math.max(progress.game.bestCombo, a.combo),
+      answerDays,
+      bestStreak: Math.max(progress.game.bestStreak, currentStreak(answerDays, a.now)),
+    },
+  };
+}
+
+export function addBonusPoints(progress: Progress, points: number): Progress {
+  return { ...progress, game: { ...progress.game, points: progress.game.points + points } };
+}

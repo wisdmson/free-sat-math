@@ -14,7 +14,7 @@ export default defineConfig({
   webServer: {
     // --ignore-lock keeps `astro preview` in the foreground. Astro 7 backgrounds it (and exits)
     // when it detects an AI agent, which makes Playwright report "exited early".
-    command: `npx astro build && npx astro preview --port ${PORT} --ignore-lock`,
+    command: `PUBLIC_TEST_HOOKS=1 npx astro build && npx astro preview --port ${PORT} --ignore-lock`,
     url: `http://localhost:${PORT}/`,
     reuseExistingServer: false,
     timeout: 180_000,

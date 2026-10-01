@@ -79,3 +79,27 @@ export function currentStreak(days: Readonly<Record<string, number>>, now: Date)
 }
 /** Gym sprints: points per correct answer, no combo (spec §3.3). */
 export const GYM_POINTS_PER_CORRECT = 2;
+export const LIGHTNING_POINTS = 5;
+export const LIGHTNING_PERFECT_BONUS = 25;
+/** A perfect Lightning round adds this much extra to the combo (spec §3.2). */
+export const LIGHTNING_PERFECT_COMBO = 2;
+export const LIGHTNING_SECONDS = 10;
+
+/** One Lightning answer: 5 base points times the combo multiplier (spec §3.1). */
+export function scoreLightningAnswer(
+  combo: number,
+  correct: boolean,
+): { combo: number; points: number; multiplier: number } {
+  if (!correct) return { combo: 0, points: 0, multiplier: 1 };
+  const next = combo + 1;
+  const multiplier = comboMultiplier(next);
+  return { combo: next, points: LIGHTNING_POINTS * multiplier, multiplier };
+}
+
+/** Seconds per Lightning question, or null for no clock (spec §4.4). */
+export function lightningSeconds(settings: {
+  timeMultiplier: 1 | 1.5 | 2;
+  untimed: boolean;
+}): number | null {
+  return settings.untimed ? null : LIGHTNING_SECONDS * settings.timeMultiplier;
+}

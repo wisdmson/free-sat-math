@@ -1,15 +1,23 @@
 import { describe, expect, it, vi } from 'vitest';
 import { TIPS } from '../../src/content/tips';
-import { SPR_GAP, TIP_EVERY, newFeedState, nextCard, skillWeight } from '../../src/engine/feed';
+import {
+  SPR_GAP,
+  TIP_EVERY,
+  newFeedState,
+  nextCard,
+  skillWeight,
+  type LightningMaker,
+} from '../../src/engine/feed';
+import { lightningRound } from '../../src/engine/mental/lightning';
 import { createRng } from '../../src/engine/rng';
 import { emptyProgress, recordAttempt } from '../../src/store/progress';
 
-function run(seed: number, n: number, progress = emptyProgress()) {
+function run(seed: number, n: number, progress = emptyProgress(), maker?: LightningMaker) {
   const rng = createRng(seed);
   let state = newFeedState(0);
   const cards = [];
   for (let i = 0; i < n; i++) {
-    const r = nextCard(progress, state, rng);
+    const r = nextCard(progress, state, rng, maker);
     state = r.state;
     cards.push(r.card);
   }
@@ -21,10 +29,34 @@ describe('nextCard', () => {
     expect(run(42, 30).map((c) => c?.key)).toEqual(run(42, 30).map((c) => c?.key));
   });
   it('inserts a tip after every TIP_EVERY questions, rotating through the list', () => {
-    const cards = run(7, TIP_EVERY * 2 + 2);
-    expect(cards[TIP_EVERY]).toMatchObject({ kind: 'tip', text: TIPS[0] });
-    expect(cards[TIP_EVERY * 2 + 1]).toMatchObject({ kind: 'tip', text: TIPS[1] });
-    expect(cards.filter((c) => c?.kind === 'tip')).toHaveLength(2);
+    const cards = run(7, 90);
+    const tips = cards.flatMap((c, i) => (c?.kind === 'tip' ? [i] : []));
+    const questionsBefore = (i: number) =>
+      cards.slice(0, i).filter((c) => c?.kind === 'sat').length;
+    expect(tips.length).toBeGreaterThanOrEqual(2);
+    expect(questionsBefore(tips[0] as number)).toBe(TIP_EVERY);
+    expect(cards[tips[0] as number]).toMatchObject({ text: TIPS[0] });
+    expect(cards[tips[1] as number]).toMatchObject({ text: TIPS[1] });
+  });
+  it('inserts a Lightning round of 3 verified mental-math questions every 8 to 12 questions', async () => {
+    const { getDrill } = await import('../../src/engine/mental/registry');
+    const cards = run(5, 120, emptyProgress(), lightningRound);
+    let since = 0;
+    for (const c of cards) {
+      if (c?.kind === 'sat') since++;
+      if (c?.kind === 'lightning') {
+        expect(since).toBeGreaterThanOrEqual(8);
+        expect(since).toBeLessThanOrEqual(12);
+        expect(c.questions).toHaveLength(3);
+        for (const q of c.questions) expect(getDrill(q.drill)!.verify(q)).toBe(true);
+        since = 0;
+      }
+    }
+    expect(cards.filter((c) => c?.kind === 'lightning').length).toBeGreaterThanOrEqual(8);
+  });
+  it('can start with a Lightning round (test hook)', () => {
+    const r = nextCard(emptyProgress(), newFeedState(0, true), createRng(3), lightningRound);
+    expect(r.card?.kind).toBe('lightning');
   });
   it('never shows more than one typed answer in any run of SPR_GAP + 1 questions', () => {
     const formats = run(3, 600).flatMap((c) => (c?.kind === 'sat' ? [c.problem.format] : []));
@@ -72,5 +104,20 @@ describe('when nothing can be generated', () => {
     const r = feed.nextCard(emptyProgress(), feed.newFeedState(0), createRng(1));
     expect(r.card).toBeNull();
     vi.doUnmock('../../src/engine/registry');
+  });
+});
+
+describe('Lightning fallback', () => {
+  it('skips a Lightning round it can’t build', () => {
+    const r = nextCard(emptyProgress(), newFeedState(0, true), createRng(1), () => null);
+    expect(r.card?.kind).toBe('sat');
+    expect(r.state.untilLightning).toBeGreaterThanOrEqual(7);
+  });
+  it('waits for the drills to load, then plays the round on the next card', () => {
+    const rng = createRng(2);
+    const first = nextCard(emptyProgress(), newFeedState(0, true), rng);
+    expect(first.card?.kind).toBe('sat');
+    const second = nextCard(emptyProgress(), first.state, rng, lightningRound);
+    expect(second.card?.kind).toBe('lightning');
   });
 });
