@@ -1,8 +1,7 @@
 import { schemaVersionOf } from './schema-version';
+import { parseProgress, parseProgressV1, tryParse } from './validate';
 import {
   PROGRESS_SCHEMA_VERSION,
-  progressSchema,
-  progressSchemaV1,
   type Game,
   type Mental,
   type Progress,
@@ -38,10 +37,10 @@ export type ReadResult =
 export function readProgress(data: unknown): ReadResult {
   const version = schemaVersionOf(data);
   if (version !== null && version > PROGRESS_SCHEMA_VERSION) return { kind: 'newer' };
-  const current = progressSchema.safeParse(data);
-  if (current.success) return { kind: 'current', progress: current.data };
-  const v1 = progressSchemaV1.safeParse(data);
-  if (v1.success) return { kind: 'upgraded', progress: upgradeV1(v1.data) };
-  const first = current.error.issues[0];
-  return { kind: 'unreadable', where: first ? first.path.join('.') : '' };
+  const current = tryParse(parseProgress, data);
+  if (current.ok) return { kind: 'current', progress: current.value };
+  const v1 = tryParse(parseProgressV1, data);
+  if (v1.ok) return { kind: 'upgraded', progress: upgradeV1(v1.value) };
+  // Report the failure for the version the data claims to be, so the reason is useful.
+  return { kind: 'unreadable', where: version === 1 ? v1.path : current.path };
 }

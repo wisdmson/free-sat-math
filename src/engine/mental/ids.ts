@@ -9,3 +9,6 @@ export const DRILL_IDS = [
 ] as const;
 
 export type DrillId = (typeof DRILL_IDS)[number];
+/** Drill difficulty tiers (spec §4.1). */
+export type Tier = 1 | 2 | 3;
+export const TIERS: readonly Tier[] = [1, 2, 3];
