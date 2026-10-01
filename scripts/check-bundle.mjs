@@ -60,7 +60,8 @@ function everything(entries) {
 }
 
 const kb = (files) =>
-  [...files].reduce((sum, f) => sum + gzipSync(readFileSync(join(DIST, '_astro', f))).length, 0) / 1024;
+  [...files].reduce((sum, f) => sum + gzipSync(readFileSync(join(DIST, '_astro', f))).length, 0) /
+  1024;
 
 const failures = [];
 for (const file of htmlFiles(DIST).sort()) {
