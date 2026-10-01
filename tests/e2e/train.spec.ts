@@ -65,3 +65,12 @@ test('the floating Play button stays out of the way in the Gym', async ({ page }
   await expect(page.getByRole('heading', { name: 'Mental Math Gym', level: 1 })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Quick Play' })).toHaveCount(0);
 });
+
+test('the Gym is one tap from the home page and the Play screen', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('main').getByRole('link', { name: 'Mental Math Gym' }).click();
+  await expect(page.getByRole('heading', { name: 'Mental Math Gym', level: 1 })).toBeVisible();
+  await page.goto('/play/');
+  await page.getByRole('link', { name: 'Mental Math Gym' }).click();
+  await expect(page.getByRole('heading', { name: 'Mental Math Gym', level: 1 })).toBeVisible();
+});

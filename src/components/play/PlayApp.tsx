@@ -1,5 +1,6 @@
 import { lazy, Suspense, useState } from 'react';
 import { currentStreak, levelInfo } from '../../engine/game';
+import { url } from '../../lib/paths';
 import { updateSettings } from '../../store/progress';
 import { getProgressStore, useProgress } from '../../store/progress-store';
 import StorageBanner from '../StorageBanner';
@@ -56,6 +57,9 @@ export default function PlayApp({ desmosKey }: { desmosKey: string | null }) {
       >
         ▶ Play
       </button>
+      <a className="button" href={url('/train/')}>
+        Mental Math Gym
+      </a>
       <label className="inline-option">
         <input
           type="checkbox"
