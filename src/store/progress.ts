@@ -229,6 +229,26 @@ export function recordAttempt(progress: Progress, attempt: Attempt): Progress {
   return { ...progress, attempts: attempts.slice(Math.max(0, attempts.length - MAX_ATTEMPTS)) };
 }
 
+/**
+ * Marks or unmarks one attempt as a guess (Quick Play's "Guessed?" chip, spec §5.3). The attempt
+ * is found by problem and time; if it's no longer stored, nothing changes.
+ */
+export function setGuessed(
+  progress: Progress,
+  problemId: ProblemId,
+  at: string,
+  guessed: boolean,
+): Progress {
+  const i = progress.attempts.findIndex((a) => a.problemId === problemId && a.at === at);
+  if (i < 0) return progress;
+  const updated: Attempt = { ...(progress.attempts[i] as Attempt) };
+  if (guessed) updated.guessed = true;
+  else delete updated.guessed;
+  const attempts = [...progress.attempts];
+  attempts[i] = updated;
+  return { ...progress, attempts };
+}
+
 export function toggleBookmark(progress: Progress, id: ProblemId): Progress {
   const has = progress.bookmarks.includes(id);
   return {
@@ -256,16 +276,27 @@ export interface MissedItem {
   skill: SkillId;
   difficulty: Difficulty;
   at: string;
+  /** The miss wasn't marked as a guess: a gap the student may not know they have (spec §5.3). */
+  sure: boolean;
 }
 
-/** Problems whose most recent attempt was wrong, newest first. */
+const newestFirst = (x: { at: string }, y: { at: string }) =>
+  x.at < y.at ? 1 : x.at > y.at ? -1 : 0;
+
+/** Problems whose most recent attempt was wrong: "sure but wrong" first, then newest first. */
 export function missedProblems(progress: Progress): MissedItem[] {
   const latest = new Map<ProblemId, Attempt>();
   for (const a of progress.attempts) latest.set(a.problemId, a);
   return [...latest.values()]
     .filter((a) => !a.correct)
-    .sort((x, y) => (x.at < y.at ? 1 : x.at > y.at ? -1 : 0))
-    .map(({ problemId, skill, difficulty, at }) => ({ problemId, skill, difficulty, at }));
+    .map(({ problemId, skill, difficulty, at, guessed }) => ({
+      problemId,
+      skill,
+      difficulty,
+      at,
+      sure: guessed !== true,
+    }))
+    .sort((x, y) => Number(y.sure) - Number(x.sure) || newestFirst(x, y));
 }
 
 export interface Accuracy {

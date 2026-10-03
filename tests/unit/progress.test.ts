@@ -10,6 +10,7 @@ import {
   findRestorableBackup,
   loadProgress,
   missedProblems,
+  setGuessed,
   parseImport,
   recordAttempt,
   replaceProgress,
@@ -280,5 +281,45 @@ describe('findRestorableBackup', () => {
     expect(
       findRestorableBackup(store, [old, empty, PRE_V2_BACKUP_KEY], emptyProgress(), NOW),
     ).toBeNull();
+  });
+});
+describe('guesses', () => {
+  it('marks and unmarks one attempt as a guess', () => {
+    let p = recordAttempt(
+      emptyProgress(),
+      attempt({ problemId: 'a', at: '2026-09-24T09:00:00.000Z', mode: 'play' }),
+    );
+    p = recordAttempt(p, attempt({ problemId: 'a', at: '2026-09-24T10:00:00.000Z', mode: 'play' }));
+    p = setGuessed(p, 'a', '2026-09-24T10:00:00.000Z', true);
+    expect(p.attempts.map((a) => a.guessed)).toEqual([undefined, true]);
+    p = setGuessed(p, 'a', '2026-09-24T10:00:00.000Z', false);
+    expect(p.attempts[1]).not.toHaveProperty('guessed');
+    // An attempt that is no longer stored: nothing changes.
+    expect(setGuessed(p, 'gone', '2026-01-01T00:00:00.000Z', true)).toEqual(p);
+  });
+  it('lists sure-but-wrong misses first, newest first within each group', () => {
+    let p = emptyProgress();
+    p = recordAttempt(
+      p,
+      attempt({ problemId: 'old-sure', correct: false, at: '2026-09-24T08:00:00.000Z' }),
+    );
+    p = recordAttempt(
+      p,
+      attempt({
+        problemId: 'new-guess',
+        correct: false,
+        at: '2026-09-24T12:00:00.000Z',
+        guessed: true,
+      }),
+    );
+    p = recordAttempt(
+      p,
+      attempt({ problemId: 'mid-sure', correct: false, at: '2026-09-24T10:00:00.000Z' }),
+    );
+    expect(missedProblems(p).map((m) => [m.problemId, m.sure])).toEqual([
+      ['mid-sure', true],
+      ['old-sure', true],
+      ['new-guess', false],
+    ]);
   });
 });
