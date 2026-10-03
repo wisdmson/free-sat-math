@@ -337,7 +337,7 @@ export default function PlayFeed({
 
   return (
     <div className="play-overlay" role="region" aria-label="Quick Play">
-      <header className="play-hud">
+      <header className="play-hud" inert={resetOpen}>
         <button type="button" className="play-exit" aria-label="Exit Quick Play" onClick={onExit}>
           ✕
         </button>
@@ -348,7 +348,7 @@ export default function PlayFeed({
         </span>
       </header>
       <StorageBanner snapshot={snapshot} />
-      <div className="play-feed" ref={scroller}>
+      <div className="play-feed" ref={scroller} inert={resetOpen}>
         {entries.map((e, i) => (
           <section
             key={e.key}
@@ -410,7 +410,7 @@ export default function PlayFeed({
           </section>
         ))}
       </div>
-      <nav className="play-arrows" aria-label="Move between cards">
+      <nav className="play-arrows" aria-label="Move between cards" inert={resetOpen}>
         <button
           type="button"
           aria-label="Previous card"

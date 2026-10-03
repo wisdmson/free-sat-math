@@ -241,3 +241,31 @@ test('the streak line uses the normal text color, not the wrong-answer red', asy
   }));
   expect(colors.streak).toBe(colors.text);
 });
+
+async function openResetFromMisses(page: Page) {
+  await page.goto('/play/?go=1');
+  for (let i = 0; i < 3; i++) {
+    await answerCurrent(page, false);
+    await next(page);
+  }
+  await current(page).getByRole('button', { name: 'Start the reset' }).click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+}
+
+test('while the reset dialog is open, the cards behind it cannot be reached', async ({ page }) => {
+  await openResetFromMisses(page);
+  for (const sel of ['.play-hud', '.play-feed', '.play-arrows']) {
+    await expect(page.locator(sel)).toHaveAttribute('inert', '');
+  }
+  await page.getByRole('button', { name: 'Skip to the checklist' }).click();
+  await page.getByRole('button', { name: 'Back to the questions' }).click();
+  await expect(page.locator('.play-feed')).not.toHaveAttribute('inert', '');
+});
+
+test('the reset dialog can be closed on a short screen', async ({ page }) => {
+  await page.setViewportSize({ width: 640, height: 300 });
+  await openResetFromMisses(page);
+  await page.getByRole('button', { name: 'Skip to the checklist' }).click();
+  await page.getByRole('button', { name: 'Back to the questions' }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+});

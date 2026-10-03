@@ -337,12 +337,14 @@
   position: fixed;
   inset: 0;
   z-index: 60;
-  display: grid;
-  place-items: center;
+  display: flex;
+  /* Scrolls on short screens (landscape phones, large text) so the close button is reachable. */
+  overflow-y: auto;
   padding: 1rem;
   background: rgb(10 15 25 / 0.55);
 }
 .reset-routine {
+  margin: auto;
   display: grid;
   justify-items: center;
   gap: 1rem;
