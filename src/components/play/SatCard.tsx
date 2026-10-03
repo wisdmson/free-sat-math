@@ -36,6 +36,12 @@ interface Props {
   paceLimitMs?: number | null;
   /** Opens the reset routine (spec §5.2); shown on pace checks. */
   onReset?(): void;
+  /**
+   * When the card first came on screen (performance.now()), kept by the feed so timing survives
+   * the card unmounting when it scrolls far away. Without it, timing starts when it's shown here.
+   */
+  firstShownAt?: number | undefined;
+  onFirstShown?(at: number): void;
 }
 
 /** One full-screen question card: tap an answer (or type and Check), see the result. */
@@ -51,16 +57,21 @@ export default function SatCard({
   onGuessed,
   paceLimitMs = null,
   onReset,
+  firstShownAt,
+  onFirstShown,
 }: Props) {
   const [typed, setTyped] = useState('');
   const [invalid, setInvalid] = useState<string | null>(null);
   const [sheet, setSheet] = useState<'none' | 'why' | 'calc'>('none');
   const answered = useRef(false);
   // Cards are built a few ahead of time; the clock starts when this one first comes on screen.
-  const startedAt = useRef<number | null>(null);
+  const startedAt = useRef<number | null>(firstShownAt ?? null);
   useEffect(() => {
-    if (active && startedAt.current === null) startedAt.current = performance.now();
-  }, [active]);
+    if (active && startedAt.current === null) {
+      startedAt.current = performance.now();
+      onFirstShown?.(startedAt.current);
+    }
+  }, [active, onFirstShown]);
   // Pace checks show elapsed time while the card is on screen and unanswered. It never submits.
   const [paceMs, setPaceMs] = useState(0);
   useEffect(() => {

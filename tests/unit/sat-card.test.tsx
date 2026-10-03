@@ -218,4 +218,40 @@ describe('SatCard', () => {
     );
     expect(screen.getByRole('status')).toHaveTextContent('1:34 · on pace');
   });
+  it('keeps timing from when the card was first shown, even after it remounts', async () => {
+    const clock = vi.spyOn(performance, 'now').mockReturnValue(90_000);
+    const onAnswer = vi.fn();
+    const onFirstShown = vi.fn();
+    const { container } = render(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        firstShownAt={0}
+        onFirstShown={onFirstShown}
+        onAnswer={onAnswer}
+      />,
+    );
+    await userEvent.click(container.querySelector('[data-letter="B"]')!);
+    expect(onAnswer).toHaveBeenCalledWith(expect.objectContaining({ timeMs: 90_000 }));
+    expect(onFirstShown).not.toHaveBeenCalled();
+    clock.mockRestore();
+  });
+  it('reports when it is first shown', () => {
+    const clock = vi.spyOn(performance, 'now').mockReturnValue(1234);
+    const onFirstShown = vi.fn();
+    render(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        onFirstShown={onFirstShown}
+        onAnswer={() => {}}
+      />,
+    );
+    expect(onFirstShown).toHaveBeenCalledWith(1234);
+    clock.mockRestore();
+  });
 });

@@ -56,6 +56,8 @@ type Entry = {
   /** When the answer was saved: identifies its attempt for the Guessed? chip. */
   at?: string;
   guessed?: boolean;
+  /** performance.now() when the card first came on screen: timing survives unmounting. */
+  shownAt?: number;
 };
 
 function useReducedMotion(): boolean {
@@ -273,6 +275,14 @@ export default function PlayFeed({
     setEntries(entriesRef.current);
   };
 
+  const onShown = (index: number, at: number) => {
+    if (entriesRef.current[index]?.shownAt !== undefined) return;
+    entriesRef.current = entriesRef.current.map((e, i) =>
+      i === index ? { ...e, shownAt: at } : e,
+    );
+    setEntries(entriesRef.current);
+  };
+
   const onGuessed = (index: number, problemId: string, guessed: boolean) => {
     const at = entriesRef.current[index]?.at;
     if (at === undefined) return;
@@ -410,6 +420,8 @@ export default function PlayFeed({
                   e.card?.kind === 'sat' && onAnswer(i, e.card.problem, e.card.pace === true, r)
                 }
                 onReset={openReset}
+                firstShownAt={e.shownAt}
+                onFirstShown={(at) => onShown(i, at)}
                 guessed={e.guessed === true}
                 chipOpen={current <= i + 1}
                 onGuessed={(g) => e.card?.kind === 'sat' && onGuessed(i, e.card.problem.id, g)}
