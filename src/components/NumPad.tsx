@@ -85,6 +85,9 @@ export default function NumPad({
         role="textbox"
         aria-readonly="true"
         aria-label={label}
+        // Taps change the value without moving focus, so announce it (role stays textbox).
+        aria-live="polite"
+        aria-atomic="true"
       >
         {value.replace('-', '−')}
         {value !== '' && suffix}

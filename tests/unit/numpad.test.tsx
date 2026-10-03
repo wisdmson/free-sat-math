@@ -83,4 +83,10 @@ describe('NumPad', () => {
     fireEvent.keyDown(seven, { key: 'Enter' });
     expect(onSubmit).toHaveBeenCalledTimes(1);
   });
+  it('announces the typed value to screen readers', () => {
+    render(<Harness />);
+    const display = screen.getByLabelText('Your answer');
+    expect(display).toHaveAttribute('aria-live', 'polite');
+    expect(display).toHaveAttribute('aria-atomic', 'true');
+  });
 });
