@@ -74,3 +74,17 @@ test('the Gym is one tap from the home page and the Play screen', async ({ page 
   await page.getByRole('link', { name: 'Mental Math Gym' }).click();
   await expect(page.getByRole('heading', { name: 'Mental Math Gym', level: 1 })).toBeVisible();
 });
+
+test('a save from another tab does not restart the sprint clock', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('/train/');
+  await page.getByRole('button', { name: /Speed arithmetic/ }).click();
+  await expect(page.locator('[data-mental-id]')).toBeVisible();
+  await page.clock.fastForward(40_000);
+  // Another tab (e.g. Quick Play) saves progress: the store reloads and the Gym re-renders.
+  await page.evaluate(() =>
+    window.dispatchEvent(new StorageEvent('storage', { key: 'fsm.progress.v1' })),
+  );
+  await page.clock.fastForward(21_000);
+  await expect(page.getByRole('heading', { name: '0 correct' })).toBeVisible();
+});

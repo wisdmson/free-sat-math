@@ -71,11 +71,17 @@ function Sprint({ drill, onDone }: { drill: DrillId; onDone(s: SprintSummary): v
   const [left, setLeft] = useState(SPRINT_MS);
   const [right, setRight] = useState(0);
 
+  // The parent passes a new onDone on every render (e.g. when another tab saves progress). Keep
+  // the latest in a ref so the clock below is set up once and a sprint is always 60 s.
+  const onDoneRef = useRef(onDone);
+  useEffect(() => {
+    onDoneRef.current = onDone;
+  });
   const finish = useCallback(() => {
     if (finished.current) return;
     finished.current = true;
-    onDone(sprintSummary(state.current));
-  }, [onDone]);
+    onDoneRef.current(sprintSummary(state.current));
+  }, []);
 
   const top = useRef<HTMLDivElement>(null);
   useEffect(() => {
