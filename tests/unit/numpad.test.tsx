@@ -61,4 +61,26 @@ describe('NumPad', () => {
     fireEvent.keyDown(window, { key: '7' });
     expect(screen.getByLabelText('Your answer')).toHaveTextContent('');
   });
+  it('leaves Enter alone on other buttons and links, so they still work', () => {
+    const onSubmit = vi.fn();
+    render(
+      <>
+        <Harness onSubmit={onSubmit} />
+        <button type="button">Next card</button>
+        <a href="#x">Review</a>
+      </>,
+    );
+    for (const name of ['Next card', 'Review']) {
+      const el = screen.getByRole(name === 'Review' ? 'link' : 'button', { name });
+      el.focus();
+      const notCancelled = fireEvent.keyDown(el, { key: 'Enter' });
+      expect(notCancelled).toBe(true);
+    }
+    expect(onSubmit).not.toHaveBeenCalled();
+    // Enter on the pad's own keys still submits.
+    const seven = screen.getByRole('button', { name: '7' });
+    seven.focus();
+    fireEvent.keyDown(seven, { key: 'Enter' });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
+  });
 });

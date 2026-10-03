@@ -3,6 +3,14 @@ import { useEffect } from 'react';
 const KEYS = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '−', '0', '.', '/', '⌫'] as const;
 const KEYBOARD: Readonly<Record<string, string>> = { '-': '−', Backspace: '⌫', '.': '.', '/': '/' };
 
+const CONTROLS =
+  'a[href], button, input, select, textarea, summary, [role="button"], [contenteditable="true"]';
+
+/** True when Enter on `t` would activate a control other than this pad's keys. */
+function activatesSomethingElse(t: EventTarget | null): boolean {
+  return t instanceof Element && t.closest(CONTROLS) !== null && t.closest('.numpad') === null;
+}
+
 /** Applies one pad key. Keeps one "." or one "/", a leading minus only, and the length cap. */
 export function padInput(current: string, key: string, maxLength: number): string {
   if (key === '⌫') return current.slice(0, -1);
@@ -53,6 +61,8 @@ export default function NumPad({
       const t = e.target;
       if (t instanceof HTMLElement && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) return;
       if (e.key === 'Enter') {
+        // Enter on another control (Next card, a link, Why?…) belongs to that control.
+        if (activatesSomethingElse(t)) return;
         e.preventDefault();
         onSubmit();
         return;
