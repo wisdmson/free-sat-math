@@ -73,6 +73,11 @@ for (const file of htmlFiles(DIST).sort()) {
   const base = closure(entries);
   const prefixes = STARTUP_LAZY[page] ?? [];
   const lazyAtStart = [...base.dynamic].filter((f) => prefixes.some((p) => f.startsWith(p)));
+  // A renamed chunk must not silently drop out of the budget.
+  for (const prefix of prefixes) {
+    if (!lazyAtStart.some((f) => f.startsWith(prefix)))
+      failures.push(`${page}: no lazy chunk starts with "${prefix}" (update STARTUP_LAZY)`);
+  }
   const startup = closure([...entries, ...lazyAtStart]).files;
   const all = everything(entries);
   const startupKb = kb(startup);
