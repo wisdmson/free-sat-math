@@ -11,7 +11,7 @@
 }
 .play-streak {
   margin: 0;
-  color: var(--accent);
+  color: var(--text);
   font-size: 1.15rem;
   font-weight: 700;
 }

@@ -84,3 +84,13 @@
     transition: none;
   }
 }
+
+/* Phones: one column, so drill names and descriptions don't wrap word by word. */
+@media (max-width: 30rem) {
+  .gym-grid {
+    grid-template-columns: 1fr;
+  }
+  .gym-drill {
+    min-height: 0;
+  }
+}

@@ -642,6 +642,18 @@ td {
   text-decoration: none;
   box-shadow: 0 6px 18px rgb(0 0 0 / 0.18);
 }
+/* On phones the floating button is a small round ⚡ so it covers less of the page. */
+@media (max-width: 40rem) {
+  .play-fab {
+    justify-content: center;
+    width: 3rem;
+    padding: 0;
+    font-size: 1.35rem;
+  }
+  .play-fab-label {
+    display: none;
+  }
+}
 .play-fab:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 2px;

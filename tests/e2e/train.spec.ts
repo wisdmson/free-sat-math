@@ -88,3 +88,13 @@ test('a save from another tab does not restart the sprint clock', async ({ page 
   await page.clock.fastForward(21_000);
   await expect(page.getByRole('heading', { name: '0 correct' })).toBeVisible();
 });
+
+test('on a phone the drill tiles stack in one readable column', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto('/train/');
+  const tiles = page.locator('.gym-drill');
+  await expect(tiles).toHaveCount(6);
+  const [a, b] = [await tiles.nth(0).boundingBox(), await tiles.nth(1).boundingBox()];
+  expect(b!.x).toBeCloseTo(a!.x, 0);
+  expect(b!.y).toBeGreaterThan(a!.y + a!.height - 1);
+});

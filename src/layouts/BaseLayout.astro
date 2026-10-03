@@ -83,7 +83,8 @@ const onPlay = here.startsWith(url('/play/')) || here.startsWith(url('/train/'))
     </footer>
     {!onPlay && (
       <a class="play-fab" href={url('/play/?go=1')} aria-label="Quick Play">
-        <span aria-hidden="true">⚡</span> Play
+        <span aria-hidden="true">⚡</span>
+        <span class="play-fab-label"> Play</span>
       </a>
     )}
     <script is:inline>

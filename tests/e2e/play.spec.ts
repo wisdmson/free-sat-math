@@ -231,3 +231,13 @@ test('three misses in a row offer a reset that ends with the unstuck checklist',
   await page.getByRole('button', { name: 'Previous card' }).click();
   await expect(current(page).getByRole('status')).toContainText('Not quite');
 });
+
+test('the streak line uses the normal text color, not the wrong-answer red', async ({ page }) => {
+  await page.goto('/play/');
+  await expect(page.locator('.play-streak')).toBeVisible();
+  const colors = await page.evaluate(() => ({
+    streak: getComputedStyle(document.querySelector('.play-streak')!).color,
+    text: getComputedStyle(document.body).color,
+  }));
+  expect(colors.streak).toBe(colors.text);
+});

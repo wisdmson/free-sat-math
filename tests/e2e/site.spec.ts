@@ -107,3 +107,12 @@ test('static pages fit a 360px screen without sideways scrolling', async ({ page
     expect(overflow, path).toBeLessThanOrEqual(0);
   }
 });
+
+test('on a phone the floating Play button is a small round icon', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto('/practice/?skill=mix&level=auto');
+  const fab = page.getByRole('link', { name: 'Quick Play' });
+  await expect(fab).toBeVisible();
+  const box = (await fab.boundingBox())!;
+  expect(box.width).toBeLessThanOrEqual(56);
+});
