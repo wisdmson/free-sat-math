@@ -5,33 +5,48 @@ import { url } from '../lib/paths';
 ---
 
 <BaseLayout>
-  <h1>Free SAT Math practice</h1>
-  <p class="lead">
-    Practice every SAT Math skill at your level, with step-by-step solutions. No sign-up, no
-    paywall, and your progress stays on your device.
-  </p>
-  <TargetScoreSelect client:only="react" id="home-target" />
-  <p class="button-row">
-    <a class="button primary" href={url('/practice/?skill=mix&level=auto')}>
-      Start practicing
-    </a>
-    <a class="button" href={url('/play/')}>
-      ▶ Quick Play
-    </a>
-    <a class="button" href={url('/train/')}>
-      Mental Math Gym
-    </a>
-  </p>
-  <h2>How it works</h2>
-  <ul>
-    <li>Problems are organized by the official SAT Math skills, each at easy, medium and hard.</li>
-    <li>
-      Every problem has a worked solution. When you miss one, you'll see why that answer was
-      tempting.
-    </li>
-    <li>Auto mode raises the difficulty after 3 right in a row and eases off after 2 misses.</li>
-  </ul>
-  <p>
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="home-copy">
+      <p class="eyebrow">A calmer way to practice</p>
+      <h1 id="home-title">Free SAT Math practice</h1>
+      <p class="lead">
+        Practice every SAT Math skill at your level, with step-by-step solutions. No sign-up, no
+        paywall, and your progress stays on your device.
+      </p>
+      <div class="home-actions">
+        <a class="button primary" href={url('/practice/?skill=mix&level=auto')}>
+          Start practicing
+        </a>
+        <a class="button" href={url('/play/')}>
+          ▶ Quick Play
+        </a>
+        <a class="button" href={url('/train/')}>
+          Mental Math Gym
+        </a>
+      </div>
+    </div>
+    <aside class="home-aside" aria-label="Choose your starting point">
+      <p class="eyebrow">Set your target</p>
+      <h2>Make a little progress today.</h2>
+      <TargetScoreSelect client:only="react" id="home-target" />
+      <p class="hint">Your target helps shape the mix of practice questions.</p>
+    </aside>
+  </section>
+  <section class="home-section" aria-labelledby="how-title">
+    <p class="eyebrow">Built for real study time</p>
+    <h2 id="how-title">How it works</h2>
+    <ul>
+      <li>
+        Problems are organized by the official SAT Math skills, each at easy, medium and hard.
+      </li>
+      <li>
+        Every problem has a worked solution. When you miss one, you'll see why that answer was
+        tempting.
+      </li>
+      <li>Auto mode raises the difficulty after 3 right in a row and eases off after 2 misses.</li>
+    </ul>
+  </section>
+  <p class="home-availability">
     Available now: <a href={url('/skills/alg.systems/')}>systems of linear equations</a>. More
     skills are on the way. See the <a href={url('/skills/')}>full skills list</a>.
   </p>

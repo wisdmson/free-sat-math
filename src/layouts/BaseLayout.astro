@@ -44,10 +44,10 @@ const onPlay = here.startsWith(url('/play/')) || here.startsWith(url('/train/'))
     </a>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a class="brand" href={url('/')}>
+        <a class="brand site-brand" href={url('/')}>
           {SITE.name}
         </a>
-        <nav aria-label="Main">
+        <nav class="site-nav" aria-label="Main">
           <ul>
             {nav.map(([href, label]) => (
               <li>

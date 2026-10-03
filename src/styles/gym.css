@@ -1,23 +1,43 @@
 .gym-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 .gym-drill {
   display: grid;
   gap: 0.35rem;
-  min-height: 7rem;
-  padding: 1rem;
+  min-height: 9rem;
+  align-content: start;
+  padding: 1.2rem;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-feature);
   background: var(--surface);
   color: var(--text);
   font: inherit;
   text-align: left;
   cursor: pointer;
+  box-shadow: 0 2px 0 rgb(24 37 56 / 0.03);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+.gym-drill:hover,
+.gym-drill:focus-visible {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
 }
 .gym-drill strong {
-  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+.gym-drill .hint {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-variant-numeric: tabular-nums;
 }
 .gym-sprint,
 .gym-done {
@@ -33,4 +53,34 @@
   max-width: 300px;
   height: auto;
   color: var(--accent);
+}
+
+@media (max-width: 680px) {
+  .gym-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .gym-drill {
+    min-height: 8.5rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .gym-grid {
+    gap: 0.6rem;
+  }
+  .gym-drill {
+    min-height: 8rem;
+    padding: 0.85rem;
+  }
+  .gym-drill strong {
+    font-size: 1.05rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gym-drill {
+    transition: none;
+  }
 }
