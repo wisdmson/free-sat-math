@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { LIGHTNING_PERFECT_BONUS } from '../../engine/game';
 import { checkMental } from '../../engine/mental/check';
+import { formatMentalAnswer } from '../../engine/mental/format';
 import type { MentalProblem } from '../../engine/mental/types';
 import NumPad from '../NumPad';
 
@@ -46,11 +47,7 @@ export default function LightningCard({
     const nextRight = right + (correct ? 1 : 0);
     setRight(nextRight);
     setLine(
-      !answered
-        ? "Time's up"
-        : correct
-          ? `✓ +${points}`
-          : `✗ ${q.answer.kind === 'number' ? q.answer.value : q.answer.choices[q.answer.index]}`,
+      !answered ? "Time's up" : correct ? `✓ +${points}` : `✗ ${formatMentalAnswer(q.answer)}`,
     );
     window.setTimeout(() => {
       setTyped('');
