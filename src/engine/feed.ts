@@ -1,8 +1,9 @@
-/** Picks Quick Play's next card (spec §3.5). Pace cards arrive in a later plan. */
+/** Picks Quick Play's next card (spec §3.5). Reset offers are inserted by PlayFeed. */
 import { TIPS } from '../content/tips';
 import { skillAccuracy, type Accuracy } from '../store/progress';
 import type { Progress } from '../store/schema';
 import { generateVerified } from './build';
+import { PACE_CHANCE, paceLimitMs } from './game';
 import type { MentalProblem } from './mental/types';
 import { startingLevel } from './practice';
 import type { Format, Problem } from './problem';
@@ -11,9 +12,11 @@ import type { Rng } from './rng';
 import type { SkillId } from './skills';
 
 export type Card =
-  | { kind: 'sat'; key: string; problem: Problem }
+  | { kind: 'sat'; key: string; problem: Problem; pace?: boolean }
   | { kind: 'tip'; key: string; text: string }
-  | { kind: 'lightning'; key: string; questions: [MentalProblem, MentalProblem, MentalProblem] };
+  | { kind: 'lightning'; key: string; questions: [MentalProblem, MentalProblem, MentalProblem] }
+  /** "Take 20 seconds?" (spec §2.1): inserted by PlayFeed after 3 misses, never by nextCard. */
+  | { kind: 'reset'; key: string };
 
 /** A tip after this many questions. */
 export const TIP_EVERY = 25;
@@ -34,9 +37,15 @@ export interface FeedState {
   cardCount: number;
   /** Questions until the next Lightning round; null means "draw a gap on the next question". */
   untilLightning: number | null;
+  /** Test hook: the next question is a pace check. */
+  forcePace: boolean;
 }
 
-export function newFeedState(tipIndex: number, lightningFirst = false): FeedState {
+export function newFeedState(
+  tipIndex: number,
+  lightningFirst = false,
+  paceFirst = false,
+): FeedState {
   return {
     sinceTip: 0,
     recentFormats: [],
@@ -44,6 +53,7 @@ export function newFeedState(tipIndex: number, lightningFirst = false): FeedStat
     tipIndex,
     cardCount: 0,
     untilLightning: lightningFirst ? 0 : null,
+    forcePace: paceFirst,
   };
 }
 
@@ -138,8 +148,11 @@ export function nextCard(
   }
   const problem = satProblem(progress, state, rng);
   if (problem === null) return { card: null, state };
+  // Pace checks (spec §3.5): 1 in 6 questions, never for untimed students.
+  const pace =
+    paceLimitMs(progress.settings) !== null && (state.forcePace || rng.chance(PACE_CHANCE));
   return {
-    card: { kind: 'sat', key: problem.id, problem },
+    card: { kind: 'sat', key: problem.id, problem, ...(pace ? { pace: true } : {}) },
     state: {
       ...state,
       sinceTip: state.sinceTip + 1,
@@ -147,6 +160,7 @@ export function nextCard(
       issued: [...state.issued, problem.id],
       cardCount: state.cardCount + 1,
       untilLightning: Math.max(0, (state.untilLightning ?? 0) - 1),
+      forcePace: false,
     },
   };
 }

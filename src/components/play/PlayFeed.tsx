@@ -343,7 +343,7 @@ export default function PlayFeed({
                 onAnswer={(r) => onLightningAnswer(i, r)}
                 onDone={(right) => onLightningDone(i, right)}
               />
-            ) : (
+            ) : e.card.kind === 'sat' ? (
               <SatCard
                 problem={e.card.problem}
                 desmosKey={desmosKey}
@@ -355,7 +355,7 @@ export default function PlayFeed({
                 chipOpen={current <= i + 1}
                 onGuessed={(g) => e.card?.kind === 'sat' && onGuessed(i, e.card.problem.id, g)}
               />
-            )}
+            ) : null}
           </section>
         ))}
       </div>

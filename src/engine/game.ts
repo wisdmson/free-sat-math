@@ -103,3 +103,27 @@ export function lightningSeconds(settings: {
 }): number | null {
   return settings.untimed ? null : LIGHTNING_SECONDS * settings.timeMultiplier;
 }
+/** Pace checks (spec §2.1, §3.1): the real test's average, 22 questions in 35 minutes. */
+export const PACE_SECONDS = 95;
+export const PACE_BONUS = 10;
+/** Chance that an SAT card in the feed is a pace check (spec §3.5). */
+export const PACE_CHANCE = 1 / 6;
+
+/** The pace-check limit, scaled by extended time; null when untimed (no pace checks). */
+export function paceLimitMs(settings: {
+  timeMultiplier: 1 | 1.5 | 2;
+  untimed: boolean;
+}): number | null {
+  return settings.untimed ? null : PACE_SECONDS * 1000 * settings.timeMultiplier;
+}
+
+/** +10 for a right pace-check answer within the limit. Bonuses are never multiplied (§3.2). */
+export function paceBonus(correct: boolean, timeMs: number, limitMs: number): number {
+  return correct && timeMs <= limitMs ? PACE_BONUS : 0;
+}
+
+/** "48 s" under a minute, "2:10" from a minute on. */
+export function formatDuration(ms: number): string {
+  const s = Math.round(ms / 1000);
+  return s < 60 ? `${s} s` : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}

@@ -83,6 +83,21 @@ describe('nextCard', () => {
     expect(keys).not.toContain(first.problem.id);
     expect(new Set(keys).size).toBe(keys.length);
   });
+  it('turns about 1 in 6 questions into pace checks', () => {
+    const sat = run(9, 300).filter((c) => c?.kind === 'sat');
+    const share = sat.filter((c) => c?.kind === 'sat' && c.pace === true).length / sat.length;
+    expect(share).toBeGreaterThan(0.08);
+    expect(share).toBeLessThan(0.28);
+  });
+  it('never makes pace checks when the student is untimed', () => {
+    const progress = emptyProgress();
+    progress.settings.untimed = true;
+    expect(run(9, 120, progress).some((c) => c?.kind === 'sat' && c.pace === true)).toBe(false);
+  });
+  it('can start with a pace check (test hook)', () => {
+    const r = nextCard(emptyProgress(), newFeedState(0, false, true), createRng(4));
+    expect(r.card).toMatchObject({ kind: 'sat', pace: true });
+  });
 });
 
 describe('skillWeight', () => {

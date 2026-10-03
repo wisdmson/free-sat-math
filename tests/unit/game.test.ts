@@ -6,7 +6,11 @@ import {
   currentStreak,
   dayKey,
   LIGHTNING_POINTS,
+  PACE_BONUS,
+  formatDuration,
   levelInfo,
+  paceBonus,
+  paceLimitMs,
   lightningSeconds,
   pointsForLevel,
   scoreLightningAnswer,
@@ -88,5 +92,23 @@ describe('Lightning', () => {
     expect(lightningSeconds({ timeMultiplier: 1.5, untimed: false })).toBe(15);
     expect(lightningSeconds({ timeMultiplier: 2, untimed: false })).toBe(20);
     expect(lightningSeconds({ timeMultiplier: 2, untimed: true })).toBeNull();
+  });
+});
+
+describe('pace checks', () => {
+  it('give 95 s, scaled by extended time, and none when untimed', () => {
+    expect(paceLimitMs({ timeMultiplier: 1, untimed: false })).toBe(95_000);
+    expect(paceLimitMs({ timeMultiplier: 1.5, untimed: false })).toBe(142_500);
+    expect(paceLimitMs({ timeMultiplier: 2, untimed: true })).toBeNull();
+  });
+  it('add a 10-point bonus for a right answer within the limit', () => {
+    expect(paceBonus(true, 95_000, 95_000)).toBe(PACE_BONUS);
+    expect(paceBonus(true, 95_001, 95_000)).toBe(0);
+    expect(paceBonus(false, 1_000, 95_000)).toBe(0);
+  });
+  it('formats durations the way the card shows them', () => {
+    expect(formatDuration(48_400)).toBe('48 s');
+    expect(formatDuration(59_600)).toBe('1:00');
+    expect(formatDuration(130_000)).toBe('2:10');
   });
 });
