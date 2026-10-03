@@ -298,28 +298,22 @@ describe('guesses', () => {
     expect(setGuessed(p, 'gone', '2026-01-01T00:00:00.000Z', true)).toEqual(p);
   });
   it('lists sure-but-wrong misses first, newest first within each group', () => {
+    const miss = (problemId: string, at: string, over: Partial<Attempt> = {}) =>
+      attempt({ problemId, correct: false, at, mode: 'play', ...over });
     let p = emptyProgress();
-    p = recordAttempt(
-      p,
-      attempt({ problemId: 'old-sure', correct: false, at: '2026-09-24T08:00:00.000Z' }),
-    );
-    p = recordAttempt(
-      p,
-      attempt({
-        problemId: 'new-guess',
-        correct: false,
-        at: '2026-09-24T12:00:00.000Z',
-        guessed: true,
-      }),
-    );
-    p = recordAttempt(
-      p,
-      attempt({ problemId: 'mid-sure', correct: false, at: '2026-09-24T10:00:00.000Z' }),
-    );
+    p = recordAttempt(p, miss('old-sure', '2026-09-24T08:00:00.000Z'));
+    p = recordAttempt(p, miss('new-guess', '2026-09-24T12:00:00.000Z', { guessed: true }));
+    p = recordAttempt(p, miss('mid-sure', '2026-09-24T10:00:00.000Z'));
     expect(missedProblems(p).map((m) => [m.problemId, m.sure])).toEqual([
       ['mid-sure', true],
       ['old-sure', true],
       ['new-guess', false],
     ]);
+  });
+  it('only calls a miss "sure" where the student could have marked a guess (Quick Play)', () => {
+    let p = emptyProgress();
+    p = recordAttempt(p, attempt({ problemId: 'practice', correct: false, mode: 'practice' }));
+    p = recordAttempt(p, attempt({ problemId: 'test', correct: false, mode: 'test' }));
+    expect(missedProblems(p).every((m) => !m.sure)).toBe(true);
   });
 });

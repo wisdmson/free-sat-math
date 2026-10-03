@@ -276,7 +276,10 @@ export interface MissedItem {
   skill: SkillId;
   difficulty: Difficulty;
   at: string;
-  /** The miss wasn't marked as a guess: a gap the student may not know they have (spec §5.3). */
+  /**
+   * A Quick Play miss not marked as a guess: a gap the student may not know they have (spec §5.3).
+   * Practice and test misses are never "sure": those modes have no Guessed? chip to say otherwise.
+   */
   sure: boolean;
 }
 
@@ -289,12 +292,12 @@ export function missedProblems(progress: Progress): MissedItem[] {
   for (const a of progress.attempts) latest.set(a.problemId, a);
   return [...latest.values()]
     .filter((a) => !a.correct)
-    .map(({ problemId, skill, difficulty, at, guessed }) => ({
+    .map(({ problemId, skill, difficulty, at, guessed, mode }) => ({
       problemId,
       skill,
       difficulty,
       at,
-      sure: guessed !== true,
+      sure: mode === 'play' && guessed !== true,
     }))
     .sort((x, y) => Number(y.sure) - Number(x.sure) || newestFirst(x, y));
 }
