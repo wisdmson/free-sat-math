@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
+import { emptyProgress } from '../../src/store/progress';
 import { answer, fixedProblem, problemUrl } from './helpers';
 
 test('a wrong answer lands in review, and a right retry clears it', async ({ page }) => {
@@ -105,4 +106,37 @@ test('review and settings fit a 360px screen', async ({ page }) => {
     );
     expect(overflow, path).toBeLessThanOrEqual(0);
   }
+});
+
+test('sure-but-wrong misses come first in review, labeled', async ({ page }) => {
+  const sure = fixedProblem('alg.systems.solve-system', 'easy', 'mcq', 21);
+  const guess = fixedProblem('alg.systems.solve-system', 'medium', 'mcq', 22);
+  const progress = emptyProgress();
+  const base = {
+    skill: 'alg.systems',
+    correct: false,
+    response: 'A',
+    timeMs: 1000,
+    mode: 'play',
+  } as const;
+  progress.attempts = [
+    { ...base, problemId: sure.id, difficulty: 'easy', at: '2026-10-01T10:00:00.000Z' },
+    {
+      ...base,
+      problemId: guess.id,
+      difficulty: 'medium',
+      at: '2026-10-01T11:00:00.000Z',
+      guessed: true,
+    },
+  ];
+  await page.addInitScript(
+    (data) => localStorage.setItem('fsm.progress.v1', data),
+    JSON.stringify(progress),
+  );
+  await page.goto('/review/');
+  const items = page.locator('section[aria-labelledby="missed-heading"] li');
+  await expect(items).toHaveCount(2);
+  await expect(items.nth(0)).toContainText('You were sure');
+  await expect(items.nth(0)).toContainText('Easy');
+  await expect(items.nth(1)).not.toContainText('You were sure');
 });

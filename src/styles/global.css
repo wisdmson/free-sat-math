@@ -649,3 +649,13 @@ td {
 .site-footer {
   padding-bottom: 5rem;
 }
+.sure-label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  background: var(--warn-soft);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+}

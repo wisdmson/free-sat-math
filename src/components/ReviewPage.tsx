@@ -30,6 +30,7 @@ export default function ReviewPage() {
             {missed.map((m) => (
               <li key={m.problemId}>
                 <span>
+                  {m.sure && <span className="sure-label">You were sure</span>}
                   {getSkill(m.skill).name} · {LEVEL_NAME[m.difficulty]} · {shortDate(m.at)}
                 </span>
                 <a className="button" href={problemLink(m.problemId)}>
