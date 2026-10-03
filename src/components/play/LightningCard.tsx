@@ -41,6 +41,15 @@ export default function LightningCard({
   const [line, setLine] = useState('');
   const [left, setLeft] = useState(seconds === null ? null : seconds * 1000);
   const locked = useRef(false);
+  // After each answer the tapped button disappears: move focus to the next question (or the
+  // summary) so keyboard and screen-reader users aren't dropped to the top of the page.
+  const prompt = useRef<HTMLParagraphElement>(null);
+  const summary = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (i > 0 && active) (prompt.current ?? summary.current)?.focus({ preventScroll: true });
+    // Only when the question changes, not when the card becomes active again.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i]);
   const done = result?.done === true || i >= 3;
   const q = questions[Math.min(i, 2)] as MentalProblem;
 
@@ -83,7 +92,9 @@ export default function LightningCard({
     const total = result?.right ?? right;
     return (
       <div className="play-card play-lightning">
-        <h2 tabIndex={-1}>⚡ Lightning</h2>
+        <h2 tabIndex={-1} ref={summary}>
+          ⚡ Lightning
+        </h2>
         <p className="play-lightning-score">
           {total === 3 ? `Perfect! +${LIGHTNING_PERFECT_BONUS} bonus` : `${total} of 3 right`}
         </p>
@@ -100,7 +111,7 @@ export default function LightningCard({
           {line}
         </span>
       </div>
-      <p className="gym-prompt" data-mental-id={q.id}>
+      <p className="gym-prompt" data-mental-id={q.id} tabIndex={-1} ref={prompt}>
         {q.prompt}
       </p>
       {q.answer.kind === 'choice' ? (

@@ -100,3 +100,21 @@ test('on a phone the drill tiles stack in one readable column', async ({ page })
   expect(b!.x).toBeCloseTo(a!.x, 0);
   expect(b!.y).toBeGreaterThan(a!.y + a!.height - 1);
 });
+
+test('focus stays on the question during a sprint', async ({ page }) => {
+  await page.goto('/train/');
+  await page.getByRole('button', { name: /SAT shortcuts/ }).click();
+  const focusedId = () =>
+    page.evaluate(() => document.activeElement?.getAttribute('data-mental-id'));
+  await expect.poll(focusedId).toMatch(/^m:/);
+  const first = await focusedId();
+  const p = mentalFromId(first!)!;
+  if (p.answer.kind === 'choice') {
+    await page.getByRole('button', { name: p.answer.choices[0] as string, exact: true }).click();
+  } else {
+    await page.keyboard.type('1');
+    await page.keyboard.press('Enter');
+  }
+  await expect.poll(focusedId).not.toBe(first);
+  await expect.poll(focusedId).toMatch(/^m:/);
+});

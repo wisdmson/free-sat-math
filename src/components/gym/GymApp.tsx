@@ -84,6 +84,11 @@ function Sprint({ drill, onDone }: { drill: DrillId; onDone(s: SprintSummary): v
   }, []);
 
   const top = useRef<HTMLDivElement>(null);
+  // Each question replaces the buttons that were just used: keep keyboard focus on the question.
+  const promptRef = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    promptRef.current?.focus({ preventScroll: true });
+  }, [problem]);
   useEffect(() => {
     // The drill list is long on phones: bring the question into view.
     top.current?.scrollIntoView({ block: 'start' });
@@ -126,7 +131,7 @@ function Sprint({ drill, onDone }: { drill: DrillId; onDone(s: SprintSummary): v
           {flash}
         </span>
       </div>
-      <p className="gym-prompt" data-mental-id={problem.id}>
+      <p className="gym-prompt" data-mental-id={problem.id} tabIndex={-1} ref={promptRef}>
         {problem.prompt}
       </p>
       {problem.answer.kind === 'choice' ? (

@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { act, fireEvent, render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 import LightningCard from '../../src/components/play/LightningCard';
 import type { MentalProblem } from '../../src/engine/mental/types';
 
@@ -48,5 +48,23 @@ describe('LightningCard', () => {
       'data-mental-id',
       questions[2].id,
     );
+  });
+  it('moves focus to the next question after an answer', () => {
+    vi.useFakeTimers();
+    render(
+      <LightningCard
+        questions={questions}
+        seconds={null}
+        active
+        result={undefined}
+        onAnswer={() => 0}
+        onDone={() => {}}
+      />,
+    );
+    fireEvent.keyDown(window, { key: '1' });
+    fireEvent.keyDown(window, { key: 'Enter' });
+    act(() => vi.advanceTimersByTime(800));
+    expect(document.activeElement).toHaveAttribute('data-mental-id', questions[1].id);
+    vi.useRealTimers();
   });
 });
