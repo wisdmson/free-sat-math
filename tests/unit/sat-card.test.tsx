@@ -138,4 +138,61 @@ describe('SatCard', () => {
     );
     expect(screen.queryByRole('button', { name: 'Guessed?' })).toBeNull();
   });
+  it('a pace check shows its target, then the time against it', async () => {
+    const clock = vi.spyOn(performance, 'now').mockReturnValue(0);
+    const onAnswer = vi.fn();
+    const props = {
+      problem: mcq,
+      desmosKey: null,
+      reduced: true,
+      paceLimitMs: 95_000,
+      onReset: () => {},
+      onAnswer,
+    };
+    const { container, rerender } = render(<SatCard {...props} result={undefined} />);
+    expect(screen.getByText('Pace check')).toBeVisible();
+    expect(screen.getByText(/aim for 1:35/)).toBeVisible();
+    clock.mockReturnValue(48_000);
+    await userEvent.click(container.querySelector('[data-letter="B"]')!);
+    expect(onAnswer).toHaveBeenCalledWith(expect.objectContaining({ timeMs: 48_000 }));
+    rerender(
+      <SatCard
+        {...props}
+        result={{
+          correct: true,
+          response: 'B',
+          timeMs: 48_000,
+          points: 20,
+          multiplier: 1,
+          bonus: 10,
+        }}
+      />,
+    );
+    expect(screen.getByRole('status')).toHaveTextContent('48 s · on pace ✅');
+    expect(screen.getByRole('status')).toHaveTextContent('+10 pace bonus');
+    rerender(
+      <SatCard
+        {...props}
+        result={{ correct: false, response: 'A', timeMs: 130_000, points: 0, multiplier: 1 }}
+      />,
+    );
+    expect(screen.getByRole('status')).toHaveTextContent('2:10 · over pace ⚠️');
+    clock.mockRestore();
+  });
+  it('the Reset button on a pace check opens the reset routine', async () => {
+    const onReset = vi.fn();
+    render(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        paceLimitMs={95_000}
+        onReset={onReset}
+        onAnswer={() => {}}
+      />,
+    );
+    await userEvent.click(screen.getByRole('button', { name: 'Reset' }));
+    expect(onReset).toHaveBeenCalledTimes(1);
+  });
 });

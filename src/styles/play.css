@@ -289,3 +289,44 @@
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+.pace-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.pace-label {
+  margin: 0;
+  font-weight: 700;
+}
+.pace-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.pace-ring {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-90deg);
+}
+.pace-ring-track,
+.pace-ring-fill {
+  fill: none;
+  stroke-width: 3.5;
+}
+.pace-ring-track {
+  stroke: var(--border);
+}
+.pace-ring-fill {
+  stroke: var(--good);
+  stroke-linecap: round;
+}
+.pace-ring-fill.is-over {
+  stroke: var(--bad);
+}
+.pace-verdict {
+  margin: 0;
+  font-weight: 600;
+}

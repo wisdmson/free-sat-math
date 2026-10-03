@@ -202,3 +202,11 @@ test('marking an answer as a guess saves it', async ({ page }) => {
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('fsm.progress.v1')!));
   expect(saved.attempts.at(-1).guessed).toBe(true);
 });
+
+test('a pace check shows the time against 95 s and adds the bonus', async ({ page }) => {
+  await page.goto('/play/?go=1&pace=first');
+  await expect(current(page).getByText('Pace check')).toBeVisible();
+  await answerCurrent(page, true);
+  await expect(current(page).getByRole('status')).toContainText('on pace ✅');
+  await expect(current(page).getByRole('status')).toContainText('+10 pace bonus');
+});

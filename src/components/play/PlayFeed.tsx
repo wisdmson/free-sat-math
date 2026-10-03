@@ -13,6 +13,8 @@ import {
   comboMultiplier,
   levelInfo,
   lightningSeconds,
+  paceBonus,
+  paceLimitMs,
   scoreLightningAnswer,
   scoreSatAnswer,
 } from '../../engine/game';
@@ -35,6 +37,11 @@ const RENDER_WINDOW = 3;
 const lightningFirst = () =>
   import.meta.env.PUBLIC_TEST_HOOKS === '1' &&
   new URLSearchParams(window.location.search).get('lightning') === 'first';
+
+/** `?pace=first` makes the first question a pace check. Only in PUBLIC_TEST_HOOKS=1 builds. */
+const paceFirst = () =>
+  import.meta.env.PUBLIC_TEST_HOOKS === '1' &&
+  new URLSearchParams(window.location.search).get('pace') === 'first';
 
 type Entry = {
   key: string;
@@ -113,7 +120,7 @@ export default function PlayFeed({
       const store = getProgressStore();
       let state =
         feedState.current ??
-        newFeedState(store.getSnapshot().progress.game.tipIndex, lightningFirst());
+        newFeedState(store.getSnapshot().progress.game.tipIndex, lightningFirst(), paceFirst());
       const added: Entry[] = [];
       while (list.length + added.length < minLength) {
         const r = nextCard(store.getSnapshot().progress, state, rng, makeLightning.current);
@@ -203,10 +210,13 @@ export default function PlayFeed({
   const onAnswer = (
     index: number,
     problem: Problem,
+    pace: boolean,
     r: { correct: boolean; response: string; timeMs: number },
   ) => {
     if (entriesRef.current[index]?.result !== undefined) return;
     const scored = scoreSatAnswer(comboRef.current, r.correct, problem.difficulty);
+    const limit = pace ? paceLimitMs(getProgressStore().getSnapshot().progress.settings) : null;
+    const bonus = limit === null ? 0 : paceBonus(r.correct, r.timeMs, limit);
     comboRef.current = scored.combo;
     setCombo(scored.combo);
     const store = getProgressStore();
@@ -216,7 +226,7 @@ export default function PlayFeed({
       applyPlayAnswer(p, {
         problem,
         ...r,
-        points: scored.points,
+        points: scored.points + bonus,
         combo: scored.combo,
         now,
       }),
@@ -229,7 +239,7 @@ export default function PlayFeed({
         ? {
             ...e,
             at: now.toISOString(),
-            result: { ...r, points: scored.points, multiplier: scored.multiplier },
+            result: { ...r, points: scored.points, multiplier: scored.multiplier, bonus },
           }
         : e,
     );
@@ -350,7 +360,10 @@ export default function PlayFeed({
                 result={e.result}
                 reduced={reduced}
                 active={i === current}
-                onAnswer={(r) => e.card?.kind === 'sat' && onAnswer(i, e.card.problem, r)}
+                paceLimitMs={e.card.pace === true ? paceLimitMs(snapshot.progress.settings) : null}
+                onAnswer={(r) =>
+                  e.card?.kind === 'sat' && onAnswer(i, e.card.problem, e.card.pace === true, r)
+                }
                 guessed={e.guessed === true}
                 chipOpen={current <= i + 1}
                 onGuessed={(g) => e.card?.kind === 'sat' && onGuessed(i, e.card.problem.id, g)}

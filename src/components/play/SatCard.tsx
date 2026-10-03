@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { checkSpr, sanitizeSprTyping } from '../../engine/answer';
+import { formatDuration } from '../../engine/game';
 import { LETTERS, type Problem } from '../../engine/problem';
 import { answerText } from '../../lib/labels';
 import MathText from '../MathText';
@@ -15,6 +16,8 @@ export interface CardResult {
   timeMs: number;
   points: number;
   multiplier: number;
+  /** Pace-check bonus, never multiplied (spec §3.1). */
+  bonus?: number;
 }
 
 interface Props {
@@ -29,6 +32,10 @@ interface Props {
   guessed?: boolean;
   chipOpen?: boolean;
   onGuessed?(guessed: boolean): void;
+  /** Set on a pace check: the time to beat (spec §2.1). */
+  paceLimitMs?: number | null;
+  /** Opens the reset routine (spec §5.2); shown on pace checks. */
+  onReset?(): void;
 }
 
 /** One full-screen question card: tap an answer (or type and Check), see the result. */
@@ -42,6 +49,8 @@ export default function SatCard({
   guessed = false,
   chipOpen = false,
   onGuessed,
+  paceLimitMs = null,
+  onReset,
 }: Props) {
   const [typed, setTyped] = useState('');
   const [invalid, setInvalid] = useState<string | null>(null);
@@ -52,6 +61,15 @@ export default function SatCard({
   useEffect(() => {
     if (active && startedAt.current === null) startedAt.current = performance.now();
   }, [active]);
+  // Pace checks show elapsed time while the card is on screen and unanswered. It never submits.
+  const [paceMs, setPaceMs] = useState(0);
+  useEffect(() => {
+    if (paceLimitMs === null || !active || result !== undefined) return;
+    const id = window.setInterval(() => {
+      if (startedAt.current !== null) setPaceMs(performance.now() - startedAt.current);
+    }, 250);
+    return () => window.clearInterval(id);
+  }, [paceLimitMs, active, result]);
 
   const elapsed = () => {
     const now = performance.now();
@@ -72,6 +90,32 @@ export default function SatCard({
       <h2 id={`q-${problem.id}`} className="visually-hidden" tabIndex={-1}>
         Question
       </h2>
+      {paceLimitMs !== null && (
+        <div className="pace-head">
+          <p className="pace-label">
+            <span aria-hidden="true">⏱ </span>Pace check
+            <span className="hint"> · aim for {formatDuration(paceLimitMs)}</span>
+          </p>
+          {result === undefined && (
+            <span className="pace-clock" aria-hidden="true">
+              {!reduced && (
+                <svg viewBox="0 0 36 36" className="pace-ring">
+                  <circle cx="18" cy="18" r="15.9" pathLength="100" className="pace-ring-track" />
+                  <circle
+                    cx="18"
+                    cy="18"
+                    r="15.9"
+                    pathLength="100"
+                    className={`pace-ring-fill ${paceMs > paceLimitMs ? 'is-over' : ''}`}
+                    strokeDasharray={`${Math.min(100, (100 * paceMs) / paceLimitMs)} 100`}
+                  />
+                </svg>
+              )}
+              {formatDuration(paceMs)}
+            </span>
+          )}
+        </div>
+      )}
       <div id={`stem-${problem.id}`}>
         <MathText block text={problem.stem} className="play-stem" />
       </div>
@@ -127,11 +171,19 @@ export default function SatCard({
           <p className="feedback-correct">
             Correct! +{result.points}
             {result.multiplier > 1 ? ` (×${result.multiplier})` : ''}
+            {result.bonus ? ` +${result.bonus} pace bonus` : ''}
           </p>
         )}
         {result && !result.correct && (
           <p className="feedback-wrong">
             Not quite. Answer: <MathText text={answerText(problem)} />
+          </p>
+        )}
+        {result !== undefined && paceLimitMs !== null && (
+          <p className="pace-verdict">
+            {result.timeMs <= paceLimitMs
+              ? `${formatDuration(result.timeMs)} · on pace ✅`
+              : `${formatDuration(result.timeMs)} · over pace ⚠️ — on test day, flag it, guess, and move on.`}
           </p>
         )}
       </div>
@@ -153,6 +205,11 @@ export default function SatCard({
       {result?.correct && !reduced && <span className="play-burst" aria-hidden="true" />}
 
       <div className="play-tools">
+        {paceLimitMs !== null && onReset !== undefined && (
+          <button type="button" className="button" onClick={onReset}>
+            Reset
+          </button>
+        )}
         {result !== undefined && (
           <button
             type="button"
