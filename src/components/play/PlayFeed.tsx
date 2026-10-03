@@ -25,11 +25,13 @@ import { setGuessed } from '../../store/progress';
 import { getProgressStore, useProgress } from '../../store/progress-store';
 import StorageBanner from '../StorageBanner';
 import { answerFeedback, levelUpFeedback } from './feedback';
-import LightningCard, { type LightningResult } from './LightningCard';
+import type { LightningResult } from './LightningCard';
 import SatCard, { type CardResult } from './SatCard';
 
-// The reset routine loads only when a student opens it.
+// Loaded only when needed: the reset routine when a student opens it, and the Lightning card
+// when a round reaches the feed (its drills load on demand too). Keeps /play/ within budget.
 const ResetRoutine = lazy(() => import('./ResetRoutine'));
+const LightningCard = lazy(() => import('./LightningCard'));
 
 /** Cards built ahead of the current one, so a swipe is instant. */
 const LOOKAHEAD = 3;
@@ -382,14 +384,16 @@ export default function PlayFeed({
                 <p className="hint">Or swipe up to keep going.</p>
               </div>
             ) : e.card.kind === 'lightning' ? (
-              <LightningCard
-                questions={e.card.questions}
-                seconds={lightningSeconds(snapshot.progress.settings)}
-                active={i === current && !resetOpen}
-                result={e.lightning}
-                onAnswer={(r) => onLightningAnswer(i, r)}
-                onDone={(right) => onLightningDone(i, right)}
-              />
+              <Suspense fallback={<p className="hint">Loading…</p>}>
+                <LightningCard
+                  questions={e.card.questions}
+                  seconds={lightningSeconds(snapshot.progress.settings)}
+                  active={i === current && !resetOpen}
+                  result={e.lightning}
+                  onAnswer={(r) => onLightningAnswer(i, r)}
+                  onDone={(right) => onLightningDone(i, right)}
+                />
+              </Suspense>
             ) : e.card.kind === 'sat' ? (
               <SatCard
                 problem={e.card.problem}
