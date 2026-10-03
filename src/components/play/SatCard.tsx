@@ -25,6 +25,10 @@ interface Props {
   /** True while this card is the one on screen. Defaults to true. */
   active?: boolean;
   onAnswer(r: { correct: boolean; response: string; timeMs: number }): void;
+  /** Quick Play's "Guessed?" chip (spec §5.3), shown after answering while `chipOpen`. */
+  guessed?: boolean;
+  chipOpen?: boolean;
+  onGuessed?(guessed: boolean): void;
 }
 
 /** One full-screen question card: tap an answer (or type and Check), see the result. */
@@ -35,6 +39,9 @@ export default function SatCard({
   reduced,
   active = true,
   onAnswer,
+  guessed = false,
+  chipOpen = false,
+  onGuessed,
 }: Props) {
   const [typed, setTyped] = useState('');
   const [invalid, setInvalid] = useState<string | null>(null);
@@ -128,6 +135,21 @@ export default function SatCard({
           </p>
         )}
       </div>
+      {result !== undefined &&
+        onGuessed !== undefined &&
+        (chipOpen ? (
+          <button
+            type="button"
+            className={`play-chip ${guessed ? 'is-on' : ''}`}
+            aria-pressed={guessed}
+            onClick={() => onGuessed(!guessed)}
+          >
+            <span aria-hidden="true">{guessed ? '✓ ' : ''}</span>
+            Guessed?
+          </button>
+        ) : (
+          guessed && <p className="hint">Marked as a guess</p>
+        ))}
       {result?.correct && !reduced && <span className="play-burst" aria-hidden="true" />}
 
       <div className="play-tools">

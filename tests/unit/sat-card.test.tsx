@@ -104,4 +104,38 @@ describe('SatCard', () => {
     expect(onAnswer).toHaveBeenCalledWith(expect.objectContaining({ timeMs: 700 }));
     clock.mockRestore();
   });
+  it('offers a Guessed? chip after answering, while it is open', async () => {
+    const onGuessed = vi.fn();
+    const answered = { correct: false, response: 'A', timeMs: 1, points: 0, multiplier: 1 };
+    const props = {
+      problem: mcq,
+      desmosKey: null,
+      result: answered,
+      reduced: true,
+      onAnswer: () => {},
+    };
+    const { rerender } = render(<SatCard {...props} chipOpen onGuessed={onGuessed} />);
+    await userEvent.click(screen.getByRole('button', { name: 'Guessed?', pressed: false }));
+    expect(onGuessed).toHaveBeenCalledWith(true);
+    rerender(<SatCard {...props} chipOpen guessed onGuessed={onGuessed} />);
+    await userEvent.click(screen.getByRole('button', { name: 'Guessed?', pressed: true }));
+    expect(onGuessed).toHaveBeenLastCalledWith(false);
+    rerender(<SatCard {...props} chipOpen={false} guessed onGuessed={onGuessed} />);
+    expect(screen.queryByRole('button', { name: 'Guessed?' })).toBeNull();
+    expect(screen.getByText('Marked as a guess')).toBeVisible();
+  });
+  it('shows no Guessed? chip before an answer', () => {
+    render(
+      <SatCard
+        problem={mcq}
+        desmosKey={null}
+        result={undefined}
+        reduced
+        chipOpen
+        onGuessed={() => {}}
+        onAnswer={() => {}}
+      />,
+    );
+    expect(screen.queryByRole('button', { name: 'Guessed?' })).toBeNull();
+  });
 });

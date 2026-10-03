@@ -19,6 +19,7 @@ import {
 import type { Problem } from '../../engine/problem';
 import { createRng, randomSeed } from '../../engine/rng';
 import { addBonusPoints, applyLightningAnswer, applyPlayAnswer } from '../../store/play';
+import { setGuessed } from '../../store/progress';
 import { getProgressStore, useProgress } from '../../store/progress-store';
 import StorageBanner from '../StorageBanner';
 import { answerFeedback, levelUpFeedback } from './feedback';
@@ -35,7 +36,15 @@ const lightningFirst = () =>
   import.meta.env.PUBLIC_TEST_HOOKS === '1' &&
   new URLSearchParams(window.location.search).get('lightning') === 'first';
 
-type Entry = { key: string; card: Card | null; result?: CardResult; lightning?: LightningResult };
+type Entry = {
+  key: string;
+  card: Card | null;
+  result?: CardResult;
+  lightning?: LightningResult;
+  /** When the answer was saved: identifies its attempt for the Guessed? chip. */
+  at?: string;
+  guessed?: boolean;
+};
 
 function useReducedMotion(): boolean {
   const [reduced, setReduced] = useState(
@@ -202,13 +211,14 @@ export default function PlayFeed({
     setCombo(scored.combo);
     const store = getProgressStore();
     const before = levelInfo(store.getSnapshot().progress.game.points).level;
+    const now = new Date();
     store.update((p) =>
       applyPlayAnswer(p, {
         problem,
         ...r,
         points: scored.points,
         combo: scored.combo,
-        now: new Date(),
+        now,
       }),
     );
     const { settings, game } = store.getSnapshot().progress;
@@ -216,9 +226,21 @@ export default function PlayFeed({
     if (levelInfo(game.points).level > before) levelUpFeedback(settings);
     entriesRef.current = entriesRef.current.map((e, i) =>
       i === index
-        ? { ...e, result: { ...r, points: scored.points, multiplier: scored.multiplier } }
+        ? {
+            ...e,
+            at: now.toISOString(),
+            result: { ...r, points: scored.points, multiplier: scored.multiplier },
+          }
         : e,
     );
+    setEntries(entriesRef.current);
+  };
+
+  const onGuessed = (index: number, problemId: string, guessed: boolean) => {
+    const at = entriesRef.current[index]?.at;
+    if (at === undefined) return;
+    getProgressStore().update((p) => setGuessed(p, problemId, at, guessed));
+    entriesRef.current = entriesRef.current.map((e, i) => (i === index ? { ...e, guessed } : e));
     setEntries(entriesRef.current);
   };
 
@@ -329,6 +351,9 @@ export default function PlayFeed({
                 reduced={reduced}
                 active={i === current}
                 onAnswer={(r) => e.card?.kind === 'sat' && onAnswer(i, e.card.problem, r)}
+                guessed={e.guessed === true}
+                chipOpen={current <= i + 1}
+                onGuessed={(g) => e.card?.kind === 'sat' && onGuessed(i, e.card.problem.id, g)}
               />
             )}
           </section>

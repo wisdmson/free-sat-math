@@ -191,3 +191,14 @@ test('a half-played Lightning round picks up where it left off', async ({ page }
     second!,
   );
 });
+
+test('marking an answer as a guess saves it', async ({ page }) => {
+  await page.goto('/play/?go=1');
+  await answerCurrent(page, false);
+  await current(page).getByRole('button', { name: 'Guessed?' }).click();
+  await expect(
+    current(page).getByRole('button', { name: 'Guessed?', pressed: true }),
+  ).toBeVisible();
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('fsm.progress.v1')!));
+  expect(saved.attempts.at(-1).guessed).toBe(true);
+});
