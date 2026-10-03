@@ -67,6 +67,30 @@ test('primary actions keep readable contrast in both themes', async ({ page }) =
   await expect.poll(contrast).toBeGreaterThanOrEqual(4.5);
 });
 
+test('muted hint text stays readable on the page background in both themes', async ({ page }) => {
+  await page.goto('/');
+  const contrast = async () =>
+    page.locator('.home-copy .lead').evaluate((el) => {
+      const rgb = (value: string) =>
+        value
+          .match(/[\d.]+/g)!
+          .slice(0, 3)
+          .map((c) => Number(c) / 255);
+      const lum = (color: string) => {
+        const [r, g, b] = rgb(color).map((c) =>
+          c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4,
+        );
+        return 0.2126 * r! + 0.7152 * g! + 0.0722 * b!;
+      };
+      const fg = lum(getComputedStyle(el).color);
+      const bg = lum(getComputedStyle(document.body).backgroundColor);
+      return (Math.max(fg, bg) + 0.05) / (Math.min(fg, bg) + 0.05);
+    });
+  await expect.poll(contrast).toBeGreaterThanOrEqual(4.5);
+  await page.getByRole('button', { name: 'Switch between light and dark theme' }).click();
+  await expect.poll(contrast).toBeGreaterThanOrEqual(4.5);
+});
+
 test('unknown pages show the 404 page', async ({ page }) => {
   const response = await page.goto('/no-such-page/');
   expect(response?.status()).toBe(404);
