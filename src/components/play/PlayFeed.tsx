@@ -321,7 +321,11 @@ export default function PlayFeed({
     if (right === 3) {
       comboRef.current += LIGHTNING_PERFECT_COMBO;
       setCombo(comboRef.current);
-      getProgressStore().update((p) => addBonusPoints(p, LIGHTNING_PERFECT_BONUS));
+      const store = getProgressStore();
+      const before = levelInfo(store.getSnapshot().progress.game.points).level;
+      store.update((p) => addBonusPoints(p, LIGHTNING_PERFECT_BONUS, comboRef.current));
+      const { settings, game } = store.getSnapshot().progress;
+      if (levelInfo(game.points).level > before) levelUpFeedback(settings);
     }
     entriesRef.current = entriesRef.current.map((e, i) =>
       i === index ? { ...e, lightning: { done: true, right, answered: 3 } } : e,

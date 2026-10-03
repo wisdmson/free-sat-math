@@ -41,3 +41,19 @@ describe('Lightning answers', () => {
     expect(p.attempts).toEqual([]);
   });
 });
+
+describe('perfect Lightning rounds', () => {
+  it('add the bonus and count the boosted combo toward the best combo', () => {
+    let p = applyLightningAnswer(emptyProgress(), {
+      answered: true,
+      points: 5,
+      combo: 7,
+      now: base.now,
+    });
+    p = addBonusPoints(p, 25, 9);
+    expect(p.game.points).toBe(30);
+    expect(p.game.bestCombo).toBe(9);
+    // A lower combo never lowers the best.
+    expect(addBonusPoints(p, 25, 2).game.bestCombo).toBe(9);
+  });
+});

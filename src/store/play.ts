@@ -62,6 +62,14 @@ export function applyLightningAnswer(
   };
 }
 
-export function addBonusPoints(progress: Progress, points: number): Progress {
-  return { ...progress, game: { ...progress.game, points: progress.game.points + points } };
+/** Bonus points (never multiplied); `combo`, when given, also counts toward the best combo. */
+export function addBonusPoints(progress: Progress, points: number, combo = 0): Progress {
+  return {
+    ...progress,
+    game: {
+      ...progress.game,
+      points: progress.game.points + points,
+      bestCombo: Math.max(progress.game.bestCombo, combo),
+    },
+  };
 }
