@@ -1,6 +1,6 @@
 {
   "drill": "mm.exponents",
-  "version": 1,
+  "version": 2,
   "problems": {
     "1:1": {
       "prompt": "3⁵",
@@ -8,7 +8,7 @@
         "kind": "number",
         "value": "243"
       },
-      "id": "m:mm.exponents@1:1:1",
+      "id": "m:mm.exponents@2:1:1",
       "drill": "mm.exponents",
       "tier": 1
     },
@@ -18,7 +18,7 @@
         "kind": "number",
         "value": "10000"
       },
-      "id": "m:mm.exponents@1:1:2",
+      "id": "m:mm.exponents@2:1:2",
       "drill": "mm.exponents",
       "tier": 1
     },
@@ -28,7 +28,7 @@
         "kind": "number",
         "value": "243"
       },
-      "id": "m:mm.exponents@1:1:3",
+      "id": "m:mm.exponents@2:1:3",
       "drill": "mm.exponents",
       "tier": 1
     },
@@ -38,7 +38,7 @@
         "kind": "number",
         "value": "512"
       },
-      "id": "m:mm.exponents@1:1:4",
+      "id": "m:mm.exponents@2:1:4",
       "drill": "mm.exponents",
       "tier": 1
     },
@@ -48,7 +48,7 @@
         "kind": "number",
         "value": "125"
       },
-      "id": "m:mm.exponents@1:1:5",
+      "id": "m:mm.exponents@2:1:5",
       "drill": "mm.exponents",
       "tier": 1
     },
@@ -58,7 +58,7 @@
         "kind": "number",
         "value": "256"
       },
-      "id": "m:mm.exponents@1:2:1",
+      "id": "m:mm.exponents@2:2:1",
       "drill": "mm.exponents",
       "tier": 2
     },
@@ -68,7 +68,7 @@
         "kind": "number",
         "value": "729"
       },
-      "id": "m:mm.exponents@1:2:2",
+      "id": "m:mm.exponents@2:2:2",
       "drill": "mm.exponents",
       "tier": 2
     },
@@ -78,7 +78,7 @@
         "kind": "number",
         "value": "16"
       },
-      "id": "m:mm.exponents@1:2:3",
+      "id": "m:mm.exponents@2:2:3",
       "drill": "mm.exponents",
       "tier": 2
     },
@@ -88,7 +88,7 @@
         "kind": "number",
         "value": "256"
       },
-      "id": "m:mm.exponents@1:2:4",
+      "id": "m:mm.exponents@2:2:4",
       "drill": "mm.exponents",
       "tier": 2
     },
@@ -98,7 +98,7 @@
         "kind": "number",
         "value": "243"
       },
-      "id": "m:mm.exponents@1:2:5",
+      "id": "m:mm.exponents@2:2:5",
       "drill": "mm.exponents",
       "tier": 2
     },
@@ -108,7 +108,7 @@
         "kind": "number",
         "value": "1/25"
       },
-      "id": "m:mm.exponents@1:3:1",
+      "id": "m:mm.exponents@2:3:1",
       "drill": "mm.exponents",
       "tier": 3
     },
@@ -118,17 +118,17 @@
         "kind": "number",
         "value": "4"
       },
-      "id": "m:mm.exponents@1:3:2",
+      "id": "m:mm.exponents@2:3:2",
       "drill": "mm.exponents",
       "tier": 3
     },
     "3:3": {
-      "prompt": "4⁻²",
+      "prompt": "5⁻²",
       "answer": {
         "kind": "number",
-        "value": "1/16"
+        "value": "1/25"
       },
-      "id": "m:mm.exponents@1:3:3",
+      "id": "m:mm.exponents@2:3:3",
       "drill": "mm.exponents",
       "tier": 3
     },
@@ -138,7 +138,7 @@
         "kind": "number",
         "value": "1"
       },
-      "id": "m:mm.exponents@1:3:4",
+      "id": "m:mm.exponents@2:3:4",
       "drill": "mm.exponents",
       "tier": 3
     },
@@ -148,7 +148,7 @@
         "kind": "number",
         "value": "1/100"
       },
-      "id": "m:mm.exponents@1:3:5",
+      "id": "m:mm.exponents@2:3:5",
       "drill": "mm.exponents",
       "tier": 3
     }

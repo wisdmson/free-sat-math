@@ -4,7 +4,7 @@ import { numberBody, numberOk, type Drill } from '../types';
 
 export const exponents: Drill = {
   id: 'mm.exponents',
-  version: 1,
+  version: 2,
   name: 'Exponents',
   blurb: 'Powers, exponent rules, and zero and negative exponents.',
   generate(rng, tier) {
@@ -40,7 +40,8 @@ export const exponents: Drill = {
     if (form === 0) return numberBody(`${rng.int(2, 12)}${sup(0)}`, r(1));
     const n = rng.int(1, 2);
     if (form === 1) {
-      const b = rng.pick([2, 3, 4, 5, 10]);
+      // Bases whose reciprocals end as decimals: a repeating answer is never typed (spec §4.2).
+      const b = rng.pick([2, 4, 5, 10]);
       return numberBody(`${b}${sup(-n)}`, r(1, b ** n));
     }
     const b = rng.pick([2, 3, 4, 5]);

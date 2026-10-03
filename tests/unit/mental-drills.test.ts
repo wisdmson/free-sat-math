@@ -29,6 +29,18 @@ const prompts = (id: string, tier: 1 | 2 | 3, n = 60) =>
   Array.from({ length: n }, (_, i) => buildMental(getDrill(id)!, tier, i + 1).prompt);
 
 describe('drill content', () => {
+  it('never asks for a typed answer whose decimal repeats (spec §4.2)', () => {
+    const bad: string[] = [];
+    for (const drill of DRILLS)
+      for (const tier of TIERS)
+        for (let seed = 1; seed <= 300; seed++) {
+          const p = buildMental(drill, tier, seed);
+          if (p.answer.kind !== 'number' || p.answer.form === 'fraction') continue;
+          if (!Rational.parse(p.answer.value).isTerminating())
+            bad.push(`${p.prompt} = ${p.answer.value}`);
+        }
+    expect([...new Set(bad)]).toEqual([]);
+  });
   it('arithmetic moves from + − × to ÷ to order of operations with negatives', () => {
     expect(prompts('mm.arithmetic', 1).every((t) => /^\d+ [+−×] \d+$/.test(t))).toBe(true);
     expect(prompts('mm.arithmetic', 2).some((t) => t.includes('÷'))).toBe(true);
