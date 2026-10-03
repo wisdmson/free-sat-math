@@ -1,35 +1,35 @@
 {
   "typeId": "geo.lines-angles-triangles.triangle-angle-sum",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "Two angles in a triangle measure $53^\\circ$ and $74^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-53$",
-          "value": "-53"
+          "text": "$\\frac{53}{2}$",
+          "value": "53/2"
         },
         {
-          "text": "$52$",
-          "value": "52"
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
         },
         {
           "text": "$53$",
           "value": "53"
-        },
-        {
-          "text": "$54$",
-          "value": "54"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -46,7 +46,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:mcq:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:mcq:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "mcq",
@@ -56,8 +56,8 @@
       "stem": "Two angles in a triangle measure $74^\\circ$ and $61^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-45$",
-          "value": "-45"
+          "text": "$\\frac{45}{2}$",
+          "value": "45/2"
         },
         {
           "text": "$43$",
@@ -77,7 +77,7 @@
         "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
         "C": "An arithmetic slip: redo the last computation carefully."
       },
@@ -96,7 +96,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:mcq:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:mcq:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "mcq",
@@ -106,10 +106,6 @@
       "stem": "Two angles in a triangle measure $53^\\circ$ and $63^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-64$",
-          "value": "-64"
-        },
-        {
           "text": "$64$",
           "value": "64"
         },
@@ -118,18 +114,22 @@
           "value": "65"
         },
         {
-          "text": "$66$",
-          "value": "66"
+          "text": "$116$",
+          "value": "116"
+        },
+        {
+          "text": "$244$",
+          "value": "244"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -146,7 +146,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:mcq:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:mcq:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "mcq",
@@ -156,10 +156,6 @@
       "stem": "Two angles in a triangle measure $32^\\circ$ and $76^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-72$",
-          "value": "-72"
-        },
-        {
           "text": "$70$",
           "value": "70"
         },
@@ -168,18 +164,22 @@
           "value": "72"
         },
         {
-          "text": "$73$",
-          "value": "73"
+          "text": "$108$",
+          "value": "108"
+        },
+        {
+          "text": "$252$",
+          "value": "252"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -196,7 +196,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:mcq:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:mcq:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "mcq",
@@ -206,20 +206,20 @@
       "stem": "Two angles in a triangle measure $66^\\circ$ and $67^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-47$",
-          "value": "-47"
+          "text": "$46$",
+          "value": "46"
         },
         {
           "text": "$47$",
           "value": "47"
         },
         {
-          "text": "$48$",
-          "value": "48"
+          "text": "$133$",
+          "value": "133"
         },
         {
-          "text": "$49$",
-          "value": "49"
+          "text": "$227$",
+          "value": "227"
         }
       ],
       "answer": {
@@ -227,9 +227,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -246,7 +246,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:mcq:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:mcq:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "mcq",
@@ -275,7 +275,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:spr:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:spr:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "spr",
@@ -304,7 +304,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:spr:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:spr:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "spr",
@@ -333,7 +333,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:spr:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:spr:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "spr",
@@ -362,7 +362,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:spr:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:spr:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "spr",
@@ -391,7 +391,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:easy:spr:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:easy:spr:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "easy",
       "format": "spr",
@@ -401,30 +401,30 @@
       "stem": "Two angles in a triangle measure $53^\\circ$ and $74^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-53$",
-          "value": "-53"
+          "text": "$\\frac{53}{2}$",
+          "value": "53/2"
         },
         {
-          "text": "$52$",
-          "value": "52"
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
         },
         {
           "text": "$53$",
           "value": "53"
-        },
-        {
-          "text": "$54$",
-          "value": "54"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -441,7 +441,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:mcq:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:mcq:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "mcq",
@@ -451,8 +451,8 @@
       "stem": "Two angles in a triangle measure $74^\\circ$ and $61^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-45$",
-          "value": "-45"
+          "text": "$\\frac{45}{2}$",
+          "value": "45/2"
         },
         {
           "text": "$43$",
@@ -472,7 +472,7 @@
         "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
         "C": "An arithmetic slip: redo the last computation carefully."
       },
@@ -491,7 +491,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:mcq:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:mcq:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "mcq",
@@ -501,10 +501,6 @@
       "stem": "Two angles in a triangle measure $53^\\circ$ and $63^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-64$",
-          "value": "-64"
-        },
-        {
           "text": "$64$",
           "value": "64"
         },
@@ -513,18 +509,22 @@
           "value": "65"
         },
         {
-          "text": "$66$",
-          "value": "66"
+          "text": "$116$",
+          "value": "116"
+        },
+        {
+          "text": "$244$",
+          "value": "244"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -541,7 +541,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:mcq:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:mcq:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "mcq",
@@ -551,10 +551,6 @@
       "stem": "Two angles in a triangle measure $32^\\circ$ and $76^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-72$",
-          "value": "-72"
-        },
-        {
           "text": "$70$",
           "value": "70"
         },
@@ -563,18 +559,22 @@
           "value": "72"
         },
         {
-          "text": "$73$",
-          "value": "73"
+          "text": "$108$",
+          "value": "108"
+        },
+        {
+          "text": "$252$",
+          "value": "252"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -591,7 +591,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:mcq:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:mcq:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "mcq",
@@ -601,20 +601,20 @@
       "stem": "Two angles in a triangle measure $66^\\circ$ and $67^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-47$",
-          "value": "-47"
+          "text": "$46$",
+          "value": "46"
         },
         {
           "text": "$47$",
           "value": "47"
         },
         {
-          "text": "$48$",
-          "value": "48"
+          "text": "$133$",
+          "value": "133"
         },
         {
-          "text": "$49$",
-          "value": "49"
+          "text": "$227$",
+          "value": "227"
         }
       ],
       "answer": {
@@ -622,9 +622,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -641,7 +641,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:mcq:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:mcq:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "mcq",
@@ -670,7 +670,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:spr:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:spr:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "spr",
@@ -699,7 +699,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:spr:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:spr:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "spr",
@@ -728,7 +728,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:spr:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:spr:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "spr",
@@ -757,7 +757,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:spr:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:spr:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "spr",
@@ -786,7 +786,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:medium:spr:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:medium:spr:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "medium",
       "format": "spr",
@@ -796,30 +796,30 @@
       "stem": "Two angles in a triangle measure $53^\\circ$ and $74^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-53$",
-          "value": "-53"
+          "text": "$\\frac{53}{2}$",
+          "value": "53/2"
         },
         {
-          "text": "$52$",
-          "value": "52"
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
         },
         {
           "text": "$53$",
           "value": "53"
-        },
-        {
-          "text": "$54$",
-          "value": "54"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -836,7 +836,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:mcq:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:mcq:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "mcq",
@@ -846,8 +846,8 @@
       "stem": "Two angles in a triangle measure $74^\\circ$ and $61^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-45$",
-          "value": "-45"
+          "text": "$\\frac{45}{2}$",
+          "value": "45/2"
         },
         {
           "text": "$43$",
@@ -867,7 +867,7 @@
         "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The value was halved somewhere along the way.",
         "B": "An arithmetic slip: redo the last computation carefully.",
         "C": "An arithmetic slip: redo the last computation carefully."
       },
@@ -886,7 +886,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:mcq:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:mcq:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "mcq",
@@ -896,10 +896,6 @@
       "stem": "Two angles in a triangle measure $53^\\circ$ and $63^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-64$",
-          "value": "-64"
-        },
-        {
           "text": "$64$",
           "value": "64"
         },
@@ -908,18 +904,22 @@
           "value": "65"
         },
         {
-          "text": "$66$",
-          "value": "66"
+          "text": "$116$",
+          "value": "116"
+        },
+        {
+          "text": "$244$",
+          "value": "244"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -936,7 +936,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:mcq:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:mcq:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "mcq",
@@ -946,10 +946,6 @@
       "stem": "Two angles in a triangle measure $32^\\circ$ and $76^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-72$",
-          "value": "-72"
-        },
-        {
           "text": "$70$",
           "value": "70"
         },
@@ -958,18 +954,22 @@
           "value": "72"
         },
         {
-          "text": "$73$",
-          "value": "73"
+          "text": "$108$",
+          "value": "108"
+        },
+        {
+          "text": "$252$",
+          "value": "252"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -986,7 +986,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:mcq:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:mcq:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "mcq",
@@ -996,20 +996,20 @@
       "stem": "Two angles in a triangle measure $66^\\circ$ and $67^\\circ$. What is the measure of the third angle?",
       "choices": [
         {
-          "text": "$-47$",
-          "value": "-47"
+          "text": "$46$",
+          "value": "46"
         },
         {
           "text": "$47$",
           "value": "47"
         },
         {
-          "text": "$48$",
-          "value": "48"
+          "text": "$133$",
+          "value": "133"
         },
         {
-          "text": "$49$",
-          "value": "49"
+          "text": "$227$",
+          "value": "227"
         }
       ],
       "answer": {
@@ -1017,9 +1017,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "That is the sum of the two given angles.",
+        "D": "The angles of a triangle add to 180°, not 360°."
       },
       "solution": [
         "The angles in a triangle add to $180^\\circ$.",
@@ -1036,7 +1036,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:mcq:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:mcq:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "mcq",
@@ -1065,7 +1065,7 @@
           74
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:spr:1",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:spr:1",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "spr",
@@ -1094,7 +1094,7 @@
           61
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:spr:2",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:spr:2",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "spr",
@@ -1123,7 +1123,7 @@
           63
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:spr:3",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:spr:3",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "spr",
@@ -1152,7 +1152,7 @@
           76
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:spr:4",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:spr:4",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "spr",
@@ -1181,7 +1181,7 @@
           67
         ]
       },
-      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@2:hard:spr:5",
+      "id": "g:geo.lines-angles-triangles.triangle-angle-sum@3:hard:spr:5",
       "skill": "geo.lines-angles-triangles",
       "difficulty": "hard",
       "format": "spr",

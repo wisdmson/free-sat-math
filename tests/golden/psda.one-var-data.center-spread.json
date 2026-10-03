@@ -1,13 +1,17 @@
 {
   "typeId": "psda.one-var-data.center-spread",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "The data set is $7, 13, 11, 9$. What is its mean?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
         },
         {
           "text": "$9$",
@@ -16,24 +20,20 @@
         {
           "text": "$10$",
           "value": "10"
-        },
-        {
-          "text": "$11$",
-          "value": "11"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "An arithmetic slip: redo the last computation carefully.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $7 + 13 + 11 + 9 = 40$.",
-        "Divide by the 4 data values: $40 div 4 = 10$."
+        "Divide by the 4 data values: $40 \\div 4 = 10$."
       ],
       "desmos": [
         "[7, 13, 11, 9]",
@@ -48,7 +48,7 @@
           9
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:mcq:1",
+      "id": "g:psda.one-var-data.center-spread@3:easy:mcq:1",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -58,34 +58,34 @@
       "stem": "The data set is $13, 9, 2, 15$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{39}{4}$",
-          "value": "-39/4"
+          "text": "$\\frac{39}{8}$",
+          "value": "39/8"
+        },
+        {
+          "text": "$\\frac{27}{4}$",
+          "value": "27/4"
+        },
+        {
+          "text": "$\\frac{31}{4}$",
+          "value": "31/4"
         },
         {
           "text": "$\\frac{39}{4}$",
           "value": "39/4"
-        },
-        {
-          "text": "$\\frac{47}{4}$",
-          "value": "47/4"
-        },
-        {
-          "text": "$\\frac{51}{4}$",
-          "value": "51/4"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The value was halved somewhere along the way.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $13 + 9 + 2 + 15 = 39$.",
-        "Divide by the 4 data values: $39 div 4 = 9.75$."
+        "Divide by the 4 data values: $39 \\div 4 = 9.75$."
       ],
       "desmos": [
         "[13, 9, 2, 15]",
@@ -100,7 +100,7 @@
           15
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:mcq:2",
+      "id": "g:psda.one-var-data.center-spread@3:easy:mcq:2",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -122,8 +122,8 @@
           "value": "8"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$32$",
+          "value": "32"
         }
       ],
       "answer": {
@@ -133,11 +133,11 @@
       "distractorNotes": {
         "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $7 + 10 + 9 + 6 = 32$.",
-        "Divide by the 4 data values: $32 div 4 = 8$."
+        "Divide by the 4 data values: $32 \\div 4 = 8$."
       ],
       "desmos": [
         "[7, 10, 9, 6]",
@@ -152,7 +152,7 @@
           6
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:mcq:3",
+      "id": "g:psda.one-var-data.center-spread@3:easy:mcq:3",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -162,34 +162,34 @@
       "stem": "The data set is $2, 13, 12, 10$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{37}{4}$",
-          "value": "-37/4"
-        },
-        {
-          "text": "$\\frac{25}{4}$",
-          "value": "25/4"
-        },
-        {
           "text": "$\\frac{37}{4}$",
           "value": "37/4"
         },
         {
-          "text": "$\\frac{45}{4}$",
-          "value": "45/4"
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$\\frac{37}{3}$",
+          "value": "37/3"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "That is the median, the middle of the sorted values.",
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $2 + 13 + 12 + 10 = 37$.",
-        "Divide by the 4 data values: $37 div 4 = 9.25$."
+        "Divide by the 4 data values: $37 \\div 4 = 9.25$."
       ],
       "desmos": [
         "[2, 13, 12, 10]",
@@ -204,7 +204,7 @@
           10
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:mcq:4",
+      "id": "g:psda.one-var-data.center-spread@3:easy:mcq:4",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -214,34 +214,34 @@
       "stem": "The data set is $11, 11, 14, 13$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{49}{4}$",
-          "value": "-49/4"
-        },
-        {
-          "text": "$\\frac{37}{4}$",
-          "value": "37/4"
-        },
-        {
-          "text": "$\\frac{45}{4}$",
-          "value": "45/4"
-        },
-        {
           "text": "$\\frac{49}{4}$",
           "value": "49/4"
+        },
+        {
+          "text": "$\\frac{61}{4}$",
+          "value": "61/4"
+        },
+        {
+          "text": "$\\frac{49}{3}$",
+          "value": "49/3"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $11 + 11 + 14 + 13 = 49$.",
-        "Divide by the 4 data values: $49 div 4 = 12.25$."
+        "Divide by the 4 data values: $49 \\div 4 = 12.25$."
       ],
       "desmos": [
         "[11, 11, 14, 13]",
@@ -256,7 +256,7 @@
           13
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:mcq:5",
+      "id": "g:psda.one-var-data.center-spread@3:easy:mcq:5",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -272,7 +272,7 @@
       },
       "solution": [
         "Add the four values: $7 + 13 + 11 + 9 = 40$.",
-        "Divide by the 4 data values: $40 div 4 = 10$."
+        "Divide by the 4 data values: $40 \\div 4 = 10$."
       ],
       "desmos": [
         "[7, 13, 11, 9]",
@@ -287,7 +287,7 @@
           9
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:spr:1",
+      "id": "g:psda.one-var-data.center-spread@3:easy:spr:1",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -303,7 +303,7 @@
       },
       "solution": [
         "Add the four values: $13 + 9 + 2 + 15 = 39$.",
-        "Divide by the 4 data values: $39 div 4 = 9.75$."
+        "Divide by the 4 data values: $39 \\div 4 = 9.75$."
       ],
       "desmos": [
         "[13, 9, 2, 15]",
@@ -318,7 +318,7 @@
           15
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:spr:2",
+      "id": "g:psda.one-var-data.center-spread@3:easy:spr:2",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -334,7 +334,7 @@
       },
       "solution": [
         "Add the four values: $7 + 10 + 9 + 6 = 32$.",
-        "Divide by the 4 data values: $32 div 4 = 8$."
+        "Divide by the 4 data values: $32 \\div 4 = 8$."
       ],
       "desmos": [
         "[7, 10, 9, 6]",
@@ -349,7 +349,7 @@
           6
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:spr:3",
+      "id": "g:psda.one-var-data.center-spread@3:easy:spr:3",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -365,7 +365,7 @@
       },
       "solution": [
         "Add the four values: $2 + 13 + 12 + 10 = 37$.",
-        "Divide by the 4 data values: $37 div 4 = 9.25$."
+        "Divide by the 4 data values: $37 \\div 4 = 9.25$."
       ],
       "desmos": [
         "[2, 13, 12, 10]",
@@ -380,7 +380,7 @@
           10
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:spr:4",
+      "id": "g:psda.one-var-data.center-spread@3:easy:spr:4",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -396,7 +396,7 @@
       },
       "solution": [
         "Add the four values: $11 + 11 + 14 + 13 = 49$.",
-        "Divide by the 4 data values: $49 div 4 = 12.25$."
+        "Divide by the 4 data values: $49 \\div 4 = 12.25$."
       ],
       "desmos": [
         "[11, 11, 14, 13]",
@@ -411,7 +411,7 @@
           13
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:easy:spr:5",
+      "id": "g:psda.one-var-data.center-spread@3:easy:spr:5",
       "skill": "psda.one-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -421,8 +421,12 @@
       "stem": "The data set is $7, 13, 11, 9$. What is its mean?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
         },
         {
           "text": "$9$",
@@ -431,24 +435,20 @@
         {
           "text": "$10$",
           "value": "10"
-        },
-        {
-          "text": "$11$",
-          "value": "11"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "An arithmetic slip: redo the last computation carefully.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $7 + 13 + 11 + 9 = 40$.",
-        "Divide by the 4 data values: $40 div 4 = 10$."
+        "Divide by the 4 data values: $40 \\div 4 = 10$."
       ],
       "desmos": [
         "[7, 13, 11, 9]",
@@ -463,7 +463,7 @@
           9
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:mcq:1",
+      "id": "g:psda.one-var-data.center-spread@3:medium:mcq:1",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -473,34 +473,34 @@
       "stem": "The data set is $13, 9, 2, 15$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{39}{4}$",
-          "value": "-39/4"
+          "text": "$\\frac{39}{8}$",
+          "value": "39/8"
+        },
+        {
+          "text": "$\\frac{27}{4}$",
+          "value": "27/4"
+        },
+        {
+          "text": "$\\frac{31}{4}$",
+          "value": "31/4"
         },
         {
           "text": "$\\frac{39}{4}$",
           "value": "39/4"
-        },
-        {
-          "text": "$\\frac{47}{4}$",
-          "value": "47/4"
-        },
-        {
-          "text": "$\\frac{51}{4}$",
-          "value": "51/4"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The value was halved somewhere along the way.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $13 + 9 + 2 + 15 = 39$.",
-        "Divide by the 4 data values: $39 div 4 = 9.75$."
+        "Divide by the 4 data values: $39 \\div 4 = 9.75$."
       ],
       "desmos": [
         "[13, 9, 2, 15]",
@@ -515,7 +515,7 @@
           15
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:mcq:2",
+      "id": "g:psda.one-var-data.center-spread@3:medium:mcq:2",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -537,8 +537,8 @@
           "value": "8"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$32$",
+          "value": "32"
         }
       ],
       "answer": {
@@ -548,11 +548,11 @@
       "distractorNotes": {
         "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $7 + 10 + 9 + 6 = 32$.",
-        "Divide by the 4 data values: $32 div 4 = 8$."
+        "Divide by the 4 data values: $32 \\div 4 = 8$."
       ],
       "desmos": [
         "[7, 10, 9, 6]",
@@ -567,7 +567,7 @@
           6
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:mcq:3",
+      "id": "g:psda.one-var-data.center-spread@3:medium:mcq:3",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -577,34 +577,34 @@
       "stem": "The data set is $2, 13, 12, 10$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{37}{4}$",
-          "value": "-37/4"
-        },
-        {
-          "text": "$\\frac{25}{4}$",
-          "value": "25/4"
-        },
-        {
           "text": "$\\frac{37}{4}$",
           "value": "37/4"
         },
         {
-          "text": "$\\frac{45}{4}$",
-          "value": "45/4"
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$\\frac{37}{3}$",
+          "value": "37/3"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "That is the median, the middle of the sorted values.",
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $2 + 13 + 12 + 10 = 37$.",
-        "Divide by the 4 data values: $37 div 4 = 9.25$."
+        "Divide by the 4 data values: $37 \\div 4 = 9.25$."
       ],
       "desmos": [
         "[2, 13, 12, 10]",
@@ -619,7 +619,7 @@
           10
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:mcq:4",
+      "id": "g:psda.one-var-data.center-spread@3:medium:mcq:4",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -629,34 +629,34 @@
       "stem": "The data set is $11, 11, 14, 13$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{49}{4}$",
-          "value": "-49/4"
-        },
-        {
-          "text": "$\\frac{37}{4}$",
-          "value": "37/4"
-        },
-        {
-          "text": "$\\frac{45}{4}$",
-          "value": "45/4"
-        },
-        {
           "text": "$\\frac{49}{4}$",
           "value": "49/4"
+        },
+        {
+          "text": "$\\frac{61}{4}$",
+          "value": "61/4"
+        },
+        {
+          "text": "$\\frac{49}{3}$",
+          "value": "49/3"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $11 + 11 + 14 + 13 = 49$.",
-        "Divide by the 4 data values: $49 div 4 = 12.25$."
+        "Divide by the 4 data values: $49 \\div 4 = 12.25$."
       ],
       "desmos": [
         "[11, 11, 14, 13]",
@@ -671,7 +671,7 @@
           13
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:mcq:5",
+      "id": "g:psda.one-var-data.center-spread@3:medium:mcq:5",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -687,7 +687,7 @@
       },
       "solution": [
         "Add the four values: $7 + 13 + 11 + 9 = 40$.",
-        "Divide by the 4 data values: $40 div 4 = 10$."
+        "Divide by the 4 data values: $40 \\div 4 = 10$."
       ],
       "desmos": [
         "[7, 13, 11, 9]",
@@ -702,7 +702,7 @@
           9
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:spr:1",
+      "id": "g:psda.one-var-data.center-spread@3:medium:spr:1",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -718,7 +718,7 @@
       },
       "solution": [
         "Add the four values: $13 + 9 + 2 + 15 = 39$.",
-        "Divide by the 4 data values: $39 div 4 = 9.75$."
+        "Divide by the 4 data values: $39 \\div 4 = 9.75$."
       ],
       "desmos": [
         "[13, 9, 2, 15]",
@@ -733,7 +733,7 @@
           15
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:spr:2",
+      "id": "g:psda.one-var-data.center-spread@3:medium:spr:2",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -749,7 +749,7 @@
       },
       "solution": [
         "Add the four values: $7 + 10 + 9 + 6 = 32$.",
-        "Divide by the 4 data values: $32 div 4 = 8$."
+        "Divide by the 4 data values: $32 \\div 4 = 8$."
       ],
       "desmos": [
         "[7, 10, 9, 6]",
@@ -764,7 +764,7 @@
           6
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:spr:3",
+      "id": "g:psda.one-var-data.center-spread@3:medium:spr:3",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -780,7 +780,7 @@
       },
       "solution": [
         "Add the four values: $2 + 13 + 12 + 10 = 37$.",
-        "Divide by the 4 data values: $37 div 4 = 9.25$."
+        "Divide by the 4 data values: $37 \\div 4 = 9.25$."
       ],
       "desmos": [
         "[2, 13, 12, 10]",
@@ -795,7 +795,7 @@
           10
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:spr:4",
+      "id": "g:psda.one-var-data.center-spread@3:medium:spr:4",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -811,7 +811,7 @@
       },
       "solution": [
         "Add the four values: $11 + 11 + 14 + 13 = 49$.",
-        "Divide by the 4 data values: $49 div 4 = 12.25$."
+        "Divide by the 4 data values: $49 \\div 4 = 12.25$."
       ],
       "desmos": [
         "[11, 11, 14, 13]",
@@ -826,7 +826,7 @@
           13
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:medium:spr:5",
+      "id": "g:psda.one-var-data.center-spread@3:medium:spr:5",
       "skill": "psda.one-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -836,8 +836,12 @@
       "stem": "The data set is $14, 24, 22, 17$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{77}{4}$",
-          "value": "-77/4"
+          "text": "$\\frac{65}{4}$",
+          "value": "65/4"
+        },
+        {
+          "text": "$\\frac{69}{4}$",
+          "value": "69/4"
         },
         {
           "text": "$\\frac{73}{4}$",
@@ -846,24 +850,20 @@
         {
           "text": "$\\frac{77}{4}$",
           "value": "77/4"
-        },
-        {
-          "text": "$\\frac{81}{4}$",
-          "value": "81/4"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "An arithmetic slip: redo the last computation carefully.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $14 + 24 + 22 + 17 = 77$.",
-        "Divide by the 4 data values: $77 div 4 = 19.25$."
+        "Divide by the 4 data values: $77 \\div 4 = 19.25$."
       ],
       "desmos": [
         "[14, 24, 22, 17]",
@@ -878,7 +878,7 @@
           17
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:mcq:1",
+      "id": "g:psda.one-var-data.center-spread@3:hard:mcq:1",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -888,34 +888,34 @@
       "stem": "The data set is $24, 18, 3, 29$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{37}{2}$",
-          "value": "-37/2"
+          "text": "$\\frac{37}{4}$",
+          "value": "37/4"
+        },
+        {
+          "text": "$\\frac{31}{2}$",
+          "value": "31/2"
+        },
+        {
+          "text": "$\\frac{33}{2}$",
+          "value": "33/2"
         },
         {
           "text": "$\\frac{37}{2}$",
           "value": "37/2"
-        },
-        {
-          "text": "$\\frac{41}{2}$",
-          "value": "41/2"
-        },
-        {
-          "text": "$\\frac{43}{2}$",
-          "value": "43/2"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The value was halved somewhere along the way.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Add the four values: $24 + 18 + 3 + 29 = 74$.",
-        "Divide by the 4 data values: $74 div 4 = 18.5$."
+        "Divide by the 4 data values: $74 \\div 4 = 18.5$."
       ],
       "desmos": [
         "[24, 18, 3, 29]",
@@ -930,7 +930,7 @@
           29
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:mcq:2",
+      "id": "g:psda.one-var-data.center-spread@3:hard:mcq:2",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -952,8 +952,8 @@
           "value": "61/4"
         },
         {
-          "text": "$\\frac{73}{4}$",
-          "value": "73/4"
+          "text": "$61$",
+          "value": "61"
         }
       ],
       "answer": {
@@ -963,11 +963,11 @@
       "distractorNotes": {
         "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $13 + 19 + 18 + 11 = 61$.",
-        "Divide by the 4 data values: $61 div 4 = 15.25$."
+        "Divide by the 4 data values: $61 \\div 4 = 15.25$."
       ],
       "desmos": [
         "[13, 19, 18, 11]",
@@ -982,7 +982,7 @@
           11
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:mcq:3",
+      "id": "g:psda.one-var-data.center-spread@3:hard:mcq:3",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -992,34 +992,34 @@
       "stem": "The data set is $3, 25, 23, 19$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{35}{2}$",
-          "value": "-35/2"
-        },
-        {
-          "text": "$\\frac{29}{2}$",
-          "value": "29/2"
-        },
-        {
           "text": "$\\frac{35}{2}$",
           "value": "35/2"
         },
         {
-          "text": "$\\frac{39}{2}$",
-          "value": "39/2"
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$\\frac{70}{3}$",
+          "value": "70/3"
+        },
+        {
+          "text": "$70$",
+          "value": "70"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "That is the median, the middle of the sorted values.",
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $3 + 25 + 23 + 19 = 70$.",
-        "Divide by the 4 data values: $70 div 4 = 17.5$."
+        "Divide by the 4 data values: $70 \\div 4 = 17.5$."
       ],
       "desmos": [
         "[3, 25, 23, 19]",
@@ -1034,7 +1034,7 @@
           19
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:mcq:4",
+      "id": "g:psda.one-var-data.center-spread@3:hard:mcq:4",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -1044,34 +1044,34 @@
       "stem": "The data set is $21, 21, 27, 26$. What is its mean?",
       "choices": [
         {
-          "text": "$-\\frac{95}{4}$",
-          "value": "-95/4"
-        },
-        {
-          "text": "$\\frac{83}{4}$",
-          "value": "83/4"
-        },
-        {
-          "text": "$\\frac{91}{4}$",
-          "value": "91/4"
-        },
-        {
           "text": "$\\frac{95}{4}$",
           "value": "95/4"
+        },
+        {
+          "text": "$\\frac{107}{4}$",
+          "value": "107/4"
+        },
+        {
+          "text": "$\\frac{95}{3}$",
+          "value": "95/3"
+        },
+        {
+          "text": "$95$",
+          "value": "95"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "There are 4 values, so divide by 4, not 3.",
+        "D": "That is the total; divide by the number of values."
       },
       "solution": [
         "Add the four values: $21 + 21 + 27 + 26 = 95$.",
-        "Divide by the 4 data values: $95 div 4 = 23.75$."
+        "Divide by the 4 data values: $95 \\div 4 = 23.75$."
       ],
       "desmos": [
         "[21, 21, 27, 26]",
@@ -1086,7 +1086,7 @@
           26
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:mcq:5",
+      "id": "g:psda.one-var-data.center-spread@3:hard:mcq:5",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -1102,7 +1102,7 @@
       },
       "solution": [
         "Add the four values: $14 + 24 + 22 + 17 = 77$.",
-        "Divide by the 4 data values: $77 div 4 = 19.25$."
+        "Divide by the 4 data values: $77 \\div 4 = 19.25$."
       ],
       "desmos": [
         "[14, 24, 22, 17]",
@@ -1117,7 +1117,7 @@
           17
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:spr:1",
+      "id": "g:psda.one-var-data.center-spread@3:hard:spr:1",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1133,7 +1133,7 @@
       },
       "solution": [
         "Add the four values: $24 + 18 + 3 + 29 = 74$.",
-        "Divide by the 4 data values: $74 div 4 = 18.5$."
+        "Divide by the 4 data values: $74 \\div 4 = 18.5$."
       ],
       "desmos": [
         "[24, 18, 3, 29]",
@@ -1148,7 +1148,7 @@
           29
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:spr:2",
+      "id": "g:psda.one-var-data.center-spread@3:hard:spr:2",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1164,7 +1164,7 @@
       },
       "solution": [
         "Add the four values: $13 + 19 + 18 + 11 = 61$.",
-        "Divide by the 4 data values: $61 div 4 = 15.25$."
+        "Divide by the 4 data values: $61 \\div 4 = 15.25$."
       ],
       "desmos": [
         "[13, 19, 18, 11]",
@@ -1179,7 +1179,7 @@
           11
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:spr:3",
+      "id": "g:psda.one-var-data.center-spread@3:hard:spr:3",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1195,7 +1195,7 @@
       },
       "solution": [
         "Add the four values: $3 + 25 + 23 + 19 = 70$.",
-        "Divide by the 4 data values: $70 div 4 = 17.5$."
+        "Divide by the 4 data values: $70 \\div 4 = 17.5$."
       ],
       "desmos": [
         "[3, 25, 23, 19]",
@@ -1210,7 +1210,7 @@
           19
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:spr:4",
+      "id": "g:psda.one-var-data.center-spread@3:hard:spr:4",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1226,7 +1226,7 @@
       },
       "solution": [
         "Add the four values: $21 + 21 + 27 + 26 = 95$.",
-        "Divide by the 4 data values: $95 div 4 = 23.75$."
+        "Divide by the 4 data values: $95 \\div 4 = 23.75$."
       ],
       "desmos": [
         "[21, 21, 27, 26]",
@@ -1241,7 +1241,7 @@
           26
         ]
       },
-      "id": "g:psda.one-var-data.center-spread@2:hard:spr:5",
+      "id": "g:psda.one-var-data.center-spread@3:hard:spr:5",
       "skill": "psda.one-var-data",
       "difficulty": "hard",
       "format": "spr",

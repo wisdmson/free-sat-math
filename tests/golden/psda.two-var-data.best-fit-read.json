@@ -1,35 +1,35 @@
 {
   "typeId": "psda.two-var-data.best-fit-read",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
       "choices": [
         {
-          "text": "$-37$",
-          "value": "-37"
-        },
-        {
-          "text": "$36$",
-          "value": "36"
+          "text": "$17$",
+          "value": "17"
         },
         {
           "text": "$37$",
           "value": "37"
         },
         {
-          "text": "$38$",
-          "value": "38"
+          "text": "$57$",
+          "value": "57"
+        },
+        {
+          "text": "$93$",
+          "value": "93"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 9 for $x$: $y = 3(9) + (10)$.",
@@ -47,7 +47,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:mcq:1",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -57,30 +57,30 @@
       "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
       "choices": [
         {
-          "text": "$-22$",
-          "value": "-22"
-        },
-        {
-          "text": "$20$",
-          "value": "20"
-        },
-        {
-          "text": "$21$",
-          "value": "21"
-        },
-        {
           "text": "$22$",
           "value": "22"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$26$",
+          "value": "26"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The slope and the intercept were swapped.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute 3 for $x$: $y = 5(3) + (7)$.",
@@ -98,7 +98,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:mcq:2",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -108,20 +108,20 @@
       "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
       "choices": [
         {
-          "text": "$-32$",
-          "value": "-32"
+          "text": "$16$",
+          "value": "16"
         },
         {
           "text": "$32$",
           "value": "32"
         },
         {
-          "text": "$33$",
-          "value": "33"
+          "text": "$48$",
+          "value": "48"
         },
         {
-          "text": "$35$",
-          "value": "35"
+          "text": "$67$",
+          "value": "67"
         }
       ],
       "answer": {
@@ -129,9 +129,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 8 for $x$: $y = 3(8) + (8)$.",
@@ -149,7 +149,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:mcq:3",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -159,30 +159,30 @@
       "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
       "choices": [
         {
-          "text": "$-30$",
-          "value": "-30"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
+          "text": "$10$",
+          "value": "10"
         },
         {
           "text": "$30$",
           "value": "30"
         },
         {
-          "text": "$33$",
-          "value": "33"
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$102$",
+          "value": "102"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 10 for $x$: $y = 2(10) + (10)$.",
@@ -200,7 +200,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:mcq:4",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -210,30 +210,30 @@
       "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
       "choices": [
         {
-          "text": "$-52$",
-          "value": "-52"
-        },
-        {
-          "text": "$49$",
-          "value": "49"
-        },
-        {
-          "text": "$50$",
-          "value": "50"
-        },
-        {
           "text": "$52$",
           "value": "52"
+        },
+        {
+          "text": "$55$",
+          "value": "55"
+        },
+        {
+          "text": "$76$",
+          "value": "76"
+        },
+        {
+          "text": "$92$",
+          "value": "92"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 11 for $x$: $y = 4(11) + (8)$.",
@@ -251,7 +251,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:mcq:5",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "mcq",
@@ -281,7 +281,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:spr:1",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -311,7 +311,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:spr:2",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -341,7 +341,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:spr:3",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -371,7 +371,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:spr:4",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -401,7 +401,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:easy:spr:5",
       "skill": "psda.two-var-data",
       "difficulty": "easy",
       "format": "spr",
@@ -411,30 +411,30 @@
       "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
       "choices": [
         {
-          "text": "$-37$",
-          "value": "-37"
-        },
-        {
-          "text": "$36$",
-          "value": "36"
+          "text": "$17$",
+          "value": "17"
         },
         {
           "text": "$37$",
           "value": "37"
         },
         {
-          "text": "$38$",
-          "value": "38"
+          "text": "$57$",
+          "value": "57"
+        },
+        {
+          "text": "$93$",
+          "value": "93"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 9 for $x$: $y = 3(9) + (10)$.",
@@ -452,7 +452,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:mcq:1",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -462,30 +462,30 @@
       "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
       "choices": [
         {
-          "text": "$-22$",
-          "value": "-22"
-        },
-        {
-          "text": "$20$",
-          "value": "20"
-        },
-        {
-          "text": "$21$",
-          "value": "21"
-        },
-        {
           "text": "$22$",
           "value": "22"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$26$",
+          "value": "26"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The slope and the intercept were swapped.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute 3 for $x$: $y = 5(3) + (7)$.",
@@ -503,7 +503,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:mcq:2",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -513,20 +513,20 @@
       "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
       "choices": [
         {
-          "text": "$-32$",
-          "value": "-32"
+          "text": "$16$",
+          "value": "16"
         },
         {
           "text": "$32$",
           "value": "32"
         },
         {
-          "text": "$33$",
-          "value": "33"
+          "text": "$48$",
+          "value": "48"
         },
         {
-          "text": "$35$",
-          "value": "35"
+          "text": "$67$",
+          "value": "67"
         }
       ],
       "answer": {
@@ -534,9 +534,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 8 for $x$: $y = 3(8) + (8)$.",
@@ -554,7 +554,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:mcq:3",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -564,30 +564,30 @@
       "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
       "choices": [
         {
-          "text": "$-30$",
-          "value": "-30"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
+          "text": "$10$",
+          "value": "10"
         },
         {
           "text": "$30$",
           "value": "30"
         },
         {
-          "text": "$33$",
-          "value": "33"
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$102$",
+          "value": "102"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 10 for $x$: $y = 2(10) + (10)$.",
@@ -605,7 +605,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:mcq:4",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -615,30 +615,30 @@
       "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
       "choices": [
         {
-          "text": "$-52$",
-          "value": "-52"
-        },
-        {
-          "text": "$49$",
-          "value": "49"
-        },
-        {
-          "text": "$50$",
-          "value": "50"
-        },
-        {
           "text": "$52$",
           "value": "52"
+        },
+        {
+          "text": "$55$",
+          "value": "55"
+        },
+        {
+          "text": "$76$",
+          "value": "76"
+        },
+        {
+          "text": "$92$",
+          "value": "92"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 11 for $x$: $y = 4(11) + (8)$.",
@@ -656,7 +656,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:mcq:5",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "mcq",
@@ -686,7 +686,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:spr:1",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -716,7 +716,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:spr:2",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -746,7 +746,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:spr:3",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -776,7 +776,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:spr:4",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -806,7 +806,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:medium:spr:5",
       "skill": "psda.two-var-data",
       "difficulty": "medium",
       "format": "spr",
@@ -816,30 +816,30 @@
       "stem": "A line of best fit for a data set is $y = 5x + 10$. Use this model to predict $y$ when $x = 9$.",
       "choices": [
         {
-          "text": "$-55$",
-          "value": "-55"
-        },
-        {
-          "text": "$54$",
-          "value": "54"
+          "text": "$35$",
+          "value": "35"
         },
         {
           "text": "$55$",
           "value": "55"
         },
         {
-          "text": "$56$",
-          "value": "56"
+          "text": "$58$",
+          "value": "58"
+        },
+        {
+          "text": "$95$",
+          "value": "95"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 9 for $x$: $y = 5(9) + (10)$.",
@@ -857,7 +857,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:mcq:1",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -867,30 +867,30 @@
       "stem": "A line of best fit for a data set is $y = 8x + 7$. Use this model to predict $y$ when $x = 3$.",
       "choices": [
         {
-          "text": "$-31$",
-          "value": "-31"
-        },
-        {
-          "text": "$29$",
-          "value": "29"
-        },
-        {
-          "text": "$30$",
-          "value": "30"
-        },
-        {
           "text": "$31$",
           "value": "31"
+        },
+        {
+          "text": "$34$",
+          "value": "34"
+        },
+        {
+          "text": "$62$",
+          "value": "62"
+        },
+        {
+          "text": "$80$",
+          "value": "80"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The value was doubled somewhere along the way.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute 3 for $x$: $y = 8(3) + (7)$.",
@@ -908,7 +908,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:mcq:2",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -918,20 +918,20 @@
       "stem": "A line of best fit for a data set is $y = 5x + 8$. Use this model to predict $y$ when $x = 8$.",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
+          "text": "$32$",
+          "value": "32"
         },
         {
           "text": "$48$",
           "value": "48"
         },
         {
-          "text": "$49$",
-          "value": "49"
+          "text": "$69$",
+          "value": "69"
         },
         {
-          "text": "$51$",
-          "value": "51"
+          "text": "$80$",
+          "value": "80"
         }
       ],
       "answer": {
@@ -939,9 +939,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The slope and the intercept were swapped.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute 8 for $x$: $y = 5(8) + (8)$.",
@@ -959,7 +959,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:mcq:3",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -969,30 +969,30 @@
       "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
       "choices": [
         {
-          "text": "$-30$",
-          "value": "-30"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
+          "text": "$10$",
+          "value": "10"
         },
         {
           "text": "$30$",
           "value": "30"
         },
         {
-          "text": "$33$",
-          "value": "33"
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$102$",
+          "value": "102"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute 10 for $x$: $y = 2(10) + (10)$.",
@@ -1010,7 +1010,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:mcq:4",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -1020,30 +1020,30 @@
       "stem": "A line of best fit for a data set is $y = 7x + 8$. Use this model to predict $y$ when $x = 11$.",
       "choices": [
         {
-          "text": "$-85$",
-          "value": "-85"
-        },
-        {
-          "text": "$82$",
-          "value": "82"
-        },
-        {
-          "text": "$83$",
-          "value": "83"
-        },
-        {
           "text": "$85$",
           "value": "85"
+        },
+        {
+          "text": "$88$",
+          "value": "88"
+        },
+        {
+          "text": "$95$",
+          "value": "95"
+        },
+        {
+          "text": "$133$",
+          "value": "133"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The slope and the intercept were swapped.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute 11 for $x$: $y = 7(11) + (8)$.",
@@ -1061,7 +1061,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:mcq:5",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "mcq",
@@ -1091,7 +1091,7 @@
           9
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:1",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:spr:1",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1121,7 +1121,7 @@
           3
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:2",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:spr:2",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1151,7 +1151,7 @@
           8
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:3",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:spr:3",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1181,7 +1181,7 @@
           10
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:4",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:spr:4",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "spr",
@@ -1211,7 +1211,7 @@
           11
         ]
       },
-      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:5",
+      "id": "g:psda.two-var-data.best-fit-read@3:hard:spr:5",
       "skill": "psda.two-var-data",
       "difficulty": "hard",
       "format": "spr",

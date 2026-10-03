@@ -17,6 +17,7 @@ Make practice something a student reaches for in spare minutes. Opening the app 
 - Mental-math drills measurably get faster: the Gym shows seconds per question falling across sessions.
 - Everything except Desmos works **offline** after the first visit.
 - No page ships more than **170 KB of gzipped JS** (the Phase 1 budget stays).
+  - **Exception (owner decision, 2026-10-03):** Quick Play (`/play/`) may use up to **175 KB**. It builds four random-skill question cards the moment it opens, so every question generator is startup code; with all 19 skills that's about 172 KB.
 - No existing student loses progress in the saved-progress upgrade.
 
 ### Non-goals

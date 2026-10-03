@@ -5,8 +5,8 @@ import type { Rng } from '../rng';
 import {
   answerValue,
   fallbackCandidates,
+  isNice,
   numericAnswer,
-  pickDistractors,
   shuffledChoices,
   type Candidate,
 } from './shared/choices';
@@ -45,7 +45,7 @@ function expected(kind: string, v: readonly number[]): Rational | string {
     case 'quadratic-value':
       return r(a * (c - b) ** 2 + d);
     case 'rate':
-      return r(a).mul(r(c)).div(r(b));
+      return r(a).mul(r(c));
     case 'percent':
       return r(a)
         .mul(r(100 + b))
@@ -60,7 +60,7 @@ function expected(kind: string, v: readonly number[]): Rational | string {
     case 'probability':
       return r(a, b);
     case 'inference':
-      return r(a, b).sub(r(c, 100));
+      return r(a - c);
     case 'claim':
       return 'randomized';
     case 'volume':
@@ -97,7 +97,7 @@ function verifiedValue(kind: string, v: readonly number[]): Rational | string {
       return Rational.of(a * difference * difference + d);
     }
     case 'rate':
-      return Rational.of(a * c, b);
+      return Rational.of(a * c);
     case 'percent':
       return Rational.of(a * (100 + b), 100);
     case 'mean':
@@ -108,7 +108,7 @@ function verifiedValue(kind: string, v: readonly number[]): Rational | string {
     case 'probability':
       return Rational.of(a, b);
     case 'inference':
-      return Rational.of(a * 100 - c * b, b * 100);
+      return Rational.of(a - c);
     case 'volume':
       return Rational.of(a * b * c);
     case 'angles':
@@ -124,13 +124,175 @@ function verifiedValue(kind: string, v: readonly number[]): Rational | string {
   }
 }
 
-const distractors = (answer: Rational, rng: Rng): Candidate[] =>
-  pickDistractors(answer, fallbackCandidates(answer, rng), { maxDen: 100 });
+/** Answers a student gets from a common mistake, tried before the generic slips. */
+function mistakes(kind: string, v: readonly number[]): Candidate[] {
+  const [a, b, c] = v as [number, number, number];
+  const m = (value: Rational, note: string): Candidate => ({ value, note });
+  switch (kind) {
+    case 'linear-one':
+      return [
+        m(r(c + b, a), 'The constant was added instead of subtracted when moving it across.'),
+        m(
+          r(c - b),
+          'Subtracting was right, but the last step forgot to divide by the coefficient.',
+        ),
+        m(
+          r(c, a).sub(r(b)),
+          'Divided before moving the constant: that splits the equation unevenly.',
+        ),
+      ];
+    case 'function':
+    case 'line':
+    case 'trend':
+      return [
+        m(r(a * c - b), 'The constant term was subtracted instead of added.'),
+        m(r(b * c + a), 'The slope and the intercept were swapped.'),
+        m(r(a * (c + b)), 'The constant was added before multiplying by the slope.'),
+      ];
+    case 'inequality':
+      return [
+        m(r(c), 'The boundary itself is not a solution: the inequality is strict (<).'),
+        m(r(c + 1), 'Numbers greater than the boundary make the inequality false.'),
+        m(r(c - 2), 'There is a greater integer that still works.'),
+      ];
+    case 'equivalent':
+      return [
+        m(
+          r(b + c),
+          'The coefficient in front of the parentheses was not distributed to the constant.',
+        ),
+        m(r(a * b), 'The separate x-term was left out when combining like terms.'),
+        m(r(a * b - c), 'The separate x-term was subtracted instead of added.'),
+      ];
+    case 'quadratic-roots':
+      return [
+        m(r(Math.min(a, b)), 'That is the smaller of the two solutions.'),
+        m(r(-Math.max(a, b)), 'A factor (x - k) gives the solution x = k, not x = -k.'),
+        m(r(-Math.min(a, b)), 'A factor (x - k) gives the solution x = k, not x = -k.'),
+      ];
+    case 'quadratic-value': {
+      const d = v[3] as number;
+      return [
+        m(
+          r(a * (c + b) ** 2 + d),
+          'In a(x - h)², the sign inside the parentheses is opposite to h.',
+        ),
+        m(r(a * 2 * (c - b) + d), 'The difference was doubled instead of squared.'),
+        m(r(a * (c - b) ** 2 - d), 'The constant k was subtracted instead of added.'),
+      ];
+    }
+    case 'rate':
+      return [
+        m(
+          r(a * b * c),
+          'Multiplied the total by the new time without finding the rate per minute first.',
+        ),
+        m(r(a * c, b), 'Divided by the time twice: the rate per minute was already found.'),
+        m(r(a * b + c), 'Added the minutes instead of multiplying by the rate.'),
+      ];
+    case 'percent':
+      return [
+        m(r(a * b, 100), 'That is only the increase; add it to the original value.'),
+        m(r(a + b), 'The percent was added as a number instead of as a percent of the value.'),
+        m(r(a * (100 - b), 100), 'That is a decrease; the value increases.'),
+      ];
+    case 'mean': {
+      const sum = v.slice(0, 4).reduce((t, n) => t + n, 0);
+      const sorted = [...v.slice(0, 4)].sort((x, y) => x - y);
+      return [
+        m(r(sum), 'That is the total; divide by the number of values.'),
+        m(
+          r((sorted[1] as number) + (sorted[2] as number), 2),
+          'That is the median, the middle of the sorted values.',
+        ),
+        m(r(sum, 3), 'There are 4 values, so divide by 4, not 3.'),
+      ];
+    }
+    case 'probability':
+      return [
+        m(r(a, b - a), 'That compares red to blue; probability compares red to all tokens.'),
+        m(r(b - a, b), 'That is the probability of blue.'),
+        m(r(1, b), 'That is the chance of one particular token, not of any red one.'),
+      ];
+    case 'inference':
+      return [
+        m(r(a + c), 'That is the upper end of the interval.'),
+        m(r(a), 'That is the sample estimate; subtract the margin for the lower end.'),
+        m(r(c), 'That is the margin of error itself.'),
+      ];
+    case 'volume':
+      return [
+        m(r(2 * (a * b + b * c + a * c)), 'That is the surface area, not the volume.'),
+        m(r(a + b + c), 'The dimensions were added instead of multiplied.'),
+        m(r(a * b), 'That is the area of the base; multiply by the height too.'),
+      ];
+    case 'angles':
+      return [
+        m(r(a + b), 'That is the sum of the two given angles.'),
+        m(r(360 - a - b), 'The angles of a triangle add to 180°, not 360°.'),
+        m(r(90 - a - b + 90 - b), 'Check the total: the three angles must add to 180°.'),
+      ];
+    case 'pythagorean':
+      return [
+        m(r(7 * a), 'The legs were added: the hypotenuse is shorter than their sum.'),
+        m(r(25 * a * a), 'That is c²; take the square root for the length.'),
+        m(r(a), 'That is the difference of the legs, not the hypotenuse.'),
+      ];
+    case 'circle-radius':
+      return [
+        m(r(a * a), 'That is r²; take the square root for the radius.'),
+        m(r(2 * a), 'That is the diameter.'),
+        m(r(a * a, 2), 'Halving r² does not give the radius; take the square root.'),
+      ];
+    default:
+      return [];
+  }
+}
+
+/** Quantities that can't be negative never get negative answer choices. */
+const NON_NEGATIVE = new Set([
+  'rate',
+  'percent',
+  'probability',
+  'inference',
+  'volume',
+  'angles',
+  'pythagorean',
+  'circle-radius',
+]);
+
+/**
+ * Three wrong choices, common mistakes first. Choices are listed smallest to largest like the
+ * SAT, so the correct answer's position is picked at random first (A to D equally often) and
+ * the wrong choices are chosen to fit around it.
+ */
+function distractors(kind: string, v: readonly number[], answer: Rational, rng: Rng): Candidate[] {
+  const rule = { maxDen: 100, ...(NON_NEGATIVE.has(kind) ? { min: 0 } : {}) };
+  const generic: Candidate[] = [
+    ...fallbackCandidates(answer, rng),
+    { value: answer.mul(r(1, 2)), note: 'The value was halved somewhere along the way.' },
+  ];
+  const pool: Candidate[] = [];
+  for (const c of [...rng.shuffle(mistakes(kind, v)), ...rng.shuffle(generic)]) {
+    if (c.value.eq(answer) || !isNice(c.value, rule) || pool.some((p) => p.value.eq(c.value)))
+      continue;
+    pool.push(c);
+  }
+  const below = pool.filter((c) => c.value.cmp(answer) < 0);
+  const above = pool.filter((c) => c.value.cmp(answer) > 0);
+  const want = rng.int(0, 3);
+  const positions = [0, 1, 2, 3].sort((x, y) => Math.abs(x - want) - Math.abs(y - want));
+  for (const pos of positions) {
+    if (below.length >= pos && above.length >= 3 - pos)
+      return [...below.slice(0, pos), ...above.slice(0, 3 - pos)];
+  }
+  throw new Error('Not enough distinct distractors');
+}
 
 function numericType(topic: Topic): ProblemType {
   return {
     id: topic.id,
-    version: 2,
+    version: 3,
     skill: topic.skill,
     supports: { easy: ['mcq', 'spr'], medium: ['mcq', 'spr'], hard: ['mcq', 'spr'] },
     generate(rng, difficulty, format): GeneratedBody {
@@ -139,7 +301,7 @@ function numericType(topic: Topic): ProblemType {
       if (typeof answer === 'string') throw new Error(`${s.kind} needs a choice type`);
       return {
         stem: s.stem,
-        ...numericAnswer(format, answer, () => distractors(answer, rng)),
+        ...numericAnswer(format, answer, () => distractors(s.kind, s.values, answer, rng)),
         solution: s.solution,
         ...(s.desmos === undefined ? {} : { desmos: s.desmos }),
         meta: { kind: s.kind, values: s.values },
@@ -165,7 +327,7 @@ function type(topic: Topic): ProblemType {
   if (topic.skill !== 'psda.claims') return numericType(topic);
   return {
     id: topic.id,
-    version: 2,
+    version: 3,
     skill: topic.skill,
     supports: { easy: ['mcq'], medium: ['mcq'], hard: ['mcq'] },
     generate(rng, difficulty): GeneratedBody {
@@ -365,8 +527,8 @@ const TOPICS: readonly Topic[] = [
         values: [rate, hours, asked],
         stem: `A printer makes $${rate * hours}$ pages in $${hours}$ minutes at a constant rate. How many pages will it make in $${asked}$ minutes?`,
         solution: [
-          `Find the unit rate: $${rate * hours} \div ${hours} = ${rate}$ pages per minute.`,
-          `Multiply by ${asked} minutes: $${rate} \times ${asked} = ${rate * asked}$.`,
+          `Find the unit rate: $${rate * hours} \\div ${hours} = ${rate}$ pages per minute.`,
+          `Multiply by ${asked} minutes: $${rate} \\times ${asked} = ${rate * asked}$.`,
         ],
         desmos: [`y = ${rate}x`, `(${asked}, ${rate * asked})`],
       };
@@ -406,7 +568,7 @@ const TOPICS: readonly Topic[] = [
         stem: `The data set is $${values.join(', ')}$. What is its mean?`,
         solution: [
           `Add the four values: $${values.join(' + ')} = ${values.reduce((sum, n) => sum + n, 0)}$.`,
-          `Divide by the 4 data values: $${values.reduce((sum, n) => sum + n, 0)} \div 4 = ${mean}$.`,
+          `Divide by the 4 data values: $${values.reduce((sum, n) => sum + n, 0)} \\div 4 = ${mean}$.`,
         ],
         desmos: [`[${values.join(', ')}]`, `mean([${values.join(', ')}])`],
       };
@@ -459,7 +621,7 @@ const TOPICS: readonly Topic[] = [
       return {
         kind: 'inference',
         values: [successes, 100, margin],
-        stem: `In a random sample, $${successes}$ out of $100$ students prefer later school start times. The margin of error is $${margin}$ percentage points. What is the lower end of the estimated interval?`,
+        stem: `In a random sample, $${successes}$ out of $100$ students prefer later school start times. The margin of error is $${margin}$ percentage points. What is the lower end of the estimated interval, as a percent?`,
         solution: [
           `The sample estimate is $${successes}\\%$. Subtract the margin of error for the lower end.`,
           `$${successes}\\% - ${margin}$ percentage points $= ${successes - margin}\\%$.`,
@@ -499,7 +661,7 @@ const TOPICS: readonly Topic[] = [
         stem: `A rectangular prism is $${a}$ units long, $${b}$ units wide, and $${c}$ units tall. What is its volume in cubic units?`,
         solution: [
           `Use $V = lwh$ for a rectangular prism.`,
-          `$V = ${a} \times ${b} \times ${c} = ${a * b * c}$ cubic units.`,
+          `$V = ${a} \\times ${b} \\times ${c} = ${a * b * c}$ cubic units.`,
         ],
         desmos: [`V = ${a}*${b}*${c}`, `V`],
       };

@@ -1,25 +1,25 @@
 {
   "typeId": "alg.linear-two-var.line-equation",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "A line has equation $y = -x + 5$. What is the $y$-coordinate when $x = 6$?",
       "choices": [
         {
-          "text": "$-2$",
-          "value": "-2"
+          "text": "$-11$",
+          "value": "-11"
         },
         {
           "text": "$-1$",
           "value": "-1"
         },
         {
-          "text": "$0$",
-          "value": "0"
+          "text": "$2$",
+          "value": "2"
         },
         {
-          "text": "$1$",
-          "value": "1"
+          "text": "$29$",
+          "value": "29"
         }
       ],
       "answer": {
@@ -27,9 +27,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "An arithmetic slip: redo the last computation carefully.",
+        "A": "The constant was added before multiplying by the slope.",
         "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 6$: $y = -1(6) + 5$.",
@@ -47,7 +47,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:mcq:1",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:mcq:1",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "mcq",
@@ -57,30 +57,30 @@
       "stem": "A line has equation $y = 3x + 1$. What is the $y$-coordinate when $x = 2$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
-        },
-        {
-          "text": "$5$",
-          "value": "5"
-        },
-        {
-          "text": "$6$",
-          "value": "6"
-        },
-        {
           "text": "$7$",
           "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "B": "The constant was added before multiplying by the slope.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Substitute $x = 2$: $y = 3(2) + 1$.",
@@ -98,7 +98,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:mcq:2",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:mcq:2",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "mcq",
@@ -108,30 +108,30 @@
       "stem": "A line has equation $y = -x + 2$. What is the $y$-coordinate when $x = 5$?",
       "choices": [
         {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
           "text": "$-3$",
           "value": "-3"
         },
         {
-          "text": "$-2$",
-          "value": "-2"
-        },
-        {
-          "text": "$0$",
-          "value": "0"
-        },
-        {
           "text": "$3$",
           "value": "3"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 0
+        "index": 1
       },
       "distractorNotes": {
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "A sign error: the size is right but the sign is wrong.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 5$: $y = -1(5) + 2$.",
@@ -149,7 +149,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:mcq:3",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:mcq:3",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "mcq",
@@ -159,20 +159,20 @@
       "stem": "A line has equation $y = -4x + 5$. What is the $y$-coordinate when $x = 7$?",
       "choices": [
         {
-          "text": "$-26$",
-          "value": "-26"
+          "text": "$-48$",
+          "value": "-48"
         },
         {
           "text": "$-23$",
           "value": "-23"
         },
         {
-          "text": "$-20$",
-          "value": "-20"
+          "text": "$-22$",
+          "value": "-22"
         },
         {
-          "text": "$23$",
-          "value": "23"
+          "text": "$31$",
+          "value": "31"
         }
       ],
       "answer": {
@@ -180,9 +180,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "An arithmetic slip: redo the last computation carefully.",
+        "A": "The constant was added before multiplying by the slope.",
         "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 7$: $y = -4(7) + 5$.",
@@ -200,7 +200,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:mcq:4",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:mcq:4",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "mcq",
@@ -210,30 +210,30 @@
       "stem": "A line has equation $y = x + 3$. What is the $y$-coordinate when $x = 8$?",
       "choices": [
         {
-          "text": "$-11$",
-          "value": "-11"
-        },
-        {
-          "text": "$8$",
-          "value": "8"
-        },
-        {
-          "text": "$9$",
-          "value": "9"
-        },
-        {
           "text": "$11$",
           "value": "11"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 8$: $y = 1(8) + 3$.",
@@ -251,7 +251,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:mcq:5",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:mcq:5",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "mcq",
@@ -281,7 +281,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:spr:1",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:spr:1",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "spr",
@@ -311,7 +311,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:spr:2",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:spr:2",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "spr",
@@ -341,7 +341,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:spr:3",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:spr:3",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "spr",
@@ -371,7 +371,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:spr:4",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:spr:4",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "spr",
@@ -401,7 +401,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:easy:spr:5",
+      "id": "g:alg.linear-two-var.line-equation@3:easy:spr:5",
       "skill": "alg.linear-two-var",
       "difficulty": "easy",
       "format": "spr",
@@ -411,30 +411,30 @@
       "stem": "A line has equation $y = x + 11$. What is the $y$-coordinate when $x = 6$?",
       "choices": [
         {
-          "text": "$-17$",
-          "value": "-17"
-        },
-        {
-          "text": "$16$",
-          "value": "16"
+          "text": "$-5$",
+          "value": "-5"
         },
         {
           "text": "$17$",
           "value": "17"
         },
         {
-          "text": "$18$",
-          "value": "18"
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$67$",
+          "value": "67"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 6$: $y = 1(6) + 11$.",
@@ -452,7 +452,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:mcq:1",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:mcq:1",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "mcq",
@@ -462,30 +462,30 @@
       "stem": "A line has equation $y = 7x + 6$. What is the $y$-coordinate when $x = 2$?",
       "choices": [
         {
-          "text": "$-20$",
-          "value": "-20"
-        },
-        {
-          "text": "$18$",
-          "value": "18"
-        },
-        {
-          "text": "$19$",
-          "value": "19"
-        },
-        {
           "text": "$20$",
           "value": "20"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The value was doubled somewhere along the way.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute $x = 2$: $y = 7(2) + 6$.",
@@ -503,7 +503,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:mcq:2",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:mcq:2",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "mcq",
@@ -513,20 +513,20 @@
       "stem": "A line has equation $y = x + 7$. What is the $y$-coordinate when $x = 5$?",
       "choices": [
         {
-          "text": "$-12$",
-          "value": "-12"
+          "text": "$-2$",
+          "value": "-2"
         },
         {
           "text": "$12$",
           "value": "12"
         },
         {
-          "text": "$13$",
-          "value": "13"
+          "text": "$24$",
+          "value": "24"
         },
         {
-          "text": "$15$",
-          "value": "15"
+          "text": "$36$",
+          "value": "36"
         }
       ],
       "answer": {
@@ -534,9 +534,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 5$: $y = 1(5) + 7$.",
@@ -554,7 +554,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:mcq:3",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:mcq:3",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "mcq",
@@ -564,20 +564,20 @@
       "stem": "A line has equation $y = -4x + 12$. What is the $y$-coordinate when $x = 7$?",
       "choices": [
         {
-          "text": "$-19$",
-          "value": "-19"
+          "text": "$-76$",
+          "value": "-76"
         },
         {
           "text": "$-16$",
           "value": "-16"
         },
         {
-          "text": "$-13$",
-          "value": "-13"
+          "text": "$-15$",
+          "value": "-15"
         },
         {
-          "text": "$16$",
-          "value": "16"
+          "text": "$80$",
+          "value": "80"
         }
       ],
       "answer": {
@@ -585,9 +585,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "An arithmetic slip: redo the last computation carefully.",
+        "A": "The constant was added before multiplying by the slope.",
         "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 7$: $y = -4(7) + 12$.",
@@ -605,7 +605,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:mcq:4",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:mcq:4",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "mcq",
@@ -615,30 +615,30 @@
       "stem": "A line has equation $y = 5x + 8$. What is the $y$-coordinate when $x = 8$?",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
-        },
-        {
-          "text": "$45$",
-          "value": "45"
-        },
-        {
-          "text": "$46$",
-          "value": "46"
-        },
-        {
           "text": "$48$",
           "value": "48"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        },
+        {
+          "text": "$69$",
+          "value": "69"
+        },
+        {
+          "text": "$80$",
+          "value": "80"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The slope and the intercept were swapped.",
+        "D": "The constant was added before multiplying by the slope."
       },
       "solution": [
         "Substitute $x = 8$: $y = 5(8) + 8$.",
@@ -656,7 +656,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:mcq:5",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:mcq:5",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "mcq",
@@ -686,7 +686,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:spr:1",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:spr:1",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "spr",
@@ -716,7 +716,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:spr:2",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:spr:2",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "spr",
@@ -746,7 +746,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:spr:3",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:spr:3",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "spr",
@@ -776,7 +776,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:spr:4",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:spr:4",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "spr",
@@ -806,7 +806,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:medium:spr:5",
+      "id": "g:alg.linear-two-var.line-equation@3:medium:spr:5",
       "skill": "alg.linear-two-var",
       "difficulty": "medium",
       "format": "spr",
@@ -816,30 +816,30 @@
       "stem": "A line has equation $y = -x + 10$. What is the $y$-coordinate when $x = 6$?",
       "choices": [
         {
-          "text": "$-4$",
-          "value": "-4"
-        },
-        {
-          "text": "$3$",
-          "value": "3"
+          "text": "$-16$",
+          "value": "-16"
         },
         {
           "text": "$4$",
           "value": "4"
         },
         {
-          "text": "$5$",
-          "value": "5"
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$59$",
+          "value": "59"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The constant was added before multiplying by the slope.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 6$: $y = -1(6) + 10$.",
@@ -857,7 +857,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:mcq:1",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:mcq:1",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "mcq",
@@ -867,30 +867,30 @@
       "stem": "A line has equation $y = 5x + 2$. What is the $y$-coordinate when $x = 2$?",
       "choices": [
         {
-          "text": "$-12$",
-          "value": "-12"
-        },
-        {
-          "text": "$10$",
-          "value": "10"
-        },
-        {
-          "text": "$11$",
-          "value": "11"
-        },
-        {
           "text": "$12$",
           "value": "12"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$24$",
+          "value": "24"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Substitute $x = 2$: $y = 5(2) + 2$.",
@@ -908,7 +908,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:mcq:2",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:mcq:2",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "mcq",
@@ -918,30 +918,30 @@
       "stem": "A line has equation $y = -2x + 3$. What is the $y$-coordinate when $x = 5$?",
       "choices": [
         {
+          "text": "$-13$",
+          "value": "-13"
+        },
+        {
           "text": "$-7$",
           "value": "-7"
         },
         {
-          "text": "$-6$",
-          "value": "-6"
-        },
-        {
-          "text": "$-4$",
-          "value": "-4"
-        },
-        {
           "text": "$7$",
           "value": "7"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 0
+        "index": 1
       },
       "distractorNotes": {
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "A": "The constant term was subtracted instead of added.",
+        "C": "A sign error: the size is right but the sign is wrong.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 5$: $y = -2(5) + 3$.",
@@ -959,7 +959,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:mcq:3",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:mcq:3",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "mcq",
@@ -969,20 +969,20 @@
       "stem": "A line has equation $y = -9x + 11$. What is the $y$-coordinate when $x = 7$?",
       "choices": [
         {
-          "text": "$-55$",
-          "value": "-55"
+          "text": "$-162$",
+          "value": "-162"
         },
         {
           "text": "$-52$",
           "value": "-52"
         },
         {
-          "text": "$-49$",
-          "value": "-49"
+          "text": "$-51$",
+          "value": "-51"
         },
         {
-          "text": "$52$",
-          "value": "52"
+          "text": "$68$",
+          "value": "68"
         }
       ],
       "answer": {
@@ -990,9 +990,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "An arithmetic slip: redo the last computation carefully.",
+        "A": "The constant was added before multiplying by the slope.",
         "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "A sign error: the size is right but the sign is wrong."
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 7$: $y = -9(7) + 11$.",
@@ -1010,7 +1010,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:mcq:4",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:mcq:4",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "mcq",
@@ -1020,30 +1020,30 @@
       "stem": "A line has equation $y = 3x + 5$. What is the $y$-coordinate when $x = 8$?",
       "choices": [
         {
-          "text": "$-29$",
-          "value": "-29"
-        },
-        {
-          "text": "$26$",
-          "value": "26"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
-        },
-        {
           "text": "$29$",
           "value": "29"
+        },
+        {
+          "text": "$32$",
+          "value": "32"
+        },
+        {
+          "text": "$39$",
+          "value": "39"
+        },
+        {
+          "text": "$43$",
+          "value": "43"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The constant was added before multiplying by the slope.",
+        "D": "The slope and the intercept were swapped."
       },
       "solution": [
         "Substitute $x = 8$: $y = 3(8) + 5$.",
@@ -1061,7 +1061,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:mcq:5",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:mcq:5",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "mcq",
@@ -1091,7 +1091,7 @@
           6
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:spr:1",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:spr:1",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "spr",
@@ -1121,7 +1121,7 @@
           2
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:spr:2",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:spr:2",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "spr",
@@ -1151,7 +1151,7 @@
           5
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:spr:3",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:spr:3",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "spr",
@@ -1181,7 +1181,7 @@
           7
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:spr:4",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:spr:4",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "spr",
@@ -1211,7 +1211,7 @@
           8
         ]
       },
-      "id": "g:alg.linear-two-var.line-equation@2:hard:spr:5",
+      "id": "g:alg.linear-two-var.line-equation@3:hard:spr:5",
       "skill": "alg.linear-two-var",
       "difficulty": "hard",
       "format": "spr",

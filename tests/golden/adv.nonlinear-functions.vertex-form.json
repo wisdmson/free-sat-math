@@ -1,13 +1,17 @@
 {
   "typeId": "adv.nonlinear-functions.vertex-form",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
         },
         {
           "text": "$6$",
@@ -16,20 +20,16 @@
         {
           "text": "$7$",
           "value": "7"
-        },
-        {
-          "text": "$8$",
-          "value": "8"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The constant k was subtracted instead of added.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
@@ -49,7 +49,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:mcq:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "mcq",
@@ -59,30 +59,30 @@
       "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-37$",
-          "value": "-37"
+          "text": "$13$",
+          "value": "13"
+        },
+        {
+          "text": "$\\frac{37}{2}$",
+          "value": "37/2"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
         },
         {
           "text": "$37$",
           "value": "37"
-        },
-        {
-          "text": "$39$",
-          "value": "39"
-        },
-        {
-          "text": "$40$",
-          "value": "40"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The value was halved somewhere along the way.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
@@ -102,7 +102,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:mcq:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "mcq",
@@ -112,20 +112,20 @@
       "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
       "choices": [
         {
-          "text": "$-4$",
-          "value": "-4"
+          "text": "$-2$",
+          "value": "-2"
         },
         {
-          "text": "$3$",
-          "value": "3"
+          "text": "$0$",
+          "value": "0"
         },
         {
           "text": "$4$",
           "value": "4"
         },
         {
-          "text": "$7$",
-          "value": "7"
+          "text": "$8$",
+          "value": "8"
         }
       ],
       "answer": {
@@ -133,9 +133,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The constant k was subtracted instead of added.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
@@ -155,7 +155,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:mcq:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "mcq",
@@ -165,30 +165,30 @@
       "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
-        },
-        {
-          "text": "$4$",
-          "value": "4"
-        },
-        {
           "text": "$7$",
           "value": "7"
         },
         {
-          "text": "$9$",
-          "value": "9"
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$87$",
+          "value": "87"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The difference was doubled instead of squared.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
@@ -208,7 +208,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:mcq:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "mcq",
@@ -218,30 +218,30 @@
       "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-28$",
-          "value": "-28"
-        },
-        {
-          "text": "$25$",
-          "value": "25"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
-        },
-        {
           "text": "$28$",
           "value": "28"
+        },
+        {
+          "text": "$31$",
+          "value": "31"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
+        },
+        {
+          "text": "$108$",
+          "value": "108"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
@@ -261,7 +261,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:mcq:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "mcq",
@@ -293,7 +293,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:spr:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "spr",
@@ -325,7 +325,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:spr:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "spr",
@@ -357,7 +357,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:spr:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "spr",
@@ -389,7 +389,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:spr:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "spr",
@@ -421,7 +421,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:easy:spr:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "easy",
       "format": "spr",
@@ -431,8 +431,12 @@
       "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
         },
         {
           "text": "$6$",
@@ -441,20 +445,16 @@
         {
           "text": "$7$",
           "value": "7"
-        },
-        {
-          "text": "$8$",
-          "value": "8"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The constant k was subtracted instead of added.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
@@ -474,7 +474,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:mcq:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "mcq",
@@ -484,30 +484,30 @@
       "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-37$",
-          "value": "-37"
+          "text": "$13$",
+          "value": "13"
+        },
+        {
+          "text": "$\\frac{37}{2}$",
+          "value": "37/2"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
         },
         {
           "text": "$37$",
           "value": "37"
-        },
-        {
-          "text": "$39$",
-          "value": "39"
-        },
-        {
-          "text": "$40$",
-          "value": "40"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The value was halved somewhere along the way.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
@@ -527,7 +527,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:mcq:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "mcq",
@@ -537,20 +537,20 @@
       "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
       "choices": [
         {
-          "text": "$-4$",
-          "value": "-4"
+          "text": "$-2$",
+          "value": "-2"
         },
         {
-          "text": "$3$",
-          "value": "3"
+          "text": "$0$",
+          "value": "0"
         },
         {
           "text": "$4$",
           "value": "4"
         },
         {
-          "text": "$7$",
-          "value": "7"
+          "text": "$8$",
+          "value": "8"
         }
       ],
       "answer": {
@@ -558,9 +558,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The constant k was subtracted instead of added.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
@@ -580,7 +580,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:mcq:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "mcq",
@@ -590,30 +590,30 @@
       "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
-        },
-        {
-          "text": "$4$",
-          "value": "4"
-        },
-        {
           "text": "$7$",
           "value": "7"
         },
         {
-          "text": "$9$",
-          "value": "9"
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$87$",
+          "value": "87"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The difference was doubled instead of squared.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
@@ -633,7 +633,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:mcq:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "mcq",
@@ -643,30 +643,30 @@
       "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-28$",
-          "value": "-28"
-        },
-        {
-          "text": "$25$",
-          "value": "25"
-        },
-        {
-          "text": "$27$",
-          "value": "27"
-        },
-        {
           "text": "$28$",
           "value": "28"
+        },
+        {
+          "text": "$31$",
+          "value": "31"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
+        },
+        {
+          "text": "$108$",
+          "value": "108"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
@@ -686,7 +686,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:mcq:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "mcq",
@@ -718,7 +718,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:spr:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "spr",
@@ -750,7 +750,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:spr:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "spr",
@@ -782,7 +782,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:spr:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "spr",
@@ -814,7 +814,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:spr:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "spr",
@@ -846,7 +846,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:medium:spr:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "medium",
       "format": "spr",
@@ -856,8 +856,12 @@
       "stem": "A quadratic function is $f(x) = 3(x - 3)^2 + 5$. What is $f(4)$?",
       "choices": [
         {
-          "text": "$-8$",
-          "value": "-8"
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
         },
         {
           "text": "$7$",
@@ -866,20 +870,16 @@
         {
           "text": "$8$",
           "value": "8"
-        },
-        {
-          "text": "$9$",
-          "value": "9"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "The constant k was subtracted instead of added.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 4$: $f(4) = 3(4 - (3))^2 + (5)$.",
@@ -899,7 +899,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:mcq:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "mcq",
@@ -909,30 +909,30 @@
       "stem": "A quadratic function is $f(x) = 4(x - 1)^2 - 11$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-53$",
-          "value": "-53"
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$\\frac{53}{2}$",
+          "value": "53/2"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
         },
         {
           "text": "$53$",
           "value": "53"
-        },
-        {
-          "text": "$55$",
-          "value": "55"
-        },
-        {
-          "text": "$56$",
-          "value": "56"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The value was halved somewhere along the way.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 4(5 - (1))^2 + (-11)$.",
@@ -952,7 +952,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:mcq:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "mcq",
@@ -962,20 +962,20 @@
       "stem": "A quadratic function is $f(x) = 3(x - 1)^2 + 2$. What is $f(0)$?",
       "choices": [
         {
-          "text": "$-5$",
-          "value": "-5"
+          "text": "$-4$",
+          "value": "-4"
         },
         {
-          "text": "$4$",
-          "value": "4"
+          "text": "$1$",
+          "value": "1"
         },
         {
           "text": "$5$",
           "value": "5"
         },
         {
-          "text": "$8$",
-          "value": "8"
+          "text": "$10$",
+          "value": "10"
         }
       ],
       "answer": {
@@ -983,9 +983,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The difference was doubled instead of squared.",
+        "B": "The constant k was subtracted instead of added.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Substitute $x = 0$: $f(0) = 3(0 - (1))^2 + (2)$.",
@@ -1005,7 +1005,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:mcq:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "mcq",
@@ -1015,30 +1015,30 @@
       "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-7$",
-          "value": "-7"
-        },
-        {
-          "text": "$4$",
-          "value": "4"
-        },
-        {
           "text": "$7$",
           "value": "7"
         },
         {
-          "text": "$9$",
-          "value": "9"
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$87$",
+          "value": "87"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The difference was doubled instead of squared.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
@@ -1058,7 +1058,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:mcq:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "mcq",
@@ -1068,30 +1068,30 @@
       "stem": "A quadratic function is $f(x) = 4(x - 2)^2 + 10$. What is $f(5)$?",
       "choices": [
         {
-          "text": "$-46$",
-          "value": "-46"
-        },
-        {
-          "text": "$43$",
-          "value": "43"
-        },
-        {
-          "text": "$45$",
-          "value": "45"
-        },
-        {
           "text": "$46$",
           "value": "46"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
+        },
+        {
+          "text": "$92$",
+          "value": "92"
+        },
+        {
+          "text": "$206$",
+          "value": "206"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "The value was doubled somewhere along the way.",
+        "D": "In a(x - h)², the sign inside the parentheses is opposite to h."
       },
       "solution": [
         "Substitute $x = 5$: $f(5) = 4(5 - (2))^2 + (10)$.",
@@ -1111,7 +1111,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:mcq:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "mcq",
@@ -1143,7 +1143,7 @@
           5
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:1",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:spr:1",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "spr",
@@ -1175,7 +1175,7 @@
           -11
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:2",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:spr:2",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "spr",
@@ -1207,7 +1207,7 @@
           2
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:3",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:spr:3",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "spr",
@@ -1239,7 +1239,7 @@
           6
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:4",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:spr:4",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "spr",
@@ -1271,7 +1271,7 @@
           10
         ]
       },
-      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:5",
+      "id": "g:adv.nonlinear-functions.vertex-form@3:hard:spr:5",
       "skill": "adv.nonlinear-functions",
       "difficulty": "hard",
       "format": "spr",

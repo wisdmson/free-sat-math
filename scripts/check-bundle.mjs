@@ -10,6 +10,12 @@ import { gzipSync } from 'node:zlib';
 
 const DIST = 'dist';
 const BUDGET_KB = Number(process.env.BUNDLE_BUDGET_KB ?? 170);
+/**
+ * Pages with their own startup budget. Quick Play builds four random-skill question cards the
+ * moment it opens, so every question generator is startup code; with all 19 skills that's 172 KB.
+ * The owner raised its limit to 175 KB (2026-10-03). BUNDLE_BUDGET_KB still overrides all pages.
+ */
+const PAGE_BUDGET_KB = process.env.BUNDLE_BUDGET_KB ? {} : { 'play/index.html': 175 };
 const NO_JS_PAGES = [
   /^skills\/[^/]+\/index\.html$/,
   /^formulas\/index\.html$/,
@@ -86,7 +92,8 @@ for (const file of htmlFiles(DIST).sort()) {
     `${page.padEnd(32)} ${startupKb.toFixed(1).padStart(6)} KB gz startup` +
       (extraKb > 0.05 ? `  (+${extraKb.toFixed(1)} KB on demand)` : ''),
   );
-  if (startupKb > BUDGET_KB) failures.push(`${page}: ${startupKb.toFixed(1)} KB > ${BUDGET_KB} KB`);
+  const budget = PAGE_BUDGET_KB[page] ?? BUDGET_KB;
+  if (startupKb > budget) failures.push(`${page}: ${startupKb.toFixed(1)} KB > ${budget} KB`);
   if (NO_JS_PAGES.some((re) => re.test(page)) && all.size > 0)
     failures.push(`${page}: should ship no JS files`);
 }
@@ -95,4 +102,4 @@ if (failures.length > 0) {
   console.error(`\nBundle budget exceeded:\n  ${failures.join('\n  ')}`);
   process.exit(1);
 }
-console.log(`\nAll pages within ${BUDGET_KB} KB at startup.`);
+console.log(`\nAll pages within budget at startup (${BUDGET_KB} KB; Quick Play 175 KB).`);

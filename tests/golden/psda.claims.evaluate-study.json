@@ -1,6 +1,6 @@
 {
   "typeId": "psda.claims.evaluate-study",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
@@ -42,7 +42,7 @@
           120
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:easy:mcq:1",
+      "id": "g:psda.claims.evaluate-study@3:easy:mcq:1",
       "skill": "psda.claims",
       "difficulty": "easy",
       "format": "mcq",
@@ -88,7 +88,7 @@
           120
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:easy:mcq:2",
+      "id": "g:psda.claims.evaluate-study@3:easy:mcq:2",
       "skill": "psda.claims",
       "difficulty": "easy",
       "format": "mcq",
@@ -134,7 +134,7 @@
           120
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:easy:mcq:3",
+      "id": "g:psda.claims.evaluate-study@3:easy:mcq:3",
       "skill": "psda.claims",
       "difficulty": "easy",
       "format": "mcq",
@@ -180,7 +180,7 @@
           120
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:easy:mcq:4",
+      "id": "g:psda.claims.evaluate-study@3:easy:mcq:4",
       "skill": "psda.claims",
       "difficulty": "easy",
       "format": "mcq",
@@ -226,7 +226,7 @@
           120
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:easy:mcq:5",
+      "id": "g:psda.claims.evaluate-study@3:easy:mcq:5",
       "skill": "psda.claims",
       "difficulty": "easy",
       "format": "mcq",
@@ -272,7 +272,7 @@
           240
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:medium:mcq:1",
+      "id": "g:psda.claims.evaluate-study@3:medium:mcq:1",
       "skill": "psda.claims",
       "difficulty": "medium",
       "format": "mcq",
@@ -318,7 +318,7 @@
           240
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:medium:mcq:2",
+      "id": "g:psda.claims.evaluate-study@3:medium:mcq:2",
       "skill": "psda.claims",
       "difficulty": "medium",
       "format": "mcq",
@@ -364,7 +364,7 @@
           240
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:medium:mcq:3",
+      "id": "g:psda.claims.evaluate-study@3:medium:mcq:3",
       "skill": "psda.claims",
       "difficulty": "medium",
       "format": "mcq",
@@ -410,7 +410,7 @@
           240
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:medium:mcq:4",
+      "id": "g:psda.claims.evaluate-study@3:medium:mcq:4",
       "skill": "psda.claims",
       "difficulty": "medium",
       "format": "mcq",
@@ -456,7 +456,7 @@
           240
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:medium:mcq:5",
+      "id": "g:psda.claims.evaluate-study@3:medium:mcq:5",
       "skill": "psda.claims",
       "difficulty": "medium",
       "format": "mcq",
@@ -502,7 +502,7 @@
           480
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:hard:mcq:1",
+      "id": "g:psda.claims.evaluate-study@3:hard:mcq:1",
       "skill": "psda.claims",
       "difficulty": "hard",
       "format": "mcq",
@@ -548,7 +548,7 @@
           480
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:hard:mcq:2",
+      "id": "g:psda.claims.evaluate-study@3:hard:mcq:2",
       "skill": "psda.claims",
       "difficulty": "hard",
       "format": "mcq",
@@ -594,7 +594,7 @@
           480
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:hard:mcq:3",
+      "id": "g:psda.claims.evaluate-study@3:hard:mcq:3",
       "skill": "psda.claims",
       "difficulty": "hard",
       "format": "mcq",
@@ -640,7 +640,7 @@
           480
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:hard:mcq:4",
+      "id": "g:psda.claims.evaluate-study@3:hard:mcq:4",
       "skill": "psda.claims",
       "difficulty": "hard",
       "format": "mcq",
@@ -686,7 +686,7 @@
           480
         ]
       },
-      "id": "g:psda.claims.evaluate-study@2:hard:mcq:5",
+      "id": "g:psda.claims.evaluate-study@3:hard:mcq:5",
       "skill": "psda.claims",
       "difficulty": "hard",
       "format": "mcq",

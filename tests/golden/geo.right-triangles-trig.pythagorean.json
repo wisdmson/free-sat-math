@@ -1,25 +1,25 @@
 {
   "typeId": "geo.right-triangles-trig.pythagorean",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$2$",
+          "value": "2"
         },
         {
-          "text": "$9$",
-          "value": "9"
+          "text": "$8$",
+          "value": "8"
         },
         {
           "text": "$10$",
           "value": "10"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$14$",
+          "value": "14"
         }
       ],
       "answer": {
@@ -27,9 +27,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "The legs were added: the hypotenuse is shorter than their sum."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -45,7 +45,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:mcq:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "mcq",
@@ -55,30 +55,30 @@
       "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-20$",
-          "value": "-20"
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$17$",
+          "value": "17"
+        },
+        {
+          "text": "$19$",
+          "value": "19"
         },
         {
           "text": "$20$",
           "value": "20"
-        },
-        {
-          "text": "$22$",
-          "value": "22"
-        },
-        {
-          "text": "$23$",
-          "value": "23"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -94,7 +94,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:mcq:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "mcq",
@@ -104,20 +104,20 @@
       "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$2$",
+          "value": "2"
         },
         {
           "text": "$10$",
           "value": "10"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$14$",
+          "value": "14"
         },
         {
-          "text": "$13$",
-          "value": "13"
+          "text": "$100$",
+          "value": "100"
         }
       ],
       "answer": {
@@ -125,9 +125,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "C": "The legs were added: the hypotenuse is shorter than their sum.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -143,7 +143,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:mcq:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "mcq",
@@ -153,20 +153,20 @@
       "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-5$",
-          "value": "-5"
+          "text": "$1$",
+          "value": "1"
         },
         {
-          "text": "$2$",
-          "value": "2"
+          "text": "$3$",
+          "value": "3"
         },
         {
           "text": "$5$",
           "value": "5"
         },
         {
-          "text": "$6$",
-          "value": "6"
+          "text": "$25$",
+          "value": "25"
         }
       ],
       "answer": {
@@ -174,9 +174,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -192,7 +192,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:mcq:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "mcq",
@@ -202,30 +202,30 @@
       "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-15$",
-          "value": "-15"
-        },
-        {
           "text": "$15$",
           "value": "15"
         },
         {
-          "text": "$16$",
-          "value": "16"
+          "text": "$21$",
+          "value": "21"
         },
         {
-          "text": "$17$",
-          "value": "17"
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$225$",
+          "value": "225"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The legs were added: the hypotenuse is shorter than their sum.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -241,7 +241,7 @@
           3
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:mcq:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "mcq",
@@ -269,7 +269,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:spr:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "spr",
@@ -297,7 +297,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:spr:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "spr",
@@ -325,7 +325,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:spr:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "spr",
@@ -353,7 +353,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:spr:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "spr",
@@ -381,7 +381,7 @@
           3
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:easy:spr:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "easy",
       "format": "spr",
@@ -391,20 +391,20 @@
       "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$2$",
+          "value": "2"
         },
         {
-          "text": "$9$",
-          "value": "9"
+          "text": "$8$",
+          "value": "8"
         },
         {
           "text": "$10$",
           "value": "10"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$14$",
+          "value": "14"
         }
       ],
       "answer": {
@@ -412,9 +412,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "The legs were added: the hypotenuse is shorter than their sum."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -430,7 +430,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:mcq:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "mcq",
@@ -440,30 +440,30 @@
       "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-20$",
-          "value": "-20"
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$17$",
+          "value": "17"
+        },
+        {
+          "text": "$19$",
+          "value": "19"
         },
         {
           "text": "$20$",
           "value": "20"
-        },
-        {
-          "text": "$22$",
-          "value": "22"
-        },
-        {
-          "text": "$23$",
-          "value": "23"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -479,7 +479,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:mcq:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "mcq",
@@ -489,20 +489,20 @@
       "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-10$",
-          "value": "-10"
+          "text": "$2$",
+          "value": "2"
         },
         {
           "text": "$10$",
           "value": "10"
         },
         {
-          "text": "$11$",
-          "value": "11"
+          "text": "$14$",
+          "value": "14"
         },
         {
-          "text": "$13$",
-          "value": "13"
+          "text": "$100$",
+          "value": "100"
         }
       ],
       "answer": {
@@ -510,9 +510,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "C": "The legs were added: the hypotenuse is shorter than their sum.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -528,7 +528,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:mcq:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "mcq",
@@ -538,20 +538,20 @@
       "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-5$",
-          "value": "-5"
+          "text": "$1$",
+          "value": "1"
         },
         {
-          "text": "$2$",
-          "value": "2"
+          "text": "$3$",
+          "value": "3"
         },
         {
           "text": "$5$",
           "value": "5"
         },
         {
-          "text": "$6$",
-          "value": "6"
+          "text": "$25$",
+          "value": "25"
         }
       ],
       "answer": {
@@ -559,9 +559,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -577,7 +577,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:mcq:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "mcq",
@@ -587,30 +587,30 @@
       "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-15$",
-          "value": "-15"
-        },
-        {
           "text": "$15$",
           "value": "15"
         },
         {
-          "text": "$16$",
-          "value": "16"
+          "text": "$21$",
+          "value": "21"
         },
         {
-          "text": "$17$",
-          "value": "17"
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$225$",
+          "value": "225"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The legs were added: the hypotenuse is shorter than their sum.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -626,7 +626,7 @@
           3
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:mcq:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "mcq",
@@ -654,7 +654,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:spr:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "spr",
@@ -682,7 +682,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:spr:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "spr",
@@ -710,7 +710,7 @@
           2
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:spr:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "spr",
@@ -738,7 +738,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:spr:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "spr",
@@ -766,7 +766,7 @@
           3
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:medium:spr:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "medium",
       "format": "spr",
@@ -776,20 +776,20 @@
       "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-20$",
-          "value": "-20"
+          "text": "$4$",
+          "value": "4"
         },
         {
-          "text": "$19$",
-          "value": "19"
+          "text": "$18$",
+          "value": "18"
         },
         {
           "text": "$20$",
           "value": "20"
         },
         {
-          "text": "$21$",
-          "value": "21"
+          "text": "$28$",
+          "value": "28"
         }
       ],
       "answer": {
@@ -797,9 +797,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "The legs were added: the hypotenuse is shorter than their sum."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -815,7 +815,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:mcq:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "mcq",
@@ -825,30 +825,30 @@
       "stem": "A right triangle has legs measuring $24$ and $32$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-40$",
-          "value": "-40"
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$39$",
+          "value": "39"
         },
         {
           "text": "$40$",
           "value": "40"
-        },
-        {
-          "text": "$42$",
-          "value": "42"
-        },
-        {
-          "text": "$43$",
-          "value": "43"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 3
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -864,7 +864,7 @@
           8
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:mcq:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "mcq",
@@ -874,20 +874,20 @@
       "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-20$",
-          "value": "-20"
+          "text": "$4$",
+          "value": "4"
         },
         {
           "text": "$20$",
           "value": "20"
         },
         {
-          "text": "$21$",
-          "value": "21"
+          "text": "$28$",
+          "value": "28"
         },
         {
-          "text": "$23$",
-          "value": "23"
+          "text": "$400$",
+          "value": "400"
         }
       ],
       "answer": {
@@ -895,9 +895,9 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "That is the difference of the legs, not the hypotenuse.",
+        "C": "The legs were added: the hypotenuse is shorter than their sum.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -913,7 +913,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:mcq:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "mcq",
@@ -923,20 +923,20 @@
       "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-5$",
-          "value": "-5"
+          "text": "$1$",
+          "value": "1"
         },
         {
-          "text": "$2$",
-          "value": "2"
+          "text": "$3$",
+          "value": "3"
         },
         {
           "text": "$5$",
           "value": "5"
         },
         {
-          "text": "$6$",
-          "value": "6"
+          "text": "$25$",
+          "value": "25"
         }
       ],
       "answer": {
@@ -944,9 +944,9 @@
         "index": 2
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the difference of the legs, not the hypotenuse.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -962,7 +962,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:mcq:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "mcq",
@@ -972,30 +972,30 @@
       "stem": "A right triangle has legs measuring $18$ and $24$ units. What is the length of its hypotenuse?",
       "choices": [
         {
-          "text": "$-30$",
-          "value": "-30"
-        },
-        {
           "text": "$30$",
           "value": "30"
         },
         {
-          "text": "$31$",
-          "value": "31"
+          "text": "$42$",
+          "value": "42"
         },
         {
-          "text": "$32$",
-          "value": "32"
+          "text": "$60$",
+          "value": "60"
+        },
+        {
+          "text": "$900$",
+          "value": "900"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 1
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "B": "The legs were added: the hypotenuse is shorter than their sum.",
+        "C": "The value was doubled somewhere along the way.",
+        "D": "That is c²; take the square root for the length."
       },
       "solution": [
         "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
@@ -1011,7 +1011,7 @@
           6
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:mcq:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "mcq",
@@ -1039,7 +1039,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:1",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:spr:1",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "spr",
@@ -1067,7 +1067,7 @@
           8
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:2",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:spr:2",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "spr",
@@ -1095,7 +1095,7 @@
           4
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:3",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:spr:3",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "spr",
@@ -1123,7 +1123,7 @@
           1
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:4",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:spr:4",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "spr",
@@ -1151,7 +1151,7 @@
           6
         ]
       },
-      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:5",
+      "id": "g:geo.right-triangles-trig.pythagorean@3:hard:spr:5",
       "skill": "geo.right-triangles-trig",
       "difficulty": "hard",
       "format": "spr",

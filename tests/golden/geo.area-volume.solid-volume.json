@@ -1,39 +1,39 @@
 {
   "typeId": "geo.area-volume.solid-volume",
-  "version": 2,
+  "version": 3,
   "problems": {
     "easy:mcq:1": {
       "stem": "A rectangular prism is $4$ units long, $5$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-80$",
-          "value": "-80"
-        },
-        {
-          "text": "$79$",
-          "value": "79"
+          "text": "$13$",
+          "value": "13"
         },
         {
           "text": "$80$",
           "value": "80"
         },
         {
-          "text": "$81$",
-          "value": "81"
+          "text": "$83$",
+          "value": "83"
+        },
+        {
+          "text": "$112$",
+          "value": "112"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "That is the surface area, not the volume."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -47,7 +47,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:mcq:1",
+      "id": "g:geo.area-volume.solid-volume@3:easy:mcq:1",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "mcq",
@@ -57,34 +57,34 @@
       "stem": "A rectangular prism is $6$ units long, $4$ units wide, and $2$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
-        },
-        {
-          "text": "$46$",
-          "value": "46"
-        },
-        {
-          "text": "$47$",
-          "value": "47"
-        },
-        {
           "text": "$48$",
           "value": "48"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        },
+        {
+          "text": "$88$",
+          "value": "88"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 4 \times 2 = 48$ cubic units."
+        "$V = 6 \\times 4 \\times 2 = 48$ cubic units."
       ],
       "desmos": [
         "V = 6*4*2",
@@ -98,7 +98,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:mcq:2",
+      "id": "g:geo.area-volume.solid-volume@3:easy:mcq:2",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "mcq",
@@ -108,20 +108,20 @@
       "stem": "A rectangular prism is $4$ units long, $5$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-80$",
-          "value": "-80"
+          "text": "$13$",
+          "value": "13"
         },
         {
           "text": "$80$",
           "value": "80"
         },
         {
-          "text": "$81$",
-          "value": "81"
+          "text": "$112$",
+          "value": "112"
         },
         {
-          "text": "$83$",
-          "value": "83"
+          "text": "$160$",
+          "value": "160"
         }
       ],
       "answer": {
@@ -129,13 +129,13 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -149,7 +149,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:mcq:3",
+      "id": "g:geo.area-volume.solid-volume@3:easy:mcq:3",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "mcq",
@@ -159,34 +159,34 @@
       "stem": "A rectangular prism is $2$ units long, $6$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
-        },
-        {
-          "text": "$45$",
-          "value": "45"
+          "text": "$12$",
+          "value": "12"
         },
         {
           "text": "$48$",
           "value": "48"
         },
         {
-          "text": "$51$",
-          "value": "51"
+          "text": "$88$",
+          "value": "88"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 6 \times 4 = 48$ cubic units."
+        "$V = 2 \\times 6 \\times 4 = 48$ cubic units."
       ],
       "desmos": [
         "V = 2*6*4",
@@ -200,7 +200,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:mcq:4",
+      "id": "g:geo.area-volume.solid-volume@3:easy:mcq:4",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "mcq",
@@ -210,34 +210,34 @@
       "stem": "A rectangular prism is $5$ units long, $5$ units wide, and $5$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-125$",
-          "value": "-125"
-        },
-        {
-          "text": "$122$",
-          "value": "122"
-        },
-        {
-          "text": "$123$",
-          "value": "123"
-        },
-        {
           "text": "$125$",
           "value": "125"
+        },
+        {
+          "text": "$127$",
+          "value": "127"
+        },
+        {
+          "text": "$128$",
+          "value": "128"
+        },
+        {
+          "text": "$150$",
+          "value": "150"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "That is the surface area, not the volume."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 5 \times 5 \times 5 = 125$ cubic units."
+        "$V = 5 \\times 5 \\times 5 = 125$ cubic units."
       ],
       "desmos": [
         "V = 5*5*5",
@@ -251,7 +251,7 @@
           5
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:mcq:5",
+      "id": "g:geo.area-volume.solid-volume@3:easy:mcq:5",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "mcq",
@@ -267,7 +267,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -281,7 +281,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:spr:1",
+      "id": "g:geo.area-volume.solid-volume@3:easy:spr:1",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "spr",
@@ -297,7 +297,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 4 \times 2 = 48$ cubic units."
+        "$V = 6 \\times 4 \\times 2 = 48$ cubic units."
       ],
       "desmos": [
         "V = 6*4*2",
@@ -311,7 +311,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:spr:2",
+      "id": "g:geo.area-volume.solid-volume@3:easy:spr:2",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "spr",
@@ -327,7 +327,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -341,7 +341,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:spr:3",
+      "id": "g:geo.area-volume.solid-volume@3:easy:spr:3",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "spr",
@@ -357,7 +357,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 6 \times 4 = 48$ cubic units."
+        "$V = 2 \\times 6 \\times 4 = 48$ cubic units."
       ],
       "desmos": [
         "V = 2*6*4",
@@ -371,7 +371,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:spr:4",
+      "id": "g:geo.area-volume.solid-volume@3:easy:spr:4",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "spr",
@@ -387,7 +387,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 5 \times 5 \times 5 = 125$ cubic units."
+        "$V = 5 \\times 5 \\times 5 = 125$ cubic units."
       ],
       "desmos": [
         "V = 5*5*5",
@@ -401,7 +401,7 @@
           5
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:easy:spr:5",
+      "id": "g:geo.area-volume.solid-volume@3:easy:spr:5",
       "skill": "geo.area-volume",
       "difficulty": "easy",
       "format": "spr",
@@ -411,34 +411,34 @@
       "stem": "A rectangular prism is $4$ units long, $5$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-80$",
-          "value": "-80"
-        },
-        {
-          "text": "$79$",
-          "value": "79"
+          "text": "$13$",
+          "value": "13"
         },
         {
           "text": "$80$",
           "value": "80"
         },
         {
-          "text": "$81$",
-          "value": "81"
+          "text": "$83$",
+          "value": "83"
+        },
+        {
+          "text": "$112$",
+          "value": "112"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "That is the surface area, not the volume."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -452,7 +452,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:mcq:1",
+      "id": "g:geo.area-volume.solid-volume@3:medium:mcq:1",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "mcq",
@@ -462,34 +462,34 @@
       "stem": "A rectangular prism is $6$ units long, $4$ units wide, and $2$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
-        },
-        {
-          "text": "$46$",
-          "value": "46"
-        },
-        {
-          "text": "$47$",
-          "value": "47"
-        },
-        {
           "text": "$48$",
           "value": "48"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        },
+        {
+          "text": "$88$",
+          "value": "88"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 4 \times 2 = 48$ cubic units."
+        "$V = 6 \\times 4 \\times 2 = 48$ cubic units."
       ],
       "desmos": [
         "V = 6*4*2",
@@ -503,7 +503,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:mcq:2",
+      "id": "g:geo.area-volume.solid-volume@3:medium:mcq:2",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "mcq",
@@ -513,20 +513,20 @@
       "stem": "A rectangular prism is $4$ units long, $5$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-80$",
-          "value": "-80"
+          "text": "$13$",
+          "value": "13"
         },
         {
           "text": "$80$",
           "value": "80"
         },
         {
-          "text": "$81$",
-          "value": "81"
+          "text": "$112$",
+          "value": "112"
         },
         {
-          "text": "$83$",
-          "value": "83"
+          "text": "$160$",
+          "value": "160"
         }
       ],
       "answer": {
@@ -534,13 +534,13 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -554,7 +554,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:mcq:3",
+      "id": "g:geo.area-volume.solid-volume@3:medium:mcq:3",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "mcq",
@@ -564,34 +564,34 @@
       "stem": "A rectangular prism is $2$ units long, $6$ units wide, and $4$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-48$",
-          "value": "-48"
-        },
-        {
-          "text": "$45$",
-          "value": "45"
+          "text": "$12$",
+          "value": "12"
         },
         {
           "text": "$48$",
           "value": "48"
         },
         {
-          "text": "$51$",
-          "value": "51"
+          "text": "$88$",
+          "value": "88"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 6 \times 4 = 48$ cubic units."
+        "$V = 2 \\times 6 \\times 4 = 48$ cubic units."
       ],
       "desmos": [
         "V = 2*6*4",
@@ -605,7 +605,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:mcq:4",
+      "id": "g:geo.area-volume.solid-volume@3:medium:mcq:4",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "mcq",
@@ -615,34 +615,34 @@
       "stem": "A rectangular prism is $5$ units long, $5$ units wide, and $5$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-125$",
-          "value": "-125"
-        },
-        {
-          "text": "$122$",
-          "value": "122"
-        },
-        {
-          "text": "$123$",
-          "value": "123"
-        },
-        {
           "text": "$125$",
           "value": "125"
+        },
+        {
+          "text": "$127$",
+          "value": "127"
+        },
+        {
+          "text": "$128$",
+          "value": "128"
+        },
+        {
+          "text": "$150$",
+          "value": "150"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "That is the surface area, not the volume."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 5 \times 5 \times 5 = 125$ cubic units."
+        "$V = 5 \\times 5 \\times 5 = 125$ cubic units."
       ],
       "desmos": [
         "V = 5*5*5",
@@ -656,7 +656,7 @@
           5
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:mcq:5",
+      "id": "g:geo.area-volume.solid-volume@3:medium:mcq:5",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "mcq",
@@ -672,7 +672,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -686,7 +686,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:spr:1",
+      "id": "g:geo.area-volume.solid-volume@3:medium:spr:1",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "spr",
@@ -702,7 +702,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 4 \times 2 = 48$ cubic units."
+        "$V = 6 \\times 4 \\times 2 = 48$ cubic units."
       ],
       "desmos": [
         "V = 6*4*2",
@@ -716,7 +716,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:spr:2",
+      "id": "g:geo.area-volume.solid-volume@3:medium:spr:2",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "spr",
@@ -732,7 +732,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 4 \times 5 \times 4 = 80$ cubic units."
+        "$V = 4 \\times 5 \\times 4 = 80$ cubic units."
       ],
       "desmos": [
         "V = 4*5*4",
@@ -746,7 +746,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:spr:3",
+      "id": "g:geo.area-volume.solid-volume@3:medium:spr:3",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "spr",
@@ -762,7 +762,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 6 \times 4 = 48$ cubic units."
+        "$V = 2 \\times 6 \\times 4 = 48$ cubic units."
       ],
       "desmos": [
         "V = 2*6*4",
@@ -776,7 +776,7 @@
           4
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:spr:4",
+      "id": "g:geo.area-volume.solid-volume@3:medium:spr:4",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "spr",
@@ -792,7 +792,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 5 \times 5 \times 5 = 125$ cubic units."
+        "$V = 5 \\times 5 \\times 5 = 125$ cubic units."
       ],
       "desmos": [
         "V = 5*5*5",
@@ -806,7 +806,7 @@
           5
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:medium:spr:5",
+      "id": "g:geo.area-volume.solid-volume@3:medium:spr:5",
       "skill": "geo.area-volume",
       "difficulty": "medium",
       "format": "spr",
@@ -816,34 +816,34 @@
       "stem": "A rectangular prism is $6$ units long, $9$ units wide, and $7$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-378$",
-          "value": "-378"
-        },
-        {
-          "text": "$377$",
-          "value": "377"
+          "text": "$22$",
+          "value": "22"
         },
         {
           "text": "$378$",
           "value": "378"
         },
         {
-          "text": "$379$",
-          "value": "379"
+          "text": "$380$",
+          "value": "380"
+        },
+        {
+          "text": "$381$",
+          "value": "381"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
         "D": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 9 \times 7 = 378$ cubic units."
+        "$V = 6 \\times 9 \\times 7 = 378$ cubic units."
       ],
       "desmos": [
         "V = 6*9*7",
@@ -857,7 +857,7 @@
           7
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:mcq:1",
+      "id": "g:geo.area-volume.solid-volume@3:hard:mcq:1",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "mcq",
@@ -867,34 +867,34 @@
       "stem": "A rectangular prism is $10$ units long, $7$ units wide, and $2$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-140$",
-          "value": "-140"
-        },
-        {
-          "text": "$138$",
-          "value": "138"
-        },
-        {
-          "text": "$139$",
-          "value": "139"
-        },
-        {
           "text": "$140$",
           "value": "140"
+        },
+        {
+          "text": "$143$",
+          "value": "143"
+        },
+        {
+          "text": "$208$",
+          "value": "208"
+        },
+        {
+          "text": "$280$",
+          "value": "280"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 10 \times 7 \times 2 = 140$ cubic units."
+        "$V = 10 \\times 7 \\times 2 = 140$ cubic units."
       ],
       "desmos": [
         "V = 10*7*2",
@@ -908,7 +908,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:mcq:2",
+      "id": "g:geo.area-volume.solid-volume@3:hard:mcq:2",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "mcq",
@@ -918,20 +918,20 @@
       "stem": "A rectangular prism is $6$ units long, $7$ units wide, and $6$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-252$",
-          "value": "-252"
+          "text": "$240$",
+          "value": "240"
         },
         {
           "text": "$252$",
           "value": "252"
         },
         {
-          "text": "$253$",
-          "value": "253"
-        },
-        {
           "text": "$255$",
           "value": "255"
+        },
+        {
+          "text": "$504$",
+          "value": "504"
         }
       ],
       "answer": {
@@ -939,13 +939,13 @@
         "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
+        "A": "That is the surface area, not the volume.",
         "C": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 7 \times 6 = 252$ cubic units."
+        "$V = 6 \\times 7 \\times 6 = 252$ cubic units."
       ],
       "desmos": [
         "V = 6*7*6",
@@ -959,7 +959,7 @@
           6
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:mcq:3",
+      "id": "g:geo.area-volume.solid-volume@3:hard:mcq:3",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "mcq",
@@ -969,34 +969,34 @@
       "stem": "A rectangular prism is $2$ units long, $9$ units wide, and $7$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-126$",
-          "value": "-126"
-        },
-        {
-          "text": "$123$",
-          "value": "123"
+          "text": "$18$",
+          "value": "18"
         },
         {
           "text": "$126$",
           "value": "126"
         },
         {
-          "text": "$129$",
-          "value": "129"
+          "text": "$190$",
+          "value": "190"
+        },
+        {
+          "text": "$252$",
+          "value": "252"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 2
+        "index": 1
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
-        "B": "An arithmetic slip: redo the last computation carefully.",
-        "D": "An arithmetic slip: redo the last computation carefully."
+        "A": "The dimensions were added instead of multiplied.",
+        "C": "That is the surface area, not the volume.",
+        "D": "The value was doubled somewhere along the way."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 9 \times 7 = 126$ cubic units."
+        "$V = 2 \\times 9 \\times 7 = 126$ cubic units."
       ],
       "desmos": [
         "V = 2*9*7",
@@ -1010,7 +1010,7 @@
           7
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:mcq:4",
+      "id": "g:geo.area-volume.solid-volume@3:hard:mcq:4",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "mcq",
@@ -1020,34 +1020,34 @@
       "stem": "A rectangular prism is $9$ units long, $7$ units wide, and $9$ units tall. What is its volume in cubic units?",
       "choices": [
         {
-          "text": "$-567$",
-          "value": "-567"
-        },
-        {
-          "text": "$564$",
-          "value": "564"
-        },
-        {
-          "text": "$565$",
-          "value": "565"
-        },
-        {
           "text": "$567$",
           "value": "567"
+        },
+        {
+          "text": "$568$",
+          "value": "568"
+        },
+        {
+          "text": "$569$",
+          "value": "569"
+        },
+        {
+          "text": "$570$",
+          "value": "570"
         }
       ],
       "answer": {
         "kind": "choice",
-        "index": 3
+        "index": 0
       },
       "distractorNotes": {
-        "A": "A sign error: the size is right but the sign is wrong.",
         "B": "An arithmetic slip: redo the last computation carefully.",
-        "C": "An arithmetic slip: redo the last computation carefully."
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 9 \times 7 \times 9 = 567$ cubic units."
+        "$V = 9 \\times 7 \\times 9 = 567$ cubic units."
       ],
       "desmos": [
         "V = 9*7*9",
@@ -1061,7 +1061,7 @@
           9
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:mcq:5",
+      "id": "g:geo.area-volume.solid-volume@3:hard:mcq:5",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "mcq",
@@ -1077,7 +1077,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 9 \times 7 = 378$ cubic units."
+        "$V = 6 \\times 9 \\times 7 = 378$ cubic units."
       ],
       "desmos": [
         "V = 6*9*7",
@@ -1091,7 +1091,7 @@
           7
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:spr:1",
+      "id": "g:geo.area-volume.solid-volume@3:hard:spr:1",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "spr",
@@ -1107,7 +1107,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 10 \times 7 \times 2 = 140$ cubic units."
+        "$V = 10 \\times 7 \\times 2 = 140$ cubic units."
       ],
       "desmos": [
         "V = 10*7*2",
@@ -1121,7 +1121,7 @@
           2
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:spr:2",
+      "id": "g:geo.area-volume.solid-volume@3:hard:spr:2",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "spr",
@@ -1137,7 +1137,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 6 \times 7 \times 6 = 252$ cubic units."
+        "$V = 6 \\times 7 \\times 6 = 252$ cubic units."
       ],
       "desmos": [
         "V = 6*7*6",
@@ -1151,7 +1151,7 @@
           6
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:spr:3",
+      "id": "g:geo.area-volume.solid-volume@3:hard:spr:3",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "spr",
@@ -1167,7 +1167,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 2 \times 9 \times 7 = 126$ cubic units."
+        "$V = 2 \\times 9 \\times 7 = 126$ cubic units."
       ],
       "desmos": [
         "V = 2*9*7",
@@ -1181,7 +1181,7 @@
           7
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:spr:4",
+      "id": "g:geo.area-volume.solid-volume@3:hard:spr:4",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "spr",
@@ -1197,7 +1197,7 @@
       },
       "solution": [
         "Use $V = lwh$ for a rectangular prism.",
-        "$V = 9 \times 7 \times 9 = 567$ cubic units."
+        "$V = 9 \\times 7 \\times 9 = 567$ cubic units."
       ],
       "desmos": [
         "V = 9*7*9",
@@ -1211,7 +1211,7 @@
           9
         ]
       },
-      "id": "g:geo.area-volume.solid-volume@2:hard:spr:5",
+      "id": "g:geo.area-volume.solid-volume@3:hard:spr:5",
       "skill": "geo.area-volume",
       "difficulty": "hard",
       "format": "spr",
