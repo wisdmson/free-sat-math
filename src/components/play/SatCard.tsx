@@ -182,8 +182,8 @@ export default function SatCard({
         {result !== undefined && paceLimitMs !== null && (
           <p className="pace-verdict">
             {result.timeMs <= paceLimitMs
-              ? `${formatDuration(result.timeMs)} · on pace ✅`
-              : `${formatDuration(result.timeMs)} · over pace ⚠️ — on test day, flag it, guess, and move on.`}
+              ? `${formatDuration(result.timeMs, Math.floor)} · on pace ✅`
+              : `${formatDuration(result.timeMs, Math.ceil)} · over pace ⚠️ — on test day, flag it, guess, and move on.`}
           </p>
         )}
       </div>

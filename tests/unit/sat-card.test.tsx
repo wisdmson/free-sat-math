@@ -195,4 +195,27 @@ describe('SatCard', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Reset' }));
     expect(onReset).toHaveBeenCalledTimes(1);
   });
+  it('never shows an over-pace time equal to the target', () => {
+    const props = {
+      problem: mcq,
+      desmosKey: null,
+      reduced: true,
+      paceLimitMs: 95_000,
+      onAnswer: () => {},
+    };
+    const { rerender } = render(
+      <SatCard
+        {...props}
+        result={{ correct: true, response: 'B', timeMs: 95_400, points: 20, multiplier: 1 }}
+      />,
+    );
+    expect(screen.getByRole('status')).toHaveTextContent('1:36 · over pace');
+    rerender(
+      <SatCard
+        {...props}
+        result={{ correct: true, response: 'B', timeMs: 94_600, points: 20, multiplier: 1 }}
+      />,
+    );
+    expect(screen.getByRole('status')).toHaveTextContent('1:34 · on pace');
+  });
 });

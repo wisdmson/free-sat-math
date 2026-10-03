@@ -122,8 +122,11 @@ export function paceBonus(correct: boolean, timeMs: number, limitMs: number): nu
   return correct && timeMs <= limitMs ? PACE_BONUS : 0;
 }
 
-/** "48 s" under a minute, "2:10" from a minute on. */
-export function formatDuration(ms: number): string {
-  const s = Math.round(ms / 1000);
+/**
+ * "48 s" under a minute, "2:10" from a minute on. `round` picks how partial seconds show: pace
+ * verdicts round down when on pace and up when over, so "over pace" never shows the target time.
+ */
+export function formatDuration(ms: number, round: (x: number) => number = Math.round): string {
+  const s = round(ms / 1000);
   return s < 60 ? `${s} s` : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 }
