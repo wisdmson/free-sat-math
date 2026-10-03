@@ -32,4 +32,21 @@ describe('LightningCard', () => {
     fireEvent.keyDown(window, { key: 'Enter' });
     expect(screen.getByRole('status')).toHaveTextContent('✗ 87.5%');
   });
+  it('picks up where it left off when it comes back on screen', () => {
+    render(
+      <LightningCard
+        questions={questions}
+        seconds={null}
+        active
+        result={{ done: false, right: 1, answered: 2 }}
+        onAnswer={() => 0}
+        onDone={() => {}}
+      />,
+    );
+    expect(screen.getByText('2 of 3 done')).toBeVisible();
+    expect(document.querySelector('[data-mental-id]')).toHaveAttribute(
+      'data-mental-id',
+      questions[2].id,
+    );
+  });
 });

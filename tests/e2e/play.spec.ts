@@ -158,3 +158,36 @@ test('a Lightning round turns up on its own within 13 cards', async ({ page }) =
   expect(index).toBeGreaterThanOrEqual(8);
   expect(index).toBeLessThanOrEqual(12);
 });
+
+test('a half-played Lightning round picks up where it left off', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' }); // instant scrolling: no in-between cards
+  await page.goto('/play/?go=1&lightning=first');
+  const card = current(page);
+  await expect(card.getByText('⚡ Lightning')).toBeVisible();
+  const prompt = card.locator('[data-mental-id]');
+  const p = mentalFromId((await prompt.getAttribute('data-mental-id'))!)!;
+  if (p.answer.kind === 'choice') {
+    await card
+      .getByRole('button', { name: p.answer.choices[p.answer.index] as string, exact: true })
+      .click();
+  } else {
+    await page.keyboard.type(p.answer.value === '0' ? '1' : '0');
+    await page.keyboard.press('Enter');
+  }
+  await expect(card.getByText('1 of 3 done')).toBeVisible();
+  const second = await prompt.getAttribute('data-mental-id');
+  const at = (n: number) => page.locator(`[data-index="${n}"][data-current="true"]`);
+  for (let n = 1; n <= 4; n++) {
+    await next(page);
+    await expect(at(n)).toBeAttached();
+  }
+  for (let n = 3; n >= 0; n--) {
+    await page.getByRole('button', { name: 'Previous card' }).click();
+    await expect(at(n)).toBeAttached();
+  }
+  await expect(current(page).getByText('1 of 3 done')).toBeVisible();
+  await expect(current(page).locator('[data-mental-id]')).toHaveAttribute(
+    'data-mental-id',
+    second!,
+  );
+});

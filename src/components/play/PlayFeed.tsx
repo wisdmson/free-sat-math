@@ -222,7 +222,23 @@ export default function PlayFeed({
     setEntries(entriesRef.current);
   };
 
-  const onLightningAnswer = (r: { correct: boolean; answered: boolean }): number => {
+  const onLightningAnswer = (index: number, r: { correct: boolean; answered: boolean }): number => {
+    // The feed keeps the round's progress, so a card that scrolls away and back can't replay.
+    const round = entriesRef.current[index]?.lightning ?? { done: false, right: 0, answered: 0 };
+    if (round.done || round.answered >= 3) return 0;
+    entriesRef.current = entriesRef.current.map((e, i) =>
+      i === index
+        ? {
+            ...e,
+            lightning: {
+              done: false,
+              right: round.right + (r.correct ? 1 : 0),
+              answered: round.answered + 1,
+            },
+          }
+        : e,
+    );
+    setEntries(entriesRef.current);
     const scored = scoreLightningAnswer(comboRef.current, r.correct);
     comboRef.current = scored.combo;
     setCombo(scored.combo);
@@ -249,7 +265,7 @@ export default function PlayFeed({
       getProgressStore().update((p) => addBonusPoints(p, LIGHTNING_PERFECT_BONUS));
     }
     entriesRef.current = entriesRef.current.map((e, i) =>
-      i === index ? { ...e, lightning: { done: true, right } } : e,
+      i === index ? { ...e, lightning: { done: true, right, answered: 3 } } : e,
     );
     setEntries(entriesRef.current);
   };
@@ -302,7 +318,7 @@ export default function PlayFeed({
                 seconds={lightningSeconds(snapshot.progress.settings)}
                 active={i === current}
                 result={e.lightning}
-                onAnswer={onLightningAnswer}
+                onAnswer={(r) => onLightningAnswer(i, r)}
                 onDone={(right) => onLightningDone(i, right)}
               />
             ) : (

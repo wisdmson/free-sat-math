@@ -5,9 +5,12 @@ import { formatMentalAnswer } from '../../engine/mental/format';
 import type { MentalProblem } from '../../engine/mental/types';
 import NumPad from '../NumPad';
 
+/** A round's progress, kept by the feed so it survives the card scrolling out of view. */
 export interface LightningResult {
   done: boolean;
   right: number;
+  /** Questions answered (or timed out) so far. */
+  answered: number;
 }
 
 interface Props {
@@ -31,8 +34,9 @@ export default function LightningCard({
   onAnswer,
   onDone,
 }: Props) {
-  const [i, setI] = useState(0);
-  const [right, setRight] = useState(0);
+  // Start from the feed's record: a card scrolled away and back resumes, it never replays.
+  const [i, setI] = useState(() => Math.min(3, result?.answered ?? 0));
+  const [right, setRight] = useState(() => result?.right ?? 0);
   const [typed, setTyped] = useState('');
   const [line, setLine] = useState('');
   const [left, setLeft] = useState(seconds === null ? null : seconds * 1000);
