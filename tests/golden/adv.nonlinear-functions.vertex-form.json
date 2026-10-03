@@ -1,0 +1,1281 @@
+{
+  "typeId": "adv.nonlinear-functions.vertex-form",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 2: $2 + (5)$.",
+        "So $f(4) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-37$",
+          "value": "-37"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$39$",
+          "value": "39"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 3: $48 + (-11)$.",
+        "So $f(5) = 37$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 2: $2 + (2)$.",
+        "So $f(0) = 4$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-28$",
+          "value": "-28"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$28$",
+          "value": "28"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 2: $18 + (10)$.",
+        "So $f(5) = 28$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:mcq:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 2: $2 + (5)$.",
+        "So $f(4) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "37"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 3: $48 + (-11)$.",
+        "So $f(5) = 37$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 2: $2 + (2)$.",
+        "So $f(0) = 4$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "28"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 2: $18 + (10)$.",
+        "So $f(5) = 28$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:easy:spr:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 2: $2 + (5)$.",
+        "So $f(4) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-37$",
+          "value": "-37"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$39$",
+          "value": "39"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 3: $48 + (-11)$.",
+        "So $f(5) = 37$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 2: $2 + (2)$.",
+        "So $f(0) = 4$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-28$",
+          "value": "-28"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$28$",
+          "value": "28"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 2: $18 + (10)$.",
+        "So $f(5) = 28$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:mcq:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A quadratic function is $f(x) = 2(x - 3)^2 + 5$. What is $f(4)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 2(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 2: $2 + (5)$.",
+        "So $f(4) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 - 11$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "37"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 3(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 3: $48 + (-11)$.",
+        "So $f(5) = 37$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A quadratic function is $f(x) = 2(x - 1)^2 + 2$. What is $f(0)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 2(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 2: $2 + (2)$.",
+        "So $f(0) = 4$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A quadratic function is $f(x) = 2(x - 2)^2 + 10$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "28"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 2(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 2: $18 + (10)$.",
+        "So $f(5) = 28$."
+      ],
+      "desmos": [
+        "f(x) = 2(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          2,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:medium:spr:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A quadratic function is $f(x) = 3(x - 3)^2 + 5$. What is $f(4)$?",
+      "choices": [
+        {
+          "text": "$-8$",
+          "value": "-8"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 3(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 3: $3 + (5)$.",
+        "So $f(4) = 8$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A quadratic function is $f(x) = 4(x - 1)^2 - 11$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-53$",
+          "value": "-53"
+        },
+        {
+          "text": "$53$",
+          "value": "53"
+        },
+        {
+          "text": "$55$",
+          "value": "55"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 4(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 4: $64 + (-11)$.",
+        "So $f(5) = 53$."
+      ],
+      "desmos": [
+        "f(x) = 4(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          4,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 + 2$. What is $f(0)$?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 3(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 3: $3 + (2)$.",
+        "So $f(0) = 5$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A quadratic function is $f(x) = 4(x - 2)^2 + 10$. What is $f(5)$?",
+      "choices": [
+        {
+          "text": "$-46$",
+          "value": "-46"
+        },
+        {
+          "text": "$43$",
+          "value": "43"
+        },
+        {
+          "text": "$45$",
+          "value": "45"
+        },
+        {
+          "text": "$46$",
+          "value": "46"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 4(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 4: $36 + (10)$.",
+        "So $f(5) = 46$."
+      ],
+      "desmos": [
+        "f(x) = 4(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          4,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:mcq:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A quadratic function is $f(x) = 3(x - 3)^2 + 5$. What is $f(4)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "8"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 4$: $f(4) = 3(4 - (3))^2 + (5)$.",
+        "Square the difference and multiply by 3: $3 + (5)$.",
+        "So $f(4) = 8$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (3))^2 + (5)",
+        "f(4)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          3,
+          4,
+          5
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:1",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A quadratic function is $f(x) = 4(x - 1)^2 - 11$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "53"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 4(5 - (1))^2 + (-11)$.",
+        "Square the difference and multiply by 4: $64 + (-11)$.",
+        "So $f(5) = 53$."
+      ],
+      "desmos": [
+        "f(x) = 4(x - (1))^2 + (-11)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          4,
+          1,
+          5,
+          -11
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:2",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A quadratic function is $f(x) = 3(x - 1)^2 + 2$. What is $f(0)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 0$: $f(0) = 3(0 - (1))^2 + (2)$.",
+        "Square the difference and multiply by 3: $3 + (2)$.",
+        "So $f(0) = 5$."
+      ],
+      "desmos": [
+        "f(x) = 3(x - (1))^2 + (2)",
+        "f(0)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          3,
+          1,
+          0,
+          2
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:3",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A quadratic function is $f(x) = 1(x - 4)^2 + 6$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 1(5 - (4))^2 + (6)$.",
+        "Square the difference and multiply by 1: $1 + (6)$.",
+        "So $f(5) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 1(x - (4))^2 + (6)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:4",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A quadratic function is $f(x) = 4(x - 2)^2 + 10$. What is $f(5)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "46"
+        ]
+      },
+      "solution": [
+        "Substitute $x = 5$: $f(5) = 4(5 - (2))^2 + (10)$.",
+        "Square the difference and multiply by 4: $36 + (10)$.",
+        "So $f(5) = 46$."
+      ],
+      "desmos": [
+        "f(x) = 4(x - (2))^2 + (10)",
+        "f(5)"
+      ],
+      "meta": {
+        "kind": "quadratic-value",
+        "values": [
+          4,
+          2,
+          5,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-functions.vertex-form@2:hard:spr:5",
+      "skill": "adv.nonlinear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

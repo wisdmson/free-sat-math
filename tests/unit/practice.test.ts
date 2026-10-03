@@ -9,6 +9,7 @@ import {
 } from '../../src/engine/practice';
 import { parseProblemId } from '../../src/engine/problem';
 import { createRng } from '../../src/engine/rng';
+import { SKILL_IDS } from '../../src/engine/skills';
 
 describe('startingLevel', () => {
   it('maps target scores to levels at the spec boundaries', () => {
@@ -62,8 +63,10 @@ describe('nextProblem', () => {
     expect(p?.skill).toBe('alg.systems');
     expect(p?.difficulty).toBe('hard');
   });
-  it('returns null for a skill with no generators yet', () => {
-    expect(nextProblem('geo.circles', 'easy', createRng(1), [])).toBeNull();
+  it('returns a generated problem for each newly enabled skill', () => {
+    const p = nextProblem('geo.circles', 'easy', createRng(1), []);
+    expect(p?.skill).toBe('geo.circles');
+    expect(p?.source).toBe('generated');
   });
   it('never returns a recently shown problem', () => {
     const first = nextProblem('alg.systems', 'easy', createRng(5), [])!;
@@ -92,6 +95,6 @@ describe('similarProblem and pickMixSkill', () => {
     }
   });
   it('picks an available skill for mix', () => {
-    expect(pickMixSkill(createRng(1))).toBe('alg.systems');
+    expect(SKILL_IDS).toContain(pickMixSkill(createRng(1)));
   });
 });

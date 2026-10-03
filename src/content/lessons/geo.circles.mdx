@@ -1,0 +1,44 @@
+---
+title: Circles
+skill: geo.circles
+summary: Read a circle's center and radius from its equation, then connect them to circumference and area.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Standard equation
+
+A circle centered at <M t="(h,k)" /> with radius <M t="r" /> has equation <M t="(x-h)^2+(y-k)^2=r^2" />. The signs inside the parentheses are opposite the center coordinates. The right side is the radius squared.
+
+<WorkedExample
+  typeId="geo.circles.circle-equation"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: read the radius"
+/>
+
+## Other circle measures
+
+Circumference is <M t="C=2\pi r" /> and area is <M t="A=\pi r^2" />. Arc length and sector area are the matching fraction of the full circumference and area; use the central angle over <M t="360^\circ" /> (or radians over <M t="2\pi" />).
+
+<WorkedExample
+  typeId="geo.circles.circle-equation"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: square-root the constant"
+/>
+
+## Common traps
+
+- Reading the center's signs exactly as they appear inside the parentheses.
+- Reporting <M t="r^2" /> as the radius instead of taking the square root.
+- Using diameter where a formula calls for radius.
+
+## Desmos steps
+
+1. Enter `(x-2)^2+(y+3)^2=25`; Desmos draws the circle.
+2. Compare the equation with standard form: the center is `(2,-3)` and the radius is `sqrt(25)=5`.
+3. You can check circumference with `2*pi*r` or area with `pi*r^2`; keep the answer in terms of <M t="\pi" /> unless a decimal is requested.

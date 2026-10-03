@@ -1,0 +1,44 @@
+---
+title: Probability and conditional probability
+skill: psda.probability
+summary: Count favorable outcomes carefully, and use the condition to choose the correct total.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Basic probability
+
+When outcomes are equally likely, <M t="P(A)=\text{favorable outcomes}/\text{all outcomes}" />. A probability is between 0 and 1. A fraction, decimal, or percent can express the same probability.
+
+<WorkedExample
+  typeId="psda.probability.two-way-table"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: count favorable outcomes"
+/>
+
+## Conditional probability
+
+The phrase “given that” changes the group you are counting from. In <M t="P(A\mid B)" />, count outcomes where both A and B happen, then divide by the outcomes where B happens. Use the B row or column total as the denominator.
+
+<WorkedExample
+  typeId="psda.probability.two-way-table"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: write a probability as a fraction"
+/>
+
+## Common traps
+
+- Using the whole sample as the denominator after the question gives a condition.
+- Adding probabilities when events overlap without subtracting the overlap.
+- Assuming outcomes are equally likely when the problem does not say so.
+
+## Desmos check
+
+1. Enter `favorable/total` as a fraction to check a simple probability.
+2. For a two-way table, enter the counts first and add the row or column named after “given that.”
+3. Divide the count in the intersection cell by that condition's total; keep the fraction form until the end.

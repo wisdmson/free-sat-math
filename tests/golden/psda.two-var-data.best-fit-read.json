@@ -1,0 +1,1221 @@
+{
+  "typeId": "psda.two-var-data.best-fit-read",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "choices": [
+        {
+          "text": "$-37$",
+          "value": "-37"
+        },
+        {
+          "text": "$36$",
+          "value": "36"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$38$",
+          "value": "38"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 3(9) + (10)$.",
+        "Evaluate the model: $y = 37$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 10",
+        "(9, 37)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "choices": [
+        {
+          "text": "$-22$",
+          "value": "-22"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 5(3) + (7)$.",
+        "Evaluate the model: $y = 22$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 7",
+        "(3, 22)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "choices": [
+        {
+          "text": "$-32$",
+          "value": "-32"
+        },
+        {
+          "text": "$32$",
+          "value": "32"
+        },
+        {
+          "text": "$33$",
+          "value": "33"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 3(8) + (8)$.",
+        "Evaluate the model: $y = 32$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 8",
+        "(8, 32)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "choices": [
+        {
+          "text": "$-30$",
+          "value": "-30"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$33$",
+          "value": "33"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "choices": [
+        {
+          "text": "$-52$",
+          "value": "-52"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$52$",
+          "value": "52"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 4(11) + (8)$.",
+        "Evaluate the model: $y = 52$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 4x + 8",
+        "(11, 52)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          4,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:mcq:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "37"
+        ]
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 3(9) + (10)$.",
+        "Evaluate the model: $y = 37$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 10",
+        "(9, 37)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "22"
+        ]
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 5(3) + (7)$.",
+        "Evaluate the model: $y = 22$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 7",
+        "(3, 22)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "32"
+        ]
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 3(8) + (8)$.",
+        "Evaluate the model: $y = 32$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 8",
+        "(8, 32)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "30"
+        ]
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "52"
+        ]
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 4(11) + (8)$.",
+        "Evaluate the model: $y = 52$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 4x + 8",
+        "(11, 52)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          4,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:easy:spr:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "choices": [
+        {
+          "text": "$-37$",
+          "value": "-37"
+        },
+        {
+          "text": "$36$",
+          "value": "36"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        },
+        {
+          "text": "$38$",
+          "value": "38"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 3(9) + (10)$.",
+        "Evaluate the model: $y = 37$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 10",
+        "(9, 37)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "choices": [
+        {
+          "text": "$-22$",
+          "value": "-22"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 5(3) + (7)$.",
+        "Evaluate the model: $y = 22$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 7",
+        "(3, 22)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "choices": [
+        {
+          "text": "$-32$",
+          "value": "-32"
+        },
+        {
+          "text": "$32$",
+          "value": "32"
+        },
+        {
+          "text": "$33$",
+          "value": "33"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 3(8) + (8)$.",
+        "Evaluate the model: $y = 32$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 8",
+        "(8, 32)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "choices": [
+        {
+          "text": "$-30$",
+          "value": "-30"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$33$",
+          "value": "33"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "choices": [
+        {
+          "text": "$-52$",
+          "value": "-52"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$52$",
+          "value": "52"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 4(11) + (8)$.",
+        "Evaluate the model: $y = 52$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 4x + 8",
+        "(11, 52)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          4,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:mcq:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A line of best fit for a data set is $y = 3x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "37"
+        ]
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 3(9) + (10)$.",
+        "Evaluate the model: $y = 37$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 10",
+        "(9, 37)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A line of best fit for a data set is $y = 5x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "22"
+        ]
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 5(3) + (7)$.",
+        "Evaluate the model: $y = 22$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 7",
+        "(3, 22)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A line of best fit for a data set is $y = 3x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "32"
+        ]
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 3(8) + (8)$.",
+        "Evaluate the model: $y = 32$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 3x + 8",
+        "(8, 32)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          3,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "30"
+        ]
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A line of best fit for a data set is $y = 4x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "52"
+        ]
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 4(11) + (8)$.",
+        "Evaluate the model: $y = 52$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 4x + 8",
+        "(11, 52)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          4,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:medium:spr:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A line of best fit for a data set is $y = 5x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "choices": [
+        {
+          "text": "$-55$",
+          "value": "-55"
+        },
+        {
+          "text": "$54$",
+          "value": "54"
+        },
+        {
+          "text": "$55$",
+          "value": "55"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 5(9) + (10)$.",
+        "Evaluate the model: $y = 55$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 10",
+        "(9, 55)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A line of best fit for a data set is $y = 8x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "choices": [
+        {
+          "text": "$-31$",
+          "value": "-31"
+        },
+        {
+          "text": "$29$",
+          "value": "29"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$31$",
+          "value": "31"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 8(3) + (7)$.",
+        "Evaluate the model: $y = 31$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 8x + 7",
+        "(3, 31)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          8,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A line of best fit for a data set is $y = 5x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "choices": [
+        {
+          "text": "$-48$",
+          "value": "-48"
+        },
+        {
+          "text": "$48$",
+          "value": "48"
+        },
+        {
+          "text": "$49$",
+          "value": "49"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 5(8) + (8)$.",
+        "Evaluate the model: $y = 48$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 8",
+        "(8, 48)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "choices": [
+        {
+          "text": "$-30$",
+          "value": "-30"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$33$",
+          "value": "33"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A line of best fit for a data set is $y = 7x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "choices": [
+        {
+          "text": "$-85$",
+          "value": "-85"
+        },
+        {
+          "text": "$82$",
+          "value": "82"
+        },
+        {
+          "text": "$83$",
+          "value": "83"
+        },
+        {
+          "text": "$85$",
+          "value": "85"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 7(11) + (8)$.",
+        "Evaluate the model: $y = 85$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 7x + 8",
+        "(11, 85)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          7,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:mcq:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A line of best fit for a data set is $y = 5x + 10$. Use this model to predict $y$ when $x = 9$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "55"
+        ]
+      },
+      "solution": [
+        "Substitute 9 for $x$: $y = 5(9) + (10)$.",
+        "Evaluate the model: $y = 55$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 10",
+        "(9, 55)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          10,
+          9
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:1",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A line of best fit for a data set is $y = 8x + 7$. Use this model to predict $y$ when $x = 3$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "31"
+        ]
+      },
+      "solution": [
+        "Substitute 3 for $x$: $y = 8(3) + (7)$.",
+        "Evaluate the model: $y = 31$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 8x + 7",
+        "(3, 31)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          8,
+          7,
+          3
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:2",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A line of best fit for a data set is $y = 5x + 8$. Use this model to predict $y$ when $x = 8$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "48"
+        ]
+      },
+      "solution": [
+        "Substitute 8 for $x$: $y = 5(8) + (8)$.",
+        "Evaluate the model: $y = 48$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 5x + 8",
+        "(8, 48)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          5,
+          8,
+          8
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:3",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A line of best fit for a data set is $y = 2x + 10$. Use this model to predict $y$ when $x = 10$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "30"
+        ]
+      },
+      "solution": [
+        "Substitute 10 for $x$: $y = 2(10) + (10)$.",
+        "Evaluate the model: $y = 30$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 2x + 10",
+        "(10, 30)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          2,
+          10,
+          10
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:4",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A line of best fit for a data set is $y = 7x + 8$. Use this model to predict $y$ when $x = 11$.",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "85"
+        ]
+      },
+      "solution": [
+        "Substitute 11 for $x$: $y = 7(11) + (8)$.",
+        "Evaluate the model: $y = 85$. This is a prediction, not necessarily an observed data value."
+      ],
+      "desmos": [
+        "y = 7x + 8",
+        "(11, 85)"
+      ],
+      "meta": {
+        "kind": "trend",
+        "values": [
+          7,
+          8,
+          11
+        ]
+      },
+      "id": "g:psda.two-var-data.best-fit-read@2:hard:spr:5",
+      "skill": "psda.two-var-data",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

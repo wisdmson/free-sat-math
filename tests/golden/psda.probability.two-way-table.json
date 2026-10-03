@@ -1,0 +1,1191 @@
+{
+  "typeId": "psda.probability.two-way-table",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A bag contains 8 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{4}{5}$",
+          "value": "-4/5"
+        },
+        {
+          "text": "$-\\frac{1}{5}$",
+          "value": "-1/5"
+        },
+        {
+          "text": "$\\frac{4}{5}$",
+          "value": "4/5"
+        },
+        {
+          "text": "$\\frac{9}{5}$",
+          "value": "9/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{10} = \\frac{4}{5}$."
+      ],
+      "desmos": [
+        "p = 8/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:mcq:1",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A bag contains 7 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{19}{13}$",
+          "value": "-19/13"
+        },
+        {
+          "text": "$-\\frac{7}{13}$",
+          "value": "-7/13"
+        },
+        {
+          "text": "$-\\frac{6}{13}$",
+          "value": "-6/13"
+        },
+        {
+          "text": "$\\frac{7}{13}$",
+          "value": "7/13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 7 favorable outcomes and 13 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{7}{13} = \\frac{7}{13}$."
+      ],
+      "desmos": [
+        "p = 7/13",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          7,
+          13
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:mcq:2",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A bag contains 6 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{5}$",
+          "value": "-3/5"
+        },
+        {
+          "text": "$\\frac{3}{5}$",
+          "value": "3/5"
+        },
+        {
+          "text": "$\\frac{8}{5}$",
+          "value": "8/5"
+        },
+        {
+          "text": "$\\frac{13}{5}$",
+          "value": "13/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 6 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{6}{10} = \\frac{3}{5}$."
+      ],
+      "desmos": [
+        "p = 6/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          6,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:mcq:3",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A bag contains 5 red tokens and 1 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{6}$",
+          "value": "-7/6"
+        },
+        {
+          "text": "$-\\frac{5}{6}$",
+          "value": "-5/6"
+        },
+        {
+          "text": "$\\frac{5}{6}$",
+          "value": "5/6"
+        },
+        {
+          "text": "$\\frac{11}{6}$",
+          "value": "11/6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 6 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{6} = \\frac{5}{6}$."
+      ],
+      "desmos": [
+        "p = 5/6",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:mcq:4",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A bag contains 8 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{2}{3}$",
+          "value": "-2/3"
+        },
+        {
+          "text": "$\\frac{2}{3}$",
+          "value": "2/3"
+        },
+        {
+          "text": "$\\frac{5}{3}$",
+          "value": "5/3"
+        },
+        {
+          "text": "$\\frac{8}{3}$",
+          "value": "8/3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 12 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{12} = \\frac{2}{3}$."
+      ],
+      "desmos": [
+        "p = 8/12",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          12
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:mcq:5",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A bag contains 8 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4/5"
+        ]
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{10} = \\frac{4}{5}$."
+      ],
+      "desmos": [
+        "p = 8/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:spr:1",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A bag contains 7 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/13"
+        ]
+      },
+      "solution": [
+        "There are 7 favorable outcomes and 13 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{7}{13} = \\frac{7}{13}$."
+      ],
+      "desmos": [
+        "p = 7/13",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          7,
+          13
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:spr:2",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A bag contains 6 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/5"
+        ]
+      },
+      "solution": [
+        "There are 6 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{6}{10} = \\frac{3}{5}$."
+      ],
+      "desmos": [
+        "p = 6/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          6,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:spr:3",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A bag contains 5 red tokens and 1 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5/6"
+        ]
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 6 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{6} = \\frac{5}{6}$."
+      ],
+      "desmos": [
+        "p = 5/6",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:spr:4",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A bag contains 8 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2/3"
+        ]
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 12 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{12} = \\frac{2}{3}$."
+      ],
+      "desmos": [
+        "p = 8/12",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          12
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:easy:spr:5",
+      "skill": "psda.probability",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A bag contains 8 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{4}{5}$",
+          "value": "-4/5"
+        },
+        {
+          "text": "$-\\frac{1}{5}$",
+          "value": "-1/5"
+        },
+        {
+          "text": "$\\frac{4}{5}$",
+          "value": "4/5"
+        },
+        {
+          "text": "$\\frac{9}{5}$",
+          "value": "9/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{10} = \\frac{4}{5}$."
+      ],
+      "desmos": [
+        "p = 8/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:mcq:1",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A bag contains 7 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{19}{13}$",
+          "value": "-19/13"
+        },
+        {
+          "text": "$-\\frac{7}{13}$",
+          "value": "-7/13"
+        },
+        {
+          "text": "$-\\frac{6}{13}$",
+          "value": "-6/13"
+        },
+        {
+          "text": "$\\frac{7}{13}$",
+          "value": "7/13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 7 favorable outcomes and 13 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{7}{13} = \\frac{7}{13}$."
+      ],
+      "desmos": [
+        "p = 7/13",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          7,
+          13
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:mcq:2",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A bag contains 6 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{5}$",
+          "value": "-3/5"
+        },
+        {
+          "text": "$\\frac{3}{5}$",
+          "value": "3/5"
+        },
+        {
+          "text": "$\\frac{8}{5}$",
+          "value": "8/5"
+        },
+        {
+          "text": "$\\frac{13}{5}$",
+          "value": "13/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 6 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{6}{10} = \\frac{3}{5}$."
+      ],
+      "desmos": [
+        "p = 6/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          6,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:mcq:3",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A bag contains 5 red tokens and 1 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{6}$",
+          "value": "-7/6"
+        },
+        {
+          "text": "$-\\frac{5}{6}$",
+          "value": "-5/6"
+        },
+        {
+          "text": "$\\frac{5}{6}$",
+          "value": "5/6"
+        },
+        {
+          "text": "$\\frac{11}{6}$",
+          "value": "11/6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 6 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{6} = \\frac{5}{6}$."
+      ],
+      "desmos": [
+        "p = 5/6",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:mcq:4",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A bag contains 8 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{2}{3}$",
+          "value": "-2/3"
+        },
+        {
+          "text": "$\\frac{2}{3}$",
+          "value": "2/3"
+        },
+        {
+          "text": "$\\frac{5}{3}$",
+          "value": "5/3"
+        },
+        {
+          "text": "$\\frac{8}{3}$",
+          "value": "8/3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 12 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{12} = \\frac{2}{3}$."
+      ],
+      "desmos": [
+        "p = 8/12",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          12
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:mcq:5",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A bag contains 8 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4/5"
+        ]
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{10} = \\frac{4}{5}$."
+      ],
+      "desmos": [
+        "p = 8/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:spr:1",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A bag contains 7 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/13"
+        ]
+      },
+      "solution": [
+        "There are 7 favorable outcomes and 13 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{7}{13} = \\frac{7}{13}$."
+      ],
+      "desmos": [
+        "p = 7/13",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          7,
+          13
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:spr:2",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A bag contains 6 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/5"
+        ]
+      },
+      "solution": [
+        "There are 6 favorable outcomes and 10 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{6}{10} = \\frac{3}{5}$."
+      ],
+      "desmos": [
+        "p = 6/10",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          6,
+          10
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:spr:3",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A bag contains 5 red tokens and 1 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5/6"
+        ]
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 6 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{6} = \\frac{5}{6}$."
+      ],
+      "desmos": [
+        "p = 5/6",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:spr:4",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A bag contains 8 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2/3"
+        ]
+      },
+      "solution": [
+        "There are 8 favorable outcomes and 12 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{8}{12} = \\frac{2}{3}$."
+      ],
+      "desmos": [
+        "p = 8/12",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          8,
+          12
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:medium:spr:5",
+      "skill": "psda.probability",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A bag contains 12 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{4}$",
+          "value": "-3/4"
+        },
+        {
+          "text": "$-\\frac{1}{4}$",
+          "value": "-1/4"
+        },
+        {
+          "text": "$\\frac{3}{4}$",
+          "value": "3/4"
+        },
+        {
+          "text": "$\\frac{7}{4}$",
+          "value": "7/4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 12 favorable outcomes and 16 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{12}{16} = \\frac{3}{4}$."
+      ],
+      "desmos": [
+        "p = 12/16",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          12,
+          16
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:mcq:1",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A bag contains 14 red tokens and 11 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{36}{25}$",
+          "value": "-36/25"
+        },
+        {
+          "text": "$-\\frac{14}{25}$",
+          "value": "-14/25"
+        },
+        {
+          "text": "$-\\frac{11}{25}$",
+          "value": "-11/25"
+        },
+        {
+          "text": "$\\frac{14}{25}$",
+          "value": "14/25"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 14 favorable outcomes and 25 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{14}{25} = \\frac{14}{25}$."
+      ],
+      "desmos": [
+        "p = 14/25",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          14,
+          25
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:mcq:2",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A bag contains 10 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{5}{8}$",
+          "value": "-5/8"
+        },
+        {
+          "text": "$\\frac{5}{8}$",
+          "value": "5/8"
+        },
+        {
+          "text": "$\\frac{13}{8}$",
+          "value": "13/8"
+        },
+        {
+          "text": "$\\frac{21}{8}$",
+          "value": "21/8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 10 favorable outcomes and 16 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{10}{16} = \\frac{5}{8}$."
+      ],
+      "desmos": [
+        "p = 10/16",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          10,
+          16
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:mcq:3",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A bag contains 5 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{9}{7}$",
+          "value": "-9/7"
+        },
+        {
+          "text": "$-\\frac{5}{7}$",
+          "value": "-5/7"
+        },
+        {
+          "text": "$\\frac{5}{7}$",
+          "value": "5/7"
+        },
+        {
+          "text": "$\\frac{12}{7}$",
+          "value": "12/7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 7 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{7} = \\frac{5}{7}$."
+      ],
+      "desmos": [
+        "p = 5/7",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          7
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:mcq:4",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A bag contains 14 red tokens and 8 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{11}$",
+          "value": "-7/11"
+        },
+        {
+          "text": "$\\frac{7}{11}$",
+          "value": "7/11"
+        },
+        {
+          "text": "$\\frac{18}{11}$",
+          "value": "18/11"
+        },
+        {
+          "text": "$\\frac{29}{11}$",
+          "value": "29/11"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "There are 14 favorable outcomes and 22 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{14}{22} = \\frac{7}{11}$."
+      ],
+      "desmos": [
+        "p = 14/22",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          14,
+          22
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:mcq:5",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A bag contains 12 red tokens and 4 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/4"
+        ]
+      },
+      "solution": [
+        "There are 12 favorable outcomes and 16 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{12}{16} = \\frac{3}{4}$."
+      ],
+      "desmos": [
+        "p = 12/16",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          12,
+          16
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:spr:1",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A bag contains 14 red tokens and 11 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "14/25"
+        ]
+      },
+      "solution": [
+        "There are 14 favorable outcomes and 25 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{14}{25} = \\frac{14}{25}$."
+      ],
+      "desmos": [
+        "p = 14/25",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          14,
+          25
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:spr:2",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A bag contains 10 red tokens and 6 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5/8"
+        ]
+      },
+      "solution": [
+        "There are 10 favorable outcomes and 16 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{10}{16} = \\frac{5}{8}$."
+      ],
+      "desmos": [
+        "p = 10/16",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          10,
+          16
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:spr:3",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A bag contains 5 red tokens and 2 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5/7"
+        ]
+      },
+      "solution": [
+        "There are 5 favorable outcomes and 7 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{5}{7} = \\frac{5}{7}$."
+      ],
+      "desmos": [
+        "p = 5/7",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          5,
+          7
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:spr:4",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A bag contains 14 red tokens and 8 blue tokens. One token is chosen at random. What is the probability it is red?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/11"
+        ]
+      },
+      "solution": [
+        "There are 14 favorable outcomes and 22 equally likely outcomes in total.",
+        "So $P(\\text{red}) = \\frac{14}{22} = \\frac{7}{11}$."
+      ],
+      "desmos": [
+        "p = 14/22",
+        "p"
+      ],
+      "meta": {
+        "kind": "probability",
+        "values": [
+          14,
+          22
+        ]
+      },
+      "id": "g:psda.probability.two-way-table@2:hard:spr:5",
+      "skill": "psda.probability",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

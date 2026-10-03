@@ -1,0 +1,44 @@
+---
+title: Nonlinear functions
+skill: adv.nonlinear-functions
+summary: Read quadratic features, evaluate function notation, and recognize exponential growth and decay.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Read a quadratic rule
+
+In vertex form, <M t="f(x)=a(x-h)^2+k" />, the vertex is <M t="(h,k)" />. If <M t="a>0" />, the graph opens up and has a minimum; if <M t="a<0" />, it opens down and has a maximum. Function notation still means substitute the input everywhere <M t="x" /> appears.
+
+<WorkedExample
+  typeId="adv.nonlinear-functions.vertex-form"
+  difficulty="easy"
+  format="mcq"
+  seed={4}
+  title="Example: evaluate a quadratic"
+/>
+
+## Exponential patterns
+
+An exponential model often has the form <M t="A(1+r)^t" /> for growth or <M t="A(1-r)^t" /> for decay. The starting amount is <M t="A" />; the percent change is applied repeatedly, so it is not the same as adding a fixed amount each step.
+
+<WorkedExample
+  typeId="adv.nonlinear-functions.vertex-form"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: substitute into vertex form"
+/>
+
+## Common traps
+
+- Reading the vertex's x-coordinate as its minimum or maximum output.
+- Treating <M t="(x-h)^2" /> as <M t="x^2-h" />.
+- Adding a repeated percent change instead of multiplying by the growth factor each period.
+
+## Desmos steps
+
+1. Enter `f(x)=2(x-3)^2-5`.
+2. Click the turning point to read the vertex; compare the graph's opening direction with the sign of the leading coefficient.
+3. Enter a table for an exponential situation and graph `A(1+r)^x` to inspect how the model changes over time.

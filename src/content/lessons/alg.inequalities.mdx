@@ -1,0 +1,44 @@
+---
+title: Linear inequalities
+skill: alg.inequalities
+summary: Solve linear inequalities and track how multiplying or dividing by a negative changes the sign.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Solve like an equation
+
+Use the same inverse operations as for an equation. Keep the inequality sign pointing the same way when adding, subtracting, or multiplying by a positive number. **Reverse the sign** when multiplying or dividing by a negative number.
+
+<WorkedExample
+  typeId="alg.inequalities.solve"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: find the integer solutions"
+/>
+
+## Describe the whole solution set
+
+An inequality usually has many solutions. For example, <M t="x<4" /> includes every number below 4. On a number line, use an open circle at 4 because 4 is excluded, then shade left. For <M t="x\le4" />, use a closed circle.
+
+<WorkedExample
+  typeId="alg.inequalities.solve"
+  difficulty="hard"
+  format="spr"
+  seed={7}
+  title="Example: solve and interpret"
+/>
+
+## Common traps
+
+- Forgetting to reverse the inequality after dividing by a negative.
+- Giving only one value when the question asks for a range.
+- Treating <M t="<" /> and <M t="\le" /> as if they include the same endpoint.
+
+## Desmos steps
+
+1. Enter `y=3x+2` and `y=14` to see the boundary where the two sides are equal.
+2. Enter the inequality, such as `3x+2<14`; Desmos shades the solution region on the number line.
+3. Check whether the boundary itself is included before reporting an endpoint.

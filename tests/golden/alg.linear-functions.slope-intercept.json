@@ -1,0 +1,1221 @@
+{
+  "typeId": "alg.linear-functions.slope-intercept",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A linear function is $f(x) = -x + 5$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -1(7) + 5$.",
+        "Evaluate: $f(7) = -2$."
+      ],
+      "desmos": [
+        "f(x) = -1x + (5)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -1,
+          5,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:mcq:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A linear function is $f(x) = 3x + 1$. What is $f(2)$?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 3(2) + 1$.",
+        "Evaluate: $f(2) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 3x + (1)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          3,
+          1,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:mcq:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A linear function is $f(x) = -x + 2$. What is $f(6)$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = -1(6) + 2$.",
+        "Evaluate: $f(6) = -4$."
+      ],
+      "desmos": [
+        "f(x) = -1x + (2)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -1,
+          2,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:mcq:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A linear function is $f(x) = -5x + 5$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-33$",
+          "value": "-33"
+        },
+        {
+          "text": "$-30$",
+          "value": "-30"
+        },
+        {
+          "text": "$-27$",
+          "value": "-27"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -5(7) + 5$.",
+        "Evaluate: $f(7) = -30$."
+      ],
+      "desmos": [
+        "f(x) = -5x + (5)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -5,
+          5,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:mcq:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A linear function is $f(x) = 2x + 3$. What is $f(9)$?",
+      "choices": [
+        {
+          "text": "$-21$",
+          "value": "-21"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        },
+        {
+          "text": "$19$",
+          "value": "19"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 2(9) + 3$.",
+        "Evaluate: $f(9) = 21$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (3)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          3,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:mcq:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A linear function is $f(x) = -x + 5$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-2"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -1(7) + 5$.",
+        "Evaluate: $f(7) = -2$."
+      ],
+      "desmos": [
+        "f(x) = -1x + (5)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -1,
+          5,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:spr:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A linear function is $f(x) = 3x + 1$. What is $f(2)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 3(2) + 1$.",
+        "Evaluate: $f(2) = 7$."
+      ],
+      "desmos": [
+        "f(x) = 3x + (1)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          3,
+          1,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:spr:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A linear function is $f(x) = -x + 2$. What is $f(6)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-4"
+        ]
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = -1(6) + 2$.",
+        "Evaluate: $f(6) = -4$."
+      ],
+      "desmos": [
+        "f(x) = -1x + (2)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -1,
+          2,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:spr:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A linear function is $f(x) = -5x + 5$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-30"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -5(7) + 5$.",
+        "Evaluate: $f(7) = -30$."
+      ],
+      "desmos": [
+        "f(x) = -5x + (5)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -5,
+          5,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:spr:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A linear function is $f(x) = 2x + 3$. What is $f(9)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "21"
+        ]
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 2(9) + 3$.",
+        "Evaluate: $f(9) = 21$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (3)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          3,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:easy:spr:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A linear function is $f(x) = 2x + 13$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-27$",
+          "value": "-27"
+        },
+        {
+          "text": "$26$",
+          "value": "26"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$28$",
+          "value": "28"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = 2(7) + 13$.",
+        "Evaluate: $f(7) = 27$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (13)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          13,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:mcq:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A linear function is $f(x) = 9x + 7$. What is $f(2)$?",
+      "choices": [
+        {
+          "text": "$-25$",
+          "value": "-25"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        },
+        {
+          "text": "$24$",
+          "value": "24"
+        },
+        {
+          "text": "$25$",
+          "value": "25"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 9(2) + 7$.",
+        "Evaluate: $f(2) = 25$."
+      ],
+      "desmos": [
+        "f(x) = 9x + (7)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          9,
+          7,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:mcq:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A linear function is $f(x) = 2x + 8$. What is $f(6)$?",
+      "choices": [
+        {
+          "text": "$-20$",
+          "value": "-20"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = 2(6) + 8$.",
+        "Evaluate: $f(6) = 20$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (8)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          8,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:mcq:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A linear function is $f(x) = -5x + 14$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-24$",
+          "value": "-24"
+        },
+        {
+          "text": "$-21$",
+          "value": "-21"
+        },
+        {
+          "text": "$-18$",
+          "value": "-18"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -5(7) + 14$.",
+        "Evaluate: $f(7) = -21$."
+      ],
+      "desmos": [
+        "f(x) = -5x + (14)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -5,
+          14,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:mcq:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A linear function is $f(x) = 6x + 9$. What is $f(9)$?",
+      "choices": [
+        {
+          "text": "$-63$",
+          "value": "-63"
+        },
+        {
+          "text": "$60$",
+          "value": "60"
+        },
+        {
+          "text": "$61$",
+          "value": "61"
+        },
+        {
+          "text": "$63$",
+          "value": "63"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 6(9) + 9$.",
+        "Evaluate: $f(9) = 63$."
+      ],
+      "desmos": [
+        "f(x) = 6x + (9)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          6,
+          9,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:mcq:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A linear function is $f(x) = 2x + 13$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "27"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = 2(7) + 13$.",
+        "Evaluate: $f(7) = 27$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (13)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          13,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:spr:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A linear function is $f(x) = 9x + 7$. What is $f(2)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "25"
+        ]
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 9(2) + 7$.",
+        "Evaluate: $f(2) = 25$."
+      ],
+      "desmos": [
+        "f(x) = 9x + (7)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          9,
+          7,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:spr:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A linear function is $f(x) = 2x + 8$. What is $f(6)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "20"
+        ]
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = 2(6) + 8$.",
+        "Evaluate: $f(6) = 20$."
+      ],
+      "desmos": [
+        "f(x) = 2x + (8)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          2,
+          8,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:spr:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A linear function is $f(x) = -5x + 14$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-21"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -5(7) + 14$.",
+        "Evaluate: $f(7) = -21$."
+      ],
+      "desmos": [
+        "f(x) = -5x + (14)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -5,
+          14,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:spr:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A linear function is $f(x) = 6x + 9$. What is $f(9)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "63"
+        ]
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 6(9) + 9$.",
+        "Evaluate: $f(9) = 63$."
+      ],
+      "desmos": [
+        "f(x) = 6x + (9)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          6,
+          9,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:medium:spr:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A linear function is $f(x) = -2x + 11$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -2(7) + 11$.",
+        "Evaluate: $f(7) = -3$."
+      ],
+      "desmos": [
+        "f(x) = -2x + (11)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -2,
+          11,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:mcq:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A linear function is $f(x) = 7x + 2$. What is $f(2)$?",
+      "choices": [
+        {
+          "text": "$-16$",
+          "value": "-16"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 7(2) + 2$.",
+        "Evaluate: $f(2) = 16$."
+      ],
+      "desmos": [
+        "f(x) = 7x + (2)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          7,
+          2,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:mcq:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A linear function is $f(x) = -2x + 4$. What is $f(6)$?",
+      "choices": [
+        {
+          "text": "$-8$",
+          "value": "-8"
+        },
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = -2(6) + 4$.",
+        "Evaluate: $f(6) = -8$."
+      ],
+      "desmos": [
+        "f(x) = -2x + (4)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -2,
+          4,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:mcq:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A linear function is $f(x) = -11x + 12$. What is $f(7)$?",
+      "choices": [
+        {
+          "text": "$-68$",
+          "value": "-68"
+        },
+        {
+          "text": "$-65$",
+          "value": "-65"
+        },
+        {
+          "text": "$-62$",
+          "value": "-62"
+        },
+        {
+          "text": "$65$",
+          "value": "65"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -11(7) + 12$.",
+        "Evaluate: $f(7) = -65$."
+      ],
+      "desmos": [
+        "f(x) = -11x + (12)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -11,
+          12,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:mcq:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A linear function is $f(x) = 4x + 6$. What is $f(9)$?",
+      "choices": [
+        {
+          "text": "$-42$",
+          "value": "-42"
+        },
+        {
+          "text": "$39$",
+          "value": "39"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$42$",
+          "value": "42"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 4(9) + 6$.",
+        "Evaluate: $f(9) = 42$."
+      ],
+      "desmos": [
+        "f(x) = 4x + (6)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          4,
+          6,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:mcq:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A linear function is $f(x) = -2x + 11$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-3"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -2(7) + 11$.",
+        "Evaluate: $f(7) = -3$."
+      ],
+      "desmos": [
+        "f(x) = -2x + (11)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -2,
+          11,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:spr:1",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A linear function is $f(x) = 7x + 2$. What is $f(2)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "16"
+        ]
+      },
+      "solution": [
+        "Substitute $2$ for $x$: $f(2) = 7(2) + 2$.",
+        "Evaluate: $f(2) = 16$."
+      ],
+      "desmos": [
+        "f(x) = 7x + (2)",
+        "f(2)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          7,
+          2,
+          2
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:spr:2",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A linear function is $f(x) = -2x + 4$. What is $f(6)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-8"
+        ]
+      },
+      "solution": [
+        "Substitute $6$ for $x$: $f(6) = -2(6) + 4$.",
+        "Evaluate: $f(6) = -8$."
+      ],
+      "desmos": [
+        "f(x) = -2x + (4)",
+        "f(6)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -2,
+          4,
+          6
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:spr:3",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A linear function is $f(x) = -11x + 12$. What is $f(7)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-65"
+        ]
+      },
+      "solution": [
+        "Substitute $7$ for $x$: $f(7) = -11(7) + 12$.",
+        "Evaluate: $f(7) = -65$."
+      ],
+      "desmos": [
+        "f(x) = -11x + (12)",
+        "f(7)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          -11,
+          12,
+          7
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:spr:4",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A linear function is $f(x) = 4x + 6$. What is $f(9)$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "42"
+        ]
+      },
+      "solution": [
+        "Substitute $9$ for $x$: $f(9) = 4(9) + 6$.",
+        "Evaluate: $f(9) = 42$."
+      ],
+      "desmos": [
+        "f(x) = 4x + (6)",
+        "f(9)"
+      ],
+      "meta": {
+        "kind": "function",
+        "values": [
+          4,
+          6,
+          9
+        ]
+      },
+      "id": "g:alg.linear-functions.slope-intercept@2:hard:spr:5",
+      "skill": "alg.linear-functions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

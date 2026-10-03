@@ -1,0 +1,44 @@
+---
+title: Linear equations in two variables
+skill: alg.linear-two-var
+summary: Read a line's slope and intercept, make a table of solutions, and check ordered pairs.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## A line is a collection of solutions
+
+An equation such as <M t="y=2x+3" /> has many solutions. Each solution is an ordered pair <M t="(x,y)" /> that makes the equation true. In slope-intercept form, <M t="m" /> is the slope and <M t="b" /> is the y-intercept.
+
+<WorkedExample
+  typeId="alg.linear-two-var.line-equation"
+  difficulty="easy"
+  format="mcq"
+  seed={3}
+  title="Example: use a line rule"
+/>
+
+## Find and check a point
+
+To find a point, choose an x-value and substitute it into the equation. To check a proposed point, substitute both coordinates and see whether the two sides match. A standard-form equation <M t="Ax+By=C" /> can be rearranged to make <M t="y" /> the subject when <M t="B\ne0" />.
+
+<WorkedExample
+  typeId="alg.linear-two-var.line-equation"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: calculate a coordinate"
+/>
+
+## Common traps
+
+- Writing a point as <M t="(y,x)" /> instead of <M t="(x,y)" />.
+- Reading the y-intercept as the x-intercept.
+- Assuming one line equation has only one solution pair.
+
+## Desmos steps
+
+1. Enter the equation, such as `y=2x+3`; Desmos draws every solution pair.
+2. Add `x=4` to see where that input meets the line.
+3. The intersection's y-coordinate is the matching output. Click a point on the line to inspect its coordinates.

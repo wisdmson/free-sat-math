@@ -1,0 +1,1161 @@
+{
+  "typeId": "geo.right-triangles-trig.pythagorean",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-20$",
+          "value": "-20"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        },
+        {
+          "text": "$17$",
+          "value": "17"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(9)^2 + (12)^2 = 225$, so $c = \\sqrt{225} = 15$."
+      ],
+      "desmos": [
+        "(9)^2 + (12)^2 = c^2",
+        "c = 15"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          3
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:mcq:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "20"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(9)^2 + (12)^2 = 225$, so $c = \\sqrt{225} = 15$."
+      ],
+      "desmos": [
+        "(9)^2 + (12)^2 = c^2",
+        "c = 15"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          3
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:easy:spr:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-20$",
+          "value": "-20"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        },
+        {
+          "text": "$17$",
+          "value": "17"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(9)^2 + (12)^2 = 225$, so $c = \\sqrt{225} = 15$."
+      ],
+      "desmos": [
+        "(9)^2 + (12)^2 = c^2",
+        "c = 15"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          3
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:mcq:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "20"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A right triangle has legs measuring $6$ and $8$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(6)^2 + (8)^2 = 100$, so $c = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(6)^2 + (8)^2 = c^2",
+        "c = 10"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A right triangle has legs measuring $9$ and $12$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(9)^2 + (12)^2 = 225$, so $c = \\sqrt{225} = 15$."
+      ],
+      "desmos": [
+        "(9)^2 + (12)^2 = c^2",
+        "c = 15"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          3
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:medium:spr:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-20$",
+          "value": "-20"
+        },
+        {
+          "text": "$19$",
+          "value": "19"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A right triangle has legs measuring $24$ and $32$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-40$",
+          "value": "-40"
+        },
+        {
+          "text": "$40$",
+          "value": "40"
+        },
+        {
+          "text": "$42$",
+          "value": "42"
+        },
+        {
+          "text": "$43$",
+          "value": "43"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(24)^2 + (32)^2 = 1600$, so $c = \\sqrt{1600} = 40$."
+      ],
+      "desmos": [
+        "(24)^2 + (32)^2 = c^2",
+        "c = 40"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          8
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-20$",
+          "value": "-20"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$23$",
+          "value": "23"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-5$",
+          "value": "-5"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A right triangle has legs measuring $18$ and $24$ units. What is the length of its hypotenuse?",
+      "choices": [
+        {
+          "text": "$-30$",
+          "value": "-30"
+        },
+        {
+          "text": "$30$",
+          "value": "30"
+        },
+        {
+          "text": "$31$",
+          "value": "31"
+        },
+        {
+          "text": "$32$",
+          "value": "32"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(18)^2 + (24)^2 = 900$, so $c = \\sqrt{900} = 30$."
+      ],
+      "desmos": [
+        "(18)^2 + (24)^2 = c^2",
+        "c = 30"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:mcq:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "20"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:1",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A right triangle has legs measuring $24$ and $32$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "40"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(24)^2 + (32)^2 = 1600$, so $c = \\sqrt{1600} = 40$."
+      ],
+      "desmos": [
+        "(24)^2 + (32)^2 = c^2",
+        "c = 40"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          8
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:2",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A right triangle has legs measuring $12$ and $16$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "20"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(12)^2 + (16)^2 = 400$, so $c = \\sqrt{400} = 20$."
+      ],
+      "desmos": [
+        "(12)^2 + (16)^2 = c^2",
+        "c = 20"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:3",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A right triangle has legs measuring $3$ and $4$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "5"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(3)^2 + (4)^2 = 25$, so $c = \\sqrt{25} = 5$."
+      ],
+      "desmos": [
+        "(3)^2 + (4)^2 = c^2",
+        "c = 5"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          1
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:4",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A right triangle has legs measuring $18$ and $24$ units. What is the length of its hypotenuse?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "30"
+        ]
+      },
+      "solution": [
+        "Use the Pythagorean theorem: $a^2 + b^2 = c^2$.",
+        "$(18)^2 + (24)^2 = 900$, so $c = \\sqrt{900} = 30$."
+      ],
+      "desmos": [
+        "(18)^2 + (24)^2 = c^2",
+        "c = 30"
+      ],
+      "meta": {
+        "kind": "pythagorean",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.right-triangles-trig.pythagorean@2:hard:spr:5",
+      "skill": "geo.right-triangles-trig",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

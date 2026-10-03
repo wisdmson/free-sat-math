@@ -11,6 +11,7 @@ import {
 import { lightningRound } from '../../src/engine/mental/lightning';
 import { createRng } from '../../src/engine/rng';
 import { emptyProgress, recordAttempt } from '../../src/store/progress';
+import { SKILL_IDS } from '../../src/engine/skills';
 
 function run(seed: number, n: number, progress = emptyProgress(), maker?: LightningMaker) {
   const rng = createRng(seed);
@@ -27,6 +28,12 @@ function run(seed: number, n: number, progress = emptyProgress(), maker?: Lightn
 describe('nextCard', () => {
   it('is deterministic for a seed', () => {
     expect(run(42, 30).map((c) => c?.key)).toEqual(run(42, 30).map((c) => c?.key));
+  });
+  it('can serve a question from every SAT Math skill in Quick Play', () => {
+    const skills = new Set(
+      run(20261003, 1_000).flatMap((card) => (card?.kind === 'sat' ? [card.problem.skill] : [])),
+    );
+    expect([...skills].sort()).toEqual([...SKILL_IDS].sort());
   });
   it('inserts a tip after every TIP_EVERY questions, rotating through the list', () => {
     const cards = run(7, 90);

@@ -1,0 +1,44 @@
+---
+title: Percentages
+skill: psda.percentages
+summary: Translate percent language into a multiplier to find a part, a new value, or an original value.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Turn a percent into a multiplier
+
+Convert a percent to a decimal by dividing by 100. To find <M t="p\%" /> of an amount, multiply by <M t="p/100" />. For an increase, use the multiplier <M t="1+p/100" />; for a decrease, use <M t="1-p/100" />.
+
+<WorkedExample
+  typeId="psda.percentages.percent-basic"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: apply an increase"
+/>
+
+## Find the starting amount
+
+If a final amount is known, divide by the change multiplier to recover the original. A 20% increase followed by a 20% decrease does not return to the start, because the second percent is taken from the new amount.
+
+<WorkedExample
+  typeId="psda.percentages.percent-basic"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: calculate the new amount"
+/>
+
+## Common traps
+
+- Using the percent number as a whole number instead of dividing by 100.
+- Reporting only the increase instead of the new total.
+- Adding successive percent changes when each applies to a different base.
+
+## Desmos check
+
+1. Enter `new=original*(1+rate/100)` for an increase, or change `+` to `-` for a decrease.
+2. Substitute the original amount and rate to check your arithmetic.
+3. For an unknown original, solve `final=x*(1+rate/100)` and inspect the intersection with `y=final`.

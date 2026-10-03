@@ -1,0 +1,44 @@
+---
+title: Inference from sample statistics
+skill: psda.inference
+summary: Use a sample estimate and its margin of error to describe a plausible interval for a population value.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Estimate with a margin
+
+A statistic describes a sample. A confidence interval uses that estimate plus and minus a margin of error to give a range of plausible population values. A larger sample often reduces sampling variability, but the margin also depends on the data and confidence level.
+
+<WorkedExample
+  typeId="psda.inference.sample-margin"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: find an interval endpoint"
+/>
+
+## Interpret the range
+
+For an estimate of 62% with a margin of 4 percentage points, the interval is 58% to 66%. The margin is in **percentage points**. It does not mean 4% of 62. A confidence interval is not a guarantee that every individual response falls in the range.
+
+<WorkedExample
+  typeId="psda.inference.sample-margin"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: subtract the margin"
+/>
+
+## Common traps
+
+- Confusing percentage points with a percent change.
+- Describing a sample statistic as if it were the exact population value.
+- Claiming a confidence interval covers individual observations.
+
+## Desmos check
+
+1. Enter `estimate-margin` and `estimate+margin` to calculate both endpoints.
+2. Use the same units for the estimate and margin; if one is a percent, both should be percentages.
+3. Desmos checks the arithmetic. The written interpretation must still name the population quantity the interval estimates.

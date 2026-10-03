@@ -1,0 +1,1281 @@
+{
+  "typeId": "alg.inequalities.solve",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "What is the greatest integer solution to $5x + 5 < 10$?",
+      "choices": [
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $5$: $5x < 5$.",
+        "Divide by positive $5$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 5x + (5)",
+        "y = 10",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:mcq:1",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "What is the greatest integer solution to $4x - 11 < 17$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $-11$: $4x < 28$.",
+        "Divide by positive $4$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 4x + (-11)",
+        "y = 17",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:mcq:2",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "What is the greatest integer solution to $4x + 2 < 6$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $2$: $4x < 4$.",
+        "Divide by positive $4$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 4x + (2)",
+        "y = 6",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:mcq:3",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "What is the greatest integer solution to $5x + 6 < -19$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Subtract $6$: $5x < -25$.",
+        "Divide by positive $5$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 5x + (6)",
+        "y = -19",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:mcq:4",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "What is the greatest integer solution to $4x + 10 < 30$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $10$: $4x < 20$.",
+        "Divide by positive $4$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 4x + (10)",
+        "y = 30",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:mcq:5",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "What is the greatest integer solution to $5x + 5 < 10$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $5$: $5x < 5$.",
+        "Divide by positive $5$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 5x + (5)",
+        "y = 10",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:spr:1",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "What is the greatest integer solution to $4x - 11 < 17$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Subtract $-11$: $4x < 28$.",
+        "Divide by positive $4$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 4x + (-11)",
+        "y = 17",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:spr:2",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "What is the greatest integer solution to $4x + 2 < 6$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $2$: $4x < 4$.",
+        "Divide by positive $4$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 4x + (2)",
+        "y = 6",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:spr:3",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "What is the greatest integer solution to $5x + 6 < -19$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-6"
+        ]
+      },
+      "solution": [
+        "Subtract $6$: $5x < -25$.",
+        "Divide by positive $5$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 5x + (6)",
+        "y = -19",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:spr:4",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "What is the greatest integer solution to $4x + 10 < 30$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "Subtract $10$: $4x < 20$.",
+        "Divide by positive $4$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 4x + (10)",
+        "y = 30",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:easy:spr:5",
+      "skill": "alg.inequalities",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "What is the greatest integer solution to $5x + 5 < 10$?",
+      "choices": [
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $5$: $5x < 5$.",
+        "Divide by positive $5$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 5x + (5)",
+        "y = 10",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:mcq:1",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "What is the greatest integer solution to $4x - 11 < 17$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $-11$: $4x < 28$.",
+        "Divide by positive $4$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 4x + (-11)",
+        "y = 17",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:mcq:2",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "What is the greatest integer solution to $4x + 2 < 6$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $2$: $4x < 4$.",
+        "Divide by positive $4$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 4x + (2)",
+        "y = 6",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:mcq:3",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "What is the greatest integer solution to $5x + 6 < -19$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Subtract $6$: $5x < -25$.",
+        "Divide by positive $5$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 5x + (6)",
+        "y = -19",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:mcq:4",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "What is the greatest integer solution to $4x + 10 < 30$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $10$: $4x < 20$.",
+        "Divide by positive $4$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 4x + (10)",
+        "y = 30",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:mcq:5",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "What is the greatest integer solution to $5x + 5 < 10$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $5$: $5x < 5$.",
+        "Divide by positive $5$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 5x + (5)",
+        "y = 10",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:spr:1",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "What is the greatest integer solution to $4x - 11 < 17$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Subtract $-11$: $4x < 28$.",
+        "Divide by positive $4$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 4x + (-11)",
+        "y = 17",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:spr:2",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "What is the greatest integer solution to $4x + 2 < 6$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $2$: $4x < 4$.",
+        "Divide by positive $4$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 4x + (2)",
+        "y = 6",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:spr:3",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "What is the greatest integer solution to $5x + 6 < -19$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-6"
+        ]
+      },
+      "solution": [
+        "Subtract $6$: $5x < -25$.",
+        "Divide by positive $5$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 5x + (6)",
+        "y = -19",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          5,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:spr:4",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "What is the greatest integer solution to $4x + 10 < 30$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "Subtract $10$: $4x < 20$.",
+        "Divide by positive $4$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 4x + (10)",
+        "y = 30",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          4,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:medium:spr:5",
+      "skill": "alg.inequalities",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "What is the greatest integer solution to $8x + 5 < 13$?",
+      "choices": [
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $5$: $8x < 8$.",
+        "Divide by positive $8$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 8x + (5)",
+        "y = 13",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          8,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:mcq:1",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "What is the greatest integer solution to $6x - 11 < 31$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $-11$: $6x < 42$.",
+        "Divide by positive $6$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 6x + (-11)",
+        "y = 31",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          6,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:mcq:2",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "What is the greatest integer solution to $6x + 2 < 8$?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$0$",
+          "value": "0"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $2$: $6x < 6$.",
+        "Divide by positive $6$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 6x + (2)",
+        "y = 8",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          6,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:mcq:3",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "What is the greatest integer solution to $8x + 6 < -34$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$-3$",
+          "value": "-3"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "A sign error: the size is right but the sign is wrong."
+      },
+      "solution": [
+        "Subtract $6$: $8x < -40$.",
+        "Divide by positive $8$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 8x + (6)",
+        "y = -34",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          8,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:mcq:4",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "What is the greatest integer solution to $7x + 10 < 45$?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$1$",
+          "value": "1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Subtract $10$: $7x < 35$.",
+        "Divide by positive $7$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 7x + (10)",
+        "y = 45",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          7,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:mcq:5",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "What is the greatest integer solution to $8x + 5 < 13$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $5$: $8x < 8$.",
+        "Divide by positive $8$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 8x + (5)",
+        "y = 13",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          8,
+          5,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:spr:1",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "What is the greatest integer solution to $6x - 11 < 31$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Subtract $-11$: $6x < 42$.",
+        "Divide by positive $6$: $x < 7$.",
+        "The greatest integer less than 7 is $6$."
+      ],
+      "desmos": [
+        "y = 6x + (-11)",
+        "y = 31",
+        "x < 7"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          6,
+          -11,
+          7
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:spr:2",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "What is the greatest integer solution to $6x + 2 < 8$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "0"
+        ]
+      },
+      "solution": [
+        "Subtract $2$: $6x < 6$.",
+        "Divide by positive $6$: $x < 1$.",
+        "The greatest integer less than 1 is $0$."
+      ],
+      "desmos": [
+        "y = 6x + (2)",
+        "y = 8",
+        "x < 1"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          6,
+          2,
+          1
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:spr:3",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "What is the greatest integer solution to $8x + 6 < -34$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "-6"
+        ]
+      },
+      "solution": [
+        "Subtract $6$: $8x < -40$.",
+        "Divide by positive $8$: $x < -5$.",
+        "The greatest integer less than -5 is $-6$."
+      ],
+      "desmos": [
+        "y = 8x + (6)",
+        "y = -34",
+        "x < -5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          8,
+          6,
+          -5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:spr:4",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "What is the greatest integer solution to $7x + 10 < 45$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "Subtract $10$: $7x < 35$.",
+        "Divide by positive $7$: $x < 5$.",
+        "The greatest integer less than 5 is $4$."
+      ],
+      "desmos": [
+        "y = 7x + (10)",
+        "y = 45",
+        "x < 5"
+      ],
+      "meta": {
+        "kind": "inequality",
+        "values": [
+          7,
+          10,
+          5
+        ]
+      },
+      "id": "g:alg.inequalities.solve@2:hard:spr:5",
+      "skill": "alg.inequalities",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+---
+title: One-variable data
+skill: psda.one-var-data
+summary: Choose the right measure of center or spread and track how a data change affects it.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Center and spread
+
+The mean is the sum divided by the number of values. The median is the middle value after sorting. The range is maximum minus minimum. The median is less affected by an unusually high or low value than the mean is.
+
+<WorkedExample
+  typeId="psda.one-var-data.center-spread"
+  difficulty="easy"
+  format="mcq"
+  seed={4}
+  title="Example: calculate the mean"
+/>
+
+## Read changes carefully
+
+Adding a value above the mean pulls the mean upward; adding one below pulls it downward. The median changes only if the middle position or values change. A frequency table represents repeated values, so include each value the listed number of times when calculating.
+
+<WorkedExample
+  typeId="psda.one-var-data.center-spread"
+  difficulty="hard"
+  format="spr"
+  seed={9}
+  title="Example: use every data value"
+/>
+
+## Common traps
+
+- Finding the median before sorting.
+- Dividing the sum by a number other than the data-set size.
+- Treating a frequency as another measurement rather than a count.
+
+## Desmos steps
+
+1. Enter the data as a list, such as `[4,7,7,10]`.
+2. Use `mean(L)` for the mean and inspect the list in sorted order to find the median.
+3. Calculate `max(L)-min(L)` for the range. Keep the data list visible so you can check that every observation is included.

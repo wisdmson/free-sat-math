@@ -1,4 +1,5 @@
 import { buildProblem } from './build';
+import { CATALOG_TYPES } from './generators/catalog';
 import { systemsCount } from './generators/algebra/systems-count';
 import { systemsSolve } from './generators/algebra/systems-solve';
 import { systemsWord } from './generators/algebra/systems-word';
@@ -6,7 +7,12 @@ import { parseProblemId, type Difficulty, type Problem, type ProblemType } from 
 import { SKILL_IDS, type SkillId } from './skills';
 
 /** Every generator the site ships. Add new types here. */
-export const PROBLEM_TYPES: readonly ProblemType[] = [systemsSolve, systemsCount, systemsWord];
+export const PROBLEM_TYPES: readonly ProblemType[] = [
+  ...CATALOG_TYPES,
+  systemsSolve,
+  systemsCount,
+  systemsWord,
+];
 
 export function getProblemType(id: string): ProblemType | undefined {
   return PROBLEM_TYPES.find((t) => t.id === id);

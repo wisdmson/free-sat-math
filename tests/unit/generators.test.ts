@@ -29,3 +29,27 @@ describe.each(PROBLEM_TYPES.map((t) => [t.id, t] as const))('%s', (_id, type) =>
     },
   );
 });
+
+describe('catalog answer verification', () => {
+  it('checks the recorded answer against the prompt parameters without answer metadata', () => {
+    const type = PROBLEM_TYPES.find((t) => t.id === 'alg.linear-one-var.solve');
+    expect(type).toBeDefined();
+    const problem = buildProblem(type!, 'medium', 'mcq', 12);
+    const meta = { ...problem.meta };
+    delete meta['answer'];
+    expect(type!.verify({ ...problem, meta })).toBe(true);
+  });
+});
+
+describe('quadratic root explanation', () => {
+  it('identifies the greater root even when the roots are generated in reverse order', () => {
+    const type = PROBLEM_TYPES.find((t) => t.id === 'adv.nonlinear-equations.quadratic-solve');
+    expect(type).toBeDefined();
+    for (let seed = 1; seed <= 100; seed++) {
+      const problem = buildProblem(type!, 'medium', 'mcq', seed);
+      const values = problem.meta?.['values'] as number[];
+      const greater = Math.max(values[0] as number, values[1] as number);
+      expect(problem.solution.at(-1)).toContain(`$${greater}$`);
+    }
+  });
+});

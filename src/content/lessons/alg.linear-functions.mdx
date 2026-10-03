@@ -1,0 +1,44 @@
+---
+title: Linear functions
+skill: alg.linear-functions
+summary: Read slope and intercept, evaluate a linear rule, and use a graph to connect the equation to its line.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## What the rule tells you
+
+In <M t="f(x)=mx+b" />, <M t="m" /> is the change in output for each 1-unit increase in input. The value <M t="b" /> is the output when the input is 0. To evaluate the function, replace every <M t="x" /> with the given input, then calculate.
+
+<WorkedExample
+  typeId="alg.linear-functions.slope-intercept"
+  difficulty="easy"
+  format="mcq"
+  seed={4}
+  title="Example: evaluate a function"
+/>
+
+## Build or compare lines
+
+Given two points, calculate slope with <M t="(y_2-y_1)/(x_2-x_1)" />. Then use either point in <M t="y=mx+b" /> to find the intercept. A table with a constant rate of change describes a linear function.
+
+<WorkedExample
+  typeId="alg.linear-functions.slope-intercept"
+  difficulty="hard"
+  format="spr"
+  seed={9}
+  title="Example: follow a linear rule"
+/>
+
+## Common traps
+
+- Swapping the x- and y-coordinates when finding slope.
+- Treating the intercept as the slope.
+- Forgetting that a function's input is substituted everywhere <M t="x" /> appears.
+
+## Desmos steps
+
+1. Enter the rule, for example `f(x)=3x+2`.
+2. Enter `f(5)` on a new line to evaluate it, or type `(5,f(5))` to mark the point.
+3. Change the input and observe how the output changes by the slope each time.

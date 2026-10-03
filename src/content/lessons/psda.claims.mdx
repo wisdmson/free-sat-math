@@ -1,0 +1,42 @@
+---
+title: Evaluating statistical claims
+skill: psda.claims
+summary: Tell what a study's sample and design allow researchers to conclude, and where those conclusions stop.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Ask how the study was done
+
+Random **sampling** helps a sample represent a population, so results can generalize to that population. Random **assignment** balances groups in an experiment, so a difference can support a cause-and-effect conclusion for the studied participants. These are different kinds of randomness.
+
+<WorkedExample
+  typeId="psda.claims.evaluate-study"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: identify what assignment supports"
+/>
+
+## Match the claim to the design
+
+An observational study measures existing groups without assigning treatments. It can show an association, but other differences may explain it. A convenience sample may not represent the full population. A large sample does not fix a biased sampling method.
+
+<WorkedExample
+  typeId="psda.claims.evaluate-study"
+  difficulty="hard"
+  format="mcq"
+  seed={8}
+  title="Example: limit the conclusion"
+/>
+
+## Common traps
+
+- Mixing up random selection with random assignment.
+- Saying an association proves causation.
+- Generalizing beyond the population the sample can represent.
+
+## Can Desmos help?
+
+Desmos can graph study results or compare group averages, but a graph cannot tell whether participants were randomly assigned or whether the sample was representative. Read the study description first; use the calculator only to check numerical summaries.

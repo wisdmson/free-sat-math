@@ -1,0 +1,44 @@
+---
+title: Ratios, rates, proportional relationships, and units
+skill: psda.ratios-rates
+summary: Keep quantities and units aligned when scaling ratios, comparing rates, and converting measurements.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Find a unit rate
+
+A ratio compares quantities. A rate compares quantities with different units. To find a unit rate, divide both quantities by the same amount until one is 1, and keep the resulting units attached to the answer.
+
+<WorkedExample
+  typeId="psda.ratios-rates.proportional-rate"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: scale a constant rate"
+/>
+
+## Scale proportionally
+
+In a proportional relationship, <M t="y=kx" /> and the ratio <M t="y/x" /> stays constant. Use conversion factors so units cancel: for example, multiply miles by <M t="5280\text{ feet}/1\text{ mile}" /> when converting to feet.
+
+<WorkedExample
+  typeId="psda.ratios-rates.proportional-rate"
+  difficulty="hard"
+  format="spr"
+  seed={9}
+  title="Example: predict from a rate"
+/>
+
+## Common traps
+
+- Flipping a rate and reporting minutes per page instead of pages per minute.
+- Adding quantities when the relationship calls for scaling.
+- Converting a squared or cubed unit without squaring or cubing the conversion factor.
+
+## Desmos steps
+
+1. Enter `y=12x` when the unit rate is 12 units per minute.
+2. Enter the desired input, such as `x=5`; the intersection shows the predicted output.
+3. Keep units on your written work. Desmos calculates numbers but does not know whether you entered minutes, hours, or seconds.

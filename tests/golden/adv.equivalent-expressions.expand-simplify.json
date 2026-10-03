@@ -1,0 +1,1251 @@
+{
+  "typeId": "adv.equivalent-expressions.expand-simplify",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "When $3x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-21$",
+          "value": "-21"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $3x(x + 6) = 3x^2 + 18x$.",
+        "Combine the $x$-terms: $18x + 3x = 21x$.",
+        "Therefore, $B = 21$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (6)) + 3x",
+        "g(x) = 3x^2 + (21)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:mcq:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "When $5x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $5x(x + 1) = 5x^2 + 5x$.",
+        "Combine the $x$-terms: $5x + x = 6x$.",
+        "Therefore, $B = 6$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (1)) + 1x",
+        "g(x) = 5x^2 + (6)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:mcq:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "When $3x(x + 2) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $3x(x + 2) = 3x^2 + 6x$.",
+        "Combine the $x$-terms: $6x + 3x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (2)) + 3x",
+        "g(x) = 3x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          2,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:mcq:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "When $2x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 3x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 3x",
+        "g(x) = 2x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:mcq:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "When $4x(x + 3) + 4x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-16$",
+          "value": "-16"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $4x(x + 3) = 4x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 4x = 16x$.",
+        "Therefore, $B = 16$."
+      ],
+      "desmos": [
+        "f(x) = 4x(x + (3)) + 4x",
+        "g(x) = 4x^2 + (16)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          4,
+          3,
+          4
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:mcq:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "When $3x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "21"
+        ]
+      },
+      "solution": [
+        "Distribute: $3x(x + 6) = 3x^2 + 18x$.",
+        "Combine the $x$-terms: $18x + 3x = 21x$.",
+        "Therefore, $B = 21$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (6)) + 3x",
+        "g(x) = 3x^2 + (21)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:spr:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "When $5x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Distribute: $5x(x + 1) = 5x^2 + 5x$.",
+        "Combine the $x$-terms: $5x + x = 6x$.",
+        "Therefore, $B = 6$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (1)) + 1x",
+        "g(x) = 5x^2 + (6)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:spr:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "When $3x(x + 2) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "Distribute: $3x(x + 2) = 3x^2 + 6x$.",
+        "Combine the $x$-terms: $6x + 3x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (2)) + 3x",
+        "g(x) = 3x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          2,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:spr:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "When $2x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15"
+        ]
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 3x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 3x",
+        "g(x) = 2x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:spr:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "When $4x(x + 3) + 4x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "16"
+        ]
+      },
+      "solution": [
+        "Distribute: $4x(x + 3) = 4x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 4x = 16x$.",
+        "Therefore, $B = 16$."
+      ],
+      "desmos": [
+        "f(x) = 4x(x + (3)) + 4x",
+        "g(x) = 4x^2 + (16)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          4,
+          3,
+          4
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:easy:spr:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "When $3x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-21$",
+          "value": "-21"
+        },
+        {
+          "text": "$20$",
+          "value": "20"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        },
+        {
+          "text": "$22$",
+          "value": "22"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $3x(x + 6) = 3x^2 + 18x$.",
+        "Combine the $x$-terms: $18x + 3x = 21x$.",
+        "Therefore, $B = 21$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (6)) + 3x",
+        "g(x) = 3x^2 + (21)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:mcq:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "When $5x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $5x(x + 1) = 5x^2 + 5x$.",
+        "Combine the $x$-terms: $5x + x = 6x$.",
+        "Therefore, $B = 6$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (1)) + 1x",
+        "g(x) = 5x^2 + (6)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:mcq:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "When $3x(x + 2) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $3x(x + 2) = 3x^2 + 6x$.",
+        "Combine the $x$-terms: $6x + 3x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (2)) + 3x",
+        "g(x) = 3x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          2,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:mcq:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "When $2x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 3x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 3x",
+        "g(x) = 2x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:mcq:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "When $4x(x + 3) + 4x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-16$",
+          "value": "-16"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        },
+        {
+          "text": "$14$",
+          "value": "14"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $4x(x + 3) = 4x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 4x = 16x$.",
+        "Therefore, $B = 16$."
+      ],
+      "desmos": [
+        "f(x) = 4x(x + (3)) + 4x",
+        "g(x) = 4x^2 + (16)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          4,
+          3,
+          4
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:mcq:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "When $3x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "21"
+        ]
+      },
+      "solution": [
+        "Distribute: $3x(x + 6) = 3x^2 + 18x$.",
+        "Combine the $x$-terms: $18x + 3x = 21x$.",
+        "Therefore, $B = 21$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (6)) + 3x",
+        "g(x) = 3x^2 + (21)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:spr:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "When $5x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Distribute: $5x(x + 1) = 5x^2 + 5x$.",
+        "Combine the $x$-terms: $5x + x = 6x$.",
+        "Therefore, $B = 6$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (1)) + 1x",
+        "g(x) = 5x^2 + (6)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:spr:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "When $3x(x + 2) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "Distribute: $3x(x + 2) = 3x^2 + 6x$.",
+        "Combine the $x$-terms: $6x + 3x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 3x(x + (2)) + 3x",
+        "g(x) = 3x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          3,
+          2,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:spr:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "When $2x(x + 6) + 3x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15"
+        ]
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 3x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 3x",
+        "g(x) = 2x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          3
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:spr:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "When $4x(x + 3) + 4x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "16"
+        ]
+      },
+      "solution": [
+        "Distribute: $4x(x + 3) = 4x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 4x = 16x$.",
+        "Therefore, $B = 16$."
+      ],
+      "desmos": [
+        "f(x) = 4x(x + (3)) + 4x",
+        "g(x) = 4x^2 + (16)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          4,
+          3,
+          4
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:medium:spr:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "When $5x(x + 6) + 6x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-36$",
+          "value": "-36"
+        },
+        {
+          "text": "$35$",
+          "value": "35"
+        },
+        {
+          "text": "$36$",
+          "value": "36"
+        },
+        {
+          "text": "$37$",
+          "value": "37"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $5x(x + 6) = 5x^2 + 30x$.",
+        "Combine the $x$-terms: $30x + 6x = 36x$.",
+        "Therefore, $B = 36$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (6)) + 6x",
+        "g(x) = 5x^2 + (36)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          6,
+          6
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:mcq:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "When $8x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $8x(x + 1) = 8x^2 + 8x$.",
+        "Combine the $x$-terms: $8x + x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 8x(x + (1)) + 1x",
+        "g(x) = 8x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          8,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:mcq:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "When $5x(x + 2) + 5x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-15$",
+          "value": "-15"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$16$",
+          "value": "16"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $5x(x + 2) = 5x^2 + 10x$.",
+        "Combine the $x$-terms: $10x + 5x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (2)) + 5x",
+        "g(x) = 5x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          2,
+          5
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:mcq:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "When $2x(x + 6) + 6x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-18$",
+          "value": "-18"
+        },
+        {
+          "text": "$15$",
+          "value": "15"
+        },
+        {
+          "text": "$18$",
+          "value": "18"
+        },
+        {
+          "text": "$21$",
+          "value": "21"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 6x = 18x$.",
+        "Therefore, $B = 18$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 6x",
+        "g(x) = 2x^2 + (18)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          6
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:mcq:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "When $7x(x + 3) + 8x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "choices": [
+        {
+          "text": "$-29$",
+          "value": "-29"
+        },
+        {
+          "text": "$26$",
+          "value": "26"
+        },
+        {
+          "text": "$27$",
+          "value": "27"
+        },
+        {
+          "text": "$29$",
+          "value": "29"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Distribute: $7x(x + 3) = 7x^2 + 21x$.",
+        "Combine the $x$-terms: $21x + 8x = 29x$.",
+        "Therefore, $B = 29$."
+      ],
+      "desmos": [
+        "f(x) = 7x(x + (3)) + 8x",
+        "g(x) = 7x^2 + (29)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          7,
+          3,
+          8
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:mcq:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "When $5x(x + 6) + 6x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "36"
+        ]
+      },
+      "solution": [
+        "Distribute: $5x(x + 6) = 5x^2 + 30x$.",
+        "Combine the $x$-terms: $30x + 6x = 36x$.",
+        "Therefore, $B = 36$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (6)) + 6x",
+        "g(x) = 5x^2 + (36)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          6,
+          6
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:spr:1",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "When $8x(x + 1) + x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "Distribute: $8x(x + 1) = 8x^2 + 8x$.",
+        "Combine the $x$-terms: $8x + x = 9x$.",
+        "Therefore, $B = 9$."
+      ],
+      "desmos": [
+        "f(x) = 8x(x + (1)) + 1x",
+        "g(x) = 8x^2 + (9)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          8,
+          1,
+          1
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:spr:2",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "When $5x(x + 2) + 5x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15"
+        ]
+      },
+      "solution": [
+        "Distribute: $5x(x + 2) = 5x^2 + 10x$.",
+        "Combine the $x$-terms: $10x + 5x = 15x$.",
+        "Therefore, $B = 15$."
+      ],
+      "desmos": [
+        "f(x) = 5x(x + (2)) + 5x",
+        "g(x) = 5x^2 + (15)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          5,
+          2,
+          5
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:spr:3",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "When $2x(x + 6) + 6x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "18"
+        ]
+      },
+      "solution": [
+        "Distribute: $2x(x + 6) = 2x^2 + 12x$.",
+        "Combine the $x$-terms: $12x + 6x = 18x$.",
+        "Therefore, $B = 18$."
+      ],
+      "desmos": [
+        "f(x) = 2x(x + (6)) + 6x",
+        "g(x) = 2x^2 + (18)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          2,
+          6,
+          6
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:spr:4",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "When $7x(x + 3) + 8x$ is written as $Ax^2 + Bx + C$, what is $B$?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "29"
+        ]
+      },
+      "solution": [
+        "Distribute: $7x(x + 3) = 7x^2 + 21x$.",
+        "Combine the $x$-terms: $21x + 8x = 29x$.",
+        "Therefore, $B = 29$."
+      ],
+      "desmos": [
+        "f(x) = 7x(x + (3)) + 8x",
+        "g(x) = 7x^2 + (29)x"
+      ],
+      "meta": {
+        "kind": "equivalent",
+        "values": [
+          7,
+          3,
+          8
+        ]
+      },
+      "id": "g:adv.equivalent-expressions.expand-simplify@2:hard:spr:5",
+      "skill": "adv.equivalent-expressions",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

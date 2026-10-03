@@ -1,0 +1,1221 @@
+{
+  "typeId": "adv.nonlinear-equations.quadratic-solve",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "The equation $(x + 4)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:mcq:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "The equation $(x - 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:mcq:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "The equation $(x + 4)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:mcq:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "The equation $(x + 10)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -10$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-10))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -10,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:mcq:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "The equation $(x + 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:mcq:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "The equation $(x + 4)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:spr:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "The equation $(x - 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:spr:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "The equation $(x + 4)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:spr:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "The equation $(x + 10)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -10$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-10))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -10,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:spr:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "The equation $(x + 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:easy:spr:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "The equation $(x + 4)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:mcq:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "The equation $(x - 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:mcq:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "The equation $(x + 4)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:mcq:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "The equation $(x + 10)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -10$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-10))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -10,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:mcq:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "The equation $(x + 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:mcq:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "The equation $(x + 4)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:spr:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "The equation $(x - 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:spr:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "The equation $(x + 4)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -4$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-4))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -4,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:spr:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "The equation $(x + 10)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -10$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-10))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -10,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:spr:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "The equation $(x + 1)(x - 7) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -1$ or $x = 7$.",
+        "The greater solution is $7$."
+      ],
+      "desmos": [
+        "y = (x - (-1))(x - 7)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -1,
+          7
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:medium:spr:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "The equation $(x + 6)(x - 12) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-12$",
+          "value": "-12"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -6$ or $x = 12$.",
+        "The greater solution is $12$."
+      ],
+      "desmos": [
+        "y = (x - (-6))(x - 12)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -6,
+          12
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:mcq:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "The equation $(x - 0)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 0$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (0))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          0,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:mcq:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "The equation $(x + 7)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -7$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-7))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -7,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:mcq:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "The equation $(x + 14)(x - 12) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-12$",
+          "value": "-12"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        },
+        {
+          "text": "$13$",
+          "value": "13"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -14$ or $x = 12$.",
+        "The greater solution is $12$."
+      ],
+      "desmos": [
+        "y = (x - (-14))(x - 12)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -14,
+          12
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:mcq:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "The equation $(x + 2)(x - 10) = 0$ has two solutions. What is the greater solution?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -2$ or $x = 10$.",
+        "The greater solution is $10$."
+      ],
+      "desmos": [
+        "y = (x - (-2))(x - 10)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -2,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:mcq:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "The equation $(x + 6)(x - 12) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "12"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -6$ or $x = 12$.",
+        "The greater solution is $12$."
+      ],
+      "desmos": [
+        "y = (x - (-6))(x - 12)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -6,
+          12
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:spr:1",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "The equation $(x - 0)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = 0$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (0))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          0,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:spr:2",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "The equation $(x + 7)(x - 9) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -7$ or $x = 9$.",
+        "The greater solution is $9$."
+      ],
+      "desmos": [
+        "y = (x - (-7))(x - 9)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -7,
+          9
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:spr:3",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "The equation $(x + 14)(x - 12) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "12"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -14$ or $x = 12$.",
+        "The greater solution is $12$."
+      ],
+      "desmos": [
+        "y = (x - (-14))(x - 12)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -14,
+          12
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:spr:4",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "The equation $(x + 2)(x - 10) = 0$ has two solutions. What is the greater solution?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "A product is zero when at least one factor is zero.",
+        "Set each factor to zero: $x = -2$ or $x = 10$.",
+        "The greater solution is $10$."
+      ],
+      "desmos": [
+        "y = (x - (-2))(x - 10)",
+        "y = 0"
+      ],
+      "meta": {
+        "kind": "quadratic-roots",
+        "values": [
+          -2,
+          10
+        ]
+      },
+      "id": "g:adv.nonlinear-equations.quadratic-solve@2:hard:spr:5",
+      "skill": "adv.nonlinear-equations",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

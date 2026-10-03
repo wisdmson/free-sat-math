@@ -1,0 +1,1131 @@
+{
+  "typeId": "geo.circles.circle-equation",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 16$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:mcq:1",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 49$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:mcq:2",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 16$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:mcq:3",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:mcq:4",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 36$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 36$, so the radius is $r = \\sqrt{36} = 6$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 36"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:mcq:5",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 16$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:spr:1",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 49$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:spr:2",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 16$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:spr:3",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:spr:4",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 36$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 36$, so the radius is $r = \\sqrt{36} = 6$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 36"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:easy:spr:5",
+      "skill": "geo.circles",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 16$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:mcq:1",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 49$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:mcq:2",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 16$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-4$",
+          "value": "-4"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:mcq:3",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:mcq:4",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 36$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$3$",
+          "value": "3"
+        },
+        {
+          "text": "$4$",
+          "value": "4"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 36$, so the radius is $r = \\sqrt{36} = 6$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 36"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:mcq:5",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 16$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:spr:1",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 49$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:spr:2",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 16$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "4"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 16"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          4
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:spr:3",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:spr:4",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 36$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 36$, so the radius is $r = \\sqrt{36} = 6$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 36"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          6
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:medium:spr:5",
+      "skill": "geo.circles",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 49$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:mcq:1",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 144$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-12$",
+          "value": "-12"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$11$",
+          "value": "11"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 144$, so the radius is $r = \\sqrt{144} = 12$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 144"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          12
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:mcq:2",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 49$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-7$",
+          "value": "-7"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:mcq:3",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-2$",
+          "value": "-2"
+        },
+        {
+          "text": "$-1$",
+          "value": "-1"
+        },
+        {
+          "text": "$2$",
+          "value": "2"
+        },
+        {
+          "text": "$5$",
+          "value": "5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:mcq:4",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 100$. What is its radius?",
+      "choices": [
+        {
+          "text": "$-10$",
+          "value": "-10"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$8$",
+          "value": "8"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 100$, so the radius is $r = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 100"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          10
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:mcq:5",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A circle has equation $(x - (3))^2 + (y - (2))^2 = 49$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (3))^2 + (y - (2))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:spr:1",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (-5))^2 = 144$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "12"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 144$, so the radius is $r = \\sqrt{144} = 12$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (-5))^2 = 144"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          12
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:spr:2",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A circle has equation $(x - (1))^2 + (y - (1))^2 = 49$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 49$, so the radius is $r = \\sqrt{49} = 7$."
+      ],
+      "desmos": [
+        "(x - (1))^2 + (y - (1))^2 = 49"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          7
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:spr:3",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A circle has equation $(x - (4))^2 + (y - (3))^2 = 4$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "2"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 4$, so the radius is $r = \\sqrt{4} = 2$."
+      ],
+      "desmos": [
+        "(x - (4))^2 + (y - (3))^2 = 4"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          2
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:spr:4",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A circle has equation $(x - (2))^2 + (y - (4))^2 = 100$. What is its radius?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "10"
+        ]
+      },
+      "solution": [
+        "A circle in standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+        "Here $r^2 = 100$, so the radius is $r = \\sqrt{100} = 10$."
+      ],
+      "desmos": [
+        "(x - (2))^2 + (y - (4))^2 = 100"
+      ],
+      "meta": {
+        "kind": "circle-radius",
+        "values": [
+          10
+        ]
+      },
+      "id": "g:geo.circles.circle-equation@2:hard:spr:5",
+      "skill": "geo.circles",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

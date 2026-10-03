@@ -1,0 +1,1161 @@
+{
+  "typeId": "psda.percentages.percent-basic",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A value of $80$ increases by $25\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-100$",
+          "value": "-100"
+        },
+        {
+          "text": "$99$",
+          "value": "99"
+        },
+        {
+          "text": "$100$",
+          "value": "100"
+        },
+        {
+          "text": "$101$",
+          "value": "101"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $80$ is $20$.",
+        "Add the increase to the original: $80 + 20 = 100$."
+      ],
+      "desmos": [
+        "y = 80(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:mcq:1",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A value of $160$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-192$",
+          "value": "-192"
+        },
+        {
+          "text": "$190$",
+          "value": "190"
+        },
+        {
+          "text": "$191$",
+          "value": "191"
+        },
+        {
+          "text": "$192$",
+          "value": "192"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $160$ is $32$.",
+        "Add the increase to the original: $160 + 32 = 192$."
+      ],
+      "desmos": [
+        "y = 160(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:mcq:2",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A value of $80$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-96$",
+          "value": "-96"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
+        },
+        {
+          "text": "$97$",
+          "value": "97"
+        },
+        {
+          "text": "$98$",
+          "value": "98"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $80$ is $16$.",
+        "Add the increase to the original: $80 + 16 = 96$."
+      ],
+      "desmos": [
+        "y = 80(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:mcq:3",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A value of $40$ increases by $25\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-50$",
+          "value": "-50"
+        },
+        {
+          "text": "$48$",
+          "value": "48"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $40$ is $10$.",
+        "Add the increase to the original: $40 + 10 = 50$."
+      ],
+      "desmos": [
+        "y = 40(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:mcq:4",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A value of $120$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-144$",
+          "value": "-144"
+        },
+        {
+          "text": "$144$",
+          "value": "144"
+        },
+        {
+          "text": "$145$",
+          "value": "145"
+        },
+        {
+          "text": "$146$",
+          "value": "146"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $120$ is $24$.",
+        "Add the increase to the original: $120 + 24 = 144$."
+      ],
+      "desmos": [
+        "y = 120(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:mcq:5",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A value of $80$ increases by $25\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "100"
+        ]
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $80$ is $20$.",
+        "Add the increase to the original: $80 + 20 = 100$."
+      ],
+      "desmos": [
+        "y = 80(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:spr:1",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A value of $160$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "192"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $160$ is $32$.",
+        "Add the increase to the original: $160 + 32 = 192$."
+      ],
+      "desmos": [
+        "y = 160(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:spr:2",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A value of $80$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "96"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $80$ is $16$.",
+        "Add the increase to the original: $80 + 16 = 96$."
+      ],
+      "desmos": [
+        "y = 80(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:spr:3",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A value of $40$ increases by $25\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "50"
+        ]
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $40$ is $10$.",
+        "Add the increase to the original: $40 + 10 = 50$."
+      ],
+      "desmos": [
+        "y = 40(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:spr:4",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A value of $120$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "144"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $120$ is $24$.",
+        "Add the increase to the original: $120 + 24 = 144$."
+      ],
+      "desmos": [
+        "y = 120(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:easy:spr:5",
+      "skill": "psda.percentages",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A value of $80$ increases by $25\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-100$",
+          "value": "-100"
+        },
+        {
+          "text": "$99$",
+          "value": "99"
+        },
+        {
+          "text": "$100$",
+          "value": "100"
+        },
+        {
+          "text": "$101$",
+          "value": "101"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $80$ is $20$.",
+        "Add the increase to the original: $80 + 20 = 100$."
+      ],
+      "desmos": [
+        "y = 80(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:mcq:1",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A value of $160$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-192$",
+          "value": "-192"
+        },
+        {
+          "text": "$190$",
+          "value": "190"
+        },
+        {
+          "text": "$191$",
+          "value": "191"
+        },
+        {
+          "text": "$192$",
+          "value": "192"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $160$ is $32$.",
+        "Add the increase to the original: $160 + 32 = 192$."
+      ],
+      "desmos": [
+        "y = 160(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:mcq:2",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A value of $80$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-96$",
+          "value": "-96"
+        },
+        {
+          "text": "$96$",
+          "value": "96"
+        },
+        {
+          "text": "$97$",
+          "value": "97"
+        },
+        {
+          "text": "$98$",
+          "value": "98"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $80$ is $16$.",
+        "Add the increase to the original: $80 + 16 = 96$."
+      ],
+      "desmos": [
+        "y = 80(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:mcq:3",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A value of $40$ increases by $25\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-50$",
+          "value": "-50"
+        },
+        {
+          "text": "$48$",
+          "value": "48"
+        },
+        {
+          "text": "$50$",
+          "value": "50"
+        },
+        {
+          "text": "$51$",
+          "value": "51"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $40$ is $10$.",
+        "Add the increase to the original: $40 + 10 = 50$."
+      ],
+      "desmos": [
+        "y = 40(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:mcq:4",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A value of $120$ increases by $20\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-144$",
+          "value": "-144"
+        },
+        {
+          "text": "$144$",
+          "value": "144"
+        },
+        {
+          "text": "$145$",
+          "value": "145"
+        },
+        {
+          "text": "$146$",
+          "value": "146"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $120$ is $24$.",
+        "Add the increase to the original: $120 + 24 = 144$."
+      ],
+      "desmos": [
+        "y = 120(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:mcq:5",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A value of $80$ increases by $25\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "100"
+        ]
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $80$ is $20$.",
+        "Add the increase to the original: $80 + 20 = 100$."
+      ],
+      "desmos": [
+        "y = 80(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:spr:1",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A value of $160$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "192"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $160$ is $32$.",
+        "Add the increase to the original: $160 + 32 = 192$."
+      ],
+      "desmos": [
+        "y = 160(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:spr:2",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A value of $80$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "96"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $80$ is $16$.",
+        "Add the increase to the original: $80 + 16 = 96$."
+      ],
+      "desmos": [
+        "y = 80(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:spr:3",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A value of $40$ increases by $25\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "50"
+        ]
+      },
+      "solution": [
+        "Find the increase: $25\\%$ of $40$ is $10$.",
+        "Add the increase to the original: $40 + 10 = 50$."
+      ],
+      "desmos": [
+        "y = 40(1 + 25/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          25
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:spr:4",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A value of $120$ increases by $20\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "144"
+        ]
+      },
+      "solution": [
+        "Find the increase: $20\\%$ of $120$ is $24$.",
+        "Add the increase to the original: $120 + 24 = 144$."
+      ],
+      "desmos": [
+        "y = 120(1 + 20/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          20
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:medium:spr:5",
+      "skill": "psda.percentages",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A value of $80$ increases by $40\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-112$",
+          "value": "-112"
+        },
+        {
+          "text": "$111$",
+          "value": "111"
+        },
+        {
+          "text": "$112$",
+          "value": "112"
+        },
+        {
+          "text": "$113$",
+          "value": "113"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $40\\%$ of $80$ is $32$.",
+        "Add the increase to the original: $80 + 32 = 112$."
+      ],
+      "desmos": [
+        "y = 80(1 + 40/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          40
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:mcq:1",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A value of $160$ increases by $30\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-208$",
+          "value": "-208"
+        },
+        {
+          "text": "$206$",
+          "value": "206"
+        },
+        {
+          "text": "$207$",
+          "value": "207"
+        },
+        {
+          "text": "$208$",
+          "value": "208"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $160$ is $48$.",
+        "Add the increase to the original: $160 + 48 = 208$."
+      ],
+      "desmos": [
+        "y = 160(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:mcq:2",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A value of $80$ increases by $30\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-104$",
+          "value": "-104"
+        },
+        {
+          "text": "$104$",
+          "value": "104"
+        },
+        {
+          "text": "$105$",
+          "value": "105"
+        },
+        {
+          "text": "$106$",
+          "value": "106"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $80$ is $24$.",
+        "Add the increase to the original: $80 + 24 = 104$."
+      ],
+      "desmos": [
+        "y = 80(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:mcq:3",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A value of $40$ increases by $40\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-56$",
+          "value": "-56"
+        },
+        {
+          "text": "$54$",
+          "value": "54"
+        },
+        {
+          "text": "$56$",
+          "value": "56"
+        },
+        {
+          "text": "$57$",
+          "value": "57"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $40\\%$ of $40$ is $16$.",
+        "Add the increase to the original: $40 + 16 = 56$."
+      ],
+      "desmos": [
+        "y = 40(1 + 40/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          40
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:mcq:4",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A value of $120$ increases by $30\\%$. What is the new value?",
+      "choices": [
+        {
+          "text": "$-156$",
+          "value": "-156"
+        },
+        {
+          "text": "$156$",
+          "value": "156"
+        },
+        {
+          "text": "$157$",
+          "value": "157"
+        },
+        {
+          "text": "$158$",
+          "value": "158"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $120$ is $36$.",
+        "Add the increase to the original: $120 + 36 = 156$."
+      ],
+      "desmos": [
+        "y = 120(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:mcq:5",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A value of $80$ increases by $40\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "112"
+        ]
+      },
+      "solution": [
+        "Find the increase: $40\\%$ of $80$ is $32$.",
+        "Add the increase to the original: $80 + 32 = 112$."
+      ],
+      "desmos": [
+        "y = 80(1 + 40/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          40
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:spr:1",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A value of $160$ increases by $30\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "208"
+        ]
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $160$ is $48$.",
+        "Add the increase to the original: $160 + 48 = 208$."
+      ],
+      "desmos": [
+        "y = 160(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          160,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:spr:2",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A value of $80$ increases by $30\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "104"
+        ]
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $80$ is $24$.",
+        "Add the increase to the original: $80 + 24 = 104$."
+      ],
+      "desmos": [
+        "y = 80(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          80,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:spr:3",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A value of $40$ increases by $40\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "56"
+        ]
+      },
+      "solution": [
+        "Find the increase: $40\\%$ of $40$ is $16$.",
+        "Add the increase to the original: $40 + 16 = 56$."
+      ],
+      "desmos": [
+        "y = 40(1 + 40/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          40,
+          40
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:spr:4",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A value of $120$ increases by $30\\%$. What is the new value?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "156"
+        ]
+      },
+      "solution": [
+        "Find the increase: $30\\%$ of $120$ is $36$.",
+        "Add the increase to the original: $120 + 36 = 156$."
+      ],
+      "desmos": [
+        "y = 120(1 + 30/100)"
+      ],
+      "meta": {
+        "kind": "percent",
+        "values": [
+          120,
+          30
+        ]
+      },
+      "id": "g:psda.percentages.percent-basic@2:hard:spr:5",
+      "skill": "psda.percentages",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

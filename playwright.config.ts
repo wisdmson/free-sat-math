@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 // A dedicated port, and never reuse a running server: a leftover preview of a different build
 // (for example one built with BASE_PATH) would make every test fail in confusing ways.
-const PORT = 4322;
+const PORT = Number(process.env['PLAYWRIGHT_PORT'] ?? 4322);
 
 export default defineConfig({
   testDir: 'tests/e2e',

@@ -1,0 +1,1221 @@
+{
+  "typeId": "psda.ratios-rates.proportional-rate",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{36}{5}$",
+          "value": "-36/5"
+        },
+        {
+          "text": "$\\frac{31}{5}$",
+          "value": "31/5"
+        },
+        {
+          "text": "$\\frac{36}{5}$",
+          "value": "36/5"
+        },
+        {
+          "text": "$\\frac{41}{5}$",
+          "value": "41/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 6 minutes: $6 \times 6 = 36$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(6, 36)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:mcq:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "A printer makes $36$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{9}{2}$",
+          "value": "-9/2"
+        },
+        {
+          "text": "$\\frac{5}{2}$",
+          "value": "5/2"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$\\frac{9}{2}$",
+          "value": "9/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $36 div 4 = 9$ pages per minute.",
+        "Multiply by 2 minutes: $9 \times 2 = 18$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(2, 18)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:mcq:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 5 minutes: $6 \times 5 = 30$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(5, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:mcq:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{2}$",
+          "value": "-7/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$\\frac{13}{2}$",
+          "value": "13/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:mcq:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "A printer makes $40$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{64}{5}$",
+          "value": "-64/5"
+        },
+        {
+          "text": "$\\frac{49}{5}$",
+          "value": "49/5"
+        },
+        {
+          "text": "$\\frac{54}{5}$",
+          "value": "54/5"
+        },
+        {
+          "text": "$\\frac{64}{5}$",
+          "value": "64/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $40 div 5 = 8$ pages per minute.",
+        "Multiply by 8 minutes: $8 \times 8 = 64$."
+      ],
+      "desmos": [
+        "y = 8x",
+        "(8, 64)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          8,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:mcq:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "36/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 6 minutes: $6 \times 6 = 36$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(6, 36)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:spr:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "A printer makes $36$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $36 div 4 = 9$ pages per minute.",
+        "Multiply by 2 minutes: $9 \times 2 = 18$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(2, 18)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:spr:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 5 minutes: $6 \times 5 = 30$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(5, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:spr:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:spr:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "A printer makes $40$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "64/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $40 div 5 = 8$ pages per minute.",
+        "Multiply by 8 minutes: $8 \times 8 = 64$."
+      ],
+      "desmos": [
+        "y = 8x",
+        "(8, 64)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          8,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:easy:spr:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{36}{5}$",
+          "value": "-36/5"
+        },
+        {
+          "text": "$\\frac{31}{5}$",
+          "value": "31/5"
+        },
+        {
+          "text": "$\\frac{36}{5}$",
+          "value": "36/5"
+        },
+        {
+          "text": "$\\frac{41}{5}$",
+          "value": "41/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 6 minutes: $6 \times 6 = 36$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(6, 36)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:mcq:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "A printer makes $36$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{9}{2}$",
+          "value": "-9/2"
+        },
+        {
+          "text": "$\\frac{5}{2}$",
+          "value": "5/2"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$\\frac{9}{2}$",
+          "value": "9/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $36 div 4 = 9$ pages per minute.",
+        "Multiply by 2 minutes: $9 \times 2 = 18$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(2, 18)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:mcq:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "choices": [
+        {
+          "text": "$-6$",
+          "value": "-6"
+        },
+        {
+          "text": "$6$",
+          "value": "6"
+        },
+        {
+          "text": "$7$",
+          "value": "7"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 5 minutes: $6 \times 5 = 30$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(5, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:mcq:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{2}$",
+          "value": "-7/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$\\frac{13}{2}$",
+          "value": "13/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:mcq:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "A printer makes $40$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{64}{5}$",
+          "value": "-64/5"
+        },
+        {
+          "text": "$\\frac{49}{5}$",
+          "value": "49/5"
+        },
+        {
+          "text": "$\\frac{54}{5}$",
+          "value": "54/5"
+        },
+        {
+          "text": "$\\frac{64}{5}$",
+          "value": "64/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $40 div 5 = 8$ pages per minute.",
+        "Multiply by 8 minutes: $8 \times 8 = 64$."
+      ],
+      "desmos": [
+        "y = 8x",
+        "(8, 64)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          8,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:mcq:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "36/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 6 minutes: $6 \times 6 = 36$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(6, 36)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:spr:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "A printer makes $36$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $36 div 4 = 9$ pages per minute.",
+        "Multiply by 2 minutes: $9 \times 2 = 18$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(2, 18)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:spr:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "A printer makes $30$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "6"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $30 div 5 = 6$ pages per minute.",
+        "Multiply by 5 minutes: $6 \times 5 = 30$."
+      ],
+      "desmos": [
+        "y = 6x",
+        "(5, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          6,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:spr:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:spr:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "A printer makes $40$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "64/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $40 div 5 = 8$ pages per minute.",
+        "Multiply by 8 minutes: $8 \times 8 = 64$."
+      ],
+      "desmos": [
+        "y = 8x",
+        "(8, 64)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          8,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:medium:spr:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "A printer makes $45$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{54}{5}$",
+          "value": "-54/5"
+        },
+        {
+          "text": "$\\frac{49}{5}$",
+          "value": "49/5"
+        },
+        {
+          "text": "$\\frac{54}{5}$",
+          "value": "54/5"
+        },
+        {
+          "text": "$\\frac{59}{5}$",
+          "value": "59/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $45 div 5 = 9$ pages per minute.",
+        "Multiply by 6 minutes: $9 \times 6 = 54$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(6, 54)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:mcq:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "A printer makes $60$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{15}{2}$",
+          "value": "-15/2"
+        },
+        {
+          "text": "$\\frac{11}{2}$",
+          "value": "11/2"
+        },
+        {
+          "text": "$\\frac{13}{2}$",
+          "value": "13/2"
+        },
+        {
+          "text": "$\\frac{15}{2}$",
+          "value": "15/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $60 div 4 = 15$ pages per minute.",
+        "Multiply by 2 minutes: $15 \times 2 = 30$."
+      ],
+      "desmos": [
+        "y = 15x",
+        "(2, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          15,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:mcq:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "A printer makes $45$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "choices": [
+        {
+          "text": "$-9$",
+          "value": "-9"
+        },
+        {
+          "text": "$9$",
+          "value": "9"
+        },
+        {
+          "text": "$10$",
+          "value": "10"
+        },
+        {
+          "text": "$12$",
+          "value": "12"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $45 div 5 = 9$ pages per minute.",
+        "Multiply by 5 minutes: $9 \times 5 = 45$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(5, 45)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:mcq:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{7}{2}$",
+          "value": "-7/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{7}{2}$",
+          "value": "7/2"
+        },
+        {
+          "text": "$\\frac{13}{2}$",
+          "value": "13/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:mcq:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "A printer makes $65$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "choices": [
+        {
+          "text": "$-\\frac{104}{5}$",
+          "value": "-104/5"
+        },
+        {
+          "text": "$\\frac{89}{5}$",
+          "value": "89/5"
+        },
+        {
+          "text": "$\\frac{94}{5}$",
+          "value": "94/5"
+        },
+        {
+          "text": "$\\frac{104}{5}$",
+          "value": "104/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "Find the unit rate: $65 div 5 = 13$ pages per minute.",
+        "Multiply by 8 minutes: $13 \times 8 = 104$."
+      ],
+      "desmos": [
+        "y = 13x",
+        "(8, 104)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          13,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:mcq:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "A printer makes $45$ pages in $5$ minutes at a constant rate. How many pages will it make in $6$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "54/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $45 div 5 = 9$ pages per minute.",
+        "Multiply by 6 minutes: $9 \times 6 = 54$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(6, 54)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          5,
+          6
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:spr:1",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "A printer makes $60$ pages in $4$ minutes at a constant rate. How many pages will it make in $2$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "15/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $60 div 4 = 15$ pages per minute.",
+        "Multiply by 2 minutes: $15 \times 2 = 30$."
+      ],
+      "desmos": [
+        "y = 15x",
+        "(2, 30)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          15,
+          4,
+          2
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:spr:2",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "A printer makes $45$ pages in $5$ minutes at a constant rate. How many pages will it make in $5$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "9"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $45 div 5 = 9$ pages per minute.",
+        "Multiply by 5 minutes: $9 \times 5 = 45$."
+      ],
+      "desmos": [
+        "y = 9x",
+        "(5, 45)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          9,
+          5,
+          5
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:spr:3",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "A printer makes $18$ pages in $6$ minutes at a constant rate. How many pages will it make in $7$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "7/2"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $18 div 6 = 3$ pages per minute.",
+        "Multiply by 7 minutes: $3 \times 7 = 21$."
+      ],
+      "desmos": [
+        "y = 3x",
+        "(7, 21)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          3,
+          6,
+          7
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:spr:4",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "A printer makes $65$ pages in $5$ minutes at a constant rate. How many pages will it make in $8$ minutes?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "104/5"
+        ]
+      },
+      "solution": [
+        "Find the unit rate: $65 div 5 = 13$ pages per minute.",
+        "Multiply by 8 minutes: $13 \times 8 = 104$."
+      ],
+      "desmos": [
+        "y = 13x",
+        "(8, 104)"
+      ],
+      "meta": {
+        "kind": "rate",
+        "values": [
+          13,
+          5,
+          8
+        ]
+      },
+      "id": "g:psda.ratios-rates.proportional-rate@2:hard:spr:5",
+      "skill": "psda.ratios-rates",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+---
+title: Right triangles and trigonometry
+skill: geo.right-triangles-trig
+summary: Identify the hypotenuse, use the Pythagorean theorem, and choose a trigonometric ratio from the angle.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Pythagorean theorem
+
+For a right triangle, <M t="a^2+b^2=c^2" />, where <M t="c" /> is always the hypotenuse, the side opposite the right angle. Special triples such as 3-4-5 and 5-12-13 can make calculations quick.
+
+<WorkedExample
+  typeId="geo.right-triangles-trig.pythagorean"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: find the hypotenuse"
+/>
+
+## Trigonometric ratios
+
+Relative to an acute angle, use <M t="\sin\theta=\text{opposite}/\text{hypotenuse}" />, <M t="\cos\theta=\text{adjacent}/\text{hypotenuse}" />, or <M t="\tan\theta=\text{opposite}/\text{adjacent}" />. Label the sides from the angle named in the question before choosing a ratio.
+
+<WorkedExample
+  typeId="geo.right-triangles-trig.pythagorean"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: scale a familiar triple"
+/>
+
+## Common traps
+
+- Calling a leg the hypotenuse; it is always opposite the right angle.
+- Switching opposite and adjacent when the reference angle changes.
+- Forgetting that the calculator must be in degree mode when angles are in degrees.
+
+## Desmos steps
+
+1. Check that the angle setting is degrees if the problem uses degree measures.
+2. Enter a ratio such as `sin(30 degrees)=x/10` and solve for the missing side.
+3. Use `a^2+b^2=c^2` for a right triangle, then check that the result is a positive length.

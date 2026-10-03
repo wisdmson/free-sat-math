@@ -1,0 +1,44 @@
+---
+title: Area and volume
+skill: geo.area-volume
+summary: Choose a formula from the shape, keep units squared or cubed, and account for scale changes.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Match the measure to the shape
+
+Area measures a flat region in square units. Volume measures space inside a solid in cubic units. For a rectangular prism, <M t="V=lwh" />. For a cylinder, <M t="V=\pi r^2h" />. Write the formula before substituting values.
+
+<WorkedExample
+  typeId="geo.area-volume.solid-volume"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: volume of a prism"
+/>
+
+## Watch scale factors
+
+If every length is multiplied by <M t="k" />, an area is multiplied by <M t="k^2" /> and a volume by <M t="k^3" />. Keep the units attached: a volume of 48 means 48 cubic units, not square units.
+
+<WorkedExample
+  typeId="geo.area-volume.solid-volume"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: multiply all three dimensions"
+/>
+
+## Common traps
+
+- Using a perimeter formula when the question asks for area.
+- Forgetting to square the radius in circle area or cylinder volume.
+- Reporting linear, square, and cubic units interchangeably.
+
+## Desmos check
+
+1. Enter `V=l*w*h` and substitute the three dimensions to check the product.
+2. For a circle-based formula, enter `pi*r^2` or `pi*r^2*h` and keep `pi` exact until a decimal is requested.
+3. Use the formula sheet to choose the geometric relationship; Desmos does not decide which dimensions belong in it.

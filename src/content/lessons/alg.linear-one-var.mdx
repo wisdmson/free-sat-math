@@ -1,0 +1,46 @@
+---
+title: Linear equations in one variable
+skill: alg.linear-one-var
+summary: Undo operations in reverse order to isolate the variable, and use a graph to check your solution.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## A reliable order
+
+The goal is to get <M t="x" /> by itself. First undo addition or subtraction, then undo multiplication or division. Whatever you do to one side, do to the other. If parentheses are present, distribute before combining like terms.
+
+<WorkedExample
+  typeId="alg.linear-one-var.solve"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: isolate the variable"
+/>
+
+## Check the value
+
+Substitute your value for the variable in the **original** equation. Both sides should give the same number. This catches sign and arithmetic slips.
+
+<WorkedExample
+  typeId="alg.linear-one-var.solve"
+  difficulty="hard"
+  format="spr"
+  seed={7}
+  title="Example: check by substitution"
+/>
+
+## Common traps
+
+- Changing a sign when moving a term without doing the same operation on both sides.
+- Dividing by only part of a coefficient expression.
+- Checking in a simplified equation instead of the original one.
+
+## Desmos check
+
+1. Enter the left side as `y = 3x + 4`.
+2. Enter the right side as `y = 19`.
+3. Find their intersection. Its <M t="x" />-coordinate is the equation's solution. Substitute it back in to confirm.
+
+Desmos is a quick check; the written steps show why the solution works.

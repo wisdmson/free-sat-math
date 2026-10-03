@@ -1,0 +1,44 @@
+---
+title: Lines, angles, and triangles
+skill: geo.lines-angles-triangles
+summary: Use angle relationships and triangle facts to find missing measures.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Angle relationships
+
+Angles on a straight line add to <M t="180^\circ" />. Vertical angles are equal. When parallel lines are crossed by a transversal, corresponding and alternate interior angles are equal, while same-side interior angles add to <M t="180^\circ" />.
+
+<WorkedExample
+  typeId="geo.lines-angles-triangles.triangle-angle-sum"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: use the triangle sum"
+/>
+
+## Triangle facts
+
+The interior angles of every triangle add to <M t="180^\circ" />. An exterior angle equals the sum of the two remote interior angles. Similar triangles have equal matching angles and proportional matching side lengths.
+
+<WorkedExample
+  typeId="geo.lines-angles-triangles.triangle-angle-sum"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: find a missing angle"
+/>
+
+## Common traps
+
+- Using a parallel-line angle rule when parallel lines are not given.
+- Matching the wrong corresponding sides in similar triangles.
+- Forgetting that the third angle must still be positive.
+
+## Desmos check
+
+1. Enter an equation such as `x+64+53=180` to check the missing angle arithmetic.
+2. If a diagram gives a relationship such as vertical angles, write that relationship before entering the equation.
+3. Desmos can solve for the variable, but the diagram determines which angles are equal or supplementary.

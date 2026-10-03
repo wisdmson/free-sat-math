@@ -1,0 +1,44 @@
+---
+title: Two-variable data
+skill: psda.two-var-data
+summary: Read scatterplots, interpret a line of best fit, and use the model for cautious predictions.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Describe the relationship
+
+A scatterplot shows paired measurements. Describe its direction (positive, negative, or none), form (often roughly linear), and strength. A line of best fit summarizes a trend; its slope describes predicted change in <M t="y" /> for a one-unit increase in <M t="x" />.
+
+<WorkedExample
+  typeId="psda.two-var-data.best-fit-read"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: use a fitted model"
+/>
+
+## Predict within the data
+
+Substitute an x-value into the model to make a prediction. Predictions inside the observed x-range are interpolation. Predictions far outside that range are extrapolation and may be unreliable. Association by itself does not establish that one variable caused the other.
+
+<WorkedExample
+  typeId="psda.two-var-data.best-fit-read"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: calculate a prediction"
+/>
+
+## Common traps
+
+- Reversing which variable the slope describes.
+- Treating a prediction as an exact observed value.
+- Extending a line far beyond the data without checking whether the pattern still makes sense.
+
+## Desmos steps
+
+1. Put x-values in table column `x_1` and matching y-values in `y_1`.
+2. Enter `y_1~mx_1+b` on a new line to fit a linear model; Desmos estimates `m` and `b`.
+3. Use the model to predict within the data range, and label any extrapolation as uncertain.

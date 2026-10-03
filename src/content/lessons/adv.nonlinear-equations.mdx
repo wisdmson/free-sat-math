@@ -1,0 +1,44 @@
+---
+title: Nonlinear equations
+skill: adv.nonlinear-equations
+summary: Solve quadratic and other nonlinear equations while checking for missed or extraneous solutions.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Quadratics and their roots
+
+The solutions to an equation are the input values that make it true. If a quadratic is factored, use the zero-product rule: when <M t="AB=0" />, at least one factor is zero. If it does not factor cleanly, use the quadratic formula or complete the square.
+
+<WorkedExample
+  typeId="adv.nonlinear-equations.quadratic-solve"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: use the zero-product rule"
+/>
+
+## Intersections and restrictions
+
+For a system containing a line and a parabola, substitute the line rule into the quadratic. The solutions are the x-coordinates of their intersections. When squaring both sides or clearing a denominator, check every candidate in the original equation; those steps can introduce values that do not work.
+
+<WorkedExample
+  typeId="adv.nonlinear-equations.quadratic-solve"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: compare the roots"
+/>
+
+## Common traps
+
+- Stopping after finding one root of a factored quadratic.
+- Forgetting the plus-or-minus in a square-root step.
+- Keeping an extraneous solution without checking it in the original equation.
+
+## Desmos steps
+
+1. Enter the left and right sides as separate equations, for example `y=(x-2)(x+3)` and `y=0`.
+2. Click each intersection to read its coordinates; the x-values solve the equation.
+3. Substitute those values into the original equation, especially if you squared or multiplied by a variable expression.

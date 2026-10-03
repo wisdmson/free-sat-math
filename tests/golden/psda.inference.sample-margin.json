@@ -1,0 +1,1251 @@
+{
+  "typeId": "psda.inference.sample-margin",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{5}$",
+          "value": "-3/5"
+        },
+        {
+          "text": "$-\\frac{2}{5}$",
+          "value": "-2/5"
+        },
+        {
+          "text": "$\\frac{3}{5}$",
+          "value": "3/5"
+        },
+        {
+          "text": "$\\frac{8}{5}$",
+          "value": "8/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:mcq:1",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{133}{100}$",
+          "value": "-133/100"
+        },
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$-\\frac{33}{100}$",
+          "value": "-33/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:mcq:2",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{31}{50}$",
+          "value": "-31/50"
+        },
+        {
+          "text": "$\\frac{31}{50}$",
+          "value": "31/50"
+        },
+        {
+          "text": "$\\frac{81}{50}$",
+          "value": "81/50"
+        },
+        {
+          "text": "$\\frac{131}{50}$",
+          "value": "131/50"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:mcq:3",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{2}$",
+          "value": "-3/2"
+        },
+        {
+          "text": "$-\\frac{1}{2}$",
+          "value": "-1/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{3}{2}$",
+          "value": "3/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:mcq:4",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        },
+        {
+          "text": "$\\frac{167}{100}$",
+          "value": "167/100"
+        },
+        {
+          "text": "$\\frac{267}{100}$",
+          "value": "267/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:mcq:5",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:spr:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/5"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:spr:1",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:spr:2",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "31/50"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:spr:3",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "1/2"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:spr:4",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "easy:spr:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:easy:spr:5",
+      "skill": "psda.inference",
+      "difficulty": "easy",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{5}$",
+          "value": "-3/5"
+        },
+        {
+          "text": "$-\\frac{2}{5}$",
+          "value": "-2/5"
+        },
+        {
+          "text": "$\\frac{3}{5}$",
+          "value": "3/5"
+        },
+        {
+          "text": "$\\frac{8}{5}$",
+          "value": "8/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:mcq:1",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{133}{100}$",
+          "value": "-133/100"
+        },
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$-\\frac{33}{100}$",
+          "value": "-33/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:mcq:2",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{31}{50}$",
+          "value": "-31/50"
+        },
+        {
+          "text": "$\\frac{31}{50}$",
+          "value": "31/50"
+        },
+        {
+          "text": "$\\frac{81}{50}$",
+          "value": "81/50"
+        },
+        {
+          "text": "$\\frac{131}{50}$",
+          "value": "131/50"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:mcq:3",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{2}$",
+          "value": "-3/2"
+        },
+        {
+          "text": "$-\\frac{1}{2}$",
+          "value": "-1/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{3}{2}$",
+          "value": "3/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:mcq:4",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        },
+        {
+          "text": "$\\frac{167}{100}$",
+          "value": "167/100"
+        },
+        {
+          "text": "$\\frac{267}{100}$",
+          "value": "267/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:mcq:5",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:spr:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/5"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:spr:1",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:spr:2",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "31/50"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:spr:3",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "1/2"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:spr:4",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "medium:spr:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:medium:spr:5",
+      "skill": "psda.inference",
+      "difficulty": "medium",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{5}$",
+          "value": "-3/5"
+        },
+        {
+          "text": "$-\\frac{2}{5}$",
+          "value": "-2/5"
+        },
+        {
+          "text": "$\\frac{3}{5}$",
+          "value": "3/5"
+        },
+        {
+          "text": "$\\frac{8}{5}$",
+          "value": "8/5"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "B": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:mcq:1",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{133}{100}$",
+          "value": "-133/100"
+        },
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$-\\frac{33}{100}$",
+          "value": "-33/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:mcq:2",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{31}{50}$",
+          "value": "-31/50"
+        },
+        {
+          "text": "$\\frac{31}{50}$",
+          "value": "31/50"
+        },
+        {
+          "text": "$\\frac{81}{50}$",
+          "value": "81/50"
+        },
+        {
+          "text": "$\\frac{131}{50}$",
+          "value": "131/50"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:mcq:3",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{3}{2}$",
+          "value": "-3/2"
+        },
+        {
+          "text": "$-\\frac{1}{2}$",
+          "value": "-1/2"
+        },
+        {
+          "text": "$\\frac{1}{2}$",
+          "value": "1/2"
+        },
+        {
+          "text": "$\\frac{3}{2}$",
+          "value": "3/2"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 2
+      },
+      "distractorNotes": {
+        "A": "An arithmetic slip: redo the last computation carefully.",
+        "B": "A sign error: the size is right but the sign is wrong.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:mcq:4",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "choices": [
+        {
+          "text": "$-\\frac{67}{100}$",
+          "value": "-67/100"
+        },
+        {
+          "text": "$\\frac{67}{100}$",
+          "value": "67/100"
+        },
+        {
+          "text": "$\\frac{167}{100}$",
+          "value": "167/100"
+        },
+        {
+          "text": "$\\frac{267}{100}$",
+          "value": "267/100"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "A sign error: the size is right but the sign is wrong.",
+        "C": "An arithmetic slip: redo the last computation carefully.",
+        "D": "An arithmetic slip: redo the last computation carefully."
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:mcq:5",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:spr:1": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "3/5"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 10$ percentage points $= 60\\%$.",
+        "The interval's lower end is 60%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 10",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:spr:1",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:2": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:spr:2",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:3": {
+      "stem": "In a random sample, $70$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "31/50"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $70\\%$. Subtract the margin of error for the lower end.",
+        "$70\\% - 8$ percentage points $= 62\\%$.",
+        "The interval's lower end is 62%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 70 - 8",
+        "y = 70"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          70,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:spr:3",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:4": {
+      "stem": "In a random sample, $60$ out of $100$ students prefer later school start times. The margin of error is $10$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "1/2"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $60\\%$. Subtract the margin of error for the lower end.",
+        "$60\\% - 10$ percentage points $= 50\\%$.",
+        "The interval's lower end is 50%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 60 - 10",
+        "y = 60"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          60,
+          100,
+          10
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:spr:4",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    },
+    "hard:spr:5": {
+      "stem": "In a random sample, $75$ out of $100$ students prefer later school start times. The margin of error is $8$ percentage points. What is the lower end of the estimated interval?",
+      "answer": {
+        "kind": "values",
+        "values": [
+          "67/100"
+        ]
+      },
+      "solution": [
+        "The sample estimate is $75\\%$. Subtract the margin of error for the lower end.",
+        "$75\\% - 8$ percentage points $= 67\\%$.",
+        "The interval's lower end is 67%. The margin describes sampling uncertainty; it is not a guarantee about every student."
+      ],
+      "desmos": [
+        "y = 75 - 8",
+        "y = 75"
+      ],
+      "meta": {
+        "kind": "inference",
+        "values": [
+          75,
+          100,
+          8
+        ]
+      },
+      "id": "g:psda.inference.sample-margin@2:hard:spr:5",
+      "skill": "psda.inference",
+      "difficulty": "hard",
+      "format": "spr",
+      "source": "generated"
+    }
+  }
+}

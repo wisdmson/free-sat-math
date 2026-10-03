@@ -8,6 +8,7 @@ import {
   problemFromId,
   problemTypesForSkill,
 } from '../../src/engine/registry';
+import { SKILL_IDS } from '../../src/engine/skills';
 
 describe('registry', () => {
   it('has unique type ids', () => {
@@ -18,13 +19,12 @@ describe('registry', () => {
     expect(getProblemType('alg.systems.solve-system')?.skill).toBe('alg.systems');
     expect(getProblemType('nope')).toBeUndefined();
     expect(problemTypesForSkill('alg.systems').length).toBeGreaterThan(0);
-    expect(problemTypesForSkill('geo.circles')).toEqual([]);
+    expect(getProblemType('geo.circles.circle-equation')?.skill).toBe('geo.circles');
   });
 
-  it('lists alg.systems as the only available skill in Phase 1', () => {
-    expect(availableSkills()).toEqual(['alg.systems']);
-    expect(isSkillAvailable('alg.systems')).toBe(true);
-    expect(isSkillAvailable('geo.circles')).toBe(false);
+  it('has practice for every official SAT Math skill', () => {
+    expect(availableSkills()).toEqual(SKILL_IDS);
+    for (const skill of SKILL_IDS) expect(isSkillAvailable(skill), skill).toBe(true);
   });
 
   it('rebuilds problems from ids and flags old versions', () => {

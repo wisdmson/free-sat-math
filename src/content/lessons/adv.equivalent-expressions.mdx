@@ -1,0 +1,44 @@
+---
+title: Equivalent expressions
+skill: adv.equivalent-expressions
+summary: Expand, combine, and factor expressions without changing their value.
+---
+
+import M from '../../components/M.astro';
+import WorkedExample from '../../components/WorkedExample.astro';
+
+## Keep the value the same
+
+Equivalent expressions give the same output for every allowed input. Distribute a factor to expand parentheses, combine only like terms, and look for a greatest common factor before using a factoring pattern.
+
+<WorkedExample
+  typeId="adv.equivalent-expressions.expand-simplify"
+  difficulty="easy"
+  format="mcq"
+  seed={2}
+  title="Example: expand and combine"
+/>
+
+## Use structure
+
+For <M t="a^2-b^2" />, use the difference-of-squares pattern <M t="(a-b)(a+b)" />. For powers with the same base, add exponents when multiplying and subtract them when dividing. A radical can be rewritten with a rational exponent, such as <M t="\sqrt{x}=x^{1/2}" />.
+
+<WorkedExample
+  typeId="adv.equivalent-expressions.expand-simplify"
+  difficulty="hard"
+  format="spr"
+  seed={8}
+  title="Example: track the coefficient"
+/>
+
+## Common traps
+
+- Distributing to the first term but not the rest of the parentheses.
+- Combining unlike terms such as <M t="x" /> and <M t="x^2" />.
+- Applying exponent rules to different bases.
+
+## Desmos check
+
+1. Enter the original expression as `f(x)=...` and your simplified version as `g(x)=...`.
+2. Graph `f(x)-g(x)`. If the expressions are equivalent, the graph stays on the x-axis for their shared domain.
+3. Use algebra to justify the identity; a graph is a useful check over the visible window, not a proof for every input.

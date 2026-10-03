@@ -1,0 +1,696 @@
+{
+  "typeId": "psda.claims.evaluate-study",
+  "version": 2,
+  "problems": {
+    "easy:mcq:1": {
+      "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          120
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:easy:mcq:1",
+      "skill": "psda.claims",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:2": {
+      "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "A convenience sample can leave out important parts of the population."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          120
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:easy:mcq:2",
+      "skill": "psda.claims",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:3": {
+      "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A convenience sample can leave out important parts of the population.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          120
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:easy:mcq:3",
+      "skill": "psda.claims",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:4": {
+      "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A convenience sample can leave out important parts of the population.",
+        "B": "A survey can show an association, but it does not assign treatments.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          120
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:easy:mcq:4",
+      "skill": "psda.claims",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "easy:mcq:5": {
+      "stem": "Researchers randomly assign 120 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          120
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:easy:mcq:5",
+      "skill": "psda.claims",
+      "difficulty": "easy",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:1": {
+      "stem": "Researchers randomly assign 240 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          240
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:medium:mcq:1",
+      "skill": "psda.claims",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:2": {
+      "stem": "Researchers randomly assign 240 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "A convenience sample can leave out important parts of the population."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          240
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:medium:mcq:2",
+      "skill": "psda.claims",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:3": {
+      "stem": "Researchers randomly assign 240 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A convenience sample can leave out important parts of the population.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          240
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:medium:mcq:3",
+      "skill": "psda.claims",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:4": {
+      "stem": "Researchers randomly assign 240 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A convenience sample can leave out important parts of the population.",
+        "B": "A survey can show an association, but it does not assign treatments.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          240
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:medium:mcq:4",
+      "skill": "psda.claims",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "medium:mcq:5": {
+      "stem": "Researchers randomly assign 240 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          240
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:medium:mcq:5",
+      "skill": "psda.claims",
+      "difficulty": "medium",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:1": {
+      "stem": "Researchers randomly assign 480 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          480
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:hard:mcq:1",
+      "skill": "psda.claims",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:2": {
+      "stem": "Researchers randomly assign 480 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 1
+      },
+      "distractorNotes": {
+        "A": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "A convenience sample can leave out important parts of the population."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          480
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:hard:mcq:2",
+      "skill": "psda.claims",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:3": {
+      "stem": "Researchers randomly assign 480 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "Researchers only observe existing groups, so other differences may explain the outcome.",
+        "C": "A convenience sample can leave out important parts of the population.",
+        "D": "A survey can show an association, but it does not assign treatments."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          480
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:hard:mcq:3",
+      "skill": "psda.claims",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:4": {
+      "stem": "Researchers randomly assign 480 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        },
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 3
+      },
+      "distractorNotes": {
+        "A": "A convenience sample can leave out important parts of the population.",
+        "B": "A survey can show an association, but it does not assign treatments.",
+        "C": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          480
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:hard:mcq:4",
+      "skill": "psda.claims",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    },
+    "hard:mcq:5": {
+      "stem": "Researchers randomly assign 480 volunteers to either a new study schedule or the usual schedule, then compare their test scores. Which conclusion is best supported by this design?",
+      "choices": [
+        {
+          "text": "The randomized experiment supports a cause-and-effect conclusion for the studied group.",
+          "value": "randomized"
+        },
+        {
+          "text": "A convenience sample represents every member of the population.",
+          "value": "convenience"
+        },
+        {
+          "text": "A survey always proves that one variable caused the other.",
+          "value": "survey"
+        },
+        {
+          "text": "An observational study proves that changing one variable caused the outcome.",
+          "value": "observational"
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "index": 0
+      },
+      "distractorNotes": {
+        "B": "A convenience sample can leave out important parts of the population.",
+        "C": "A survey can show an association, but it does not assign treatments.",
+        "D": "Researchers only observe existing groups, so other differences may explain the outcome."
+      },
+      "solution": [
+        "Random assignment helps balance other differences between the groups.",
+        "Because researchers assigned the schedules, a difference in scores can support a cause-and-effect conclusion for the volunteers in this study.",
+        "This alone does not show that the result applies to every student; that also depends on how representative the volunteers are."
+      ],
+      "meta": {
+        "kind": "claim",
+        "values": [
+          480
+        ]
+      },
+      "id": "g:psda.claims.evaluate-study@2:hard:mcq:5",
+      "skill": "psda.claims",
+      "difficulty": "hard",
+      "format": "mcq",
+      "source": "generated"
+    }
+  }
+}
