@@ -191,15 +191,23 @@ export default function GymApp() {
     const { summary, previousBest } = view;
     const accuracy =
       summary.attempted === 0 ? 0 : Math.round((100 * summary.correct) / summary.attempted);
+    const isNewBest = summary.correct > previousBest;
     return (
       <div className="gym-done">
         <StorageBanner snapshot={snapshot} />
-        <h2>{summary.correct} correct</h2>
-        <p>
+        <p className="eyebrow">{getDrill(view.drill)?.name}</p>
+        <h2 className="gym-score">{summary.correct} correct</h2>
+        <p className="gym-stats">
           {summary.attempted} answered · {accuracy}% accurate
         </p>
-        <p className="gym-best">
-          {summary.correct > previousBest ? 'New personal best!' : `Personal best: ${previousBest}`}
+        <p className={`gym-best ${isNewBest ? 'is-new' : ''}`}>
+          {isNewBest ? (
+            <>
+              <span aria-hidden="true">🎉 </span>New personal best!
+            </>
+          ) : (
+            `Personal best: ${previousBest}`
+          )}
         </p>
         <Trend drill={view.drill} />
         <div className="button-row">

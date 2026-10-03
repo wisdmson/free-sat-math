@@ -45,9 +45,6 @@
   gap: 1rem;
   max-width: 28rem;
 }
-.gym-best {
-  font-weight: 700;
-}
 .gym-trend svg {
   width: 100%;
   max-width: 300px;
@@ -92,5 +89,54 @@
   }
   .gym-drill {
     min-height: 0;
+  }
+}
+
+/* Sprint results: one card, a big score, and a clear moment for a new personal best. */
+.gym-done {
+  padding: clamp(1.25rem, 5vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-feature, 24px);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft, none);
+}
+.gym-done .eyebrow {
+  margin: 0;
+}
+.gym-score {
+  margin: 0;
+  font-size: clamp(2.5rem, 12vw, 3.5rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.gym-stats {
+  margin: 0;
+  color: var(--muted);
+}
+.gym-best {
+  justify-self: start;
+  margin: 0;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-weight: 700;
+}
+.gym-best.is-new {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gym-best.is-new {
+    animation: gym-best-pop 0.45s ease-out;
+  }
+}
+@keyframes gym-best-pop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

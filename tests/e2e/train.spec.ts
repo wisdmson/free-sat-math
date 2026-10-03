@@ -31,6 +31,7 @@ test('the sprint ends after 60 seconds and keeps the personal best', async ({ pa
   await page.clock.fastForward(61_000);
   await expect(page.getByRole('heading', { name: '3 correct' })).toBeVisible();
   await expect(page.getByText('New personal best!')).toBeVisible();
+  await expect(page.locator('.gym-best.is-new')).toBeVisible();
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('fsm.progress.v1')!));
   expect(saved.mental.best['mm.arithmetic']).toBe(3);
   expect(saved.game.points).toBe(6);
@@ -40,6 +41,7 @@ test('the sprint ends after 60 seconds and keeps the personal best', async ({ pa
   await page.clock.fastForward(61_000);
   await expect(page.getByRole('heading', { name: '1 correct' })).toBeVisible();
   await expect(page.getByText('Personal best: 3')).toBeVisible();
+  await expect(page.locator('.gym-best.is-new')).toHaveCount(0);
 });
 
 test('the Gym fits a 360px screen and is in the main menu', async ({ page }) => {
