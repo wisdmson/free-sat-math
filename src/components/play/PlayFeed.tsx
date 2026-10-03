@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   lightningSoon,
   newFeedState,
@@ -27,6 +27,9 @@ import StorageBanner from '../StorageBanner';
 import { answerFeedback, levelUpFeedback } from './feedback';
 import LightningCard, { type LightningResult } from './LightningCard';
 import SatCard, { type CardResult } from './SatCard';
+
+// The reset routine loads only when a student opens it.
+const ResetRoutine = lazy(() => import('./ResetRoutine'));
 
 /** Cards built ahead of the current one, so a swipe is instant. */
 const LOOKAHEAD = 3;
@@ -87,7 +90,22 @@ export default function PlayFeed({
   const [current, setCurrent] = useState(0);
   const [combo, setCombo] = useState(0);
   const comboRef = useRef(0);
+  // The reset routine (spec §5.2): offered once per session after 3 SAT misses in a row.
+  const [resetOpen, setResetOpen] = useState(false);
+  const missRun = useRef(0);
+  const resetOffered = useRef(false);
   const scroller = useRef<HTMLDivElement>(null);
+  const currentRef = useRef(0);
+  useEffect(() => {
+    currentRef.current = current;
+  }, [current]);
+  const openReset = useCallback(() => setResetOpen(true), []);
+  const closeReset = useCallback(() => {
+    setResetOpen(false);
+    scroller.current
+      ?.querySelector<HTMLElement>(`[data-index="${currentRef.current}"] h2`)
+      ?.focus({ preventScroll: true });
+  }, []);
 
   // The drills load on demand, a few cards before the first Lightning round is due, so a short
   // session never downloads them. The test hook loads them first and waits.
@@ -188,7 +206,7 @@ export default function PlayFeed({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (isTyping(e.target)) return;
+      if (resetOpen || isTyping(e.target)) return;
       const onButton = e.target instanceof HTMLButtonElement;
       if (
         e.key === 'ArrowDown' ||
@@ -205,7 +223,7 @@ export default function PlayFeed({
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [current, goTo]);
+  }, [current, goTo, resetOpen]);
 
   const onAnswer = (
     index: number,
@@ -234,7 +252,8 @@ export default function PlayFeed({
     const { settings, game } = store.getSnapshot().progress;
     answerFeedback(r.correct, settings);
     if (levelInfo(game.points).level > before) levelUpFeedback(settings);
-    entriesRef.current = entriesRef.current.map((e, i) =>
+    missRun.current = r.correct ? 0 : missRun.current + 1;
+    let list = entriesRef.current.map((e, i) =>
       i === index
         ? {
             ...e,
@@ -243,6 +262,12 @@ export default function PlayFeed({
           }
         : e,
     );
+    if (missRun.current >= 3 && !resetOffered.current) {
+      resetOffered.current = true;
+      const offer: Entry = { key: 'reset-offer', card: { kind: 'reset', key: 'reset-offer' } };
+      list = [...list.slice(0, index + 1), offer, ...list.slice(index + 1)];
+    }
+    entriesRef.current = list;
     setEntries(entriesRef.current);
   };
 
@@ -344,11 +369,23 @@ export default function PlayFeed({
                 <h2 tabIndex={-1}>Test-day tip</h2>
                 <p>{e.card.text}</p>
               </div>
+            ) : e.card.kind === 'reset' ? (
+              <div className="play-card play-reset-offer">
+                <h2 tabIndex={-1}>Take 20 seconds?</h2>
+                <p>
+                  Three misses in a row happens to everyone. A short reset and a checklist can get
+                  you unstuck.
+                </p>
+                <button type="button" className="button primary" onClick={openReset}>
+                  Start the reset
+                </button>
+                <p className="hint">Or swipe up to keep going.</p>
+              </div>
             ) : e.card.kind === 'lightning' ? (
               <LightningCard
                 questions={e.card.questions}
                 seconds={lightningSeconds(snapshot.progress.settings)}
-                active={i === current}
+                active={i === current && !resetOpen}
                 result={e.lightning}
                 onAnswer={(r) => onLightningAnswer(i, r)}
                 onDone={(right) => onLightningDone(i, right)}
@@ -359,11 +396,12 @@ export default function PlayFeed({
                 desmosKey={desmosKey}
                 result={e.result}
                 reduced={reduced}
-                active={i === current}
+                active={i === current && !resetOpen}
                 paceLimitMs={e.card.pace === true ? paceLimitMs(snapshot.progress.settings) : null}
                 onAnswer={(r) =>
                   e.card?.kind === 'sat' && onAnswer(i, e.card.problem, e.card.pace === true, r)
                 }
+                onReset={openReset}
                 guessed={e.guessed === true}
                 chipOpen={current <= i + 1}
                 onGuessed={(g) => e.card?.kind === 'sat' && onGuessed(i, e.card.problem.id, g)}
@@ -385,6 +423,13 @@ export default function PlayFeed({
           ↓
         </button>
       </nav>
+      {resetOpen && (
+        <div className="reset-backdrop">
+          <Suspense fallback={<p className="hint">Loading…</p>}>
+            <ResetRoutine reduced={reduced} onClose={closeReset} />
+          </Suspense>
+        </div>
+      )}
     </div>
   );
 }

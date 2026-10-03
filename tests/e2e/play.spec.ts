@@ -210,3 +210,24 @@ test('a pace check shows the time against 95 s and adds the bonus', async ({ pag
   await expect(current(page).getByRole('status')).toContainText('on pace ✅');
   await expect(current(page).getByRole('status')).toContainText('+10 pace bonus');
 });
+
+test('three misses in a row offer a reset that ends with the unstuck checklist', async ({
+  page,
+}) => {
+  await page.goto('/play/?go=1');
+  for (let i = 0; i < 3; i++) {
+    await answerCurrent(page, false);
+    await next(page);
+  }
+  await expect(current(page).getByRole('heading', { name: 'Take 20 seconds?' })).toBeVisible();
+  await current(page).getByRole('button', { name: 'Start the reset' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Take 20 seconds' });
+  await expect(dialog).toBeVisible();
+  await dialog.getByRole('button', { name: 'Skip to the checklist' }).click();
+  await expect(page.getByRole('dialog', { name: 'Get unstuck' })).toBeVisible();
+  await page.getByRole('button', { name: 'Back to the questions' }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  // The three answered cards keep their results.
+  await page.getByRole('button', { name: 'Previous card' }).click();
+  await expect(current(page).getByRole('status')).toContainText('Not quite');
+});

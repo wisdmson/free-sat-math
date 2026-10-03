@@ -330,3 +330,74 @@
   margin: 0;
   font-weight: 600;
 }
+.play-reset-offer h2 {
+  font-size: 1.4rem;
+}
+.reset-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgb(10 15 25 / 0.55);
+}
+.reset-routine {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  width: min(100%, 26rem);
+  padding: 1.5rem;
+  border-radius: var(--radius-feature, 24px);
+  background: var(--surface);
+  color: var(--text);
+  text-align: center;
+}
+.reset-circle {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 3px solid var(--accent);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.reset-circle.is-in {
+  animation-name: reset-grow;
+}
+.reset-circle.is-out {
+  animation-name: reset-shrink;
+}
+@keyframes reset-grow {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes reset-shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.6);
+  }
+}
+.reset-step {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.reset-count {
+  margin: 0;
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+}
+.reset-checklist {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  text-align: left;
+}
